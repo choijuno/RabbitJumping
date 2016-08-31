@@ -91,6 +91,13 @@ public class PrefabManager : MonoBehaviour
 		for(int i=0; i < createdPrefabs.Count; i++)
 			SavePrefab( createdPrefabs[i], i );
 	}
+
+	// OnApplicationQuit isn't always called on mobile, so use OnApplicationPause.
+	void OnApplicationPause(bool isPaused)
+	{
+		if(isPaused)
+			OnApplicationQuit();
+	}
 	
 	/*
 	 * This is where we save the Variables/Components of our prefab.

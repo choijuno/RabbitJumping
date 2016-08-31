@@ -41,13 +41,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadEvent: 0
   saveEvent: 0
-  filePath: AutoSave.es2
-  tag: default
+  filePath: 4175746f536176652e657332
+  tag: 64656661756c74
   encrypt: 0
-  encryptionPassword: f2WYP35djvxP2pdR
+  encryptionPassword: 66325759503335646a76785032706452
   encryptionType: 0
-  deletePrefabsOnLoad: 0
-  convertPrefabsToSceneObjectsOnImport: 1
   sceneObjects: []
   globalManager: {fileID: 11466620, guid: b526f529a8c9147ff9f63024e8ef2144, type: 2}
 --- !u!1001 &100100000
