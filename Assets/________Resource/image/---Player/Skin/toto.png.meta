@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 32bd69c1cae512949ae2a52b586e4a16
+timeCreated: 1467002728
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_0
+    21300002: toto_1
+    21300004: toto_2
+    21300006: toto_3
+    21300008: toto_4
+    21300010: toto_5
+    21300012: toto_6
+    21300014: toto_7
+    21300016: toto_8
+    21300018: toto_9
+    21300020: toto_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: toto_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 305
+        width: 226
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -92, y: 82.5}
+        - {x: -113, y: 49.5}
+        - {x: -113, y: -74.5}
+        - {x: -106, y: -89.5}
+        - {x: -88, y: -101.5}
+        - {x: 2, y: -101.5}
+        - {x: 92, y: -18.5}
+        - {x: 92, y: 63.5}
+        - {x: 57, y: 82.5}
+    - name: toto_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 349
+        width: 97
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 63.5}
+        - {x: -48.5, y: 63.5}
+        - {x: -48.5, y: -34.5}
+        - {x: -25.5, y: -63.5}
+        - {x: 33.5, y: -63.5}
+        - {x: 48.5, y: -47.5}
+        - {x: 48.5, y: 19.5}
+        - {x: 43.5, y: 48.5}
+    - name: toto_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.85761946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.812462, y: 8.685211}
+        - {x: -18.812462, y: 7.685211}
+        - {x: -37.81246, y: -37.31479}
+        - {x: -37.81246, y: -52.31479}
+        - {x: -18.812462, y: -52.31479}
+        - {x: -14.812462, y: -51.31479}
+        - {x: 10.187538, y: -13.314789}
+        - {x: 10.187538, y: 5.685211}
+        - {x: 9.187538, y: 8.685211}
+    - name: toto_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 63
+        height: 221
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 221}
+        - {x: -31.5, y: 200}
+        - {x: -31.5, y: 24}
+        - {x: -29.5, y: 0}
+        - {x: 31.5, y: 0}
+        - {x: 31.5, y: 205}
+        - {x: 12.5, y: 221}
+    - name: toto_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.10189071, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.1964264, y: 6.111046}
+        - {x: -5.1964264, y: -8.888954}
+        - {x: 28.803574, y: -48.888954}
+        - {x: 45.803574, y: -48.888954}
+        - {x: 45.803574, y: -24.888954}
+        - {x: 10.803574, y: 6.111046}
+    - name: toto_7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 9
+        width: 19
+        height: 56
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 10
+        width: 17
+        height: 62
+      alignment: 9
+      pivot: {x: 0.42026114, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 34
+        height: 65
+      alignment: 9
+      pivot: {x: 0.42697862, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.482727, y: 7.1763}
+        - {x: -11.517273, y: 7.1763}
+        - {x: -14.517273, y: 6.1763}
+        - {x: -14.517273, y: -57.8237}
+        - {x: 19.482727, y: -57.8237}
+        - {x: 19.482727, y: -31.8237}
+        - {x: 11.482727, y: 1.1763}
+    - name: toto_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.17300713, y: 0.88068324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.093292, y: 7.159004}
+        - {x: -7.093292, y: -51.840996}
+        - {x: -3.0932922, y: -52.840996}
+        - {x: 31.906708, y: -52.840996}
+        - {x: 33.906708, y: -50.840996}
+        - {x: 33.906708, y: -32.840996}
+        - {x: 9.906708, y: 7.159004}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

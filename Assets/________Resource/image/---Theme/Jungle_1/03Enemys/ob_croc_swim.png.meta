@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: b1fd3f0fde670d94195217dbe8f0b12b
+timeCreated: 1471777393
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_croc_swim_0
+    21300002: ob_croc_swim_1
+    21300004: ob_croc_swim_2
+    21300006: ob_croc_swim_3
+    21300008: ob_croc_swim_4
+    21300010: ob_croc_swim_5
+    21300012: ob_croc_swim_6
+    21300014: ob_croc_swim_7
+    21300016: ob_croc_swim_8
+    21300018: ob_croc_swim_9
+    21300020: ob_croc_swim_10
+    21300022: ob_croc_swim_11
+    21300024: ob_croc_swim_12
+    21300026: ob_croc_swim_13
+    21300028: ob_croc_swim_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_croc_swim_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 444
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 21.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -22.5, y: 13.5}
+        - {x: -22.5, y: -10.5}
+        - {x: -9.5, y: -21.5}
+        - {x: 22.5, y: -21.5}
+        - {x: 22.5, y: 21.5}
+    - name: ob_croc_swim_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_croc_swim_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 479
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_croc_swim_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 408
+        width: 75
+        height: 96
+      alignment: 9
+      pivot: {x: 0.34565043, y: 0.74117154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.923782, y: 24.847534}
+        - {x: -25.923782, y: 17.847534}
+        - {x: -25.923782, y: -45.152466}
+        - {x: -12.923782, y: -71.152466}
+        - {x: 31.076218, y: -71.152466}
+        - {x: 49.076218, y: -32.152466}
+        - {x: 49.076218, y: 21.847534}
+        - {x: 45.076218, y: 24.847534}
+    - name: ob_croc_swim_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 399
+        width: 114
+        height: 103
+      alignment: 9
+      pivot: {x: 0.80463743, y: 0.78900445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.271332, y: -25.267456}
+        - {x: 22.271332, y: 19.732544}
+        - {x: 13.271332, y: 21.732544}
+        - {x: -22.728668, y: 21.732544}
+        - {x: -33.72867, y: 9.732544}
+        - {x: -90.72867, y: -40.267456}
+        - {x: -91.72867, y: -42.267456}
+        - {x: -91.72867, y: -74.267456}
+        - {x: -81.72867, y: -81.267456}
+        - {x: -38.72867, y: -81.267456}
+        - {x: 9.271332, y: -44.267456}
+        - {x: 18.271332, y: -33.267456}
+    - name: ob_croc_swim_5
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 404
+        width: 82
+        height: 78
+      alignment: 9
+      pivot: {x: 0.6210059, y: 0.62721133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.077515, y: 20.077515}
+        - {x: 11.077515, y: 29.077515}
+        - {x: -19.922485, y: 29.077515}
+        - {x: -38.922485, y: 14.077515}
+        - {x: -50.922485, y: -12.922485}
+        - {x: -50.922485, y: -25.922485}
+        - {x: -14.922485, y: -48.922485}
+        - {x: -1.9224854, y: -48.922485}
+        - {x: 27.077515, y: -38.922485}
+        - {x: 31.077515, y: -25.922485}
+        - {x: 31.077515, y: 15.077515}
+    - name: ob_croc_swim_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 403
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_croc_swim_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 403
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_croc_swim_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 357
+        width: 39
+        height: 21
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21239306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_croc_swim_9
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 240
+        width: 341
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 163.5, y: 57.5}
+        - {x: 81.5, y: 57.5}
+        - {x: -42.5, y: 48.5}
+        - {x: -95.5, y: 57.5}
+        - {x: -166.5, y: 57.5}
+        - {x: -170.5, y: 37.5}
+        - {x: -170.5, y: -15.5}
+        - {x: -96.5, y: -54.5}
+        - {x: -75.5, y: -57.5}
+        - {x: 58.5, y: -57.5}
+        - {x: 170.5, y: -11.5}
+        - {x: 170.5, y: 35.5}
+    - name: ob_croc_swim_11
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 136
+        width: 213
+        height: 69
+      alignment: 9
+      pivot: {x: 0.8959675, y: 0.3322285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.84108, y: 46.076233}
+        - {x: -190.84108, y: 14.076233}
+        - {x: -190.84108, y: -22.923767}
+        - {x: 22.15892, y: -22.923767}
+        - {x: 22.15892, y: 46.076233}
+    - name: ob_croc_swim_12
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 146
+        width: 171
+        height: 54
+      alignment: 9
+      pivot: {x: 0.12282968, y: 0.5612499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.996124, y: 23.692505}
+        - {x: -21.003876, y: 23.692505}
+        - {x: -21.003876, y: -4.307495}
+        - {x: -20.003876, y: -12.307495}
+        - {x: -8.003876, y: -30.307495}
+        - {x: 15.996124, y: -30.307495}
+        - {x: 149.99612, y: 3.692505}
+        - {x: 149.99612, y: 11.692505}
+        - {x: 116.996124, y: 16.692505}
+    - name: ob_croc_swim_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 48
+        width: 201
+        height: 50
+      alignment: 9
+      pivot: {x: 0.9360625, y: 0.59922487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.14856, y: 20.038757}
+        - {x: -46.14856, y: 20.038757}
+        - {x: -63.14856, y: 16.038757}
+        - {x: -162.14856, y: 17.038757}
+        - {x: -188.14856, y: 15.038757}
+        - {x: -188.14856, y: -0.9612427}
+        - {x: -163.14856, y: -26.961243}
+        - {x: -127.14856, y: -29.961243}
+        - {x: 1.8514404, y: -29.961243}
+        - {x: 12.85144, y: -10.961243}
+        - {x: 12.85144, y: 6.0387573}
+        - {x: 9.85144, y: 12.038757}
+    - name: ob_croc_swim_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 27
+        width: 170
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64291656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85, y: 28.92376}
+        - {x: -85, y: 19.92376}
+        - {x: -81, y: 11.923759}
+        - {x: -24, y: -42.07624}
+        - {x: 29, y: -52.07624}
+        - {x: 85, y: -52.07624}
+        - {x: 85, y: 23.92376}
+        - {x: 49, y: 28.92376}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

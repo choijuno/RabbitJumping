@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 825d2dea946199743ac9262942c1ca8e
+timeCreated: 1471773636
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_bird_0
+    21300002: ob_bird_1
+    21300004: ob_bird_2
+    21300006: ob_bird_3
+    21300008: ob_bird_4
+    21300010: ob_bird_5
+    21300012: ob_bird_6
+    21300014: ob_bird_7
+    21300016: ob_bird_8
+    21300018: ob_bird_9
+    21300020: ob_bird_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_bird_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 335
+        width: 127
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.5, y: 74.5}
+        - {x: -26.5, y: 74.5}
+        - {x: -63.5, y: 20.5}
+        - {x: -63.5, y: -60.5}
+        - {x: -56.5, y: -74.5}
+        - {x: 13.5, y: -74.5}
+        - {x: 38.5, y: -57.5}
+        - {x: 63.5, y: 3.5}
+        - {x: 63.5, y: 73.5}
+    - name: ob_bird_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 468
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_bird_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 468
+        width: 42
+        height: 32
+      alignment: 9
+      pivot: {x: 0.18500082, y: 0.6550398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.770035, y: 11.038727}
+        - {x: -7.770035, y: -16.961273}
+        - {x: -5.770035, y: -20.961273}
+        - {x: 34.229965, y: -20.961273}
+        - {x: 34.229965, y: 10.038727}
+        - {x: 29.229965, y: 11.038727}
+    - name: ob_bird_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 443
+        width: 102
+        height: 59
+      alignment: 9
+      pivot: {x: 0.6621318, y: 0.24773343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.462555, y: 36.383728}
+        - {x: 11.462555, y: 33.383728}
+        - {x: 16.462555, y: 38.383728}
+        - {x: 19.462555, y: 44.383728}
+        - {x: -50.537445, y: 44.383728}
+        - {x: -67.537445, y: 33.383728}
+        - {x: -67.537445, y: 5.383728}
+        - {x: -54.537445, y: -3.616272}
+        - {x: -2.537445, y: -14.616272}
+        - {x: 11.462555, y: -14.616272}
+        - {x: 34.462555, y: 33.383728}
+        - {x: 34.462555, y: 40.383728}
+        - {x: 23.462555, y: 40.383728}
+    - name: ob_bird_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 445
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_bird_5
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 336
+        width: 53
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0.20317377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: 61.22867}
+        - {x: -1.5, y: 89.22867}
+        - {x: -6.5, y: 93.22867}
+        - {x: -22.5, y: 93.22867}
+        - {x: -24.5, y: 92.22867}
+        - {x: -26.5, y: 66.22867}
+        - {x: -26.5, y: -21.771332}
+        - {x: -25.5, y: -23.771332}
+        - {x: 5.5, y: -23.771332}
+        - {x: 20.5, y: -18.771332}
+        - {x: 26.5, y: -12.771332}
+        - {x: 26.5, y: 32.22867}
+    - name: ob_bird_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 340
+        width: 94
+        height: 107
+      alignment: 9
+      pivot: {x: 0.69352365, y: 0.14452213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.19122, y: 91.53613}
+        - {x: -65.19122, y: 44.536133}
+        - {x: -31.191223, y: -15.463867}
+        - {x: 28.808777, y: -15.463867}
+        - {x: 28.808777, y: 29.536133}
+        - {x: -55.191223, y: 91.53613}
+    - name: ob_bird_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 307
+        width: 100
+        height: 114
+      alignment: 9
+      pivot: {x: 0.8968988, y: 0.79013115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.6898804, y: 23.925049}
+        - {x: -28.68988, y: 23.925049}
+        - {x: -89.68988, y: -68.07495}
+        - {x: -89.68988, y: -90.07495}
+        - {x: -16.68988, y: -90.07495}
+        - {x: 10.31012, y: -75.07495}
+        - {x: 10.31012, y: 13.925049}
+        - {x: 4.3101196, y: 21.925049}
+    - name: ob_bird_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 40
+        width: 199
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5498617, y: 0.9414384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.577515, y: 14.698975}
+        - {x: -36.422485, y: 14.698975}
+        - {x: -109.422485, y: -124.301025}
+        - {x: -109.422485, y: -205.30103}
+        - {x: -35.422485, y: -236.30103}
+        - {x: 52.577515, y: -236.30103}
+        - {x: 86.577515, y: -224.30103}
+        - {x: 89.577515, y: -215.30103}
+        - {x: 89.577515, y: -173.30103}
+      - - {x: -109.422485, y: 13.698975}
+        - {x: -109.422485, y: 7.6989746}
+        - {x: -106.422485, y: 7.6989746}
+        - {x: -104.422485, y: 9.698975}
+        - {x: -104.422485, y: 10.698975}
+        - {x: -107.422485, y: 13.698975}
+    - name: ob_bird_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 40
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.52033293, y: 0.93927646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.961243, y: 15.545227}
+        - {x: -20.961243, y: -98.45477}
+        - {x: -126.96124, y: -118.45477}
+        - {x: -126.96124, y: -192.45477}
+        - {x: -16.961243, y: -240.45477}
+        - {x: 92.03876, y: -240.45477}
+        - {x: 117.03876, y: -195.45477}
+        - {x: 117.03876, y: -142.45477}
+        - {x: 12.038757, y: 15.545227}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

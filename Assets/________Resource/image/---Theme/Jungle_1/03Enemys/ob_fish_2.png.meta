@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: ab5f79921f401664fafa146a1ce53fd0
+timeCreated: 1471767897
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_fish_0
+    21300002: ob_fish_1
+    21300004: ob_fish_2
+    21300006: ob_fish_3
+    21300008: ob_fish_4
+    21300010: ob_fish_5
+    21300012: ob_fish_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_fish_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 253
+        width: 278
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 132, y: 21.5}
+        - {x: 110, y: 52.5}
+        - {x: 69, y: 89.5}
+        - {x: 24, y: 117.5}
+        - {x: 4, y: 108.5}
+        - {x: -23, y: 119.5}
+        - {x: -60, y: 119.5}
+        - {x: -109, y: 91.5}
+        - {x: -139, y: 38.5}
+        - {x: -139, y: -0.5}
+        - {x: -134, y: -23.5}
+        - {x: -109, y: -39.5}
+        - {x: -64, y: -86.5}
+        - {x: -15, y: -110.5}
+        - {x: 16, y: -119.5}
+        - {x: 85, y: -119.5}
+        - {x: 104, y: -116.5}
+        - {x: 139, y: -76.5}
+        - {x: 139, y: 0.5}
+    - name: ob_fish_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 448
+        width: 36
+        height: 48
+      alignment: 9
+      pivot: {x: 0.17843798, y: 0.39664078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.576233, y: 28.961243}
+        - {x: -6.423767, y: 0.9612427}
+        - {x: -6.423767, y: -10.038757}
+        - {x: 9.576233, y: -19.038757}
+        - {x: 23.576233, y: -19.038757}
+        - {x: 26.576233, y: -17.038757}
+        - {x: 29.576233, y: 10.961243}
+        - {x: 29.576233, y: 28.961243}
+    - name: ob_fish_2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 439
+        width: 76
+        height: 50
+      alignment: 9
+      pivot: {x: 0.6958385, y: 0.69844973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.883728, y: 15.077515}
+        - {x: -49.883728, y: 0.07751465}
+        - {x: -52.883728, y: -8.922485}
+        - {x: -52.883728, y: -34.922485}
+        - {x: -46.883728, y: -34.922485}
+        - {x: 23.116272, y: -3.9224854}
+        - {x: 23.116272, y: 4.0775146}
+        - {x: 9.116272, y: 15.077515}
+    - name: ob_fish_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 320
+        width: 80
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 45.5}
+        - {x: -40, y: 19.5}
+        - {x: -40, y: -30.5}
+        - {x: -26, y: -45.5}
+        - {x: 19, y: -45.5}
+        - {x: 29, y: -43.5}
+        - {x: 40, y: -22.5}
+        - {x: 40, y: 33.5}
+        - {x: 20, y: 45.5}
+    - name: ob_fish_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 192
+        width: 56
+        height: 27
+      alignment: 9
+      pivot: {x: 0.35234398, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 208
+        height: 196
+      alignment: 9
+      pivot: {x: 0.68286616, y: 0.43250006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79.03616, y: 111.22999}
+        - {x: -141.03616, y: 92.22999}
+        - {x: -142.03616, y: 91.22999}
+        - {x: -142.03616, y: 83.22999}
+        - {x: -89.03616, y: 19.229988}
+        - {x: -105.03616, y: -70.77001}
+        - {x: -73.03616, y: -84.77001}
+        - {x: 32.963837, y: -84.77001}
+        - {x: 58.963837, y: -78.77001}
+        - {x: 65.96384, y: -35.77001}
+        - {x: 65.96384, y: 56.22999}
+        - {x: -16.036163, y: 111.22999}
+    - name: ob_fish_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 7
+        width: 252
+        height: 151
+      alignment: 9
+      pivot: {x: 0.9396866, y: 0.7847511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -236.80103, y: -13.497421}
+        - {x: -236.80103, y: -41.49742}
+        - {x: -194.80103, y: -117.49742}
+        - {x: -189.80103, y: -118.49742}
+        - {x: -59.801025, y: -118.49742}
+        - {x: 15.198975, y: -48.49742}
+        - {x: 15.198975, y: 32.50258}
+        - {x: -84.801025, y: 32.50258}
+        - {x: -210.80103, y: 4.5025787}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: a47a6f922f662074eb5a97f1f7abda84
+timeCreated: 1471338980
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_spider_0
+    21300002: ob_spider_1
+    21300004: ob_spider_2
+    21300006: ob_spider_3
+    21300008: ob_spider_4
+    21300010: ob_spider_5
+    21300012: ob_spider_6
+    21300014: ob_spider_7
+    21300016: ob_spider_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_spider_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 35
+        height: 18
+      alignment: 9
+      pivot: {x: 0.8839057, y: 0.2760548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 42
+        height: 18
+      alignment: 9
+      pivot: {x: 0.11609431, y: 0.23873097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 71
+        width: 56
+        height: 19
+      alignment: 9
+      pivot: {x: 0.93189365, y: 0.42928034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 52
+        width: 30
+        height: 39
+      alignment: 9
+      pivot: {x: 0.43204448, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 65
+        width: 56
+        height: 19
+      alignment: 9
+      pivot: {x: 0.09210042, y: 0.53535986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 40
+        width: 45
+        height: 17
+      alignment: 9
+      pivot: {x: 0.93296, y: 0.6185585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 30
+        width: 45
+        height: 20
+      alignment: 9
+      pivot: {x: 0.06704, y: 0.54544735}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 7
+        width: 32
+        height: 29
+      alignment: 9
+      pivot: {x: 0.8569119, y: 0.8706674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_spider_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.1430881, y: 0.9078999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

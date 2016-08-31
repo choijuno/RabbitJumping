@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: e9444484846d98e428d2307bfb9d4b16
+timeCreated: 1471337539
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_jumpmushroom_0
+    21300002: ob_jumpmushroom_1
+    21300004: ob_jumpmushroom_2
+    21300006: ob_jumpmushroom_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_jumpmushroom_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 114
+        height: 21
+      alignment: 9
+      pivot: {x: 0.49580672, y: 0.27236357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_jumpmushroom_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 136
+        height: 36
+      alignment: 9
+      pivot: {x: 0.49648502, y: 0.10163625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67.521965, y: 32.341095}
+        - {x: -67.521965, y: 1.341095}
+        - {x: -66.521965, y: -3.658905}
+        - {x: 68.478035, y: -3.658905}
+        - {x: 68.478035, y: 32.341095}
+    - name: ob_jumpmushroom_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 6
+        width: 54
+        height: 55
+      alignment: 9
+      pivot: {x: 0.49114743, y: 0.8971881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.521961, y: 5.6546516}
+        - {x: -18.521961, y: 4.6546516}
+        - {x: -18.521961, y: -48.34535}
+        - {x: -14.521961, y: -49.34535}
+        - {x: 14.478039, y: -49.34535}
+        - {x: 23.478039, y: -37.34535}
+        - {x: 27.478039, y: -4.3453484}
+        - {x: 27.478039, y: 5.6546516}
+    - name: ob_jumpmushroom_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 10
+        width: 56
+        height: 50
+      alignment: 9
+      pivot: {x: 0.51803905, y: 0.14625317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.010185, y: 39.68734}
+        - {x: -24.010185, y: 35.68734}
+        - {x: -29.010185, y: 26.687342}
+        - {x: -29.010185, y: -0.3126583}
+        - {x: -22.010185, y: -7.3126583}
+        - {x: 26.989815, y: -7.3126583}
+        - {x: 26.989815, y: 23.687342}
+        - {x: 3.9898148, y: 39.68734}
+      - - {x: -29.010185, y: 42.68734}
+        - {x: -29.010185, y: 39.68734}
+        - {x: -25.010185, y: 39.68734}
+        - {x: -23.010185, y: 41.68734}
+        - {x: -23.010185, y: 42.68734}
+      - - {x: -1.0101852, y: 42.68734}
+        - {x: -0.010185242, y: 39.68734}
+        - {x: 2.9898148, y: 39.68734}
+        - {x: 4.9898148, y: 41.68734}
+        - {x: 4.9898148, y: 42.68734}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 82c920af5742db34a969d5c699dd6200
+timeCreated: 1471769041
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_beehouse_bee_0
+    21300002: ob_beehouse_bee_1
+    21300004: ob_beehouse_bee_2
+    21300006: ob_beehouse_bee_3
+    21300008: ob_beehouse_bee_4
+    21300010: ob_beehouse_bee_5
+    21300012: ob_beehouse_bee_6
+    21300014: ob_beehouse_bee_7
+    21300016: ob_beehouse_bee_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_beehouse_bee_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 110
+        width: 312
+        height: 385
+      alignment: 9
+      pivot: {x: 0.49469957, y: 0.95531726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 139.65373, y: -265.79715}
+        - {x: 141.65373, y: -245.79715}
+        - {x: 155.65373, y: -235.79715}
+        - {x: 156.65373, y: -227.79715}
+        - {x: 156.65373, y: -191.79715}
+        - {x: 143.65373, y: -172.79715}
+        - {x: 147.65373, y: -142.79715}
+        - {x: 137.65373, y: -117.79715}
+        - {x: 78.65373, y: -34.79715}
+        - {x: 59.653732, y: -17.79715}
+        - {x: 31.653732, y: -6.7971497}
+        - {x: 16.653732, y: -5.7971497}
+        - {x: 16.653732, y: 17.20285}
+        - {x: -14.346268, y: 17.20285}
+        - {x: -15.346268, y: -4.7971497}
+        - {x: -46.346268, y: -10.79715}
+        - {x: -63.346268, y: -18.79715}
+        - {x: -84.34627, y: -39.79715}
+        - {x: -89.34627, y: -55.79715}
+        - {x: -118.34627, y: -82.79715}
+        - {x: -148.34627, y: -134.79715}
+        - {x: -149.34627, y: -145.79715}
+        - {x: -148.34627, y: -165.79715}
+        - {x: -154.34627, y: -185.79715}
+        - {x: -154.34627, y: -229.79715}
+        - {x: -149.34627, y: -236.79715}
+        - {x: -138.34627, y: -265.79715}
+        - {x: -127.34627, y: -295.79715}
+        - {x: -104.34627, y: -336.79715}
+        - {x: -95.34627, y: -350.79715}
+        - {x: -76.34627, y: -367.79715}
+        - {x: 59.653732, y: -367.79715}
+        - {x: 79.65373, y: -363.79715}
+        - {x: 96.65373, y: -349.79715}
+        - {x: 116.65373, y: -320.79715}
+    - name: ob_beehouse_bee_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 452
+        width: 52
+        height: 44
+      alignment: 9
+      pivot: {x: 0.5, y: -1.3040868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 101.37982}
+        - {x: -26, y: 84.37982}
+        - {x: -26, y: 68.37982}
+        - {x: -24, y: 60.37982}
+        - {x: -20, y: 58.37982}
+        - {x: 16, y: 58.37982}
+        - {x: 25, y: 60.37982}
+        - {x: 25, y: 97.37982}
+        - {x: 23, y: 101.37982}
+    - name: ob_beehouse_bee_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 377
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: -0.34446684, y: -0.24418564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.189941, y: 49.767426}
+        - {x: 16.189941, y: 34.767426}
+        - {x: 16.189941, y: 12.767426}
+        - {x: 18.189941, y: 9.767426}
+        - {x: 63.18994, y: 9.767426}
+        - {x: 63.18994, y: 45.767426}
+        - {x: 62.18994, y: 49.767426}
+    - name: ob_beehouse_bee_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 302
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: -1.4574965, y: -0.326873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.41733, y: 53.07492}
+        - {x: 71.41733, y: 44.07492}
+        - {x: 71.41733, y: 19.07492}
+        - {x: 74.41733, y: 13.074921}
+        - {x: 120.41733, y: 13.074921}
+        - {x: 120.41733, y: 53.07492}
+    - name: ob_beehouse_bee_4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 224
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 1.4148377, y: -0.4922474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.497375, y: 59.689896}
+        - {x: -66.497375, y: 44.689896}
+        - {x: -66.497375, y: 22.689896}
+        - {x: -64.497375, y: 19.689896}
+        - {x: -19.497375, y: 19.689896}
+        - {x: -19.497375, y: 55.689896}
+        - {x: -20.497375, y: 59.689896}
+    - name: ob_beehouse_bee_5
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 137
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 1.0981634, y: 1.4922485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.613678, y: -19.689941}
+        - {x: -51.613678, y: -34.68994}
+        - {x: -51.613678, y: -56.68994}
+        - {x: -49.613678, y: -59.68994}
+        - {x: -4.613678, y: -59.68994}
+        - {x: -4.613678, y: -23.689941}
+        - {x: -5.613678, y: -19.689941}
+    - name: ob_beehouse_bee_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 42
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: -0.41483843, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.497406, y: 19.99998}
+        - {x: 19.497406, y: 4.999981}
+        - {x: 19.497406, y: -17.00002}
+        - {x: 21.497406, y: -20.00002}
+        - {x: 66.497406, y: -20.00002}
+        - {x: 66.497406, y: 15.999981}
+        - {x: 65.497406, y: 19.99998}
+    - name: ob_beehouse_bee_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 42
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: 1.6137477, y: 1.1201556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.07364, y: -4.806221}
+        - {x: -79.07364, y: -13.806221}
+        - {x: -79.07364, y: -38.80622}
+        - {x: -76.07364, y: -44.80622}
+        - {x: -30.073639, y: -44.80622}
+        - {x: -30.073639, y: -4.806221}
+    - name: ob_beehouse_bee_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 42
+        width: 49
+        height: 40
+      alignment: 9
+      pivot: {x: 0.1625005, y: 3.187339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.9625244, y: -87.49356}
+        - {x: -7.9625244, y: -96.49356}
+        - {x: -7.9625244, y: -121.49356}
+        - {x: -4.9625244, y: -127.49356}
+        - {x: 41.037476, y: -127.49356}
+        - {x: 41.037476, y: -87.49356}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

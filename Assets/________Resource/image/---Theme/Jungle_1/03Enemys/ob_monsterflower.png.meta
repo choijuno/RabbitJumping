@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: f9ff7876947657a4e98e0d040612aa26
+timeCreated: 1468723282
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_monsterflower_0
+    21300002: ob_monsterflower_1
+    21300004: ob_monsterflower_2
+    21300006: ob_monsterflower_3
+    21300008: ob_monsterflower_4
+    21300010: ob_monsterflower_5
+    21300012: ob_monsterflower_6
+    21300014: ob_monsterflower_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_monsterflower_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 84
+        width: 45
+        height: 33
+      alignment: 9
+      pivot: {x: 0.8858743, y: 0.17113009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.86434, y: 27.352707}
+        - {x: -39.86434, y: 11.352707}
+        - {x: -15.864342, y: -5.647293}
+        - {x: 5.1356583, y: -5.647293}
+        - {x: 5.1356583, y: 21.352707}
+        - {x: 2.1356583, y: 27.352707}
+    - name: ob_monsterflower_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 114
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0.50000054, y: 0.2286822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monsterflower_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 8
+        width: 45
+        height: 101
+      alignment: 9
+      pivot: {x: 0.28294575, y: 0.76863146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.26744, y: -50.631775}
+        - {x: 32.26744, y: 4.368225}
+        - {x: 19.26744, y: 23.368225}
+        - {x: 0.2674408, y: 23.368225}
+        - {x: 0.2674408, y: 22.368225}
+        - {x: -9.732559, y: 17.368225}
+        - {x: -12.732559, y: 16.368225}
+        - {x: -12.732559, y: -46.631775}
+        - {x: -4.732559, y: -77.631775}
+        - {x: 16.26744, y: -77.631775}
+        - {x: 17.26744, y: -76.631775}
+        - {x: 17.26744, y: -72.631775}
+        - {x: 31.26744, y: -54.631775}
+    - name: ob_monsterflower_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 88
+        width: 31
+        height: 26
+      alignment: 9
+      pivot: {x: 0.11490361, y: 0.16607049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monsterflower_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 46
+        height: 38
+      alignment: 9
+      pivot: {x: 0.88928217, y: 0.6570787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.906979, y: 13.03101}
+        - {x: -40.90698, y: 9.03101}
+        - {x: -40.90698, y: -19.96899}
+        - {x: -30.906979, y: -24.96899}
+        - {x: 5.0930214, y: -24.96899}
+        - {x: 5.0930214, y: 11.03101}
+        - {x: 3.0930214, y: 13.03101}
+    - name: ob_monsterflower_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 49
+        width: 29
+        height: 31
+      alignment: 9
+      pivot: {x: 0.8555198, y: 0.18492126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monsterflower_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 8
+        width: 12
+        height: 18
+      alignment: 9
+      pivot: {x: 0.77131844, y: 0.71102524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monsterflower_7
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 25
+        height: 30
+      alignment: 9
+      pivot: {x: 0.17441833, y: 0.19250634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

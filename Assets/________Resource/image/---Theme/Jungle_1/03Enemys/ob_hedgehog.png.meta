@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: a02773f3ec03b5d45aceb8c112d5eae0
+timeCreated: 1471782708
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_hedgehog_0
+    21300002: ob_hedgehog_1
+    21300004: ob_hedgehog_4
+    21300006: ob_hedgehog_5
+    21300008: ob_hedgehog_6
+    21300010: ob_hedgehog_7
+    21300012: ob_hedgehog_8
+    21300014: ob_hedgehog_9
+    21300016: ob_hedgehog_10
+    21300018: ob_hedgehog_11
+    21300020: ob_hedgehog_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_hedgehog_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 286
+        width: 231
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.5, y: 88}
+        - {x: 41.5, y: 109}
+        - {x: -44.5, y: 109}
+        - {x: -63.5, y: 97}
+        - {x: -103.5, y: 55}
+        - {x: -115.5, y: 28}
+        - {x: -115.5, y: -9}
+        - {x: -111.5, y: -39}
+        - {x: -97.5, y: -64}
+        - {x: -91.5, y: -87}
+        - {x: -64.5, y: -109}
+        - {x: 47.5, y: -109}
+        - {x: 78.5, y: -99}
+        - {x: 115.5, y: -60}
+        - {x: 115.5, y: 54}
+    - name: ob_hedgehog_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 356
+        width: 157
+        height: 152
+      alignment: 9
+      pivot: {x: 0.48964813, y: 0.5213848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.874756, y: 32.74951}
+        - {x: -76.874756, y: -69.25049}
+        - {x: -27.874756, y: -76.25049}
+        - {x: 10.125244, y: -76.25049}
+        - {x: 25.125244, y: -64.25049}
+        - {x: 25.125244, y: -52.25049}
+        - {x: 3.1252441, y: 8.749512}
+        - {x: -29.874756, y: 54.74951}
+        - {x: -43.874756, y: 54.74951}
+        - {x: -60.874756, y: 41.74951}
+      - - {x: 37.125244, y: 15.749512}
+        - {x: 7.125244, y: 3.7495117}
+        - {x: 3.1252441, y: -1.2504883}
+        - {x: 3.1252441, y: -8.250488}
+        - {x: 30.125244, y: -57.25049}
+        - {x: 67.125244, y: -57.25049}
+        - {x: 73.125244, y: -36.25049}
+        - {x: 73.125244, y: 13.749512}
+        - {x: 71.125244, y: 15.749512}
+      - - {x: -8.874756, y: 71.74951}
+        - {x: -8.874756, y: 45.74951}
+        - {x: 0.12524414, y: 7.7495117}
+        - {x: 1.1252441, y: 3.7495117}
+        - {x: 7.125244, y: 3.7495117}
+        - {x: 58.125244, y: 22.749512}
+        - {x: 62.125244, y: 26.749512}
+        - {x: 62.125244, y: 67.74951}
+        - {x: 30.125244, y: 71.74951}
+    - name: ob_hedgehog_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 301
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95.5, y: -118}
+        - {x: 146.5, y: -58}
+        - {x: 133.5, y: -36}
+        - {x: 150.5, y: 40}
+        - {x: 150.5, y: 73}
+        - {x: 89.5, y: 58}
+        - {x: 64.5, y: 103}
+        - {x: 3.5, y: 134}
+        - {x: 0.5, y: 134}
+        - {x: -27.5, y: 91}
+        - {x: -87.5, y: 134}
+        - {x: -108.5, y: 134}
+        - {x: -109.5, y: 126}
+        - {x: -150.5, y: 91}
+        - {x: -150.5, y: -48}
+        - {x: -146.5, y: -64}
+        - {x: -150.5, y: -77}
+        - {x: -150.5, y: -121}
+        - {x: -109.5, y: -134}
+        - {x: 11.5, y: -134}
+        - {x: 22.5, y: -130}
+        - {x: 41.5, y: -124}
+        - {x: 80.5, y: -122}
+    - name: ob_hedgehog_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 264
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 34}
+        - {x: -30, y: 19}
+        - {x: -28, y: 17}
+        - {x: -30, y: -7}
+        - {x: -30, y: -34}
+        - {x: 30, y: -34}
+        - {x: 30, y: 34}
+    - name: ob_hedgehog_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 267
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 20.5}
+        - {x: -18, y: 10.5}
+        - {x: -17, y: 9.5}
+        - {x: -18, y: 1.5}
+        - {x: -18, y: -20.5}
+        - {x: 18, y: -20.5}
+        - {x: 18, y: 20.5}
+    - name: ob_hedgehog_7
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 269
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_hedgehog_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 180
+        width: 34
+        height: 68
+      alignment: 9
+      pivot: {x: 0.54864055, y: 0.2568023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.653778, y: 50.537445}
+        - {x: -18.653778, y: -8.462555}
+        - {x: -16.653778, y: -12.462555}
+        - {x: -7.653778, y: -16.462555}
+        - {x: 13.346222, y: -16.462555}
+        - {x: 15.346222, y: -15.462555}
+        - {x: 15.346222, y: 41.537445}
+        - {x: 3.346222, y: 50.537445}
+    - name: ob_hedgehog_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 180
+        width: 37
+        height: 63
+      alignment: 9
+      pivot: {x: 0.7234794, y: 0.23750088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.768738, y: 48.037445}
+        - {x: -26.768738, y: 48.037445}
+        - {x: -26.768738, y: 12.037445}
+        - {x: -22.768738, y: -12.962555}
+        - {x: -19.768738, y: -14.962555}
+        - {x: 10.231262, y: -14.962555}
+        - {x: 10.231262, y: 37.037445}
+        - {x: 3.2312622, y: 46.037445}
+    - name: ob_hedgehog_10
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 141
+        width: 23
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5277856, y: 0.0634288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_hedgehog_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 138
+        width: 24
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5159238, y: 0.014536771}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_hedgehog_12
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 26
+        width: 103
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.5, y: 43.5}
+        - {x: -51.5, y: 36.5}
+        - {x: -51.5, y: -29.5}
+        - {x: -37.5, y: -43.5}
+        - {x: 32.5, y: -43.5}
+        - {x: 51.5, y: -36.5}
+        - {x: 51.5, y: 22.5}
+        - {x: 36.5, y: 43.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

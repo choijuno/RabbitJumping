@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: e89692f0f2783d343bfaa533dc18eede
+timeCreated: 1467346429
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rakoon_cha_0
+    21300002: rakoon_cha_1
+    21300004: rakoon_cha_2
+    21300006: rakoon_cha_3
+    21300008: rakoon_cha_4
+    21300010: rakoon_cha_5
+    21300012: rakoon_cha_6
+    21300014: rakoon_cha_7
+    21300016: rakoon_cha_8
+    21300018: rakoon_cha_9
+    21300020: rakoon_cha_10
+    21300022: rakoon_cha_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: rakoon_cha_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 110
+        width: 96
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 68}
+        - {x: -48, y: 25}
+        - {x: -48, y: -52}
+        - {x: -47, y: -54}
+        - {x: -26, y: -68}
+        - {x: 39, y: -68}
+        - {x: 48, y: -57}
+        - {x: 48, y: 68}
+    - name: rakoon_cha_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 207
+        width: 36
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.19882983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 32.847977}
+        - {x: -18, y: -8.152023}
+        - {x: 10, y: -8.152023}
+        - {x: 18, y: -0.15202332}
+        - {x: 18, y: 11.847977}
+        - {x: 3, y: 32.847977}
+    - name: rakoon_cha_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 215
+        width: 20
+        height: 29
+      alignment: 9
+      pivot: {x: 0.45590058, y: 0.16544947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 168
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0.34250095, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 170
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0.6696155, y: 0.6889997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 58
+        width: 29
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5304137, y: 0.7769064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 70
+        width: 26
+        height: 21
+      alignment: 9
+      pivot: {x: 0.3982309, y: 0.70999944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 71
+        width: 26
+        height: 21
+      alignment: 9
+      pivot: {x: 0.43215415, y: 0.7309995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 39
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5696314, y: 0.5232104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 17
+        width: 84
+        height: 36
+      alignment: 9
+      pivot: {x: 0.79924935, y: 0.6347497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.136948, y: 13.14901}
+        - {x: -67.13695, y: 4.1490097}
+        - {x: -67.13695, y: -22.85099}
+        - {x: -8.136948, y: -22.85099}
+        - {x: 16.863052, y: -15.85099}
+        - {x: 16.863052, y: 13.14901}
+    - name: rakoon_cha_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 11
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5928421, y: 0.4999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: rakoon_cha_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 12
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 4624b94227ba3594aa51c084b803bfc8
+timeCreated: 1468560426
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_fish_0
+    21300002: ob_fish_1
+    21300004: ob_fish_2
+    21300006: ob_fish_3
+    21300008: ob_fish_4
+    21300010: ob_fish_5
+    21300012: ob_fish_6
+    21300014: ob_fish_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_fish_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 44
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 21.5}
+        - {x: -25.5, y: 14.5}
+        - {x: -25.5, y: -10.5}
+        - {x: -1.5, y: -21.5}
+        - {x: 25.5, y: -21.5}
+        - {x: 25.5, y: 14.5}
+        - {x: 16.5, y: 21.5}
+    - name: ob_fish_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 78
+        width: 15
+        height: 10
+      alignment: 9
+      pivot: {x: 0.8165375, y: 0.66957396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 68
+        width: 10
+        height: 6
+      alignment: 9
+      pivot: {x: 0.87306213, y: 0.6130498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 57
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 46
+        width: 7
+        height: 9
+      alignment: 9
+      pivot: {x: 0.3546513, y: 0.31158575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 41
+        width: 11
+        height: 6
+      alignment: 9
+      pivot: {x: 0.1608533, y: 0.21737926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 10
+        width: 45
+        height: 30
+      alignment: 9
+      pivot: {x: 0.71856165, y: 0.19476776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_fish_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 9
+        width: 44
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7004051, y: 0.5113055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

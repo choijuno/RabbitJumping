@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 6ccdce27b1d618947b7db633bb3686e8
+timeCreated: 1471791170
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_leaf_0
+    21300002: ob_leaf_1
+    21300004: ob_leaf_2
+    21300006: ob_leaf_3
+    21300008: ob_leaf_4
+    21300010: ob_leaf_5
+    21300012: ob_leaf_6
+    21300014: ob_leaf_7
+    21300016: ob_leaf_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_leaf_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 404
+        width: 228
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93, y: 34}
+        - {x: -114, y: 24}
+        - {x: -114, y: -13}
+        - {x: -91, y: -34}
+        - {x: 104, y: -34}
+        - {x: 114, y: -20}
+        - {x: 114, y: 29}
+        - {x: 90, y: 34}
+    - name: ob_leaf_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 304
+        width: 226
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72, y: 34}
+        - {x: -94, y: 32}
+        - {x: -113, y: 15}
+        - {x: -113, y: -21}
+        - {x: -108, y: -34}
+        - {x: 113, y: -34}
+        - {x: 113, y: 24}
+        - {x: 77, y: 34}
+    - name: ob_leaf_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 303
+        width: 224
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -91, y: 31.5}
+        - {x: -109, y: 24.5}
+        - {x: -112, y: 15.5}
+        - {x: -112, y: -18.5}
+        - {x: -96, y: -31.5}
+        - {x: 112, y: -31.5}
+        - {x: 112, y: 31.5}
+    - name: ob_leaf_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 192
+        width: 226
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -107, y: 34}
+        - {x: -113, y: 19}
+        - {x: -113, y: -18}
+        - {x: -97, y: -34}
+        - {x: 113, y: -34}
+        - {x: 113, y: 34}
+    - name: ob_leaf_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 124
+        width: 122
+        height: 40
+      alignment: 9
+      pivot: {x: 0.8795485, y: 0.29328233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96.30492, y: 28.268707}
+        - {x: -107.30492, y: 16.268707}
+        - {x: -107.30492, y: 4.2687073}
+        - {x: -102.30492, y: 4.2687073}
+        - {x: -62.304916, y: -11.731293}
+        - {x: 7.6950836, y: -11.731293}
+        - {x: 14.695084, y: -5.7312927}
+        - {x: 14.695084, y: 28.268707}
+    - name: ob_leaf_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 132
+        width: 121
+        height: 33
+      alignment: 9
+      pivot: {x: 0.22665355, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.57492, y: 9.500015}
+        - {x: 59.57492, y: 14.500015}
+        - {x: 47.57492, y: 16.500015}
+        - {x: -27.42508, y: 16.500015}
+        - {x: -27.42508, y: -13.499985}
+        - {x: -9.425079, y: -16.499985}
+        - {x: 45.57492, y: -16.499985}
+        - {x: 68.57492, y: -8.499985}
+        - {x: 93.57492, y: 0.50001526}
+        - {x: 93.57492, y: 6.5000153}
+    - name: ob_leaf_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 61
+        width: 101
+        height: 47
+      alignment: 9
+      pivot: {x: 0.8438483, y: 0.5351866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.228676, y: 21.84623}
+        - {x: -85.228676, y: 21.84623}
+        - {x: -85.228676, y: -12.15377}
+        - {x: -79.228676, y: -19.15377}
+        - {x: -47.228676, y: -25.15377}
+        - {x: 3.7713242, y: -25.15377}
+        - {x: 15.771324, y: -6.1537704}
+        - {x: 15.771324, y: 2.8462296}
+        - {x: 0.77132416, y: 9.84623}
+    - name: ob_leaf_7
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 60
+        width: 148
+        height: 45
+      alignment: 9
+      pivot: {x: 0.43295628, y: 0.8307495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.07753, y: 7.616272}
+        - {x: -64.07753, y: -14.383728}
+        - {x: -64.07753, y: -37.383728}
+        - {x: 51.92247, y: -37.383728}
+        - {x: 83.92247, y: -21.383728}
+        - {x: 83.92247, y: -12.383728}
+        - {x: 30.92247, y: 7.616272}
+    - name: ob_leaf_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 65
+        width: 85
+        height: 39
+      alignment: 9
+      pivot: {x: 0.13033879, y: 0.6696155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.921204, y: 12.8849945}
+        - {x: 32.921204, y: 6.8849945}
+        - {x: 5.9212036, y: 8.8849945}
+        - {x: -4.0787964, y: 5.8849945}
+        - {x: -11.078796, y: 2.8849945}
+        - {x: -11.078796, y: -4.1150055}
+        - {x: 9.921204, y: -19.115005}
+        - {x: 55.921204, y: -26.115005}
+        - {x: 73.9212, y: -26.115005}
+        - {x: 73.9212, y: 12.8849945}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: c3bc4d76eb933f747b8b48a373484a79
+timeCreated: 1468561921
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_palmtree_0
+    21300002: ob_palmtree_1
+    21300004: ob_palmtree_2
+    21300006: ob_palmtree_3
+    21300008: ob_palmtree_4
+    21300010: ob_palmtree_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_palmtree_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 376
+        width: 128
+        height: 137
+      alignment: 9
+      pivot: {x: 0.53135055, y: 0.39015853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.01287, y: 83.54828}
+        - {x: -68.01287, y: 78.54828}
+        - {x: -68.01287, y: -26.451721}
+        - {x: -66.01287, y: -49.45172}
+        - {x: -48.01287, y: -53.45172}
+        - {x: 37.98713, y: -53.45172}
+        - {x: 59.98713, y: -33.45172}
+        - {x: 59.98713, y: 81.54828}
+        - {x: 58.98713, y: 83.54828}
+    - name: ob_palmtree_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 430
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_palmtree_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 302
+        width: 122
+        height: 34
+      alignment: 9
+      pivot: {x: 0.919378, y: 0.70654386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77.164116, y: 9.977509}
+        - {x: -112.164116, y: -7.0224915}
+        - {x: -112.164116, y: -16.022491}
+        - {x: -101.164116, y: -24.022491}
+        - {x: -43.164116, y: -24.022491}
+        - {x: 9.835884, y: -5.0224915}
+        - {x: 9.835884, y: 9.977509}
+    - name: ob_palmtree_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 16
+        width: 97
+        height: 379
+      alignment: 9
+      pivot: {x: 0.7171916, y: 0.031478584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.56758, y: 367.0696}
+        - {x: -69.56758, y: 367.0696}
+        - {x: -69.56758, y: 270.0696}
+        - {x: -23.567581, y: -10.930389}
+        - {x: -23.567581, y: -11.930389}
+        - {x: 27.432419, y: -11.930389}
+        - {x: 27.432419, y: 301.0696}
+        - {x: -14.567581, y: 351.0696}
+    - name: ob_palmtree_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 140
+        width: 89
+        height: 139
+      alignment: 9
+      pivot: {x: 0.16183668, y: 0.045303892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.596535, y: 132.70276}
+        - {x: 60.596535, y: 132.70276}
+        - {x: 24.596535, y: 109.70276}
+        - {x: -14.403465, y: 19.702759}
+        - {x: -14.403465, y: -6.297241}
+        - {x: 3.5965347, y: -6.297241}
+        - {x: 9.596535, y: -5.297241}
+        - {x: 55.596535, y: 23.702759}
+        - {x: 74.596535, y: 103.70276}
+    - name: ob_palmtree_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 33
+        width: 103
+        height: 78
+      alignment: 9
+      pivot: {x: 0.91881925, y: 0.83440554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.63838, y: -22.083633}
+        - {x: -87.63838, y: -47.083633}
+        - {x: -94.63838, y: -57.083633}
+        - {x: -94.63838, y: -65.08363}
+        - {x: -65.63838, y: -65.08363}
+        - {x: 8.361618, y: -19.083633}
+        - {x: 8.361618, y: 12.916367}
+        - {x: -11.638382, y: 12.916367}
+        - {x: -44.638382, y: 2.9163666}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 70f54c7541382e24f9b709a0a4e4cbf3
+timeCreated: 1468562694
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_monkey_0
+    21300002: ob_monkey_1
+    21300004: ob_monkey_2
+    21300006: ob_monkey_3
+    21300008: ob_monkey_4
+    21300010: ob_monkey_5
+    21300012: ob_monkey_6
+    21300014: ob_monkey_7
+    21300016: ob_monkey_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_monkey_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 97
+        width: 33
+        height: 60
+      alignment: 9
+      pivot: {x: 0.6644352, y: 0.030846277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.926361, y: 58.149223}
+        - {x: -21.926361, y: 48.149223}
+        - {x: -21.926361, y: 7.1492233}
+        - {x: -11.926361, y: -1.8507767}
+        - {x: 5.073639, y: -1.8507767}
+        - {x: 6.073639, y: 1.1492233}
+        - {x: 11.073639, y: 17.149223}
+        - {x: 11.073639, y: 58.149223}
+    - name: ob_monkey_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 83
+        width: 34
+        height: 41
+      alignment: 9
+      pivot: {x: 0.26060194, y: 0.102949746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.860466, y: 36.77906}
+        - {x: -8.860466, y: -4.2209396}
+        - {x: 20.139534, y: -4.2209396}
+        - {x: 25.139534, y: 1.7790604}
+        - {x: 25.139534, y: 32.77906}
+        - {x: 24.139534, y: 36.77906}
+    - name: ob_monkey_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 48
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 23}
+        - {x: -14.5, y: 23}
+        - {x: -24.5, y: 6}
+        - {x: -24.5, y: -16}
+        - {x: -17.5, y: -23}
+        - {x: 0.5, y: -23}
+        - {x: 21.5, y: -14}
+        - {x: 24.5, y: -9}
+        - {x: 24.5, y: 17}
+    - name: ob_monkey_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 60
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monkey_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 46
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monkey_5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 47
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monkey_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4
+        width: 19
+        height: 38
+      alignment: 9
+      pivot: {x: 0.51785, y: 0.8748473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monkey_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 19
+        height: 36
+      alignment: 9
+      pivot: {x: 0.23225223, y: 0.8108854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_monkey_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 16
+        width: 16
+        height: 19
+      alignment: 9
+      pivot: {x: 0.288033, y: 0.767748}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
