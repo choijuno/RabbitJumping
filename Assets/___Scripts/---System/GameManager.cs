@@ -51,6 +51,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject tiltOn;
 	public GameObject tiltOff;
 
+	public GameObject soundOn;
+	public GameObject soundOff;
+
 
     //Json
 
@@ -70,6 +73,20 @@ public class GameManager : MonoBehaviour {
 				tiltCheck = ES2.Load<bool> ("tilt");
 			} else {
 
+			}
+
+			if (ES2.Exists ("musicChk")) {
+				if (ES2.Load<bool> ("musicChk")) {
+					soundOn.SetActive (true);
+					soundOff.SetActive (false);
+				} else {
+					soundOn.SetActive (false);
+					soundOff.SetActive (true);
+				}
+			} else {
+				ES2.Save<bool> (true, "musicChk");
+				soundOn.SetActive (true);
+				soundOff.SetActive (false);
 			}
 
 			Money_ingame = 0;

@@ -80,8 +80,8 @@ public class UI_Gage : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
-		gage_bar.fillAmount = (playerBody.transform.position.x + 7.58f)  / EndPos;
+		Debug.Log ("endPos : " + EndPos + " // CharacterPos : " + (playerBody.transform.position.x + 7.58));
+		gage_bar.fillAmount = (playerBody.transform.position.x + 7.58f)  / (EndPos+7.58f);
 		chaPos = gage_bar.fillAmount * chaMax;
 		gage_Character.transform.localPosition = new Vector3 (StartPos.transform.localPosition.x + chaPos -6f , gage_Character.transform.localPosition.y, gage_Character.transform.localPosition.z );
 	}

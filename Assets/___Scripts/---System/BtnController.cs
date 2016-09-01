@@ -50,14 +50,17 @@ public class BtnController : MonoBehaviour {
 	}
 
 	public void Bgm_OnOff(){
+		//ES2.Load<bool> ("musicChk")
 		switch (this.name) {
 		case "On":
 			openClose ();
-			ClosePanel_2.SetActive (false);
+			//ClosePanel_2.SetActive (false);
+			MusicManager.instance.MusicSelect (false);
 			break;
 		case "Off":
 			openClose ();
-			OpenPanel_2.SetActive (true);
+			//OpenPanel_2.SetActive (true);
+			MusicManager.instance.MusicSelect (true);
 			break;
 		}
 	}
