@@ -88,3 +88,5 @@ D:\최준오\programing\projects\JumpX\Temp\bin\Debug\MoodkieSecurity.dll
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Security.dll
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Stores.dll
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\winrt.dll
+D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Tizen.dll
+D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

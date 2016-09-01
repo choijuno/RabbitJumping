@@ -58,6 +58,14 @@ public class UI_Gage : MonoBehaviour {
 						EndPos = child.transform.position.x + 6.08f;
 					}
 
+
+					if (child.name.Substring (0, 7) == "1990051") {
+						
+					}
+
+					if (child.name.Substring (0, 7) == "1990052") {
+						EndPos = child.transform.position.x;
+					}
 				}
 
 				StopCoroutine ("posSet");
