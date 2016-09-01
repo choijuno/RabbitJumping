@@ -24,9 +24,12 @@ public class MusicManager : MonoBehaviour {
         }
 
         audioSource = this.GetComponent<AudioSource>();
-        soundStart();
+        if (!ES2.Exists("musicChk"))
+            ES2.Save<bool>(true, "musicChk");
+
+        MusicSelect(ES2.Load<bool>("musicChk"));
     }
-    void soundStart()
+    /*void soundStart()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
@@ -42,11 +45,12 @@ public class MusicManager : MonoBehaviour {
         }
         audioSource.Play();
         audioSource.loop = true;
-    }
+    }*/
     public void MusicSelect(bool musicChk)
     {
         if (musicChk)
         {
+            ES2.Save<bool>(musicChk, "musicChk");
             if (SceneManager.GetActiveScene().buildIndex == 0)
             {
                 audioSource.clip = mainScene;
@@ -64,6 +68,7 @@ public class MusicManager : MonoBehaviour {
         }
         else
         {
+            ES2.Save<bool>(musicChk, "musicChk");
             audioSource.clip = null;
             audioSource.Stop();
             audioSource.loop = false;
