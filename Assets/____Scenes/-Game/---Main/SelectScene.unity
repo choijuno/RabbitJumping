@@ -34666,6 +34666,8 @@ MonoBehaviour:
   Controller: {fileID: 0}
   tiltOn: {fileID: 0}
   tiltOff: {fileID: 0}
+  soundOn: {fileID: 0}
+  soundOff: {fileID: 0}
 --- !u!4 &1666215209
 Transform:
   m_ObjectHideFlags: 0
@@ -40998,7 +41000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainScene: {fileID: 8300000, guid: 8f63f2c5cb034174b8d89b7ab44f35fa, type: 3}
   selectScene: {fileID: 8300000, guid: a1250f472fc7cd54b84d8e4c3b82130a, type: 3}
-  gameScene: {fileID: 8300000, guid: 10be28ff5af055742936cf8daa032b16, type: 3}
+  gameScene: {fileID: 8300000, guid: feb07188fe9dcc2479c022ce9527095e, type: 3}
 --- !u!1 &1932463344
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,6 @@ public class MusicManager : MonoBehaviour {
         {
             DestroyImmediate(this.gameObject);
         }
-
         audioSource = this.GetComponent<AudioSource>();
         if (!ES2.Exists("musicChk"))
             ES2.Save<bool>(true, "musicChk");

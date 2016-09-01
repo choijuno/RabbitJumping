@@ -79,9 +79,11 @@ public class GameManager : MonoBehaviour {
 				if (ES2.Load<bool> ("musicChk")) {
 					soundOn.SetActive (true);
 					soundOff.SetActive (false);
+					MusicManager.instance.MusicSelect (true);
 				} else {
 					soundOn.SetActive (false);
 					soundOff.SetActive (true);
+					MusicManager.instance.MusicSelect (false);
 				}
 			} else {
 				ES2.Save<bool> (true, "musicChk");

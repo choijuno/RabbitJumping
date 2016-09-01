@@ -130,9 +130,9 @@ public class selectManager : MonoBehaviour {
         setup = UiCanvas.gameObject.transform.FindChild("setup").gameObject;
         
         backgroundMusicOn = setup.transform.FindChild("backgroundMusicOn").GetComponent<Button>();
-        backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(0));
+        backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(1));
         backgroundMusicOff = setup.transform.FindChild("backgroundMusicOff").GetComponent<Button>();
-        backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(1));
+        backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(0));
 
         
 
@@ -529,15 +529,15 @@ public class selectManager : MonoBehaviour {
         if(musicOnOff == 0)
         {
             Debug.Log("abc");
-            backgroundMusicOn.gameObject.SetActive(false);
-            backgroundMusicOff.gameObject.SetActive(true);
+            backgroundMusicOn.gameObject.SetActive(true);
+            backgroundMusicOff.gameObject.SetActive(false);
             MusicManager.instance.MusicSelect(true);
 
         }
         else if(musicOnOff == 1)
         {
-            backgroundMusicOn.gameObject.SetActive(true);
-            backgroundMusicOff.gameObject.SetActive(false);
+            backgroundMusicOn.gameObject.SetActive(false);
+            backgroundMusicOff.gameObject.SetActive(true);
             MusicManager.instance.MusicSelect(false);
         }
     }
