@@ -139,8 +139,20 @@ public class selectManager : MonoBehaviour {
         hyogwaMusicOn = setup.transform.FindChild("hyogwaMusicOn").GetComponent<Button>();
         hyogwaMusicOff = setup.transform.FindChild("hyogwaMusicOff").GetComponent<Button>();
 
-        backgroundMusicOn.gameObject.SetActive(true);
-        backgroundMusicOff.gameObject.SetActive(false);
+        if (!ES2.Exists("musicChk"))
+            ES2.Save<bool>(true, "musicChk");
+
+        if (ES2.Load<bool>("musicChk"))
+        {
+            backgroundMusicOff.gameObject.SetActive(false);
+            backgroundMusicOn.gameObject.SetActive(true);
+        }
+        else
+        {
+            backgroundMusicOff.gameObject.SetActive(true);
+            backgroundMusicOn.gameObject.SetActive(false);
+        }
+        
         hyogwaMusicOff.gameObject.SetActive(false);
         hyogwaMusicOn.gameObject.SetActive(true);
 
