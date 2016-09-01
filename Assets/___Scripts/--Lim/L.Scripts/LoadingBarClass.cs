@@ -9,6 +9,7 @@ public class LoadingBarClass : MonoBehaviour {
     bool loadingchk = false;
 	void Start ()
     {
+        MusicManager.instance.MusicSelect(false);
         StartCoroutine(NextScene());
 	}
 	
@@ -50,9 +51,6 @@ public class LoadingBarClass : MonoBehaviour {
             while (async.isDone == false)
             {
                 loadingBar.fillAmount = async.progress * 10f;
-                Debug.Log(async.progress);
-                Debug.Log(async.isDone);
-
                 yield return true;
             }
         }

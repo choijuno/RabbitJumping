@@ -4814,6 +4814,10 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 49
       objectReference: {fileID: 0}
+    - target: {fileID: 9571142, guid: ae1449e524ef48840b82545f9247108d, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: de2da751cb8ec724897a15b6639b9555, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae1449e524ef48840b82545f9247108d, type: 2}
   m_IsPrefabParent: 0
@@ -21306,6 +21310,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9508454, guid: 7f0849b687adfd84491a4a247711d742, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: de2da751cb8ec724897a15b6639b9555, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f0849b687adfd84491a4a247711d742, type: 2}
   m_IsPrefabParent: 0
@@ -22631,6 +22639,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9503156, guid: 8bb6e1be834015344bffee1cb7e4b517, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: de2da751cb8ec724897a15b6639b9555, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bb6e1be834015344bffee1cb7e4b517, type: 2}
   m_IsPrefabParent: 0
@@ -40999,7 +41011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScene: {fileID: 8300000, guid: 8f63f2c5cb034174b8d89b7ab44f35fa, type: 3}
-  selectScene: {fileID: 8300000, guid: a1250f472fc7cd54b84d8e4c3b82130a, type: 3}
+  selectScene: {fileID: 8300000, guid: 10be28ff5af055742936cf8daa032b16, type: 3}
   gameScene: {fileID: 8300000, guid: feb07188fe9dcc2479c022ce9527095e, type: 3}
 --- !u!1 &1932463344
 GameObject:
