@@ -731,12 +731,12 @@ public class PlayerMove : MonoBehaviour {
 	void bumped() {
 		int rand = Random.Range (0, 10);
 
-			AudioSource.PlayClipAtPoint (bumpSound, SoundBase.transform.position);
+        AudioSource.PlayClipAtPoint(bumpSound, SoundBase.transform.position);
 
-			bumpEffect.transform.position = this.transform.position;
-			bumpEffect.SetActive (true);
+        bumpEffect.transform.position = this.transform.position;
+        bumpEffect.SetActive(true);
 
-		switch (rand) {
+        switch (rand) {
 		case 0:
 		case 1:
 		case 2:

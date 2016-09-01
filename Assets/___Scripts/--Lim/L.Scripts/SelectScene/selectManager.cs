@@ -59,6 +59,10 @@ public class selectManager : MonoBehaviour {
     //설정
     GameObject setup;
     Button setupExit;
+    Button backgroundMusicOn;
+    Button backgroundMusicOff;
+    Button hyogwaMusicOn;
+    Button hyogwaMusicOff;
 
     //골드 보석 상점
     GameObject goldBosuk;
@@ -74,6 +78,10 @@ public class selectManager : MonoBehaviour {
     Button bosuk1000won;
     Button bosuk2500won;
     Button bosuk32500won;
+
+    Button gold1000won;
+    Button gold2500won;
+    Button gold32500won;
 
     public Sprite nonGoldSprite;
     public Sprite GoldSprite;
@@ -120,6 +128,22 @@ public class selectManager : MonoBehaviour {
 
         //설정
         setup = UiCanvas.gameObject.transform.FindChild("setup").gameObject;
+        
+        backgroundMusicOn = setup.transform.FindChild("backgroundMusicOn").GetComponent<Button>();
+        backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(0));
+        backgroundMusicOff = setup.transform.FindChild("backgroundMusicOff").GetComponent<Button>();
+        backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(1));
+
+        
+
+        hyogwaMusicOn = setup.transform.FindChild("hyogwaMusicOn").GetComponent<Button>();
+        hyogwaMusicOff = setup.transform.FindChild("hyogwaMusicOff").GetComponent<Button>();
+
+        backgroundMusicOn.gameObject.SetActive(true);
+        backgroundMusicOff.gameObject.SetActive(false);
+        hyogwaMusicOff.gameObject.SetActive(false);
+        hyogwaMusicOn.gameObject.SetActive(true);
+
         setupExit = setup.transform.FindChild("setupExit").GetComponent<Button>();
         setupExit.onClick.AddListener(setupExitBtnFunc);
         setup.SetActive(false);
@@ -141,6 +165,14 @@ public class selectManager : MonoBehaviour {
         goldbosukExitBtn = goldBosuk.transform.FindChild("goldbosukExitBtn").GetComponent<Button>();
         goldbosukExitBtn.onClick.AddListener(goldbosukExitBtnFunc);
 
+        gold1000won = goldStore.transform.FindChild("1000bosuk").GetComponent<Button>();
+        gold2500won = goldStore.transform.FindChild("2500bosuk").GetComponent<Button>();
+        gold32500won = goldStore.transform.FindChild("32500bosuk").GetComponent<Button>();
+
+        gold1000won.onClick.AddListener(() => goldBuy(1000));
+        gold2500won.onClick.AddListener(() => goldBuy(2500));
+        gold32500won.onClick.AddListener(() => goldBuy(32500));
+
         bosuk1000won = bosukStore.transform.FindChild("1000won").GetComponent<Button>();
         bosuk1000won.onClick.AddListener(() => bosukBuy(1000));
         bosuk2500won = bosukStore.transform.FindChild("2500won").GetComponent<Button>();
@@ -150,6 +182,8 @@ public class selectManager : MonoBehaviour {
 
         goldBosuk.SetActive(false);
 
+        //사운드 옵션
+        
 
 
         myRoom = ui_back_large.transform.FindChild("MyRoom").gameObject;
@@ -218,6 +252,7 @@ public class selectManager : MonoBehaviour {
 				stageBtn.onClick.AddListener (() => SceneGo (stageBtn.name));
 			}
 		}
+        
 
         loadStar(); //별 로드
         loadNoneStage();
@@ -429,6 +464,69 @@ public class selectManager : MonoBehaviour {
             case 32500:
                 InappManager.Instance.Buy100000Bosuk();
                 break;
+        }
+    }
+    void goldBuy(int bosuk)
+    {
+        float bosukCount = DataSave._instance.getBosuk_Game();
+        switch (bosuk)
+        {
+            case 1000:
+                if(bosukCount < 1000)
+                {
+                    Debug.Log("====보석이 부족합니다=====");
+                    return;
+                }
+                else
+                {
+                    DataSave._instance.setBosuk_GameMinus(1000);
+                    DataSave._instance.setMoney_Game(20000);
+                    gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                }
+                break;
+            case 2500:
+                if (bosukCount < 2000)
+                {
+                    Debug.Log("====보석이 부족합니다=====");
+                    return;
+                }
+                else
+                {
+                    DataSave._instance.setBosuk_GameMinus(2500);
+                    DataSave._instance.setMoney_Game(30000);
+                    gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                }
+                break;
+            case 32500:
+                if (bosukCount < 32500)
+                {
+                    Debug.Log("====보석이 부족합니다=====");
+                    return;
+                }
+                else
+                {
+                    DataSave._instance.setBosuk_GameMinus(32500);
+                    DataSave._instance.setMoney_Game(100000);
+                    gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                }
+                break;
+        }
+    }
+    void backgroundMusicGo(int musicOnOff) //사운드
+    {
+        if(musicOnOff == 0)
+        {
+            Debug.Log("abc");
+            backgroundMusicOn.gameObject.SetActive(false);
+            backgroundMusicOff.gameObject.SetActive(true);
+            MusicManager.instance.MusicSelect(true);
+
+        }
+        else if(musicOnOff == 1)
+        {
+            backgroundMusicOn.gameObject.SetActive(true);
+            backgroundMusicOff.gameObject.SetActive(false);
+            MusicManager.instance.MusicSelect(false);
         }
     }
 }

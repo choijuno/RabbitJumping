@@ -95,7 +95,6 @@ public class DataSave : MonoBehaviour {
 
     void Start()
     {
-        DontDestroyOnLoad(this);
         if(_instance == null)
         {
             _instance = this;
