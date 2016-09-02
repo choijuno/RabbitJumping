@@ -561,17 +561,6 @@ public class selectManager : MonoBehaviour {
             MusicManager.instance.MusicSelect(false);
         }
     }
-    void Update()
-    {
-        if (GoogleManager.GetInstance.bLogin)
-        {
-            
-        }
-        else
-        {
-            
-        }
-    }
     void GoogleBtnFunc(int googleOnOff)
     {
         //0 == 로그인 , 1 == 비로그인.
