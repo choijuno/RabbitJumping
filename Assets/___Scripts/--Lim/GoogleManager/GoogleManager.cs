@@ -206,7 +206,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             return;
         }
         ILeaderboard lb = Social.CreateLeaderboard();
-        lb.id = GPGS.LeaderBoardTest;
+        lb.id =  GPGS.LeaderBoardTest;
         lb.LoadScores(ok =>
         {
             if (ok)
