@@ -83,6 +83,9 @@ public class selectManager : MonoBehaviour {
     Button gold2500won;
     Button gold32500won;
 
+    Button GoogleBtnOn;
+    Button GoogleBtnOff;
+
     public Sprite nonGoldSprite;
     public Sprite GoldSprite;
     public Sprite nonBosukSprite;
@@ -96,7 +99,7 @@ public class selectManager : MonoBehaviour {
     }
     void selectInit()
     {
-        
+
         chaSetFalse();
         gameMoney = GameObject.Find("gameMoney").GetComponent<Text>();
         bosukMoney = GameObject.Find("bosukMoney").GetComponent<Text>();
@@ -104,7 +107,7 @@ public class selectManager : MonoBehaviour {
             gameMoney.text = DataSave._instance.getMoney_Game().ToString(); //돈 출력
         else
         {
-            gameMoney.text = 5000.ToString("#,##0"); 
+            gameMoney.text = 5000.ToString("#,##0");
             DataSave._instance.setMoney_Game(5000);
         }
 
@@ -115,7 +118,7 @@ public class selectManager : MonoBehaviour {
 
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         eventSystem.pixelDragThreshold = (int)(0.5f * Screen.dpi / 2.54f);
-        
+
         shopBtn = allBtnPanel.transform.FindChild("shopBtn").GetComponent<Button>();
         MyBtn = allBtnPanel.transform.FindChild("MyBtn").GetComponent<Button>();
         rangkingBtn = allBtnPanel.transform.FindChild("rangkingBtn").GetComponent<Button>();
@@ -129,14 +132,28 @@ public class selectManager : MonoBehaviour {
 
         //설정
         setup = UiCanvas.gameObject.transform.FindChild("setup").gameObject;
-        
+
         backgroundMusicOn = setup.transform.FindChild("backgroundMusicOn").GetComponent<Button>();
         backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(1));
         backgroundMusicOff = setup.transform.FindChild("backgroundMusicOff").GetComponent<Button>();
         backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(0));
 
-        
+        GoogleBtnOn = setup.transform.FindChild("GoogleBtnOn").GetComponent<Button>();
+        GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0));
+        GoogleBtnOff = setup.transform.FindChild("GoogleBtnOff").GetComponent<Button>();
+        GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1));
 
+        if (!Social.localUser.authenticated)
+        {
+            GoogleBtnOff.gameObject.SetActive(true); //로그인 안되있으면.
+            GoogleBtnOn.gameObject.SetActive(false);
+        }
+        else
+        {
+            GoogleBtnOn.gameObject.SetActive(true); //로그인 되있으면.
+            GoogleBtnOff.gameObject.SetActive(false);
+        }
+            
         hyogwaMusicOn = setup.transform.FindChild("hyogwaMusicOn").GetComponent<Button>();
         hyogwaMusicOff = setup.transform.FindChild("hyogwaMusicOff").GetComponent<Button>();
 
@@ -542,6 +559,33 @@ public class selectManager : MonoBehaviour {
             backgroundMusicOn.gameObject.SetActive(false);
             backgroundMusicOff.gameObject.SetActive(true);
             MusicManager.instance.MusicSelect(false);
+        }
+    }
+    void Update()
+    {
+        if (GoogleManager.GetInstance.bLogin)
+        {
+            GoogleBtnOff.gameObject.SetActive(false);
+            GoogleBtnOn.gameObject.SetActive(true);
+        }
+        else
+        {
+            GoogleBtnOn.gameObject.SetActive(false);
+            GoogleBtnOff.gameObject.SetActive(true);
+        }
+    }
+    void GoogleBtnFunc(int googleOnOff)
+    {
+        //0 == 로그인 , 1 == 비로그인.
+        if(googleOnOff == 0)
+        {
+            Debug.Log("----로그인----");
+            GoogleManager.GetInstance.LogoutGPGS();
+        }
+        else
+        {
+            Debug.Log("---비로그인----");
+            GoogleManager.GetInstance.LoginGPGS();
         }
     }
 }

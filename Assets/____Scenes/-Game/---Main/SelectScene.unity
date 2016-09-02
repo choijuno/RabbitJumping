@@ -867,12 +867,12 @@ GameObject:
   - 114: {fileID: 65813862}
   - 114: {fileID: 65813861}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: GoogleBtnOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &65813860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -883,11 +883,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1280105744}
-  m_RootOrder: 1
+  m_Father: {fileID: 321872156}
+  m_RootOrder: 13
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 316.60004, y: 0.399971}
+  m_AnchoredPosition: {x: 36, y: -167}
   m_SizeDelta: {x: 95, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65813861
@@ -7691,6 +7691,8 @@ RectTransform:
   - {fileID: 320581123}
   - {fileID: 262653562}
   - {fileID: 1280105744}
+  - {fileID: 352085474}
+  - {fileID: 65813860}
   - {fileID: 958748332}
   - {fileID: 1923533022}
   m_Father: {fileID: 537051082}
@@ -8112,7 +8114,7 @@ GameObject:
   - 114: {fileID: 352085476}
   - 114: {fileID: 352085475}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: GoogleBtnOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8128,11 +8130,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1280105744}
-  m_RootOrder: 2
+  m_Father: {fileID: 321872156}
+  m_RootOrder: 12
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205.60004, y: 0.399971}
+  m_AnchoredPosition: {x: 36, y: -167}
   m_SizeDelta: {x: 95, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352085475
@@ -21176,7 +21178,7 @@ RectTransform:
   - {fileID: 775632303}
   - {fileID: 2112707905}
   m_Father: {fileID: 321872156}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -169.6, y: -238.4}
@@ -27717,8 +27719,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1947070198}
-  - {fileID: 65813860}
-  - {fileID: 352085474}
   m_Father: {fileID: 321872156}
   m_RootOrder: 11
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -40564,7 +40564,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 321872156}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 162.1, y: -200.3}
