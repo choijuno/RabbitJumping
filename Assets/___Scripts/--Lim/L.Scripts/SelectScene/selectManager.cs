@@ -96,6 +96,7 @@ public class selectManager : MonoBehaviour {
     }
     void selectInit()
     {
+        
         chaSetFalse();
         gameMoney = GameObject.Find("gameMoney").GetComponent<Text>();
         bosukMoney = GameObject.Find("bosukMoney").GetComponent<Text>();
@@ -146,11 +147,13 @@ public class selectManager : MonoBehaviour {
         {
             backgroundMusicOff.gameObject.SetActive(false);
             backgroundMusicOn.gameObject.SetActive(true);
+            MusicManager.instance.MusicSelect(true);
         }
         else
         {
             backgroundMusicOff.gameObject.SetActive(true);
             backgroundMusicOn.gameObject.SetActive(false);
+            MusicManager.instance.MusicSelect(false);
         }
         
         hyogwaMusicOff.gameObject.SetActive(false);
