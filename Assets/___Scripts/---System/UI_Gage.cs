@@ -24,17 +24,18 @@ public class UI_Gage : MonoBehaviour {
 	public GameObject StartPos;
 	//
 
-	public float Pos;
-	public float EndPos;
 
 	float chaPos;
 	float chaMax = 564f;
 
-	public GameObject chaStart;
-	float chaStartPos;
-	public GameObject chaEnd;
-	float chaEndPos;
 
+	//inGame
+	//Map_L
+	float chaStartPos;
+	//Map_R
+	float chaEndPos;
+	//clearGround
+	float EndPos;
 
 
 	// Use this for initialization
@@ -55,19 +56,30 @@ public class UI_Gage : MonoBehaviour {
 				
 				foreach (Transform child in loadParent) {
 					if (child.name.Substring (0, 7) == "1990021") {
-						EndPos = child.transform.position.x + 6.08f;
+						EndPos = child.transform.position.x;
 					}
 
 
 					if (child.name.Substring (0, 7) == "1990051") {
-						
+						chaStartPos = Mathf.Abs (child.transform.position.x);
 					}
 
 					if (child.name.Substring (0, 7) == "1990052") {
-						EndPos = child.transform.position.x;
+						chaEndPos = child.transform.position.x;
 					}
+
+
 				}
 
+				//clearGroundCheck
+				gage_bar.fillAmount = (EndPos + chaStartPos)  / (chaEndPos + chaStartPos);
+				chaPos = gage_bar.fillAmount * chaMax;
+				finish_ground.transform.localPosition = new Vector3 (StartPos.transform.localPosition.x + chaPos -6f , finish_ground.transform.localPosition.y, finish_ground.transform.localPosition.z );
+
+
+				StartCoroutine ("naviStart");
+				gage_Character.SetActive (true);
+				finish_ground.SetActive (true);
 				StopCoroutine ("posSet");
 			} else {
 				timer = timer - Time.deltaTime;
@@ -76,13 +88,19 @@ public class UI_Gage : MonoBehaviour {
 		}
 	}
 
+	IEnumerator naviStart(){
+		
 
-
-	// Update is called once per frame
-	void Update () {
-		Debug.Log ("endPos : " + EndPos + " // CharacterPos : " + (playerBody.transform.position.x + 7.58));
-		gage_bar.fillAmount = (playerBody.transform.position.x + 7.58f)  / (EndPos+7.58f);
-		chaPos = gage_bar.fillAmount * chaMax;
-		gage_Character.transform.localPosition = new Vector3 (StartPos.transform.localPosition.x + chaPos -6f , gage_Character.transform.localPosition.y, gage_Character.transform.localPosition.z );
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+			Debug.Log ("endPos : " + EndPos + " // CharacterPos : " + (playerBody.transform.position.x + chaStartPos));
+			gage_bar.fillAmount = (playerBody.transform.position.x + chaStartPos)  / (chaEndPos + chaStartPos);
+			chaPos = gage_bar.fillAmount * chaMax;
+			gage_Character.transform.localPosition = new Vector3 (StartPos.transform.localPosition.x + chaPos -6f , gage_Character.transform.localPosition.y, gage_Character.transform.localPosition.z );
+		}
 	}
+
+
+
+
 }
