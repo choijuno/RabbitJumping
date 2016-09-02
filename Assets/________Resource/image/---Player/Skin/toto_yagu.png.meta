@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: f0a4d6b775cfa6043a7ac35ed832815a
+timeCreated: 1472084017
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_yagu_0
+    21300002: toto_yagu_1
+    21300004: toto_yagu_2
+    21300006: toto_yagu_3
+    21300008: toto_yagu_4
+    21300010: toto_yagu_5
+    21300012: toto_yagu_6
+    21300014: toto_yagu_7
+    21300016: toto_yagu_8
+    21300018: toto_yagu_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: toto_yagu_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 346
+        width: 249
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.5, y: 56.5}
+        - {x: 10.5, y: 71.5}
+        - {x: -74.5, y: 71.5}
+        - {x: -124.5, y: 35.5}
+        - {x: -124.5, y: -67.5}
+        - {x: -77.5, y: -71.5}
+        - {x: 98.5, y: -71.5}
+        - {x: 119.5, y: -70.5}
+        - {x: 124.5, y: -66.5}
+        - {x: 124.5, y: -47.5}
+        - {x: 122.5, y: -42.5}
+    - name: toto_yagu_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_yagu_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 49
+        height: 61
+      alignment: 9
+      pivot: {x: 0.791919, y: 0.8405724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.804031, y: 9.725082}
+        - {x: -36.80403, y: 7.7250824}
+        - {x: -38.80403, y: -10.274918}
+        - {x: -38.80403, y: -51.274918}
+        - {x: -23.804031, y: -51.274918}
+        - {x: 10.195969, y: -13.274918}
+        - {x: 10.195969, y: 5.7250824}
+        - {x: 9.195969, y: 9.725082}
+    - name: toto_yagu_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_yagu_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 63
+        height: 221
+      alignment: 9
+      pivot: {x: 0.49205282, y: 0.012895886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.999329, y: 218.15001}
+        - {x: -30.999329, y: 197.15001}
+        - {x: -30.999329, y: 21.15001}
+        - {x: -28.999329, y: -2.8499908}
+        - {x: 32.00067, y: -2.8499908}
+        - {x: 32.00067, y: 202.15001}
+        - {x: 13.000671, y: 218.15001}
+    - name: toto_yagu_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.12603834, y: 0.87153345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.4279556, y: 7.0656586}
+        - {x: -6.4279556, y: -7.9343414}
+        - {x: 27.572044, y: -47.93434}
+        - {x: 44.572044, y: -47.93434}
+        - {x: 44.572044, y: -23.934341}
+        - {x: 9.572044, y: 7.0656586}
+    - name: toto_yagu_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 24
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5547886, y: 0.7756922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_yagu_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 10
+        width: 21
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5584935, y: 0.86364186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_yagu_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 34
+        height: 65
+      alignment: 9
+      pivot: {x: 0.46324158, y: 0.87974864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.249786, y: 7.8163376}
+        - {x: -12.750214, y: 7.8163376}
+        - {x: -15.750214, y: 6.8163376}
+        - {x: -15.750214, y: -57.183662}
+        - {x: 18.249786, y: -57.183662}
+        - {x: 18.249786, y: -31.183662}
+        - {x: 10.249786, y: 1.8163376}
+    - name: toto_yagu_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.21041052, y: 0.8801495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.626831, y: 7.1910324}
+        - {x: -8.626831, y: -51.808968}
+        - {x: -4.626831, y: -52.808968}
+        - {x: 30.373169, y: -52.808968}
+        - {x: 32.37317, y: -50.808968}
+        - {x: 32.37317, y: -32.808968}
+        - {x: 8.373169, y: 7.1910324}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

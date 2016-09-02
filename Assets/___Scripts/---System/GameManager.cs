@@ -61,29 +61,29 @@ public class GameManager : MonoBehaviour {
     int starCount = 0;
 	void Start()
     {
+		gameSet = 3;
+
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        JsonGo = GameObject.Find("Json").GetComponent<JsonParsing>();
-        if (ES2.Exists("musicChk"))
-        {
-            if (ES2.Load<bool>("musicChk"))
-            {
-                soundOn.SetActive(true);
-                soundOff.SetActive(false);
-                MusicManager.instance.MusicSelect(true);
-            }
-            else
-            {
-                soundOn.SetActive(false);
-                soundOff.SetActive(true);
-                MusicManager.instance.MusicSelect(false);
-            }
-        }
-        else
-        {
-            ES2.Save<bool>(true, "musicChk");
-            soundOn.SetActive(true);
-            soundOff.SetActive(false);
-        }
+
+		if (Application.loadedLevelName == "TestGame") {
+			
+			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
+			if (ES2.Exists ("musicChk")) {
+				if (ES2.Load<bool> ("musicChk")) {
+					soundOn.SetActive (true);
+					soundOff.SetActive (false);
+					MusicManager.instance.MusicSelect (true);
+				} else {
+					soundOn.SetActive (false);
+					soundOff.SetActive (true);
+					MusicManager.instance.MusicSelect (false);
+				}
+			} else {
+				ES2.Save<bool> (true, "musicChk");
+				soundOn.SetActive (true);
+				soundOff.SetActive (false);
+			}
+		}
     }
 
 	void Awake () {

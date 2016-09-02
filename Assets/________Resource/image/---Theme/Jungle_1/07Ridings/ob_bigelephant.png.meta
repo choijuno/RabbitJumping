@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: 9fc2b8faa1981294eb039ce9cf2a9467
+timeCreated: 1471767786
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_bigelephant_0
+    21300002: ob_bigelephant_1
+    21300004: ob_bigelephant_2
+    21300006: ob_bigelephant_3
+    21300008: ob_bigelephant_4
+    21300010: ob_bigelephant_5
+    21300012: ob_bigelephant_6
+    21300014: ob_bigelephant_7
+    21300016: ob_bigelephant_8
+    21300018: ob_bigelephant_9
+    21300020: ob_bigelephant_10
+    21300022: ob_bigelephant_11
+    21300024: ob_bigelephant_12
+    21300026: ob_bigelephant_13
+    21300028: ob_bigelephant_14
+    21300030: ob_bigelephant_15
+    21300032: ob_bigelephant_16
+    21300034: ob_bigelephant_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ob_bigelephant_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 720
+        width: 318
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 133, y: -79}
+        - {x: 151, y: -51}
+        - {x: 159, y: -19}
+        - {x: 159, y: 48}
+        - {x: 157, y: 59}
+        - {x: 154, y: 87}
+        - {x: 141, y: 125}
+        - {x: 128, y: 133}
+        - {x: 117, y: 138}
+        - {x: 71, y: 138}
+        - {x: -29, y: 121}
+        - {x: -93, y: 120}
+        - {x: -103, y: 111}
+        - {x: -130, y: 72}
+        - {x: -141, y: 48}
+        - {x: -149, y: 18}
+        - {x: -159, y: -37}
+        - {x: -159, y: -102}
+        - {x: -138, y: -124}
+        - {x: -131, y: -126}
+        - {x: -77, y: -129}
+        - {x: -63, y: -134}
+        - {x: -46, y: -138}
+        - {x: 3, y: -138}
+        - {x: 53, y: -129}
+        - {x: 96, y: -106}
+        - {x: 119, y: -92}
+    - name: ob_bigelephant_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 804
+        width: 100
+        height: 180
+      alignment: 9
+      pivot: {x: 0.77399415, y: 0.5845659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.399414, y: 74.77814}
+        - {x: -77.399414, y: 66.77814}
+        - {x: -77.399414, y: 35.778137}
+        - {x: -74.399414, y: 35.778137}
+        - {x: -77.399414, y: 35.778137}
+        - {x: -77.399414, y: 15.778137}
+        - {x: -75.399414, y: -10.221863}
+        - {x: -56.399414, y: -47.221863}
+        - {x: -38.399414, y: -68.22186}
+        - {x: -9.399414, y: -105.22186}
+        - {x: 22.600586, y: -105.22186}
+        - {x: 22.600586, y: 37.778137}
+        - {x: 9.600586, y: 74.77814}
+    - name: ob_bigelephant_2
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 876
+        width: 210
+        height: 108
+      alignment: 9
+      pivot: {x: 0.86242646, y: 0.7818875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.10956, y: 23.556152}
+        - {x: -181.10956, y: -12.443848}
+        - {x: -181.10956, y: -84.44385}
+        - {x: -95.10956, y: -84.44385}
+        - {x: -80.10956, y: -78.44385}
+        - {x: 28.890442, y: -12.443848}
+        - {x: 28.890442, y: 23.556152}
+    - name: ob_bigelephant_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 936
+        width: 56
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_bigelephant_4
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 934
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_bigelephant_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 494
+        width: 197
+        height: 170
+      alignment: 9
+      pivot: {x: 0.29910186, y: 0.7148973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.076935, y: 48.46747}
+        - {x: -23.923065, y: 48.46747}
+        - {x: -44.923065, y: 45.46747}
+        - {x: -58.923065, y: 35.46747}
+        - {x: -58.923065, y: -46.53253}
+        - {x: -40.923065, y: -101.53253}
+        - {x: 33.076935, y: -121.53253}
+        - {x: 94.076935, y: -121.53253}
+        - {x: 138.07693, y: -101.53253}
+        - {x: 138.07693, y: -45.53253}
+        - {x: 111.076935, y: 2.4674683}
+    - name: ob_bigelephant_6
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 638
+        width: 170
+        height: 126
+      alignment: 9
+      pivot: {x: 0.16925049, y: 0.23750038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 101.22742, y: 96.07495}
+        - {x: -28.772583, y: 23.074951}
+        - {x: -28.772583, y: -25.925049}
+        - {x: -14.772583, y: -29.925049}
+        - {x: 68.22742, y: -29.925049}
+        - {x: 106.22742, y: -12.925049}
+        - {x: 141.22742, y: 71.07495}
+        - {x: 141.22742, y: 96.07495}
+    - name: ob_bigelephant_7
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 648
+        width: 102
+        height: 188
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7429027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 34.33429}
+        - {x: 37, y: 29.33429}
+        - {x: 40, y: 31.33429}
+        - {x: 36, y: 48.33429}
+        - {x: -37, y: 48.33429}
+        - {x: -51, y: 40.33429}
+        - {x: -51, y: -136.66571}
+        - {x: -41, y: -139.66571}
+        - {x: 51, y: -139.66571}
+        - {x: 51, y: 4.3342896}
+        - {x: 41, y: 17.33429}
+    - name: ob_bigelephant_8
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 652
+        width: 94
+        height: 174
+      alignment: 9
+      pivot: {x: 0.43522677, y: 0.70995706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.911316, y: 50.46747}
+        - {x: -40.911316, y: 26.467468}
+        - {x: -40.911316, y: -110.53253}
+        - {x: 4.088684, y: -123.53253}
+        - {x: 43.088684, y: -123.53253}
+        - {x: 53.088684, y: -85.53253}
+        - {x: 53.088684, y: 23.467468}
+        - {x: 30.088684, y: 50.46747}
+    - name: ob_bigelephant_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 399
+        width: 26
+        height: 77
+      alignment: 9
+      pivot: {x: 0.22773904, y: 0.11994756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_bigelephant_10
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 368
+        width: 42
+        height: 108
+      alignment: 9
+      pivot: {x: 0.83708483, y: 0.0630383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.157562, y: 101.191864}
+        - {x: -35.157562, y: 95.191864}
+        - {x: -35.157562, y: 73.191864}
+        - {x: -30.157562, y: 60.191864}
+        - {x: -16.157562, y: 25.191864}
+        - {x: -3.1575623, y: -2.808136}
+        - {x: 0.84243774, y: -6.808136}
+        - {x: 6.8424377, y: -6.808136}
+        - {x: 6.8424377, y: 9.191864}
+        - {x: -25.157562, y: 101.191864}
+    - name: ob_bigelephant_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 440
+        width: 190
+        height: 144
+      alignment: 9
+      pivot: {x: 0.15184277, y: 0.17843798}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102.14987, y: 118.30493}
+        - {x: -28.850128, y: 72.30493}
+        - {x: -28.850128, y: -19.695068}
+        - {x: -13.850128, y: -25.695068}
+        - {x: 69.14987, y: -25.695068}
+        - {x: 97.14987, y: -18.695068}
+        - {x: 161.14987, y: 83.30493}
+        - {x: 161.14987, y: 118.30493}
+    - name: ob_bigelephant_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 388
+        width: 112
+        height: 186
+      alignment: 9
+      pivot: {x: 0.44563675, y: 0.7455143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.911316, y: 47.33435}
+        - {x: -49.911316, y: 30.33435}
+        - {x: -49.911316, y: -113.66565}
+        - {x: -45.911316, y: -138.66565}
+        - {x: 62.088684, y: -138.66565}
+        - {x: 62.088684, y: -48.66565}
+        - {x: 58.088684, y: -24.66565}
+        - {x: 29.088684, y: 47.33435}
+    - name: ob_bigelephant_13
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 412
+        width: 154
+        height: 132
+      alignment: 9
+      pivot: {x: 0.26277578, y: 0.75369817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.46747, y: 32.51184}
+        - {x: -40.46747, y: -34.48816}
+        - {x: -5.4674683, y: -99.48816}
+        - {x: 67.53253, y: -99.48816}
+        - {x: 113.53253, y: -76.48816}
+        - {x: 113.53253, y: -57.48816}
+        - {x: 58.53253, y: 30.51184}
+        - {x: 45.53253, y: 32.51184}
+    - name: ob_bigelephant_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 78
+        width: 171
+        height: 174
+      alignment: 9
+      pivot: {x: 0.5449732, y: 0.15253256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.190414, y: -26.540665}
+        - {x: 77.809586, y: -26.540665}
+        - {x: 77.809586, y: 126.459335}
+        - {x: 70.809586, y: 147.45934}
+        - {x: -93.190414, y: 147.45934}
+        - {x: -93.190414, y: 50.459335}
+    - name: ob_bigelephant_15
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 88
+        width: 126
+        height: 170
+      alignment: 9
+      pivot: {x: 0.3133252, y: 0.38292676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.478973, y: 104.90245}
+        - {x: -39.478973, y: 30.90245}
+        - {x: -21.478973, y: -65.09755}
+        - {x: 86.52103, y: -65.09755}
+        - {x: 86.52103, y: 47.90245}
+        - {x: 27.521027, y: 104.90245}
+    - name: ob_bigelephant_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 175
+        width: 59
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5385362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.5, y: 72.911285}
+        - {x: 13.5, y: 72.911285}
+        - {x: -29.5, y: 18.911285}
+        - {x: -29.5, y: -74.088715}
+        - {x: -25.5, y: -85.088715}
+        - {x: -6.5, y: -85.088715}
+        - {x: -4.5, y: -80.088715}
+        - {x: 29.5, y: -17.088715}
+        - {x: 29.5, y: 61.911285}
+    - name: ob_bigelephant_17
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 217
+        width: 92
+        height: 68
+      alignment: 9
+      pivot: {x: 0.23527129, y: 0.634311}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.644958, y: 24.866852}
+        - {x: -21.644958, y: -1.1331482}
+        - {x: -9.6449585, y: -25.133148}
+        - {x: 30.355042, y: -42.13315}
+        - {x: 40.35504, y: -43.13315}
+        - {x: 70.35504, y: -43.13315}
+        - {x: 70.35504, y: -12.133148}
+        - {x: 69.35504, y: -7.133148}
+        - {x: 11.3550415, y: 24.866852}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

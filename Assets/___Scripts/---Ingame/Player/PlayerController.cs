@@ -40,46 +40,46 @@ public class PlayerController : MonoBehaviour {
 
 
 		// raycast hit to gameObject in click point. change to MovePosition(status)
-
-		if (GameManager.tiltCheck) {
-			if (Input.acceleration.x < -0.08f)
-				playerState = MovePosition.Left;
-			if (Input.acceleration.x > 0.08f)
-				playerState = MovePosition.Right;
-			if (Input.acceleration.x >= -0.079999f && Input.acceleration.x <= 0.079999f) {
-				playerState = MovePosition.Stay;
-			}
-		} else {
+			if (GameManager.tiltCheck) {
+				if (Input.acceleration.x < -0.08f)
+					playerState = MovePosition.Left;
+				if (Input.acceleration.x > 0.08f)
+					playerState = MovePosition.Right;
+				if (Input.acceleration.x >= -0.079999f && Input.acceleration.x <= 0.079999f) {
+					playerState = MovePosition.Stay;
+				}
+			} else {
 		
 
-			if (Input.GetMouseButton (0)) {
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				if (Physics.Raycast (ray, out hit)) {
+				if (Input.GetMouseButton (0)) {
+					RaycastHit hit;
+					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+					if (Physics.Raycast (ray, out hit)) {
 
-					if (hit.collider.gameObject.CompareTag ("left")) {
-						if (!poisonCheck) {
-							playerState = MovePosition.Left;
-						} else {
-							playerState = MovePosition.Right;
+						if (hit.collider.gameObject.CompareTag ("left")) {
+							if (!poisonCheck) {
+								playerState = MovePosition.Left;
+							} else {
+								playerState = MovePosition.Right;
+							}
 						}
-					}
-					if (hit.collider.gameObject.CompareTag ("right")) {
-						if (!poisonCheck) {
-							playerState = MovePosition.Right;
-						} else {
-							playerState = MovePosition.Left;
+						if (hit.collider.gameObject.CompareTag ("right")) {
+							if (!poisonCheck) {
+								playerState = MovePosition.Right;
+							} else {
+								playerState = MovePosition.Left;
+							}
 						}
+
+
+
 					}
 
-
-
+				} else {
+					playerState = MovePosition.Stay;
 				}
-
-			} else {
-				playerState = MovePosition.Stay;
 			}
-		}
+		
 
 
 

@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 779c7a95f3455474899f9fd80f898a14
+timeCreated: 1472083060
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_oto_0
+    21300002: toto_oto_1
+    21300004: toto_oto_2
+    21300006: toto_oto_3
+    21300008: toto_oto_4
+    21300010: toto_oto_5
+    21300012: toto_oto_6
+    21300014: toto_oto_7
+    21300016: toto_oto_8
+    21300018: toto_oto_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: toto_oto_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 297
+        width: 215
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107.5, y: 77}
+        - {x: 61.5, y: 103}
+        - {x: -64.5, y: 103}
+        - {x: -106.5, y: 64}
+        - {x: -106.5, y: -16}
+        - {x: -34.5, y: -103}
+        - {x: 12.5, y: -103}
+        - {x: 9.5, y: -93}
+        - {x: 106.5, y: 8}
+        - {x: 107.5, y: 10}
+    - name: toto_oto_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_oto_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 49
+        height: 62
+      alignment: 9
+      pivot: {x: 0.7867539, y: 0.8080673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.550941, y: 11.899826}
+        - {x: -38.55094, y: -16.100174}
+        - {x: -38.55094, y: -50.100174}
+        - {x: -18.550941, y: -50.100174}
+        - {x: -15.550941, y: -49.100174}
+        - {x: 10.449059, y: -10.100174}
+        - {x: 10.449059, y: 11.899826}
+    - name: toto_oto_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_oto_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 63
+        height: 221
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.0068639694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5000305, y: 219.48306}
+        - {x: -31.50003, y: 198.48306}
+        - {x: -31.50003, y: 22.483063}
+        - {x: -29.50003, y: -1.5169373}
+        - {x: 31.49997, y: -1.5169373}
+        - {x: 31.49997, y: 203.48306}
+        - {x: 12.4999695, y: 219.48306}
+    - name: toto_oto_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.11488806, y: 0.8999381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.859291, y: 5.5034027}
+        - {x: -5.859291, y: -9.496597}
+        - {x: 28.140709, y: -49.496597}
+        - {x: 45.14071, y: -49.496597}
+        - {x: 45.14071, y: -25.496597}
+        - {x: 10.140709, y: 5.5034027}
+    - name: toto_oto_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 9
+        width: 25
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5044989, y: 0.7237153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_oto_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 10
+        width: 21
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5648702, y: 0.92845494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_oto_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 34
+        height: 65
+      alignment: 9
+      pivot: {x: 0.44991526, y: 0.8816235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.702881, y: 7.6944733}
+        - {x: -12.297119, y: 7.6944733}
+        - {x: -15.297119, y: 6.6944733}
+        - {x: -15.297119, y: -57.305527}
+        - {x: 18.70288, y: -57.305527}
+        - {x: 18.70288, y: -31.305527}
+        - {x: 10.702881, y: 1.6944733}
+    - name: toto_oto_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.19265375, y: 0.86895335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.8988037, y: 7.8628006}
+        - {x: -7.8988037, y: -51.1372}
+        - {x: -3.8988037, y: -52.1372}
+        - {x: 31.101196, y: -52.1372}
+        - {x: 33.101196, y: -50.1372}
+        - {x: 33.101196, y: -32.1372}
+        - {x: 9.101196, y: 7.8628006}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

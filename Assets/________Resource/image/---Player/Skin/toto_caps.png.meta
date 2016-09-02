@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: eebf73fe2a21ba142abbf4305696c903
+timeCreated: 1471999168
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_caps_0
+    21300002: toto_caps_1
+    21300004: toto_caps_2
+    21300006: toto_caps_3
+    21300008: toto_caps_4
+    21300010: toto_caps_5
+    21300012: toto_caps_6
+    21300014: toto_caps_7
+    21300016: toto_caps_8
+    21300018: toto_caps_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: toto_caps_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 352
+        width: 228
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 62}
+        - {x: -114, y: -7}
+        - {x: -114, y: -28}
+        - {x: -112, y: -30}
+        - {x: -87, y: -60}
+        - {x: -70, y: -62}
+        - {x: 105, y: -62}
+        - {x: 114, y: -42}
+        - {x: 114, y: 59}
+        - {x: 108, y: 62}
+    - name: toto_caps_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_caps_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 49
+        height: 61
+      alignment: 9
+      pivot: {x: 0.7675644, y: 0.8457554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.610657, y: 9.40892}
+        - {x: -35.610657, y: 7.4089203}
+        - {x: -37.610657, y: -10.59108}
+        - {x: -37.610657, y: -51.59108}
+        - {x: -22.610657, y: -51.59108}
+        - {x: 11.389343, y: -13.59108}
+        - {x: 11.389343, y: 5.4089203}
+        - {x: 10.389343, y: 9.40892}
+    - name: toto_caps_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_caps_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 63
+        height: 221
+      alignment: 9
+      pivot: {x: 0.4909513, y: 0.009929881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.929932, y: 218.8055}
+        - {x: -30.929932, y: 197.8055}
+        - {x: -30.929932, y: 21.805496}
+        - {x: -28.929932, y: -2.1945038}
+        - {x: 32.07007, y: -2.1945038}
+        - {x: 32.07007, y: 202.8055}
+        - {x: 13.070068, y: 218.8055}
+    - name: toto_caps_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.11998075, y: 0.89383864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.1190186, y: 5.838875}
+        - {x: -6.1190186, y: -9.161125}
+        - {x: 27.880981, y: -49.161125}
+        - {x: 44.88098, y: -49.161125}
+        - {x: 44.88098, y: -25.161125}
+        - {x: 9.880981, y: 5.838875}
+    - name: toto_caps_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 8
+        width: 24
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5950025, y: 0.7480766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_caps_7
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 10
+        width: 20
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.90453684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_caps_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 34
+        height: 65
+      alignment: 9
+      pivot: {x: 0.46646836, y: 0.91217524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.140076, y: 5.7086105}
+        - {x: -12.859924, y: 5.7086105}
+        - {x: -15.859924, y: 4.7086105}
+        - {x: -15.859924, y: -59.29139}
+        - {x: 18.140076, y: -59.29139}
+        - {x: 18.140076, y: -33.29139}
+        - {x: 10.140076, y: -0.29138947}
+    - name: toto_caps_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.19413124, y: 0.8705191}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.959381, y: 7.768852}
+        - {x: -7.959381, y: -51.231148}
+        - {x: -3.959381, y: -52.231148}
+        - {x: 31.040619, y: -52.231148}
+        - {x: 33.04062, y: -50.231148}
+        - {x: 33.04062, y: -32.231148}
+        - {x: 9.040619, y: 7.768852}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

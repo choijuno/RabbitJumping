@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 724b2b583f4831e4c93257f7483c0739
+timeCreated: 1472181727
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cha_fox_0
+    21300002: cha_fox_1
+    21300004: cha_fox_2
+    21300006: cha_fox_3
+    21300008: cha_fox_4
+    21300010: cha_fox_6
+    21300012: cha_fox_8
+    21300014: cha_fox_9
+    21300016: cha_fox_10
+    21300018: cha_fox_11
+    21300020: cha_fox_12
+    21300022: cha_fox_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cha_fox_0
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 463
+        width: 46
+        height: 33
+      alignment: 9
+      pivot: {x: 0.53183514, y: 0.36686847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.4644165, y: 20.893341}
+        - {x: -24.464417, y: 6.893341}
+        - {x: -24.464417, y: -12.106659}
+        - {x: 9.5355835, y: -12.106659}
+        - {x: 21.535583, y: 2.893341}
+        - {x: 21.535583, y: 18.893341}
+        - {x: 18.535583, y: 20.893341}
+    - name: cha_fox_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 464
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_fox_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 303
+        width: 205
+        height: 157
+      alignment: 9
+      pivot: {x: 0.535429, y: 0.13916656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.23706, y: 131.15085}
+        - {x: 18.23706, y: 132.15085}
+        - {x: 9.237061, y: 135.15085}
+        - {x: -46.76294, y: 135.15085}
+        - {x: -64.76294, y: 134.15085}
+        - {x: -109.76294, y: 76.15085}
+        - {x: -109.76294, y: 8.150848}
+        - {x: -72.76294, y: -21.849152}
+        - {x: 40.23706, y: -21.849152}
+        - {x: 95.23706, y: 19.150848}
+        - {x: 95.23706, y: 72.15085}
+        - {x: 38.23706, y: 124.15085}
+    - name: cha_fox_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 396
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_fox_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 392
+        width: 117
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_fox_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 341
+        width: 107
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.5, y: 4}
+        - {x: -53.5, y: -19}
+        - {x: -52.5, y: -20}
+        - {x: -37.5, y: -20}
+        - {x: -34.5, y: -14}
+        - {x: -34.5, y: 2}
+        - {x: -39.5, y: 4}
+      - - {x: 48.5, y: 15}
+        - {x: 34.5, y: 15}
+        - {x: 33.5, y: 12}
+        - {x: 33.5, y: -8}
+        - {x: 37.5, y: -9}
+        - {x: 51.5, y: -9}
+        - {x: 52.5, y: -7}
+        - {x: 53.5, y: -4}
+        - {x: 53.5, y: 9}
+    - name: cha_fox_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 252
+        width: 73
+        height: 84
+      alignment: 9
+      pivot: {x: 0.6003046, y: 0.44769868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.822235, y: 46.39331}
+        - {x: -43.822235, y: 0.39331055}
+        - {x: -30.822235, y: -37.60669}
+        - {x: -15.822235, y: -37.60669}
+        - {x: 29.177765, y: 4.3933105}
+        - {x: 29.177765, y: 26.39331}
+        - {x: -2.822235, y: 46.39331}
+    - name: cha_fox_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 263
+        width: 68
+        height: 75
+      alignment: 9
+      pivot: {x: 0.456928, y: 0.40237018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.928894, y: 44.822235}
+        - {x: 3.928894, y: 44.822235}
+        - {x: -25.071106, y: 34.822235}
+        - {x: -31.071106, y: 23.822235}
+        - {x: -31.071106, y: 0.8222351}
+        - {x: -27.071106, y: -7.177765}
+        - {x: 11.928894, y: -30.177765}
+        - {x: 26.928894, y: -30.177765}
+        - {x: 36.928894, y: -1.1777649}
+        - {x: 36.928894, y: 43.822235}
+    - name: cha_fox_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 39
+        width: 127
+        height: 194
+      alignment: 9
+      pivot: {x: 0.8519287, y: 0.08859601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.19495, y: 176.81238}
+        - {x: -108.19495, y: 176.81238}
+        - {x: -108.19495, y: 46.812378}
+        - {x: -69.19495, y: 2.812378}
+        - {x: -14.194946, y: -17.187622}
+        - {x: 18.805054, y: -17.187622}
+        - {x: 18.805054, y: 88.81238}
+        - {x: 12.805054, y: 131.81238}
+    - name: cha_fox_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 40
+        width: 152
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 81.5}
+        - {x: -34, y: 81.5}
+        - {x: -76, y: 27.5}
+        - {x: -76, y: -65.5}
+        - {x: -73, y: -81.5}
+        - {x: 55, y: -81.5}
+        - {x: 76, y: -49.5}
+        - {x: 76, y: 41.5}
+        - {x: 74, y: 53.5}
+    - name: cha_fox_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 78
+        width: 37
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7745843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 14.426605}
+        - {x: -18.5, y: -33.573395}
+        - {x: -13.5, y: -49.573395}
+        - {x: 13.5, y: -49.573395}
+        - {x: 18.5, y: -44.573395}
+        - {x: 18.5, y: 13.426605}
+        - {x: 14.5, y: 14.426605}
+    - name: cha_fox_13
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 76
+        width: 37
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.79288954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 13.462181}
+        - {x: -18.5, y: 10.462181}
+        - {x: -18.5, y: -51.53782}
+        - {x: 16.5, y: -51.53782}
+        - {x: 18.5, y: -25.537819}
+        - {x: 18.5, y: 9.462181}
+        - {x: 12.5, y: 13.462181}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

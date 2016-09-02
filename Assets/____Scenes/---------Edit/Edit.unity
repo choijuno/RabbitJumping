@@ -4255,6 +4255,8 @@ MonoBehaviour:
   Controller: {fileID: 0}
   tiltOn: {fileID: 0}
   tiltOff: {fileID: 0}
+  soundOn: {fileID: 0}
+  soundOff: {fileID: 0}
 --- !u!4 &460096947
 Transform:
   m_ObjectHideFlags: 0
@@ -4478,7 +4480,7 @@ MonoBehaviour:
   monkey: {fileID: 161792, guid: 7f3f87988ed1f01448809c2032e9a136, type: 2}
   plant: {fileID: 188114, guid: ccf10ddbbd5d7ac4ca48c36865c8424e, type: 2}
   rhino: {fileID: 149564, guid: 77f6bc9e0821d9d40a791f5ad33437a6, type: 2}
-  tree: {fileID: 162536, guid: c7d55f7421ceea740bcf4d4c805b1fa4, type: 2}
+  tree: {fileID: 121544, guid: c73328b54d8554f4f9975deee5f5d32d, type: 2}
   tree_R: {fileID: 162536, guid: 6140426d64ea47044889e230c0887bc8, type: 2}
   hedgedog: {fileID: 186896, guid: f35b88ac3b1cc614aa770131a3028ff2, type: 2}
   crocodile: {fileID: 128124, guid: 0c93eb7958236b94e9fadbe609232e6e, type: 2}
@@ -4494,6 +4496,8 @@ MonoBehaviour:
   hawk: {fileID: 159826, guid: dce126e748c28454591a76e443f35bec, type: 2}
   Cage: {fileID: 199842, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
   ClearPoint: {fileID: 189584, guid: 048a7ea2cabaca74cab983fbb3941c01, type: 2}
+  Map_L: {fileID: 111434, guid: e2e1d451215ea9741b6174ade531dc5b, type: 2}
+  Map_R: {fileID: 120228, guid: ad7d1643d301c68478afe4096dd1dbf7, type: 2}
 --- !u!1 &471979224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6623,7 +6627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13b606121ef67441a6b027129b97f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 0}
+  playerBody: {fileID: 663604558}
   basePos: {fileID: 487670608}
   loadManager: {fileID: 468541976}
   OpenPanel: {fileID: 0}
@@ -8797,7 +8801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13b606121ef67441a6b027129b97f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 0}
+  playerBody: {fileID: 663604558}
   basePos: {fileID: 487670608}
   loadManager: {fileID: 468541976}
   OpenPanel: {fileID: 0}
@@ -9985,7 +9989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: gameManager
@@ -13072,7 +13076,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496418, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 178446, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_Name
@@ -13133,7 +13137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13b606121ef67441a6b027129b97f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 0}
+  playerBody: {fileID: 663604558}
   basePos: {fileID: 0}
   loadManager: {fileID: 468541976}
   OpenPanel: {fileID: 313680212}
@@ -18055,7 +18059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13b606121ef67441a6b027129b97f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 0}
+  playerBody: {fileID: 663604558}
   basePos: {fileID: 487670608}
   loadManager: {fileID: 468541976}
   OpenPanel: {fileID: 0}

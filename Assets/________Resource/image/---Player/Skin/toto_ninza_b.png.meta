@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 04e5da544b7fcaa4eb54bface0eff215
+timeCreated: 1472000495
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_ninza_b_0
+    21300002: toto_ninza_b_2
+    21300004: toto_ninza_b_4
+    21300006: toto_ninza_b_5
+    21300008: toto_ninza_b_6
+    21300010: toto_ninza_b_7
+    21300012: toto_ninza_b_8
+    21300014: toto_ninza_b_9
+    21300016: toto_ninza_b_10
+    21300018: toto_ninza_b_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: toto_ninza_b_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 200
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: -34.5}
+        - {x: -87, y: -49.5}
+        - {x: -88, y: -50.5}
+        - {x: -88, y: -60.5}
+        - {x: -57, y: -94.5}
+        - {x: -25, y: -104.5}
+        - {x: 50, y: -104.5}
+        - {x: 96, y: -62.5}
+        - {x: 96, y: -44.5}
+        - {x: 61, y: -34.5}
+      - - {x: -65, y: 106.5}
+        - {x: -100, y: 64.5}
+        - {x: -100, y: -12.5}
+        - {x: -80, y: -12.5}
+        - {x: 100, y: 11.5}
+        - {x: 100, y: 81.5}
+        - {x: 45, y: 106.5}
+    - name: toto_ninza_b_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_ninza_b_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 133
+        width: 63
+        height: 222
+      alignment: 9
+      pivot: {x: 0.5, y: 0.018865842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 217.81178}
+        - {x: -31.5, y: 196.81178}
+        - {x: -31.5, y: -4.188217}
+        - {x: 16.5, y: -4.188217}
+        - {x: 31.5, y: 12.811783}
+        - {x: 31.5, y: 216.81178}
+        - {x: 28.5, y: 217.81178}
+    - name: toto_ninza_b_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 49
+        height: 62
+      alignment: 9
+      pivot: {x: 0.7369385, y: 0.8183382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.109985, y: 11.263031}
+        - {x: -21.109985, y: 2.263031}
+        - {x: -35.109985, y: -28.736969}
+        - {x: -36.109985, y: -32.73697}
+        - {x: -36.109985, y: -50.73697}
+        - {x: -20.109985, y: -50.73697}
+        - {x: 12.890015, y: -8.736969}
+        - {x: 12.890015, y: 5.263031}
+        - {x: 9.890015, y: 11.263031}
+    - name: toto_ninza_b_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_ninza_b_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.113412, y: 0.9003113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.784012, y: 5.4828796}
+        - {x: -5.784012, y: -9.51712}
+        - {x: 28.215988, y: -49.51712}
+        - {x: 45.21599, y: -49.51712}
+        - {x: 45.21599, y: -25.51712}
+        - {x: 10.215988, y: 5.4828796}
+    - name: toto_ninza_b_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 24
+        height: 76
+      alignment: 9
+      pivot: {x: 0.4758123, y: 0.6038265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_ninza_b_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 10
+        width: 20
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5440155, y: 0.90095925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_ninza_b_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 34
+        height: 65
+      alignment: 9
+      pivot: {x: 0.41463247, y: 0.84829944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.902496, y: 9.860535}
+        - {x: -11.097504, y: 9.860535}
+        - {x: -14.097504, y: 8.860535}
+        - {x: -14.097504, y: -55.139465}
+        - {x: 19.902496, y: -55.139465}
+        - {x: 19.902496, y: -29.139465}
+        - {x: 11.902496, y: 3.8605347}
+    - name: toto_ninza_b_11
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.18851304, y: 0.8482994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.7290344, y: 9.1020355}
+        - {x: -7.7290344, y: -49.897964}
+        - {x: -3.7290344, y: -50.897964}
+        - {x: 31.270966, y: -50.897964}
+        - {x: 33.270966, y: -48.897964}
+        - {x: 33.270966, y: -30.897964}
+        - {x: 9.270966, y: 9.1020355}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

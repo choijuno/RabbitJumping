@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: a46ba77d0bc18824eb0e8c59fbdbe5ef
+timeCreated: 1472019952
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_jump elephant_0
+    21300002: ob_jump elephant_1
+    21300004: ob_jump elephant_2
+    21300006: ob_jump elephant_3
+    21300008: ob_jump elephant_4
+    21300010: ob_jump elephant_5
+    21300012: ob_jump elephant_6
+    21300014: ob_jump elephant_7
+    21300016: ob_jump elephant_8
+    21300018: ob_jump elephant_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ob_jump elephant_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 462
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ob_jump elephant_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 454
+        width: 222
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11836595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -69, y: 34.383728}
+        - {x: -111, y: 13.383728}
+        - {x: -111, y: -4.616272}
+        - {x: 110, y: -4.616272}
+        - {x: 111, y: -2.616272}
+        - {x: 111, y: 34.383728}
+    - name: ob_jump elephant_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 312
+        width: 83
+        height: 104
+      alignment: 9
+      pivot: {x: 0.6992466, y: 0.8339298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.037468, y: 17.271301}
+        - {x: -58.037468, y: -16.728699}
+        - {x: -58.037468, y: -72.7287}
+        - {x: -42.037468, y: -86.7287}
+        - {x: 3.962532, y: -86.7287}
+        - {x: 10.962532, y: -84.7287}
+        - {x: 24.962532, y: -72.7287}
+        - {x: 24.962532, y: 17.271301}
+    - name: ob_jump elephant_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 338
+        width: 43
+        height: 47
+      alignment: 9
+      pivot: {x: 0.8461329, y: 0.64074445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.6162872, y: 16.88501}
+        - {x: -0.38371277, y: 8.88501}
+        - {x: -36.383713, y: -9.11499}
+        - {x: -36.383713, y: -26.11499}
+        - {x: -34.383713, y: -30.11499}
+        - {x: -13.383713, y: -30.11499}
+        - {x: 6.616287, y: -23.11499}
+        - {x: 6.616287, y: 16.88501}
+    - name: ob_jump elephant_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 220
+        width: 265
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 132.5, y: -33.5}
+        - {x: 132.5, y: 0.5}
+        - {x: 127.5, y: 30.5}
+        - {x: 104.5, y: 70.5}
+        - {x: 98.5, y: 75.5}
+        - {x: 65.5, y: 88.5}
+        - {x: -111.5, y: 88.5}
+        - {x: -132.5, y: 53.5}
+        - {x: -132.5, y: -19.5}
+        - {x: -114.5, y: -60.5}
+        - {x: -64.5, y: -88.5}
+        - {x: 4.5, y: -88.5}
+        - {x: 46.5, y: -84.5}
+        - {x: 91.5, y: -87.5}
+        - {x: 112.5, y: -86.5}
+        - {x: 121.5, y: -68.5}
+    - name: ob_jump elephant_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 219
+        width: 99
+        height: 62
+      alignment: 9
+      pivot: {x: 0.21602327, y: 0.4733264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.386303, y: 32.653763}
+        - {x: -21.386303, y: 3.6537628}
+        - {x: -21.386303, y: -15.346237}
+        - {x: -1.386303, y: -29.346237}
+        - {x: 47.613697, y: -29.346237}
+        - {x: 71.61369, y: -17.346237}
+        - {x: 77.61369, y: -8.346237}
+        - {x: 77.61369, y: 32.653763}
+    - name: ob_jump elephant_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 33
+        width: 80
+        height: 128
+      alignment: 9
+      pivot: {x: 0.25193805, y: 0.75839794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30.844955, y: 19.925064}
+        - {x: 17.844955, y: 23.925064}
+        - {x: 13.844955, y: 23.925064}
+        - {x: 21.844955, y: 23.925064}
+        - {x: 27.844955, y: 20.925064}
+        - {x: 30.844955, y: 20.925064}
+        - {x: 33.844955, y: 23.925064}
+        - {x: 29.844955, y: 30.925064}
+        - {x: -20.155045, y: 30.925064}
+        - {x: -20.155045, y: -97.074936}
+        - {x: 59.844955, y: -97.074936}
+        - {x: 59.844955, y: -29.074936}
+        - {x: 55.844955, y: 0.9250641}
+    - name: ob_jump elephant_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 39
+        width: 81
+        height: 128
+      alignment: 9
+      pivot: {x: 0.37750018, y: 0.7713177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.422485, y: 4.271332}
+        - {x: 21.422485, y: 17.271332}
+        - {x: 15.422485, y: 20.271332}
+        - {x: 10.422485, y: 22.271332}
+        - {x: 20.422485, y: 19.271332}
+        - {x: 22.422485, y: 21.271332}
+        - {x: 24.422485, y: 24.271332}
+        - {x: 20.422485, y: 29.271332}
+        - {x: -17.577515, y: 29.271332}
+        - {x: -30.577515, y: 26.271332}
+        - {x: -30.577515, y: -66.72867}
+        - {x: -20.577515, y: -98.72867}
+        - {x: 50.422485, y: -98.72867}
+        - {x: 50.422485, y: -17.728668}
+    - name: ob_jump elephant_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 48
+        width: 72
+        height: 97
+      alignment: 9
+      pivot: {x: 0.29328156, y: 0.7386852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.116272, y: -16.652466}
+        - {x: 2.883728, y: -71.652466}
+        - {x: 36.883728, y: -71.652466}
+        - {x: 50.883728, y: -69.652466}
+        - {x: 50.883728, y: -25.652466}
+        - {x: 46.883728, y: 8.347534}
+        - {x: 9.883728, y: 25.347534}
+        - {x: -19.116272, y: 25.347534}
+        - {x: -21.116272, y: 21.347534}
+    - name: ob_jump elephant_9
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 42
+        width: 72
+        height: 95
+      alignment: 9
+      pivot: {x: 0.24734412, y: 0.7785258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.191223, y: 21.040047}
+        - {x: -17.808777, y: 21.040047}
+        - {x: -17.808777, y: -57.959953}
+        - {x: 6.191223, y: -73.95995}
+        - {x: 54.191223, y: -73.95995}
+        - {x: 54.191223, y: -51.959953}
+        - {x: 46.191223, y: 1.0400467}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

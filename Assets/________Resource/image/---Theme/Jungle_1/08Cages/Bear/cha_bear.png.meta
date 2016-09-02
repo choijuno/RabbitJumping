@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: 9a7d48be63813cf4591bfef824b17db9
+timeCreated: 1472182327
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cha_bear_0
+    21300002: cha_bear_1
+    21300004: cha_bear_2
+    21300006: cha_bear_3
+    21300008: cha_bear_4
+    21300010: cha_bear_5
+    21300012: cha_bear_6
+    21300014: cha_bear_7
+    21300016: cha_bear_8
+    21300018: cha_bear_9
+    21300020: cha_bear_10
+    21300022: cha_bear_11
+    21300024: cha_bear_12
+    21300026: cha_bear_13
+    21300028: cha_bear_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cha_bear_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 411
+        width: 71
+        height: 78
+      alignment: 9
+      pivot: {x: 0.75621444, y: 0.39399055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49.691223, y: 47.268738}
+        - {x: -53.691223, y: 46.268738}
+        - {x: -53.691223, y: -25.731262}
+        - {x: -45.691223, y: -30.731262}
+        - {x: 6.308777, y: -30.731262}
+        - {x: 12.308777, y: -29.731262}
+        - {x: 17.308777, y: -22.731262}
+        - {x: 17.308777, y: 47.268738}
+    - name: cha_bear_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 424
+        width: 66
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5250568, y: 0.30040976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.653748, y: 40.576233}
+        - {x: -34.653748, y: 36.576233}
+        - {x: -34.653748, y: -17.423767}
+        - {x: 31.346252, y: -17.423767}
+        - {x: 31.346252, y: 27.576233}
+        - {x: 27.346252, y: 40.576233}
+    - name: cha_bear_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 203
+        width: 200
+        height: 183
+      alignment: 9
+      pivot: {x: 0.5413437, y: 0.17467278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.731262, y: 136.03488}
+        - {x: 25.731262, y: 151.03488}
+        - {x: -40.268738, y: 151.03488}
+        - {x: -76.26874, y: 135.03488}
+        - {x: -105.26874, y: 111.03488}
+        - {x: -108.26874, y: 93.03488}
+        - {x: -108.26874, y: 22.034882}
+        - {x: -92.26874, y: 1.0348816}
+        - {x: -65.26874, y: -31.965118}
+        - {x: 45.731262, y: -31.965118}
+        - {x: 91.73126, y: 11.034882}
+        - {x: 91.73126, y: 101.03488}
+        - {x: 86.73126, y: 119.03488}
+    - name: cha_bear_3
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 316
+        width: 59
+        height: 80
+      alignment: 9
+      pivot: {x: 0.44394076, y: 0.85142136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.807495, y: 11.8862915}
+        - {x: -16.192505, y: 11.8862915}
+        - {x: -22.192505, y: 10.8862915}
+        - {x: -26.192505, y: -0.113708496}
+        - {x: -26.192505, y: -68.11371}
+        - {x: 32.807495, y: -68.11371}
+        - {x: 32.807495, y: -22.113708}
+        - {x: 26.807495, y: 8.8862915}
+    - name: cha_bear_4
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 312
+        width: 59
+        height: 81
+      alignment: 9
+      pivot: {x: 0.41591114, y: 0.8266658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.538757, y: 14.04007}
+        - {x: -24.538757, y: 5.0400696}
+        - {x: -24.538757, y: -57.95993}
+        - {x: -18.538757, y: -66.95993}
+        - {x: 34.461243, y: -66.95993}
+        - {x: 34.461243, y: 14.04007}
+    - name: cha_bear_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 215
+        width: 54
+        height: 54
+      alignment: 9
+      pivot: {x: 0.6424182, y: 0.15582304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.690582, y: 45.585556}
+        - {x: -34.690582, y: 43.585556}
+        - {x: -34.690582, y: -4.414444}
+        - {x: -25.690582, y: -8.414444}
+        - {x: 13.309418, y: -8.414444}
+        - {x: 19.309418, y: 0.58555603}
+        - {x: 19.309418, y: 35.585556}
+        - {x: 11.309418, y: 45.585556}
+    - name: cha_bear_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 235
+        width: 22
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5291318, y: 0.30946845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_bear_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 226
+        width: 50
+        height: 47
+      alignment: 9
+      pivot: {x: 0.79767454, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.883728, y: 23.5}
+        - {x: -39.883728, y: 17.5}
+        - {x: -39.883728, y: -15.5}
+        - {x: -31.883728, y: -23.5}
+        - {x: 1.116272, y: -23.5}
+        - {x: 10.116272, y: -13.5}
+        - {x: 10.116272, y: 15.5}
+        - {x: 0.11627197, y: 23.5}
+    - name: cha_bear_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 40
+        width: 116
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 66.5}
+        - {x: -44, y: 62.5}
+        - {x: -58, y: -2.5}
+        - {x: -58, y: -53.5}
+        - {x: -47, y: -66.5}
+        - {x: 31, y: -66.5}
+        - {x: 58, y: -50.5}
+        - {x: 58, y: 36.5}
+        - {x: 44, y: 66.5}
+    - name: cha_bear_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 107
+        width: 72
+        height: 89
+      alignment: 9
+      pivot: {x: 0.3392192, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.423782, y: 44.499985}
+        - {x: -24.423782, y: 13.499985}
+        - {x: -24.423782, y: -27.500015}
+        - {x: -19.423782, y: -44.500015}
+        - {x: 30.576218, y: -44.500015}
+        - {x: 47.576218, y: -40.500015}
+        - {x: 47.576218, y: 39.499985}
+        - {x: 35.576218, y: 44.499985}
+    - name: cha_bear_10
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 108
+        width: 68
+        height: 89
+      alignment: 9
+      pivot: {x: 0.3540811, y: 0.5371627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.922485, y: 41.19252}
+        - {x: -24.077515, y: 41.19252}
+        - {x: -24.077515, y: -47.80748}
+        - {x: 17.922485, y: -47.80748}
+        - {x: 43.922485, y: -35.80748}
+        - {x: 43.922485, y: 21.19252}
+        - {x: 33.922485, y: 35.19252}
+    - name: cha_bear_11
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 140
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.9452397, y: 0.7583971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_bear_12
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 35
+        width: 48
+        height: 42
+      alignment: 9
+      pivot: {x: 0.43109384, y: 0.5393743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.692505, y: 19.34628}
+        - {x: -20.692505, y: 11.346279}
+        - {x: -20.692505, y: -22.65372}
+        - {x: 1.3074951, y: -22.65372}
+        - {x: 10.307495, y: -20.65372}
+        - {x: 27.307495, y: 0.34627914}
+        - {x: 27.307495, y: 19.34628}
+    - name: cha_bear_13
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 50
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cha_bear_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 44
+        width: 49
+        height: 64
+      alignment: 9
+      pivot: {x: 0.66874915, y: 0.70671797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.768707, y: -37.22995}
+        - {x: -28.768707, y: -45.22995}
+        - {x: -1.7687073, y: -45.22995}
+        - {x: 16.231293, y: -31.22995}
+        - {x: 16.231293, y: 18.77005}
+        - {x: -12.768707, y: 18.77005}
+        - {x: -32.768707, y: -12.22995}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
