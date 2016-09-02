@@ -565,13 +565,11 @@ public class selectManager : MonoBehaviour {
     {
         if (GoogleManager.GetInstance.bLogin)
         {
-            GoogleBtnOff.gameObject.SetActive(false);
-            GoogleBtnOn.gameObject.SetActive(true);
+            
         }
         else
         {
-            GoogleBtnOn.gameObject.SetActive(false);
-            GoogleBtnOff.gameObject.SetActive(true);
+            
         }
     }
     void GoogleBtnFunc(int googleOnOff)
@@ -581,11 +579,15 @@ public class selectManager : MonoBehaviour {
         {
             Debug.Log("----로그인----");
             GoogleManager.GetInstance.LogoutGPGS();
+            GoogleBtnOff.gameObject.SetActive(true);
+            GoogleBtnOn.gameObject.SetActive(false);
         }
         else
         {
             Debug.Log("---비로그인----");
             GoogleManager.GetInstance.LoginGPGS();
+            GoogleBtnOn.gameObject.SetActive(true);
+            GoogleBtnOff.gameObject.SetActive(false);
         }
     }
 }
