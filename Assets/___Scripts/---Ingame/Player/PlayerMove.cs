@@ -556,7 +556,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("ride"))
                 {
-                    GetComponent<PlayerController>().moveStopCheck = true;
+                    
                     switch (obj.name.Substring(0, 4))
                     {
                         case "elep":
@@ -574,6 +574,7 @@ public class PlayerMove : MonoBehaviour {
                             }
                             break;
                         case "hawk":
+					GetComponent<PlayerController>().moveStopCheck = true;
                             bounce = Bouncy.ride;
                             MaxHeight_in = transform.position.y + MaxHeight * 0.3f;
                             Camera_ingame.GetComponent<GameCamera>().riding = true;

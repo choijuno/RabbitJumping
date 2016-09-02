@@ -80,6 +80,7 @@ public class GameCamera : MonoBehaviour {
 				}
 
 			} else {
+				Debug.Log (direction);
 				waitTime_in = waitTime_in - Time.deltaTime;
 				if (waitTime_in <= 0) {
 					switch (direction) {

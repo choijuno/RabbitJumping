@@ -93,7 +93,7 @@ public class UI_Gage : MonoBehaviour {
 
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
-			Debug.Log ("endPos : " + EndPos + " // CharacterPos : " + (playerBody.transform.position.x + chaStartPos));
+			//Debug.Log ("endPos : " + EndPos + " // CharacterPos : " + (playerBody.transform.position.x + chaStartPos));
 			gage_bar.fillAmount = (playerBody.transform.position.x + chaStartPos)  / (chaEndPos + chaStartPos);
 			chaPos = gage_bar.fillAmount * chaMax;
 			gage_Character.transform.localPosition = new Vector3 (StartPos.transform.localPosition.x + chaPos -6f , gage_Character.transform.localPosition.y, gage_Character.transform.localPosition.z );

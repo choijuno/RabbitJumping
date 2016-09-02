@@ -158,7 +158,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/tlghk/Desktop/Jumpx_limsihwan/RealKey.keystore
+  AndroidKeystoreName: "D:/\uCD5C\uC900\uC624/programing/projects/JumpX/RealKey.keystore"
   AndroidKeyaliasName: realkey
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
