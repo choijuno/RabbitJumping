@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/____Scenes/-Game/---Main/MainScene.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/____Scenes/-Game/---Main/LoadingScene.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/____Scenes/-Game/---Main/SelectScene.unity
   - enabled: 1
     path: Assets/____Scenes/-Game/---Ingame/TestGame.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/____Scenes/AutoLight/TestMain.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/____Scenes/-Game/---Main/CreateUnitScene.unity
   - enabled: 0
     path: Assets/____Scenes/-Game/---Main/TestBuyItem.unity
