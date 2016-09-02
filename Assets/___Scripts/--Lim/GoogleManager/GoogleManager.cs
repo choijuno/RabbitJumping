@@ -206,7 +206,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             return;
         }
         ILeaderboard lb = Social.CreateLeaderboard();
-        lb.id = GPGS.LeaderBoardTest;
+        lb.id =  GPGS.LeaderBoardTest;
         lb.LoadScores(ok =>
         {
             if (ok)
@@ -340,8 +340,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
         if (!Social.localUser.authenticated)
             Social.localUser.Authenticate(LoginCallBackGPGS);
     }
-
-    public void LoginCallBackGPGS(bool result) //로그인
+    void LoginCallBackGPGS(bool result) //로그인
     {
         bLogin = result;
     }
@@ -354,7 +353,6 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             bLogin = false;
         }
     }
-
     public Texture2D GetImageGPGS() //내 이미지
     {
         if (Social.localUser.authenticated)
