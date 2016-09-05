@@ -4,6 +4,8 @@ using System.Collections;
 public class Elephant : MonoBehaviour {
 	public elephantStatus stat = elephantStatus.stay;
 
+	public Animator thisAni;
+
 	public GameObject Pos;
 	public GameObject elephantCollider;
 	public GameObject attCollider;
@@ -23,6 +25,9 @@ public class Elephant : MonoBehaviour {
 
 	void Update () {
 		if (stat == elephantStatus.wait) {
+
+			thisAni.SetTrigger ("wait");
+
 			stat = elephantStatus.not;
 			elephantCollider.SetActive (false);
 			StartCoroutine ("wait");
@@ -36,6 +41,7 @@ public class Elephant : MonoBehaviour {
 			waitTime_in = waitTime_in - Time.deltaTime;
 			if (waitTime_in <= 0) {
 				waitTime_in = 0;
+				thisAni.SetTrigger ("run");
 				StartCoroutine ("att");
 				StopCoroutine ("wait");
 			}
@@ -61,7 +67,7 @@ public class Elephant : MonoBehaviour {
 		waitTime_in = 5;
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
-			transform.position = new Vector3 (transform.position.x + runSpeed_in * 2.5f, transform.position.y, transform.position.z);
+			transform.position = new Vector3 (transform.position.x + runSpeed_in * 1.5f, transform.position.y, transform.position.z);
 
 			waitTime_in = waitTime_in - Time.deltaTime;
 			if (waitTime_in <= 0) {

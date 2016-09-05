@@ -2874,6 +2874,8 @@ MonoBehaviour:
   hawk: {fileID: 159826, guid: dce126e748c28454591a76e443f35bec, type: 2}
   Cage: {fileID: 199842, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
   ClearPoint: {fileID: 189584, guid: 048a7ea2cabaca74cab983fbb3941c01, type: 2}
+  Map_L: {fileID: 111434, guid: e2e1d451215ea9741b6174ade531dc5b, type: 2}
+  Map_R: {fileID: 120228, guid: ad7d1643d301c68478afe4096dd1dbf7, type: 2}
 --- !u!4 &63598158
 Transform:
   m_ObjectHideFlags: 0

@@ -71,6 +71,8 @@ public class LoadManager : MonoBehaviour {
 
 	//99Pos
 	public GameObject ClearPoint;
+	public GameObject Map_L;
+	public GameObject Map_R;
 
 	GameObject _tmp;
 
@@ -318,8 +320,15 @@ public class LoadManager : MonoBehaviour {
 						_tmp = (GameObject)Instantiate (Cage, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 
+				//09Pos
 					case "1990021":
 						_tmp = (GameObject)Instantiate (ClearPoint, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1990051":
+						_tmp = (GameObject)Instantiate (Map_L, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1990052":
+						_tmp = (GameObject)Instantiate (Map_R, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					}
 

@@ -259,6 +259,7 @@ public class PlayerMove : MonoBehaviour {
 		transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y, 0);
 		rideTime_in = rideTime_in - Time.deltaTime;
 		if (rideTime_in <= 0) {
+			Camera_ingame.GetComponent<GameCamera> ().direction = 1;
 			GetComponent<PlayerController> ().moveStopCheck = false;
 			Camera_ingame.GetComponent<GameCamera> ().riding = false;
 			transform.parent = null;
@@ -389,6 +390,9 @@ public class PlayerMove : MonoBehaviour {
                 {
 				GetComponent<PlayerController>().moveStopCheck = true;
 				_anim.SetBool ("DropCheck", false);
+
+
+				Camera_ingame.GetComponent<GameCamera> ().direction = 2;
                     switch (obj.name.Substring(0, 4))
                     {
                         case "elep":
@@ -399,9 +403,9 @@ public class PlayerMove : MonoBehaviour {
                                 Camera_ingame.GetComponent<GameCamera>().riding = true;
                                 Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Elephant>().waitTime;
                                 Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Elephant>().runSpeed * 0.001f;
-                                rideTime_in = obj.transform.parent.GetComponent<Elephant>().runTime;
-                                transform.parent = obj.transform.parent.transform;
-                                transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Elephant>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Elephant>().Pos.transform.localPosition.y, 0);
+								rideTime_in = obj.transform.parent.GetComponent<Elephant>().runTime;
+								transform.parent = obj.transform.parent.GetComponent<Elephant>().Pos.transform;
+                                transform.localPosition = new Vector3(0, 0, 0);
                                 obj.transform.parent.GetComponent<Elephant>().stat = elephantStatus.wait;
                             }
                             break;
@@ -556,7 +560,8 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("ride"))
                 {
-                    
+				
+				
                     switch (obj.name.Substring(0, 4))
                     {
                         case "elep":
@@ -568,13 +573,14 @@ public class PlayerMove : MonoBehaviour {
                                 Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Elephant>().waitTime;
                                 Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Elephant>().runSpeed * 0.001f;
                                 rideTime_in = obj.transform.parent.GetComponent<Elephant>().runTime;
-                                transform.parent = obj.transform.parent.transform;
-                                transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Elephant>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Elephant>().Pos.transform.localPosition.y, 0);
+								transform.parent = obj.transform.parent.GetComponent<Elephant>().Pos.transform;
+                                transform.localPosition = new Vector3(0, 0, 0);
                                 obj.transform.parent.GetComponent<Elephant>().stat = elephantStatus.wait;
                             }
                             break;
                         case "hawk":
 					GetComponent<PlayerController>().moveStopCheck = true;
+					Camera_ingame.GetComponent<GameCamera> ().direction = 2;
                             bounce = Bouncy.ride;
                             MaxHeight_in = transform.position.y + MaxHeight * 0.3f;
                             Camera_ingame.GetComponent<GameCamera>().riding = true;

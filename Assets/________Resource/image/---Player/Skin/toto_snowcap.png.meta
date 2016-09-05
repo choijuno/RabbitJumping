@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 3657f00e4bf859f4083524fd1e7dfec1
+timeCreated: 1472083489
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: toto_snowcap_0
+    21300002: toto_snowcap_1
+    21300004: toto_snowcap_2
+    21300006: toto_snowcap_3
+    21300008: toto_snowcap_4
+    21300010: toto_snowcap_5
+    21300012: toto_snowcap_6
+    21300014: toto_snowcap_7
+    21300016: toto_snowcap_8
+    21300018: toto_snowcap_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: toto_snowcap_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 315
+        width: 199
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 99.5, y: -22.5}
+        - {x: 99.5, y: 50.5}
+        - {x: 39.5, y: 83.5}
+        - {x: -16.5, y: 98.5}
+        - {x: -50.5, y: 98.5}
+        - {x: -92.5, y: 36.5}
+        - {x: -99.5, y: 15.5}
+        - {x: -99.5, y: -43.5}
+        - {x: -57.5, y: -98.5}
+        - {x: -31.5, y: -98.5}
+        - {x: -25.5, y: -89.5}
+        - {x: -26.5, y: -82.5}
+        - {x: -28.5, y: -77.5}
+    - name: toto_snowcap_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 407
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_snowcap_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 49
+        height: 61
+      alignment: 9
+      pivot: {x: 0.77220744, y: 0.8592249}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.838165, y: 8.58728}
+        - {x: -35.838165, y: 6.5872803}
+        - {x: -37.838165, y: -11.41272}
+        - {x: -37.838165, y: -52.41272}
+        - {x: -22.838165, y: -52.41272}
+        - {x: 11.161835, y: -14.41272}
+        - {x: 11.161835, y: 4.5872803}
+        - {x: 10.161835, y: 8.58728}
+    - name: toto_snowcap_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 99
+        width: 192
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 58.5}
+        - {x: 47, y: 94.5}
+        - {x: -34, y: 94.5}
+        - {x: -67, y: 85.5}
+        - {x: -96, y: 55.5}
+        - {x: -96, y: -49.5}
+        - {x: -85, y: -62.5}
+        - {x: -48, y: -94.5}
+        - {x: 37, y: -94.5}
+        - {x: 64, y: -88.5}
+        - {x: 88, y: -60.5}
+        - {x: 96, y: -34.5}
+        - {x: 96, y: 50.5}
+    - name: toto_snowcap_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 63
+        height: 221
+      alignment: 9
+      pivot: {x: 0.50735134, y: 0.011747196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.963135, y: 218.40387}
+        - {x: -31.963135, y: 197.40387}
+        - {x: -31.963135, y: 21.40387}
+        - {x: -29.963135, y: -2.5961304}
+        - {x: 31.036865, y: -2.5961304}
+        - {x: 31.036865, y: 202.40387}
+        - {x: 12.036865, y: 218.40387}
+    - name: toto_snowcap_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.11392795, y: 0.8810909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.8103256, y: 6.540001}
+        - {x: -5.8103256, y: -8.459999}
+        - {x: 28.189674, y: -48.46}
+        - {x: 45.189674, y: -48.46}
+        - {x: 45.189674, y: -24.46}
+        - {x: 10.189674, y: 6.540001}
+    - name: toto_snowcap_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 9
+        width: 25
+        height: 66
+      alignment: 9
+      pivot: {x: 0.55081236, y: 0.79351676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_snowcap_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 10
+        width: 21
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5604902, y: 0.8892863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toto_snowcap_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 8
+        width: 38
+        height: 67
+      alignment: 9
+      pivot: {x: 0.40807062, y: 0.87919444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.506683, y: -58.90603}
+        - {x: 22.493317, y: -58.90603}
+        - {x: 22.493317, y: -33.90603}
+        - {x: 9.493317, y: 8.093971}
+        - {x: -13.506683, y: 8.093971}
+        - {x: -15.506683, y: 3.0939713}
+    - name: toto_snowcap_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 43
+        height: 60
+      alignment: 9
+      pivot: {x: 0.19719607, y: 0.8705049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.520569, y: 7.7697067}
+        - {x: -6.479431, y: 7.7697067}
+        - {x: -8.479431, y: 5.7697067}
+        - {x: -8.479431, y: -47.230293}
+        - {x: -2.4794312, y: -52.230293}
+        - {x: 34.52057, y: -52.230293}
+        - {x: 34.52057, y: -29.230293}
+        - {x: 10.520569, y: 2.7697067}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
