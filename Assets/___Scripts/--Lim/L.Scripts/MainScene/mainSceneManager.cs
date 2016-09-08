@@ -32,14 +32,10 @@ public class mainSceneManager : MonoBehaviour {
 	void startBtnFunc()
     {
         SceneIndex = 1;
-        Panel.gameObject.SetActive(true);
-        StartCoroutine(waitLoad());
+        SceneManager.LoadScene(1);
+        
     }
-    IEnumerator waitLoad()
-    {
-        yield return new WaitForSeconds(0.6f);
-        SceneManager.LoadScene(2);
-    }
+    
     void faceBookBtnFunc() //구글
     {
         GoogleManager.GetInstance.InitializeGPGS();

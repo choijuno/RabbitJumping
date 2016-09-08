@@ -104,7 +104,7 @@ public class DataSave : MonoBehaviour {
             DestroyImmediate(this.gameObject);
         }
     }
-    public void saveData(float stageIndex, float starCount, float stageRecord)
+    public void saveData(int stageIndex, float starCount, float stageRecord)
     {
         Debug.Log("-------stageindex-----" + stageIndex);
 
@@ -119,16 +119,16 @@ public class DataSave : MonoBehaviour {
         ES2.Save(test, "ValueKey" + stageIndex.ToString());
 
 
-        if (ES2.Exists("stageCount"))
+        if (ES2.Exists("stageIndexCount"))
         {
-            if (ES2.Load<float>("stageCount") < stageIndex)
+            if (ES2.Load<int>("stageIndexCount") < stageIndex)
             {
-                ES2.Save(stageIndex, "stageCount");
+                ES2.Save<int>(stageIndex, "stageIndexCount");
             }
         }
         else
         {
-            ES2.Save(stageIndex, "stageCount");
+            ES2.Save<int>(stageIndex, "stageIndexCount");
         }
     }
 }

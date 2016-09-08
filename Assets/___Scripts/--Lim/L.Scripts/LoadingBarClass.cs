@@ -40,11 +40,12 @@ public class LoadingBarClass : MonoBehaviour {
 
         while (loadingBar.fillAmount >= 0.5f)
         {
-            loadingBar.fillAmount += 0.0001f;
+            loadingBar.fillAmount += 0.001f;
 
             yield return null;
             
         }
+
         loadingchk = true;
         if (loadingchk == true)
         {

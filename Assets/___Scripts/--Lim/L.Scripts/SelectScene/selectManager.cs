@@ -22,34 +22,35 @@ public class selectManager : MonoBehaviour {
 
     public Canvas UiCanvas;
 
-    Button shopBtn;
-    Button MyBtn;
-    Button rangkingBtn;
-    Button tropyBtn;
-    Button setupBtn;
+    public Button shopBtn;
+    public Button MyBtn;
+    public Button rangkingBtn;
+    public Button tropyBtn;
+    public Button setupBtn;
 
-    Button myRoomBtn;
-    Button storeBtn;
+    public Button myRoomBtn;
+    public Button storeBtn;
     //상점
-    GameObject storeAndRoom;
-    GameObject myRoom;
-    GameObject store;
-    Button storeRoomExit;
+    public GameObject storeAndRoom;
+    public GameObject myRoom;
+    public GameObject store;
 
-    Button greenBoxBtn;
-    Button redBoxBtn;
-    Button blueBoxBtn;
+    public Button storeRoomExit;
+
+    public Button greenBoxBtn;
+    public Button redBoxBtn;
+    public Button blueBoxBtn;
 
     EventSystem eventSystem;
 
-    Text gameMoney;
-    Text bosukMoney;
+    public Text gameMoney;
+    public Text bosukMoney;
 
     //마이룸.
-    GameObject cha_selectUi;
-    GameObject cha_btnAll;
-    GameObject empty_panel;
-    GameObject cha_scrollpanel;
+    public GameObject cha_selectUi;
+    public GameObject cha_btnAll;
+    public GameObject empty_panel;
+    public GameObject cha_scrollpanel;
     public Image[] chaArray = new Image[10];
     public Sprite[] nonImg = new Sprite[10];
     public Sprite[] okImg = new Sprite[10];
@@ -57,52 +58,59 @@ public class selectManager : MonoBehaviour {
     public GameObject[] cha_Array = new GameObject[3];
 
     //설정
-    GameObject setup;
-    Button setupExit;
-    Button backgroundMusicOn;
-    Button backgroundMusicOff;
-    Button hyogwaMusicOn;
-    Button hyogwaMusicOff;
+    public GameObject setup;
+
+    public Button setupExit;
+    public Button backgroundMusicOn;
+    public Button backgroundMusicOff;
+    public Button hyogwaMusicOn;
+    public Button hyogwaMusicOff;
 
     //골드 보석 상점
-    GameObject goldBosuk;
-    GameObject goldStore;
-    GameObject bosukStore;
-    Button goldbosukExitBtn;
-    Button goldBtn;
-    Button bosukBtn;
+    public GameObject goldBosuk;
+    public GameObject goldStore;
+    public GameObject bosukStore;
+    public Button goldbosukExitBtn;
+    public Button goldBtn;
+    public Button bosukBtn;
 
-    Button bosukRealBtn;
-    Button goldRealBtn;
+    public Button bosukRealBtn;
+    public Button goldRealBtn;
 
-    Button bosuk1000won;
-    Button bosuk2500won;
-    Button bosuk32500won;
+    public Button bosuk1000won;
+    public Button bosuk2500won;
+    public Button bosuk32500won;
 
-    Button gold1000won;
-    Button gold2500won;
-    Button gold32500won;
+    public Button gold1000won;
+    public Button gold2500won;
+    public Button gold32500won;
 
-    Button GoogleBtnOn;
-    Button GoogleBtnOff;
+    public Button GoogleBtnOn;
+    public Button GoogleBtnOff;
 
     public Sprite nonGoldSprite;
     public Sprite GoldSprite;
     public Sprite nonBosukSprite;
     public Sprite BosukSprite;
 
+    //스크롤저장
+    public RectTransform scrollPanel;
+    Vector2 test;
 
-
-	void Start ()
+    void Start ()
     {
+       
+        if (ES2.Exists("scrollPanel"))
+        {
+            scrollPanel.localPosition = ES2.Load<Vector2>("scrollPanel");
+            Debug.Log("====불로올 데이터====" + scrollPanel.localPosition);
+        }
+            
         selectInit();
     }
     void selectInit()
     {
-
         chaSetFalse();
-        gameMoney = GameObject.Find("gameMoney").GetComponent<Text>();
-        bosukMoney = GameObject.Find("bosukMoney").GetComponent<Text>();
         if (ES2.Exists("Money_Game"))
             gameMoney.text = DataSave._instance.getMoney_Game().ToString(); //돈 출력
         else
@@ -118,29 +126,17 @@ public class selectManager : MonoBehaviour {
 
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         eventSystem.pixelDragThreshold = (int)(0.5f * Screen.dpi / 2.54f);
-
-        shopBtn = allBtnPanel.transform.FindChild("shopBtn").GetComponent<Button>();
-        MyBtn = allBtnPanel.transform.FindChild("MyBtn").GetComponent<Button>();
-        rangkingBtn = allBtnPanel.transform.FindChild("rangkingBtn").GetComponent<Button>();
-        tropyBtn = allBtnPanel.transform.FindChild("tropyBtn").GetComponent<Button>();
-        setupBtn = allBtnPanel.transform.FindChild("setupBtn").GetComponent<Button>();
-
-        storeAndRoom = UiCanvas.gameObject.transform.FindChild("StoreAndRoom").gameObject;
-        ui_back_large = storeAndRoom.gameObject.transform.FindChild("ui_back_large").gameObject;
+     
         storeAndRoom.SetActive(false);
 
 
         //설정
         setup = UiCanvas.gameObject.transform.FindChild("setup").gameObject;
-
-        backgroundMusicOn = setup.transform.FindChild("backgroundMusicOn").GetComponent<Button>();
+        
         backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(1));
-        backgroundMusicOff = setup.transform.FindChild("backgroundMusicOff").GetComponent<Button>();
         backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(0));
-
-        GoogleBtnOn = setup.transform.FindChild("GoogleBtnOn").GetComponent<Button>();
+        
         GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0));
-        GoogleBtnOff = setup.transform.FindChild("GoogleBtnOff").GetComponent<Button>();
         GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1));
 
         if (!Social.localUser.authenticated)
@@ -154,8 +150,6 @@ public class selectManager : MonoBehaviour {
             GoogleBtnOff.gameObject.SetActive(false);
         }
             
-        hyogwaMusicOn = setup.transform.FindChild("hyogwaMusicOn").GetComponent<Button>();
-        hyogwaMusicOff = setup.transform.FindChild("hyogwaMusicOff").GetComponent<Button>();
 
         if (!ES2.Exists("musicChk"))
             ES2.Save<bool>(true, "musicChk");
@@ -175,8 +169,7 @@ public class selectManager : MonoBehaviour {
         
         hyogwaMusicOff.gameObject.SetActive(false);
         hyogwaMusicOn.gameObject.SetActive(true);
-
-        setupExit = setup.transform.FindChild("setupExit").GetComponent<Button>();
+        
         setupExit.onClick.AddListener(setupExitBtnFunc);
         setup.SetActive(false);
 
@@ -184,40 +177,24 @@ public class selectManager : MonoBehaviour {
         goldBosuk = UiCanvas.gameObject.transform.FindChild("goldBosuk").gameObject;
         goldStore = goldBosuk.transform.FindChild("goldStore").gameObject;
         bosukStore = goldBosuk.transform.FindChild("bosukStore").gameObject;
-
-
-        bosukRealBtn = allBtnPanel.transform.FindChild("bosukBtn").GetComponent<Button>();
+        
         bosukRealBtn.onClick.AddListener(bosukRealBtnFunc);
-        goldRealBtn = allBtnPanel.transform.FindChild("goldBtn").GetComponent<Button>();
         goldRealBtn.onClick.AddListener(goldRealBtnFunc);
-        bosukBtn = goldBosuk.transform.FindChild("bosukBtn").GetComponent<Button>();
         bosukBtn.onClick.AddListener(bosukBtnFunc);
-        goldBtn = goldBosuk.transform.FindChild("goldBtn").GetComponent<Button>();
         goldBtn.onClick.AddListener(goldBtnFunc);
-        goldbosukExitBtn = goldBosuk.transform.FindChild("goldbosukExitBtn").GetComponent<Button>();
         goldbosukExitBtn.onClick.AddListener(goldbosukExitBtnFunc);
-
-        gold1000won = goldStore.transform.FindChild("1000bosuk").GetComponent<Button>();
-        gold2500won = goldStore.transform.FindChild("2500bosuk").GetComponent<Button>();
-        gold32500won = goldStore.transform.FindChild("32500bosuk").GetComponent<Button>();
 
         gold1000won.onClick.AddListener(() => goldBuy(1000));
         gold2500won.onClick.AddListener(() => goldBuy(2500));
         gold32500won.onClick.AddListener(() => goldBuy(32500));
-
-        bosuk1000won = bosukStore.transform.FindChild("1000won").GetComponent<Button>();
+        
         bosuk1000won.onClick.AddListener(() => bosukBuy(1000));
-        bosuk2500won = bosukStore.transform.FindChild("2500won").GetComponent<Button>();
         bosuk2500won.onClick.AddListener(() => bosukBuy(2500));
-        bosuk32500won = bosukStore.transform.FindChild("32500won").GetComponent<Button>();
         bosuk32500won.onClick.AddListener(() => bosukBuy(32500));
 
         goldBosuk.SetActive(false);
 
         //사운드 옵션
-        
-
-
         myRoom = ui_back_large.transform.FindChild("MyRoom").gameObject;
         cha_selectUi = myRoom.transform.FindChild("cha_selectUi").gameObject;
         empty_panel = cha_selectUi.transform.GetChild(0).gameObject;
@@ -232,43 +209,25 @@ public class selectManager : MonoBehaviour {
 
         store = ui_back_large.transform.FindChild("Store").gameObject;
 
-        greenBoxBtn = store.transform.FindChild("greenBoxBtn").GetComponent<Button>();
-        greenBoxBtn.onClick.AddListener(greenBoxBtnFunc);
-        redBoxBtn = store.transform.FindChild("redBoxBtn").GetComponent<Button>();
-        redBoxBtn.onClick.AddListener(redBoxBtnFunc);
-        blueBoxBtn = store.transform.FindChild("blueBoxBtn").GetComponent<Button>();
-        blueBoxBtn.onClick.AddListener(blueBoxBtnFunc);
-
-        storeRoomExit = ui_back_large.transform.FindChild("StoreRoomExit").GetComponent<Button>();
         storeRoomExit.onClick.AddListener(storeRoomExitFunc);
-
-        myRoomBtn = ui_back_large.transform.FindChild("myRoomBtn").GetComponent<Button>();
-        myRoomBtn.onClick.AddListener(MyBtnFunc);
-        storeBtn = ui_back_large.transform.FindChild("storeBtn").GetComponent<Button>();
-        storeBtn.onClick.AddListener(shopBtnFunc);
-
-        shopBtn.onClick.AddListener(shopBtnFunc);
-        MyBtn.onClick.AddListener(MyBtnFunc);
-        rangkingBtn.onClick.AddListener(rangkingBtnFunc);
-        tropyBtn.onClick.AddListener(tropyBtnFunc);
-        setupBtn.onClick.AddListener(setupBtnFunc);
-		if (!ES2.Exists("stageCount"))
-			ES2.Save(0,"stageCount");
+        
+		if (!ES2.Exists("stageIndexCount"))
+			ES2.Save<int>(0, "stageIndexCount");
 		
-		if (ES2.Exists ("stageCount")) {
+		if (ES2.Exists ("stageIndexCount")) {
 			for (int i = 0; i < ScrollPanel.transform.childCount - 1; i++) {
 				Button stageBtn = ScrollPanel.transform.GetChild (i + 1).gameObject.GetComponent<Button> (); //버튼들
 				Image stageImg = stageBtn.GetComponent<Image> ();
 				Text stageText = stageBtn.transform.GetChild (3).GetComponent<Text> ();
 
 
-				if (i > ES2.Load<float> ("stageCount")) {
+				if (i > ES2.Load<int> ("stageIndexCount")) {
 					stageText.text = "";
 					stageImg.sprite = noneSprite;
 					stageBtn.interactable = false;
 				} else {
 					stageText.text = (i + 1).ToString ();
-					if (i == ES2.Load<float> ("stageCount"))
+					if (i == ES2.Load<int> ("stageIndexCount"))
 						stageImg.sprite = newSprite;
 					else
 						stageImg.sprite = clearSprite;
@@ -284,7 +243,6 @@ public class selectManager : MonoBehaviour {
 				stageBtn.onClick.AddListener (() => SceneGo (stageBtn.name));
 			}
 		}
-        
 
         loadStar(); //별 로드
         loadNoneStage();
@@ -295,9 +253,9 @@ public class selectManager : MonoBehaviour {
         string[] test = new string[3];
         GameObject[] star = new GameObject[3];
         Button stageBtn;
-        if (ES2.Exists("stageCount"))
+        if (ES2.Exists("stageIndexCount"))
         {
-            for (int i = 0; i < ES2.Load<float>("stageCount"); i++)
+            for (int i = 0; i < ES2.Load<int>("stageIndexCount"); i++)
             {
                 test = ES2.LoadArray<string>("ValueKey" + (i + 1));
                 stageBtn = ScrollPanel.transform.GetChild(i + 1).gameObject.GetComponent<Button>();
@@ -321,11 +279,14 @@ public class selectManager : MonoBehaviour {
     }
     void SceneGo(string name) //게임씬으로 넘기자
     {
+        test = scrollPanel.localPosition;
+        ES2.Save<Vector2>(test, "scrollPanel");
+        Debug.Log("====처음벡터===" + ES2.Load<Vector2>("scrollPanel"));
         GameManager.TestNum = System.Convert.ToInt32(name);
         mainSceneManager.SceneIndex = 2;
         SceneManager.LoadScene(1);
     }
-    void shopBtnFunc() //상점 버튼 눌렀을때.
+    public void shopBtnFunc() //상점 버튼 눌렀을때.
     {
         chaSetFalse();
         storeBtn.GetComponent<Image>().sprite = storeBtnClick;
@@ -336,7 +297,7 @@ public class selectManager : MonoBehaviour {
         store.SetActive(true);
         myRoom.SetActive(false);
     }
-    void MyBtnFunc() //인벤토리 버튼 눌렀을때.
+    public void MyBtnFunc() //인벤토리 버튼 눌렀을때.
     {
         chaSetFalse();
         myRoomBtn.GetComponent<Image>().sprite = myRoomBtnClick;
@@ -371,35 +332,35 @@ public class selectManager : MonoBehaviour {
         }
            
     }
-    void rangkingBtnFunc() //랭킹 버튼 눌렀을때.
+    public void rangkingBtnFunc() //랭킹 버튼 눌렀을때.
     {
         chaSetFalse();
         GoogleManager.GetInstance.ShowLeaderboard();
     }
-    void tropyBtnFunc() //업적 버튼 눌렀을때.
+    public void tropyBtnFunc() //업적 버튼 눌렀을때.
     {
         chaSetFalse();
         GoogleManager.GetInstance.ShowAchievement();
     }
-    void setupBtnFunc() //설정 버튼 눌렀을때.
+    public void setupBtnFunc() //설정 버튼 눌렀을때.
     {
         chaSetFalse();
         setup.SetActive(true);
     }
-    void setupExitBtnFunc()
+    public void setupExitBtnFunc()
     {
         chaSetFalse();
         setup.SetActive(false);
     }
-    void storeRoomExitFunc() //상점 닫기
+    public void storeRoomExitFunc() //상점 닫기
     {
         chaSetFalse();
         storeAndRoom.SetActive(false);
     }
-    void greenBoxBtnFunc() //그린박스
+    public void greenBoxBtnFunc() //그린박스
     {
         float gameMoney = DataSave._instance.getMoney_Game();
-        if (gameMoney < -10000)
+        if (gameMoney < 1000)
             Debug.Log("돈이 부족합니다.");
         else
         {
@@ -408,16 +369,18 @@ public class selectManager : MonoBehaviour {
         }
     }
 
-    void blueBoxBtnFunc() //파란박스
+    public void redBoxBtnFunc() //레드박스
     {
-
+        float gameMoney = DataSave._instance.getMoney_Game();
+        if (gameMoney < 2500)
+            Debug.Log("돈이 부족합니다.");
+        else
+        {
+            DataSave._instance.setMoney_GameMinus(2500);
+            SceneManager.LoadScene(5);
+        }
     }
-
-    void redBoxBtnFunc() //레드박스
-    {
-
-    }
-    void chaFunc(string cha_index)
+    public void chaFunc(string cha_index)
     {
         int cha_test = int.Parse(cha_index);
 
@@ -440,14 +403,14 @@ public class selectManager : MonoBehaviour {
                 break;
         }
     }
-    void chaSetFalse()
+    public void chaSetFalse()
     {
         for(int i = 0; i < cha_Array.Length; i++)
         {
             cha_Array[i].SetActive(false);
         }
     }
-    void bosukBtnFunc()
+    public void bosukBtnFunc()
     {
         goldBosuk.SetActive(true);
         goldBtn.image.sprite = GoldSprite;
@@ -459,7 +422,7 @@ public class selectManager : MonoBehaviour {
         goldStore.SetActive(false);
         bosukStore.SetActive(true);
     }
-    void goldBtnFunc()
+    public void goldBtnFunc()
     {
         goldBosuk.SetActive(true);
         goldBtn.image.sprite = nonGoldSprite;
@@ -471,19 +434,19 @@ public class selectManager : MonoBehaviour {
         goldStore.SetActive(true);
         bosukStore.SetActive(false);
     }
-    void goldbosukExitBtnFunc()
+    public void goldbosukExitBtnFunc()
     {
         goldBosuk.SetActive(false);
     }
-    void bosukRealBtnFunc()
+    public void bosukRealBtnFunc()
     {
         bosukBtnFunc();
     }
-    void goldRealBtnFunc()
+    public void goldRealBtnFunc()
     {
         goldBtnFunc();
     }
-    void bosukBuy(int won)
+    public void bosukBuy(int won)
     {
         switch (won)
         {
@@ -498,7 +461,7 @@ public class selectManager : MonoBehaviour {
                 break;
         }
     }
-    void goldBuy(int bosuk)
+    public void goldBuy(int bosuk)
     {
         float bosukCount = DataSave._instance.getBosuk_Game();
         switch (bosuk)
@@ -544,7 +507,7 @@ public class selectManager : MonoBehaviour {
                 break;
         }
     }
-    void backgroundMusicGo(int musicOnOff) //사운드
+    public void backgroundMusicGo(int musicOnOff) //사운드
     {
         if(musicOnOff == 0)
         {
@@ -561,7 +524,7 @@ public class selectManager : MonoBehaviour {
             MusicManager.instance.MusicSelect(false);
         }
     }
-    void GoogleBtnFunc(int googleOnOff)
+    public void GoogleBtnFunc(int googleOnOff)
     {
         //0 == 로그인 , 1 == 비로그인.
         if(googleOnOff == 0)

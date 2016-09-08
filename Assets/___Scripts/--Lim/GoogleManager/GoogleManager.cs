@@ -39,8 +39,6 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
     {
         TS.test = 100;
         bLogin = false;
-        //CloudText = GameObject.Find("CloudText").GetComponent<Text>();
-        //PlayGamesPlatform.DebugLogEnabled = true;
 
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
             .EnableSavedGames()
