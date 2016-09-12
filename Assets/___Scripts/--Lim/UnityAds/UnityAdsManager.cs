@@ -12,7 +12,6 @@ public class UnityAdsManager : MonoBehaviour {
     {
         Advertisement.Initialize("124147", true); // true인이유는 테스트광고를 시청하겠다.
         _ShowOpt.resultCallback = OnAdsShowResultCallBack;
-        //UpdateButton();
 
     }
     void OnAdsShowResultCallBack(ShowResult result) //광고 보기후 호출되는 콜백함수. finished 다봤다는의미.

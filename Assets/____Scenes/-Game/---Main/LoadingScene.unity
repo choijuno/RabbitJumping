@@ -114,10 +114,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 900311942}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1280, y: 720}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &13907357
 MonoBehaviour:
@@ -590,7 +590,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tip) \uCD5C\uC900\uC624 \uBC14\uBCF4"
+  m_Text: "Tip) \uD2F8\uD2B8 \uBAA8\uB4DC\uB3C4 \uC788\uC5B4\uC694~"
 --- !u!222 &875596551
 CanvasRenderer:
   m_ObjectHideFlags: 0
