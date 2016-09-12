@@ -48,6 +48,7 @@ public class LoadManager : MonoBehaviour {
 
 	//04MoveEnemy
 	public GameObject hedgedog;
+	public GameObject hedgedog_Move;
 	public GameObject crocodile;
 	public GameObject spider_1;
 	public GameObject spider_2;
@@ -68,6 +69,9 @@ public class LoadManager : MonoBehaviour {
 
 	//08Cage
 	public GameObject Cage;
+	public GameObject Cage_Bear;
+	public GameObject Cage_Fox;
+
 
 	//99Pos
 	public GameObject ClearPoint;
@@ -260,6 +264,9 @@ public class LoadManager : MonoBehaviour {
 					case "1040011":
 						_tmp = (GameObject)Instantiate (hedgedog, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
+					case "1040012":
+						_tmp = (GameObject)Instantiate (hedgedog_Move, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
 					case "1040021":
 						_tmp = (GameObject)Instantiate (crocodile, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						if (objPos_component_dataIn [k + 1] == 1)
@@ -318,6 +325,12 @@ public class LoadManager : MonoBehaviour {
 				//08Cage
 					case "1080011":
 						_tmp = (GameObject)Instantiate (Cage, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1080021":
+						_tmp = (GameObject)Instantiate (Cage_Bear, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1080031":
+						_tmp = (GameObject)Instantiate (Cage_Fox, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 
 				//09Pos
