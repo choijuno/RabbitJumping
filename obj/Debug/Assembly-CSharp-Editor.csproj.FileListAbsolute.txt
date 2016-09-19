@@ -73,9 +73,7 @@ D:\최준오\programing\projects\JumpX\Temp\bin\Debug\UnityEditor.TreeEditor.xml
 D:\최준오\programing\projects\JumpX\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 D:\최준오\programing\projects\JumpX\obj\Debug\Assembly-CSharp-Editor.dll
 D:\최준오\programing\projects\JumpX\obj\Debug\Assembly-CSharp-Editor.pdb
-D:\최준오\programing\projects\JumpX\Temp\bin\Debug\UnityEngine.Analytics.dll
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\UnityEngine.Purchasing.dll
-D:\최준오\programing\projects\JumpX\Temp\bin\Debug\UnityEngine.Analytics.xml
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\UnityEngine.Purchasing.xml
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Apple.dll
 D:\최준오\programing\projects\JumpX\Temp\bin\Debug\Common.dll

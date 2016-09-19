@@ -114,7 +114,9 @@ public class PlayerController : MonoBehaviour {
 
 		// only run playing
 		if (GameManager.gameSet == 0) {
-			transform.position = new Vector3 (transform.position.x + movespeed * 0.01f, transform.position.y, transform.position.z);
+			if (!GameManager.pauseCheck) {
+				transform.position = new Vector3 (transform.position.x + movespeed * 0.01f, transform.position.y, transform.position.z);
+			}
 		}
 	}
 
