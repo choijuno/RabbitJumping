@@ -6,6 +6,8 @@ using System;
 
 public class GameManager : MonoBehaviour {
     
+	public GameObject ingameCamera;
+
 	public static bool pauseCheck;
 
 	public bool resultCheck;
@@ -132,14 +134,18 @@ public class GameManager : MonoBehaviour {
 			yield return new WaitForSeconds (0.006f);
 
 			switch (gameSet) {
-			case 1:
+			case 1://win
+				
+				yield return new WaitForSeconds (2.3f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
 				StartCoroutine ("gameResult_Clear");
 				
 				break;
 
-			case 2:
+			case 2://lose
+				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
+				yield return new WaitForSeconds (2.3f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
 				StartCoroutine ("gameResult_Failed");
