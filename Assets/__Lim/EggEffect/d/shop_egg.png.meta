@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 2a8feeebb94d4874b8943713c20c86d2
+timeCreated: 1473657987
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shop_egg_0
+    21300002: shop_egg_1
+    21300004: shop_egg_2
+    21300006: shop_egg_3
+    21300008: shop_egg_4
+    21300010: shop_egg_5
+    21300012: shop_egg_6
+    21300014: shop_egg_7
+    21300016: shop_egg_8
+    21300018: shop_egg_9
+    21300020: shop_egg_10
+    21300022: shop_egg_11
+    21300024: shop_egg_12
+    21300026: shop_egg_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: shop_egg_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 657
+        width: 287
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -143.5, y: 165.5}
+        - {x: -143.5, y: -165.5}
+        - {x: 139.5, y: -165.5}
+        - {x: 143.5, y: -161.5}
+        - {x: 143.5, y: 161.5}
+        - {x: 139.5, y: 165.5}
+    - name: shop_egg_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 731
+        width: 148
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 84.5}
+        - {x: -38, y: 81.5}
+        - {x: -74, y: 41.5}
+        - {x: -74, y: -47.5}
+        - {x: -60, y: -84.5}
+        - {x: 69, y: -84.5}
+        - {x: 74, y: -65.5}
+        - {x: 74, y: 70.5}
+        - {x: 44, y: 84.5}
+    - name: shop_egg_2
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 849
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -26, y: 11}
+        - {x: -26, y: -13}
+        - {x: -4, y: -19}
+        - {x: 17, y: -19}
+        - {x: 21, y: -14}
+        - {x: 26, y: -3}
+        - {x: 26, y: 19}
+    - name: shop_egg_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 853
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: shop_egg_4
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 835
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 24.5}
+        - {x: -26.5, y: 19.5}
+        - {x: -26.5, y: -6.5}
+        - {x: -11.5, y: -24.5}
+        - {x: 4.5, y: -24.5}
+        - {x: 26.5, y: -2.5}
+        - {x: 26.5, y: 24.5}
+    - name: shop_egg_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 575
+        width: 148
+        height: 93
+      alignment: 9
+      pivot: {x: 0.47765225, y: 0.5133811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.692535, y: 45.255554}
+        - {x: -70.692535, y: -4.744446}
+        - {x: -64.692535, y: -27.744446}
+        - {x: -34.692535, y: -47.744446}
+        - {x: 48.307465, y: -47.744446}
+        - {x: 77.307465, y: -14.744446}
+        - {x: 77.307465, y: 42.255554}
+        - {x: 61.307465, y: 45.255554}
+    - name: shop_egg_6
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 576
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39445648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74.5, y: 6.665222}
+        - {x: -74.5, y: -26.334778}
+        - {x: -57.5, y: -47.334778}
+        - {x: 74.5, y: -47.334778}
+        - {x: 74.5, y: 35.665222}
+        - {x: 61.5, y: 72.66522}
+        - {x: -45.5, y: 72.66522}
+        - {x: -65.5, y: 38.665222}
+    - name: shop_egg_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 96
+        width: 287
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -143.5, y: 165.5}
+        - {x: -143.5, y: -165.5}
+        - {x: 139.5, y: -165.5}
+        - {x: 143.5, y: -161.5}
+        - {x: 143.5, y: 161.5}
+        - {x: 139.5, y: 165.5}
+    - name: shop_egg_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 204
+        width: 149
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: 84.5}
+        - {x: -40.5, y: 84.5}
+        - {x: -74.5, y: 36.5}
+        - {x: -74.5, y: -73.5}
+        - {x: -39.5, y: -84.5}
+        - {x: 43.5, y: -84.5}
+        - {x: 69.5, y: -56.5}
+        - {x: 74.5, y: -35.5}
+        - {x: 74.5, y: 36.5}
+    - name: shop_egg_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 289
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -26, y: 11}
+        - {x: -26, y: -13}
+        - {x: -4, y: -19}
+        - {x: 17, y: -19}
+        - {x: 21, y: -14}
+        - {x: 26, y: -3}
+        - {x: 26, y: 19}
+    - name: shop_egg_10
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 287
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: shop_egg_11
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 277
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 24.5}
+        - {x: -25.5, y: -5.5}
+        - {x: -9.5, y: -24.5}
+        - {x: 5.5, y: -24.5}
+        - {x: 25.5, y: -8.5}
+        - {x: 25.5, y: 24.5}
+    - name: shop_egg_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 31
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.4776523, y: 0.5133811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.1702, y: 44.28232}
+        - {x: -71.1702, y: -44.71768}
+        - {x: -69.1702, y: -46.71768}
+        - {x: 47.829803, y: -46.71768}
+        - {x: 77.8298, y: -27.717682}
+        - {x: 77.8298, y: 44.28232}
+    - name: shop_egg_13
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 30
+        width: 149
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3944565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.5, y: -31.940323}
+        - {x: 65.5, y: -33.940323}
+        - {x: 74.5, y: -19.940323}
+        - {x: 74.5, y: 62.059677}
+        - {x: 44.5, y: 72.05968}
+        - {x: -48.5, y: 72.05968}
+        - {x: -67.5, y: 41.059677}
+        - {x: -74.5, y: 26.059677}
+        - {x: -74.5, y: -40.940323}
+        - {x: -51.5, y: -46.940323}
+        - {x: 50.5, y: -46.940323}
+        - {x: 54.5, y: -25.940323}
+        - {x: 54.5, y: -22.940323}
+        - {x: 54.5, y: -24.940323}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
