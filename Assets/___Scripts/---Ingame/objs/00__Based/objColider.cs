@@ -56,6 +56,7 @@ public class objColider : MonoBehaviour {
 			yield return new WaitForSeconds (0.06f);
 
 			if (reset) {
+				Debug.Log ("reset");
 				switch (transform.parent.name.Substring (0, 7)) {
 				case "Plan":
 					
@@ -65,15 +66,16 @@ public class objColider : MonoBehaviour {
 				case "1001":
 					break;
 				case "1010021":
-					yeon_ani.SetInteger("hp",(int)standhp);
+					Debug.Log ("resetYeon");
 					yeon_ani.SetTrigger("reset");
+					yeon_ani.SetInteger("hp",(int)standhp);
 					GetComponent<BoxCollider> ().enabled = true;
 					break;
 				case "2000":
 					break;
 				case "1040021": //croc
-					croc_ani.SetInteger("hp",(int)standhp);
 					croc_ani.SetTrigger("reset");
+					croc_ani.SetInteger("hp",(int)standhp);
 					crocAngry.SetActive (false);
 					break;
 				}

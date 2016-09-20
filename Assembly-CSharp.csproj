@@ -325,6 +325,7 @@
      <Compile Include="Assets\___Scripts\---Ingame\Player\PlayerMove.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\00__Based\objColider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\00__Based\objMovement.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\01Grounds\BumpColider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\02ActionObjs\Tunnel.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\02ActionObjs\TunnelCollider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\02ActionObjs\TunnelExitCollider.cs" />

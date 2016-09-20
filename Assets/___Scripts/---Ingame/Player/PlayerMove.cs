@@ -445,6 +445,10 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("ground"))
 			{
+				if (obj.transform.parent.name.Substring(0,3) == "101"){
+					obj.GetComponent<BumpColider> ().bumpAni.SetTrigger("bump");
+				}
+					
                     if (!obj.CompareTag("Untagged"))
                     {
                         if (GameManager.gameSet == 0)
@@ -784,7 +788,9 @@ public class PlayerMove : MonoBehaviour {
 
 			backGround_inCamera.transform.position = new Vector3 (backGround_basePos.transform.position.x, backGround_basePos.transform.position.y, backGround_basePos.transform.position.z);
 			FindChild_inParent = FindChild_inParent.GetComponentInChildren<Transform>();
-			foreach (Transform child in FindChild_inParent) {
+
+			/*foreach (Transform child in FindChild_inParent) {
+
 				foreach (Transform child_inChild in child) {
 					
 					switch (child.name.Substring (0, 7)) {
@@ -807,6 +813,30 @@ public class PlayerMove : MonoBehaviour {
 
 					}
 				}
+
+			}*/
+
+			foreach (Transform child in FindChild_inParent) {
+				switch (child.name.Substring (0, 7)) {
+
+				case "1010021"://yeon
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "breakground_Collider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				case "1040021"://croc
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "crocodile_Collider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				}
+
 
 			}
 			//loadManager.GetComponent<LoadManager> ().loadCheck = true;
