@@ -3,19 +3,22 @@ using System.Collections;
 
 public class clearCollider : MonoBehaviour {
 	public GameObject ClearEffect;
-	// Use this for initialization
-	void Start () {
-	
+
+	IEnumerator Clear(){
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+
+			if (GameManager.gameSet == 1) {
+				ClearEffect.SetActive (true);
+				StopCoroutine ("Clear");
+			}
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
 	void OnTriggerEnter(Collider player){
 		if (player.CompareTag ("player")) {
-			ClearEffect.SetActive (true);
+			StartCoroutine ("Clear");
 		}
 	}
 }

@@ -51,8 +51,11 @@ public class objMovement : MonoBehaviour {
 
 
 
-	//_etc
 
+	//fish
+	public GameObject waterEffect;
+
+	//_etc
 
 	void Start(){
 		if (Application.loadedLevelName == "Edit") {
@@ -90,7 +93,8 @@ public class objMovement : MonoBehaviour {
 			break;
 
 			//03Stayenemy
-		case "1030011":
+		case "1030011":	//fish
+			waterEffect.transform.parent = null;
 			StartCoroutine ("enemyM_reset");
 			break;
 		case "1030012":
@@ -226,6 +230,8 @@ public class objMovement : MonoBehaviour {
 			//Debug.Log (waitTime_in);
 
 			if (waitTime_jump_in < 0) {
+				waterEffect.SetActive (false);
+				waterEffect.SetActive (true);
 				waitTime_jump_in = waitTime_jump;
 				objmove = objMove.up;
 				if (gameObject.name.Substring (0, 7) == "1030011")
@@ -267,6 +273,10 @@ public class objMovement : MonoBehaviour {
 		transform.position = new Vector3 (transform.position.x, transform.position.y - down_Lerp_in * 0.1f, transform.position.z);
 
 		if (transform.position.y <= baseHeight_in) {
+
+			waterEffect.SetActive (false);
+			waterEffect.SetActive (true);
+
 			transform.position = new Vector3 (transform.position.x, baseHeight_in, transform.position.z);
 
 			U_Lerp_in = U_Lerp * 0.1f;

@@ -416,8 +416,14 @@ public class PlayerMove : MonoBehaviour {
                             Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Hawk>().waitTime;
                             Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
                             rideTime_in = obj.transform.parent.GetComponent<Hawk>().runTime;
+
+							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
+							transform.localPosition = new Vector3(0, 0, 0);
+							/*
                             transform.parent = obj.transform.parent.transform;
                             transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.y, 0);
+							*/
+
                             obj.transform.parent.GetComponent<Hawk>().stat = hawkStatus.wait;
                             break;
                     }
@@ -445,7 +451,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("ground"))
 			{
-				if (obj.transform.parent.name.Substring(0,3) == "101"){
+				if (obj.transform.parent.name.Substring(0,3) == "101" || obj.transform.parent.name.Substring(0,6) == "106001" || obj.transform.parent.name.Substring(0,6) == "104002"){
 					obj.GetComponent<BumpColider> ().bumpAni.SetTrigger("bump");
 				}
 					
@@ -524,7 +530,10 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("clear"))
                 {
-
+				Debug.Log ("!!!!!!!!!!!!!!!!!!!!");
+					transform.parent = obj.transform;
+					transform.localPosition = new Vector3(transform.localPosition.x,0.5f,transform.localPosition.z);
+					obj.GetComponent<BumpColider> ().bumpAni.SetTrigger("bump");
 				GameManager.gameSet = 1;
                     //게임클리어.
                     /*if (GameManager.TestNum == 001)
@@ -591,8 +600,13 @@ public class PlayerMove : MonoBehaviour {
                             Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Hawk>().waitTime;
                             Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
                             rideTime_in = obj.transform.parent.GetComponent<Hawk>().runTime;
+
+							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
+							transform.localPosition = new Vector3(0, 0, 0);
+							/*
                             transform.parent = obj.transform.parent.transform;
                             transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.y, 0);
+							*/
                             obj.transform.parent.GetComponent<Hawk>().stat = hawkStatus.wait;
                             break;
                     }
@@ -784,6 +798,7 @@ public class PlayerMove : MonoBehaviour {
 			GameManager.gameSet = 2;
 
 		} else {
+			transform.parent = null;
 			GetComponent<PlayerController> ().moveStopCheck = false;
 
 			backGround_inCamera.transform.position = new Vector3 (backGround_basePos.transform.position.x, backGround_basePos.transform.position.y, backGround_basePos.transform.position.z);

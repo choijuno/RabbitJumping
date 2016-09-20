@@ -2842,7 +2842,7 @@ MonoBehaviour:
   stageNum_string: 
   inputNum_txt: {fileID: 0}
   loadCheck: 0
-  playerBody: {fileID: 934627842}
+  playerBody: {fileID: 0}
   Edit: {fileID: 1536855813}
   loadParent: {fileID: 1282434733}
   basePos: {fileID: 0}
@@ -3061,6 +3061,176 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &85661008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 85661009}
+  - 212: {fileID: 85661011}
+  - 114: {fileID: 85661010}
+  m_Layer: 0
+  m_Name: swamp_front (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &85661009
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85661008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1825521642}
+  m_RootOrder: 2
+--- !u!114 &85661010
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85661008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: qPH8tXQVXEaF63vYzIW68A
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+    component: {fileID: 85661009}
+  - name: SpriteRenderer
+    id: IlnouKubHEq9XTCRV73ebw
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+    component: {fileID: 85661011}
+  activeSelfVariable:
+    name: activeSelf
+    id: Fp7YFQfsqke82xJf8mSdYQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+  nameVariable:
+    name: name
+    id: FOG2PD0Xgk20rvobegQy8Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+  tagVariable:
+    name: tag
+    id: BHFzJVYkgka4bA4qZeiajg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+  layerVariable:
+    name: layer
+    id: W416EnL9QEynWKs0IEBw9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+  parentVariable:
+    name: parent
+    id: KCd3wBkHOEWsgfrgxpfmWA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 85661008}
+    _autoSave: {fileID: 85661010}
+  id: cnJbPJ0vQUKtkMhUIQa8ng
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8961526, g: 0.39615262, b: 0.8961526, a: 1}
+  transform: {fileID: 85661009}
+--- !u!212 &85661011
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85661008}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &86011132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,6 +3305,136 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86011132}
+--- !u!1 &91547719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 91547720}
+  - 114: {fileID: 91547721}
+  m_Layer: 0
+  m_Name: swamp (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &91547720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91547719}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0.0002784431}
+  m_LocalPosition: {x: -32.129272, y: 6.2539263, z: 37.997093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1039058164}
+  - {fileID: 496295516}
+  - {fileID: 803077249}
+  - {fileID: 1827313937}
+  m_Father: {fileID: 1614817295}
+  m_RootOrder: 7
+--- !u!114 &91547721
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91547719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: B04BHeueHEGLcrU9TxUxKQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+    component: {fileID: 91547720}
+  activeSelfVariable:
+    name: activeSelf
+    id: QvZguJR4FE24tNws0JylRQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+  nameVariable:
+    name: name
+    id: U7B7VeIjh0yWoAkR8sTEuw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+  tagVariable:
+    name: tag
+    id: 0WDytVWUEUO3LWlkT02vFQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+  layerVariable:
+    name: layer
+    id: GvDpVmZU8UyiPC8giax91w
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+  parentVariable:
+    name: parent
+    id: Nen846j4B0ytPqVS60vIDA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 91547719}
+    _autoSave: {fileID: 91547721}
+  id: lz5jkTztv0i3we1PjuDQYg
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
+  transform: {fileID: 91547720}
 --- !u!1 &102408569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,6 +3477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpAni: {fileID: 1063970221}
+  groundParent: {fileID: 1674174199}
 --- !u!65 &102408572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3404,6 +3705,176 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.34181696, g: 0.59181696, b: 0.84181696, a: 1}
   transform: {fileID: 111538643}
+--- !u!1 &132262593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 132262594}
+  - 212: {fileID: 132262596}
+  - 114: {fileID: 132262595}
+  m_Layer: 0
+  m_Name: swamp_back (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &132262594
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132262593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 530305480}
+  m_RootOrder: 3
+--- !u!114 &132262595
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132262593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: D9B69CNyz0egZ1YObOJTCA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+    component: {fileID: 132262594}
+  - name: SpriteRenderer
+    id: Y4i1mwIXikK1wL9ECrt1JA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+    component: {fileID: 132262596}
+  activeSelfVariable:
+    name: activeSelf
+    id: AhiflHKNk0K87zfhc0pSCA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+  nameVariable:
+    name: name
+    id: Mhbf31w0Ik2mOMe2179uzQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+  tagVariable:
+    name: tag
+    id: Vr06fmvSw0SuOsobZUqGBg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+  layerVariable:
+    name: layer
+    id: MyTSVwJsH0CYxlzgRQLKeQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+  parentVariable:
+    name: parent
+    id: 2QoVRF1to020CHFjDOs9qA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 132262593}
+    _autoSave: {fileID: 132262595}
+  id: UNF1Ep2vAUKNjBo3gnPR7Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8635135, g: 0.5939057, b: 0.3674351, a: 1}
+  transform: {fileID: 132262594}
+--- !u!212 &132262596
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132262593}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!4 &137178796 stripped
 Transform:
   m_PrefabParentObject: {fileID: 455796, guid: b20653d125abe284b877c0045b4f062c, type: 2}
@@ -4453,6 +4924,176 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.29821604, g: 0.79821604, b: 0.79821604, a: 1}
   transform: {fileID: 144653712}
+--- !u!1 &154748419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 154748420}
+  - 212: {fileID: 154748422}
+  - 114: {fileID: 154748421}
+  m_Layer: 0
+  m_Name: swamp_back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154748420
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154748419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 530305480}
+  m_RootOrder: 0
+--- !u!114 &154748421
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154748419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: BhTUpnLOvkai36uE6mjleA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+    component: {fileID: 154748420}
+  - name: SpriteRenderer
+    id: VV0HhaBzukq0QztgGXldnQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+    component: {fileID: 154748422}
+  activeSelfVariable:
+    name: activeSelf
+    id: AlFPgJ91p0On81oGnj3AGw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+  nameVariable:
+    name: name
+    id: 7ydpFTW7NUuxbuDhimdU9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+  tagVariable:
+    name: tag
+    id: CC8NRkWTD02kI2nAGLdPiw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+  layerVariable:
+    name: layer
+    id: l2KR0a4D6EqMTxqtgeqYmg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+  parentVariable:
+    name: parent
+    id: LbQc4Ml4wkmheWk8SzMD3A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 154748419}
+    _autoSave: {fileID: 154748421}
+  id: 65dd7yi0ZkCADBc31H5z9Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.95120835, g: 0.91199267, b: 0.4590515, a: 1}
+  transform: {fileID: 154748420}
+--- !u!212 &154748422
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154748419}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &157991211
 Prefab:
   m_ObjectHideFlags: 0
@@ -7279,6 +7920,176 @@ MonoBehaviour:
   ClosePanel_2: {fileID: 889803356}
   tiltOn: {fileID: 0}
   tiltOff: {fileID: 0}
+--- !u!1 &267045607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 267045608}
+  - 212: {fileID: 267045610}
+  - 114: {fileID: 267045609}
+  m_Layer: 0
+  m_Name: swamp_front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267045608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267045607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1258900385}
+  m_RootOrder: 1
+--- !u!114 &267045609
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267045607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: LBdIFquT2USpeFd0yAyaYQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+    component: {fileID: 267045608}
+  - name: SpriteRenderer
+    id: K0kvOMYeAEeMOlTiq2G8uQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+    component: {fileID: 267045610}
+  activeSelfVariable:
+    name: activeSelf
+    id: 9KilNoHWpUORpIHXuszr1Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+  nameVariable:
+    name: name
+    id: KTIUy9Kz2EWbwdS2JEOpuA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+  tagVariable:
+    name: tag
+    id: karz01mTFEmWqPtKdaeYnw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+  layerVariable:
+    name: layer
+    id: P6ZfjoxuGUOJA06ZfnjCsQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+  parentVariable:
+    name: parent
+    id: QzxW5H115Em1VsjwFw7stQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 267045607}
+    _autoSave: {fileID: 267045609}
+  id: UQ5fKnq5gkWygF5v0bujdQ
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.38608754, g: 0.88608754, b: 0.88608754, a: 1}
+  transform: {fileID: 267045608}
+--- !u!212 &267045610
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267045607}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &267511630
 GameObject:
   m_ObjectHideFlags: 0
@@ -7660,6 +8471,92 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282243575}
+--- !u!1001 &283370613
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 615815015}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: SoundBase
+      value: 
+      objectReference: {fileID: 1258064634}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: loadManager
+      value: 
+      objectReference: {fileID: 63598156}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: FindChild_inParent
+      value: 
+      objectReference: {fileID: 1282434733}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: StartPos
+      value: 
+      objectReference: {fileID: 2145956768}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: waterDead
+      value: 
+      objectReference: {fileID: 506181894}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: waterEffect
+      value: 
+      objectReference: {fileID: 506181894}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: bumpEffect
+      value: 
+      objectReference: {fileID: 8073901}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: Camera_ingame
+      value: 
+      objectReference: {fileID: 1047770018}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: backGround_basePos
+      value: 
+      objectReference: {fileID: 1512191039}
+    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: backGround_inCamera
+      value: 
+      objectReference: {fileID: 1512191037}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &284129847 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 101198, guid: b20653d125abe284b877c0045b4f062c, type: 2}
@@ -11004,11 +11901,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 431955064}
-  m_RootOrder: 2
+  m_Father: {fileID: 1792530674}
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 31}
+  m_AnchoredPosition: {x: 0, y: 0.0000019073486}
   m_SizeDelta: {x: 769, y: 779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414205328
@@ -11411,7 +12308,7 @@ RectTransform:
   m_Children:
   - {fileID: 421308011}
   - {fileID: 1219160397}
-  - {fileID: 414205327}
+  - {fileID: 1792530674}
   - {fileID: 292698661}
   m_Father: {fileID: 926681346}
   m_RootOrder: 1
@@ -13581,6 +14478,516 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 480923800}
+--- !u!1 &489921473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489921474}
+  - 212: {fileID: 489921476}
+  - 114: {fileID: 489921475}
+  m_Layer: 0
+  m_Name: swamp_front (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489921474
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489921473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1258900385}
+  m_RootOrder: 2
+--- !u!114 &489921475
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489921473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: qPH8tXQVXEaF63vYzIW68A
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+    component: {fileID: 489921474}
+  - name: SpriteRenderer
+    id: IlnouKubHEq9XTCRV73ebw
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+    component: {fileID: 489921476}
+  activeSelfVariable:
+    name: activeSelf
+    id: Fp7YFQfsqke82xJf8mSdYQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+  nameVariable:
+    name: name
+    id: FOG2PD0Xgk20rvobegQy8Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+  tagVariable:
+    name: tag
+    id: BHFzJVYkgka4bA4qZeiajg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+  layerVariable:
+    name: layer
+    id: W416EnL9QEynWKs0IEBw9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+  parentVariable:
+    name: parent
+    id: KCd3wBkHOEWsgfrgxpfmWA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 489921473}
+    _autoSave: {fileID: 489921475}
+  id: cnJbPJ0vQUKtkMhUIQa8ng
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8961526, g: 0.39615262, b: 0.8961526, a: 1}
+  transform: {fileID: 489921474}
+--- !u!212 &489921476
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 489921473}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1 &496295515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 496295516}
+  - 212: {fileID: 496295518}
+  - 114: {fileID: 496295517}
+  m_Layer: 0
+  m_Name: swamp_front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496295516
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496295515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 91547720}
+  m_RootOrder: 1
+--- !u!114 &496295517
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496295515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: LBdIFquT2USpeFd0yAyaYQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+    component: {fileID: 496295516}
+  - name: SpriteRenderer
+    id: K0kvOMYeAEeMOlTiq2G8uQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+    component: {fileID: 496295518}
+  activeSelfVariable:
+    name: activeSelf
+    id: 9KilNoHWpUORpIHXuszr1Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+  nameVariable:
+    name: name
+    id: KTIUy9Kz2EWbwdS2JEOpuA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+  tagVariable:
+    name: tag
+    id: karz01mTFEmWqPtKdaeYnw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+  layerVariable:
+    name: layer
+    id: P6ZfjoxuGUOJA06ZfnjCsQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+  parentVariable:
+    name: parent
+    id: QzxW5H115Em1VsjwFw7stQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 496295515}
+    _autoSave: {fileID: 496295517}
+  id: UQ5fKnq5gkWygF5v0bujdQ
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.38608754, g: 0.88608754, b: 0.88608754, a: 1}
+  transform: {fileID: 496295516}
+--- !u!212 &496295518
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496295515}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1 &498040164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 498040165}
+  - 212: {fileID: 498040167}
+  - 114: {fileID: 498040166}
+  m_Layer: 0
+  m_Name: swamp_front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498040165
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498040164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 530305480}
+  m_RootOrder: 1
+--- !u!114 &498040166
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498040164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: LBdIFquT2USpeFd0yAyaYQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+    component: {fileID: 498040165}
+  - name: SpriteRenderer
+    id: K0kvOMYeAEeMOlTiq2G8uQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+    component: {fileID: 498040167}
+  activeSelfVariable:
+    name: activeSelf
+    id: 9KilNoHWpUORpIHXuszr1Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+  nameVariable:
+    name: name
+    id: KTIUy9Kz2EWbwdS2JEOpuA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+  tagVariable:
+    name: tag
+    id: karz01mTFEmWqPtKdaeYnw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+  layerVariable:
+    name: layer
+    id: P6ZfjoxuGUOJA06ZfnjCsQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+  parentVariable:
+    name: parent
+    id: QzxW5H115Em1VsjwFw7stQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 498040164}
+    _autoSave: {fileID: 498040166}
+  id: UQ5fKnq5gkWygF5v0bujdQ
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.38608754, g: 0.88608754, b: 0.88608754, a: 1}
+  transform: {fileID: 498040165}
+--- !u!212 &498040167
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498040164}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &498094316
 GameObject:
   m_ObjectHideFlags: 0
@@ -15486,6 +16893,136 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 19837820, guid: b20653d125abe284b877c0045b4f062c,
     type: 2}
   m_PrefabInternal: {fileID: 1345859590}
+--- !u!1 &530305479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 530305480}
+  - 114: {fileID: 530305481}
+  m_Layer: 0
+  m_Name: swamp (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &530305480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530305479}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0.0002784431}
+  m_LocalPosition: {x: 87.095726, y: 6.1875315, z: 37.997093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 154748420}
+  - {fileID: 498040165}
+  - {fileID: 1291642639}
+  - {fileID: 132262594}
+  m_Father: {fileID: 1614817295}
+  m_RootOrder: 4
+--- !u!114 &530305481
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530305479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: B04BHeueHEGLcrU9TxUxKQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+    component: {fileID: 530305480}
+  activeSelfVariable:
+    name: activeSelf
+    id: QvZguJR4FE24tNws0JylRQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+  nameVariable:
+    name: name
+    id: U7B7VeIjh0yWoAkR8sTEuw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+  tagVariable:
+    name: tag
+    id: 0WDytVWUEUO3LWlkT02vFQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+  layerVariable:
+    name: layer
+    id: GvDpVmZU8UyiPC8giax91w
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+  parentVariable:
+    name: parent
+    id: Nen846j4B0ytPqVS60vIDA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 530305479}
+    _autoSave: {fileID: 530305481}
+  id: lz5jkTztv0i3we1PjuDQYg
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
+  transform: {fileID: 530305480}
 --- !u!1 &532791176
 GameObject:
   m_ObjectHideFlags: 0
@@ -17161,7 +18698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1001 &790694474
 Prefab:
   m_ObjectHideFlags: 0
@@ -18182,6 +19719,176 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 455796, guid: b20653d125abe284b877c0045b4f062c, type: 2}
   m_PrefabInternal: {fileID: 800215685}
+--- !u!1 &803077248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 803077249}
+  - 212: {fileID: 803077251}
+  - 114: {fileID: 803077250}
+  m_Layer: 0
+  m_Name: swamp_front (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &803077249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803077248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 91547720}
+  m_RootOrder: 2
+--- !u!114 &803077250
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803077248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: qPH8tXQVXEaF63vYzIW68A
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+    component: {fileID: 803077249}
+  - name: SpriteRenderer
+    id: IlnouKubHEq9XTCRV73ebw
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+    component: {fileID: 803077251}
+  activeSelfVariable:
+    name: activeSelf
+    id: Fp7YFQfsqke82xJf8mSdYQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+  nameVariable:
+    name: name
+    id: FOG2PD0Xgk20rvobegQy8Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+  tagVariable:
+    name: tag
+    id: BHFzJVYkgka4bA4qZeiajg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+  layerVariable:
+    name: layer
+    id: W416EnL9QEynWKs0IEBw9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+  parentVariable:
+    name: parent
+    id: KCd3wBkHOEWsgfrgxpfmWA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 803077248}
+    _autoSave: {fileID: 803077250}
+  id: cnJbPJ0vQUKtkMhUIQa8ng
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8961526, g: 0.39615262, b: 0.8961526, a: 1}
+  transform: {fileID: 803077249}
+--- !u!212 &803077251
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803077248}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &807384150
 Prefab:
   m_ObjectHideFlags: 0
@@ -18666,6 +20373,184 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
   transform: {fileID: 819919404}
+--- !u!1 &821334923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 821334924}
+  - 212: {fileID: 821334926}
+  - 114: {fileID: 821334925}
+  m_Layer: 0
+  m_Name: swamp_back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821334924
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821334923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1258900385}
+  m_RootOrder: 0
+--- !u!114 &821334925
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821334923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: BhTUpnLOvkai36uE6mjleA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+    component: {fileID: 821334924}
+  - name: SpriteRenderer
+    id: VV0HhaBzukq0QztgGXldnQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+    component: {fileID: 821334926}
+  activeSelfVariable:
+    name: activeSelf
+    id: AlFPgJ91p0On81oGnj3AGw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+  nameVariable:
+    name: name
+    id: 7ydpFTW7NUuxbuDhimdU9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+  tagVariable:
+    name: tag
+    id: CC8NRkWTD02kI2nAGLdPiw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+  layerVariable:
+    name: layer
+    id: l2KR0a4D6EqMTxqtgeqYmg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+  parentVariable:
+    name: parent
+    id: LbQc4Ml4wkmheWk8SzMD3A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 821334923}
+    _autoSave: {fileID: 821334925}
+  id: 65dd7yi0ZkCADBc31H5z9Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.95120835, g: 0.91199267, b: 0.4590515, a: 1}
+  transform: {fileID: 821334924}
+--- !u!212 &821334926
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821334923}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1 &832472001 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 108226, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+  m_PrefabInternal: {fileID: 283370613}
+--- !u!4 &832472009 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+  m_PrefabInternal: {fileID: 283370613}
 --- !u!1 &838716847
 GameObject:
   m_ObjectHideFlags: 0
@@ -21284,14 +23169,6 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.812449, g: 0.31244898, b: 0.562449, a: 1}
   transform: {fileID: 931968146}
---- !u!1 &934627842 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 108226, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-  m_PrefabInternal: {fileID: 1906343554}
---- !u!4 &934627850 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-  m_PrefabInternal: {fileID: 1906343554}
 --- !u!1 &944611396
 GameObject:
   m_ObjectHideFlags: 0
@@ -21544,6 +23421,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!23 &968669310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24010,6 +25888,176 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.9285772, g: 0.42857715, b: 0.42857715, a: 1}
   transform: {fileID: 1014506526}
+--- !u!1 &1039058163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1039058164}
+  - 212: {fileID: 1039058166}
+  - 114: {fileID: 1039058165}
+  m_Layer: 0
+  m_Name: swamp_back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039058164
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039058163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 91547720}
+  m_RootOrder: 0
+--- !u!114 &1039058165
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039058163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: BhTUpnLOvkai36uE6mjleA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+    component: {fileID: 1039058164}
+  - name: SpriteRenderer
+    id: VV0HhaBzukq0QztgGXldnQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+    component: {fileID: 1039058166}
+  activeSelfVariable:
+    name: activeSelf
+    id: AlFPgJ91p0On81oGnj3AGw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+  nameVariable:
+    name: name
+    id: 7ydpFTW7NUuxbuDhimdU9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+  tagVariable:
+    name: tag
+    id: CC8NRkWTD02kI2nAGLdPiw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+  layerVariable:
+    name: layer
+    id: l2KR0a4D6EqMTxqtgeqYmg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+  parentVariable:
+    name: parent
+    id: LbQc4Ml4wkmheWk8SzMD3A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1039058163}
+    _autoSave: {fileID: 1039058165}
+  id: 65dd7yi0ZkCADBc31H5z9Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.95120835, g: 0.91199267, b: 0.4590515, a: 1}
+  transform: {fileID: 1039058164}
+--- !u!212 &1039058166
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039058163}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1047770018
 GameObject:
   m_ObjectHideFlags: 0
@@ -24117,7 +26165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   midleBackGround: {fileID: 1512191037}
-  playerPosition: {fileID: 934627850}
+  playerPosition: {fileID: 832472009}
   viveCheck: 0
   CameraCenterPosition: 4
   waitTime_in: 0
@@ -26435,6 +28483,176 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
   transform: {fileID: 1136544251}
+--- !u!1 &1146037586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1146037587}
+  - 212: {fileID: 1146037589}
+  - 114: {fileID: 1146037588}
+  m_Layer: 0
+  m_Name: swamp_back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146037587
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146037586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1825521642}
+  m_RootOrder: 0
+--- !u!114 &1146037588
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146037586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: BhTUpnLOvkai36uE6mjleA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+    component: {fileID: 1146037587}
+  - name: SpriteRenderer
+    id: VV0HhaBzukq0QztgGXldnQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+    component: {fileID: 1146037589}
+  activeSelfVariable:
+    name: activeSelf
+    id: AlFPgJ91p0On81oGnj3AGw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+  nameVariable:
+    name: name
+    id: 7ydpFTW7NUuxbuDhimdU9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+  tagVariable:
+    name: tag
+    id: CC8NRkWTD02kI2nAGLdPiw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+  layerVariable:
+    name: layer
+    id: l2KR0a4D6EqMTxqtgeqYmg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+  parentVariable:
+    name: parent
+    id: LbQc4Ml4wkmheWk8SzMD3A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1146037586}
+    _autoSave: {fileID: 1146037588}
+  id: 65dd7yi0ZkCADBc31H5z9Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.95120835, g: 0.91199267, b: 0.4590515, a: 1}
+  transform: {fileID: 1146037587}
+--- !u!212 &1146037589
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146037586}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &1149304199
 Prefab:
   m_ObjectHideFlags: 0
@@ -26486,7 +28704,7 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 38c28ac364d4ff14e86523ca5a258298, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -26495,7 +28713,7 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 11400000, guid: 38c28ac364d4ff14e86523ca5a258298, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 38c28ac364d4ff14e86523ca5a258298, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1157830665
@@ -28480,6 +30698,136 @@ Transform:
   - {fileID: 889803358}
   m_Father: {fileID: 1047770023}
   m_RootOrder: 4
+--- !u!1 &1258900384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1258900385}
+  - 114: {fileID: 1258900386}
+  m_Layer: 0
+  m_Name: swamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258900385
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258900384}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0.0002784431}
+  m_LocalPosition: {x: 47.354725, y: 6.2096643, z: 37.997093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 821334924}
+  - {fileID: 267045608}
+  - {fileID: 489921474}
+  - {fileID: 1912676606}
+  m_Father: {fileID: 1614817295}
+  m_RootOrder: 5
+--- !u!114 &1258900386
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258900384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: B04BHeueHEGLcrU9TxUxKQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+    component: {fileID: 1258900385}
+  activeSelfVariable:
+    name: activeSelf
+    id: QvZguJR4FE24tNws0JylRQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+  nameVariable:
+    name: name
+    id: U7B7VeIjh0yWoAkR8sTEuw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+  tagVariable:
+    name: tag
+    id: 0WDytVWUEUO3LWlkT02vFQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+  layerVariable:
+    name: layer
+    id: GvDpVmZU8UyiPC8giax91w
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+  parentVariable:
+    name: parent
+    id: Nen846j4B0ytPqVS60vIDA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1258900384}
+    _autoSave: {fileID: 1258900386}
+  id: lz5jkTztv0i3we1PjuDQYg
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
+  transform: {fileID: 1258900385}
 --- !u!1 &1260612913
 GameObject:
   m_ObjectHideFlags: 0
@@ -29590,6 +31938,176 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!1 &1291642638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1291642639}
+  - 212: {fileID: 1291642641}
+  - 114: {fileID: 1291642640}
+  m_Layer: 0
+  m_Name: swamp_front (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1291642639
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291642638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 530305480}
+  m_RootOrder: 2
+--- !u!114 &1291642640
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291642638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: qPH8tXQVXEaF63vYzIW68A
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+    component: {fileID: 1291642639}
+  - name: SpriteRenderer
+    id: IlnouKubHEq9XTCRV73ebw
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+    component: {fileID: 1291642641}
+  activeSelfVariable:
+    name: activeSelf
+    id: Fp7YFQfsqke82xJf8mSdYQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+  nameVariable:
+    name: name
+    id: FOG2PD0Xgk20rvobegQy8Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+  tagVariable:
+    name: tag
+    id: BHFzJVYkgka4bA4qZeiajg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+  layerVariable:
+    name: layer
+    id: W416EnL9QEynWKs0IEBw9A
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+  parentVariable:
+    name: parent
+    id: KCd3wBkHOEWsgfrgxpfmWA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1291642638}
+    _autoSave: {fileID: 1291642640}
+  id: cnJbPJ0vQUKtkMhUIQa8ng
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8961526, g: 0.39615262, b: 0.8961526, a: 1}
+  transform: {fileID: 1291642639}
+--- !u!212 &1291642641
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1291642638}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &1299115440
 Prefab:
   m_ObjectHideFlags: 0
@@ -37654,8 +40172,12 @@ Transform:
   - {fileID: 819919404}
   - {fileID: 1361258624}
   - {fileID: 498094317}
+  - {fileID: 530305480}
+  - {fileID: 1258900385}
+  - {fileID: 1825521642}
+  - {fileID: 91547720}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1001 &1640636049
 Prefab:
   m_ObjectHideFlags: 0
@@ -37977,6 +40499,176 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647772307}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1 &1653412083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1653412084}
+  - 212: {fileID: 1653412086}
+  - 114: {fileID: 1653412085}
+  m_Layer: 0
+  m_Name: swamp_front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1653412084
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653412083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9829626, y: 11.992058, z: -40.18}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1825521642}
+  m_RootOrder: 1
+--- !u!114 &1653412085
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653412083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: LBdIFquT2USpeFd0yAyaYQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+    component: {fileID: 1653412084}
+  - name: SpriteRenderer
+    id: K0kvOMYeAEeMOlTiq2G8uQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+    component: {fileID: 1653412086}
+  activeSelfVariable:
+    name: activeSelf
+    id: 9KilNoHWpUORpIHXuszr1Q
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+  nameVariable:
+    name: name
+    id: KTIUy9Kz2EWbwdS2JEOpuA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+  tagVariable:
+    name: tag
+    id: karz01mTFEmWqPtKdaeYnw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+  layerVariable:
+    name: layer
+    id: P6ZfjoxuGUOJA06ZfnjCsQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+  parentVariable:
+    name: parent
+    id: QzxW5H115Em1VsjwFw7stQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1653412083}
+    _autoSave: {fileID: 1653412085}
+  id: UQ5fKnq5gkWygF5v0bujdQ
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.38608754, g: 0.88608754, b: 0.88608754, a: 1}
+  transform: {fileID: 1653412084}
+--- !u!212 &1653412086
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653412083}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -38657,7 +41349,7 @@ MonoBehaviour:
   gage_Character: {fileID: 2045122768}
   finish_ground: {fileID: 1191184165}
   loadParent: {fileID: 1282434733}
-  playerBody: {fileID: 934627842}
+  playerBody: {fileID: 832472001}
   StartPos: {fileID: 1453072423}
 --- !u!4 &1725925917
 Transform:
@@ -41496,6 +44188,51 @@ Transform:
   - {fileID: 1536855815}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &1792530673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1792530674}
+  - 114: {fileID: 1792530675}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1792530674
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792530673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 414205327}
+  m_Father: {fileID: 431955064}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 30.999998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1792530675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792530673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ed16a211358ec40acae282c68af56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1808913488
 Prefab:
   m_ObjectHideFlags: 0
@@ -43605,6 +46342,306 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 19810838, guid: a2b2ebb8ea5e650419a8506b048f8e7a,
     type: 2}
   m_PrefabInternal: {fileID: 1654141060}
+--- !u!1 &1825521641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1825521642}
+  - 114: {fileID: 1825521643}
+  m_Layer: 0
+  m_Name: swamp (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1825521642
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1825521641}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0.0002784431}
+  m_LocalPosition: {x: 7.6127243, y: 6.2317953, z: 37.997093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1146037587}
+  - {fileID: 1653412084}
+  - {fileID: 85661009}
+  - {fileID: 1870195225}
+  m_Father: {fileID: 1614817295}
+  m_RootOrder: 6
+--- !u!114 &1825521643
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1825521641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: B04BHeueHEGLcrU9TxUxKQ
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+    component: {fileID: 1825521642}
+  activeSelfVariable:
+    name: activeSelf
+    id: QvZguJR4FE24tNws0JylRQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+  nameVariable:
+    name: name
+    id: U7B7VeIjh0yWoAkR8sTEuw
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+  tagVariable:
+    name: tag
+    id: 0WDytVWUEUO3LWlkT02vFQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+  layerVariable:
+    name: layer
+    id: GvDpVmZU8UyiPC8giax91w
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+  parentVariable:
+    name: parent
+    id: Nen846j4B0ytPqVS60vIDA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1825521641}
+    _autoSave: {fileID: 1825521643}
+  id: lz5jkTztv0i3we1PjuDQYg
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.45219797, g: 0.45219797, b: 0.95219797, a: 1}
+  transform: {fileID: 1825521642}
+--- !u!1 &1827313936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1827313937}
+  - 212: {fileID: 1827313939}
+  - 114: {fileID: 1827313938}
+  m_Layer: 0
+  m_Name: swamp_back (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1827313937
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827313936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 91547720}
+  m_RootOrder: 3
+--- !u!114 &1827313938
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827313936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: D9B69CNyz0egZ1YObOJTCA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+    component: {fileID: 1827313937}
+  - name: SpriteRenderer
+    id: Y4i1mwIXikK1wL9ECrt1JA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+    component: {fileID: 1827313939}
+  activeSelfVariable:
+    name: activeSelf
+    id: AhiflHKNk0K87zfhc0pSCA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+  nameVariable:
+    name: name
+    id: Mhbf31w0Ik2mOMe2179uzQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+  tagVariable:
+    name: tag
+    id: Vr06fmvSw0SuOsobZUqGBg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+  layerVariable:
+    name: layer
+    id: MyTSVwJsH0CYxlzgRQLKeQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+  parentVariable:
+    name: parent
+    id: 2QoVRF1to020CHFjDOs9qA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1827313936}
+    _autoSave: {fileID: 1827313938}
+  id: UNF1Ep2vAUKNjBo3gnPR7Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8635135, g: 0.5939057, b: 0.3674351, a: 1}
+  transform: {fileID: 1827313937}
+--- !u!212 &1827313939
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827313936}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1854255819
 GameObject:
   m_ObjectHideFlags: 0
@@ -43777,6 +46814,176 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000030517396, y: -0.00064086914}
   m_SizeDelta: {x: 501, y: 601.49}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1870195224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1870195225}
+  - 212: {fileID: 1870195227}
+  - 114: {fileID: 1870195226}
+  m_Layer: 0
+  m_Name: swamp_back (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870195225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870195224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1825521642}
+  m_RootOrder: 3
+--- !u!114 &1870195226
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870195224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: D9B69CNyz0egZ1YObOJTCA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+    component: {fileID: 1870195225}
+  - name: SpriteRenderer
+    id: Y4i1mwIXikK1wL9ECrt1JA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+    component: {fileID: 1870195227}
+  activeSelfVariable:
+    name: activeSelf
+    id: AhiflHKNk0K87zfhc0pSCA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+  nameVariable:
+    name: name
+    id: Mhbf31w0Ik2mOMe2179uzQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+  tagVariable:
+    name: tag
+    id: Vr06fmvSw0SuOsobZUqGBg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+  layerVariable:
+    name: layer
+    id: MyTSVwJsH0CYxlzgRQLKeQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+  parentVariable:
+    name: parent
+    id: 2QoVRF1to020CHFjDOs9qA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1870195224}
+    _autoSave: {fileID: 1870195226}
+  id: UNF1Ep2vAUKNjBo3gnPR7Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8635135, g: 0.5939057, b: 0.3674351, a: 1}
+  transform: {fileID: 1870195225}
+--- !u!212 &1870195227
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870195224}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1873931980
 GameObject:
   m_ObjectHideFlags: 0
@@ -44012,80 +47219,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1906343554
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 615815015}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: SoundBase
-      value: 
-      objectReference: {fileID: 1157830665}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: StartPos
-      value: 
-      objectReference: {fileID: 2145956768}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: waterDead
-      value: 
-      objectReference: {fileID: 506181894}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: bumpEffect
-      value: 
-      objectReference: {fileID: 8073901}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: waterEffect
-      value: 
-      objectReference: {fileID: 506181894}
-    - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: Camera_ingame
-      value: 
-      objectReference: {fileID: 1047770018}
-    - target: {fileID: 152926, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1908671789
 GameObject:
   m_ObjectHideFlags: 0
@@ -44232,6 +47365,176 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908671789}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1 &1912676605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1912676606}
+  - 212: {fileID: 1912676608}
+  - 114: {fileID: 1912676607}
+  m_Layer: 0
+  m_Name: swamp_back (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912676606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912676605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.888, y: 11.992058, z: -39.547092}
+  m_LocalScale: {x: 1.5523596, y: 1.7030512, z: 2.4346108}
+  m_Children: []
+  m_Father: {fileID: 1258900385}
+  m_RootOrder: 3
+--- !u!114 &1912676607
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912676605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1062084277, guid: f7c2b27021fe24040a15c90bfc80ef29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableCache: []
+  components:
+  - name: Transform
+    id: D9B69CNyz0egZ1YObOJTCA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.Transform, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+    component: {fileID: 1912676606}
+  - name: SpriteRenderer
+    id: Y4i1mwIXikK1wL9ECrt1JA
+    previousID: 
+    isComponent: 1
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 0
+    assemblyQualifiedTypeName: UnityEngine.SpriteRenderer, UnityEngine, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+    component: {fileID: 1912676608}
+  activeSelfVariable:
+    name: activeSelf
+    id: AhiflHKNk0K87zfhc0pSCA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+  nameVariable:
+    name: name
+    id: Mhbf31w0Ik2mOMe2179uzQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+  tagVariable:
+    name: tag
+    id: Vr06fmvSw0SuOsobZUqGBg
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+  layerVariable:
+    name: layer
+    id: MyTSVwJsH0CYxlzgRQLKeQ
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+  parentVariable:
+    name: parent
+    id: 2QoVRF1to020CHFjDOs9qA
+    previousID: 
+    isComponent: 0
+    _selected: 0
+    saveButtonSelected: 0
+    isProperty: 1
+    assemblyQualifiedTypeName: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    variableIDs: []
+    gameObject: {fileID: 1912676605}
+    _autoSave: {fileID: 1912676607}
+  id: UNF1Ep2vAUKNjBo3gnPR7Q
+  prefabID: 
+  isInitialised: 0
+  _selected: 0
+  saveButtonSelected: 0
+  color: {r: 0.8635135, g: 0.5939057, b: 0.3674351, a: 1}
+  transform: {fileID: 1912676606}
+--- !u!212 &1912676608
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912676605}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -46263,7 +49566,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1 &2062287436
 GameObject:
   m_ObjectHideFlags: 0

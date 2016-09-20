@@ -19,6 +19,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &112266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 448356}
+  - 95: {fileID: 9583476}
+  m_Layer: 0
+  m_Name: model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &129020
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 468064}
+  m_Layer: 0
+  m_Name: model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &145308
 GameObject:
   m_ObjectHideFlags: 1
@@ -65,6 +96,7 @@ GameObject:
   - 33: {fileID: 3386442}
   - 65: {fileID: 6581142}
   - 23: {fileID: 2320390}
+  - 114: {fileID: 11499984}
   m_Layer: 0
   m_Name: CloudCollider
   m_TagString: ground
@@ -109,7 +141,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &184916
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -124,7 +156,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &186756
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -190,12 +222,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23844479, y: 0.87, z: 0}
+  m_LocalPosition: {x: -0.23844488, y: 0.8700001, z: 0}
   m_LocalScale: {x: 0.11663955, y: 0.67016006, z: 0.67016006}
   m_Children:
   - {fileID: 432306}
-  m_Father: {fileID: 455856}
-  m_RootOrder: 3
+  m_Father: {fileID: 468064}
+  m_RootOrder: 0
 --- !u!4 &432306
 Transform:
   m_ObjectHideFlags: 1
@@ -221,6 +253,19 @@ Transform:
   - {fileID: 470296}
   m_Father: {fileID: 455856}
   m_RootOrder: 2
+--- !u!4 &448356
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 468064}
+  m_Father: {fileID: 455856}
+  m_RootOrder: 3
 --- !u!4 &455856
 Transform:
   m_ObjectHideFlags: 1
@@ -228,15 +273,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -11.6, y: -3.41, z: 0}
   m_LocalScale: {x: 5.7455664, y: 1, z: 1}
   m_Children:
   - {fileID: 474276}
   - {fileID: 431670}
   - {fileID: 445906}
+  - {fileID: 448356}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &468064
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
   - {fileID: 432260}
   - {fileID: 479764}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 448356}
   m_RootOrder: 0
 --- !u!4 &470296
 Transform:
@@ -294,12 +352,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 1.09, z: 0}
+  m_LocalPosition: {x: 0.09999995, y: 1.0899999, z: 0}
   m_LocalScale: {x: 0.15822187, y: 0.90907407, z: 0.90907407}
   m_Children:
   - {fileID: 477156}
-  m_Father: {fileID: 455856}
-  m_RootOrder: 4
+  m_Father: {fileID: 468064}
+  m_RootOrder: 1
 --- !u!23 &2317258
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -310,7 +368,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: c9355c4b10aecf54a8fce286d8f2d52a, type: 2}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -440,6 +498,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9583476
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8caa20f4f996cd046b3e1b2941facd66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9598804
 Animator:
   serializedVersion: 3
@@ -485,6 +560,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!114 &11437896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,6 +604,19 @@ MonoBehaviour:
     in the Emission tab with the Rate property. Be sure to set a Max Particles number
     to match the Rate in the main tab!"
   MsgType: 1
+--- !u!114 &11499984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a36c2ddedb2e704a8f10a403e1a8820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bumpAni: {fileID: 9583476}
+  groundParent: {fileID: 468064}
 --- !u!198 &19834310
 ParticleSystem:
   m_ObjectHideFlags: 1

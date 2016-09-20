@@ -14,6 +14,8 @@ public class Monkey : MonoBehaviour {
 	float turnSpeed_in;
 	// Use this for initialization
 	void Start () {
+		banana.transform.parent = null;
+
 		waitTime_in = waitTime;
 
 		attSpeed_in = attSpeed;

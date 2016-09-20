@@ -535,6 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpAni: {fileID: 9598658}
+  groundParent: {fileID: 437576}
 --- !u!114 &11478072
 MonoBehaviour:
   m_ObjectHideFlags: 1
