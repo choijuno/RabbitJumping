@@ -357,6 +357,7 @@
      <Compile Include="Assets\___Scripts\--Lim\L.Scripts\JsonParsing\JsonParsing.cs" />
      <Compile Include="Assets\___Scripts\--Lim\L.Scripts\LoadingBarClass.cs" />
      <Compile Include="Assets\___Scripts\--Lim\L.Scripts\MainScene\mainSceneManager.cs" />
+     <Compile Include="Assets\___Scripts\--Lim\L.Scripts\SelectScene\selectManager.Method.cs" />
      <Compile Include="Assets\___Scripts\--Lim\L.Scripts\SelectScene\selectManager.cs" />
      <Compile Include="Assets\___Scripts\--Lim\LimTestClass.cs" />
      <Compile Include="Assets\___Scripts\--Lim\ScrollClass.cs" />
