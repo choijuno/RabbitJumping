@@ -136,7 +136,7 @@ public class GameManager : MonoBehaviour {
 			switch (gameSet) {
 			case 1://win
 				
-				yield return new WaitForSeconds (2.3f);
+				yield return new WaitForSeconds (1.1f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
 				StartCoroutine ("gameResult_Clear");
@@ -145,7 +145,7 @@ public class GameManager : MonoBehaviour {
 
 			case 2://lose
 				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
-				yield return new WaitForSeconds (2.3f);
+				yield return new WaitForSeconds (1.7f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
 				StartCoroutine ("gameResult_Failed");
