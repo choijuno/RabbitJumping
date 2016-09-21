@@ -141,19 +141,6 @@ public partial class selectManager : MonoBehaviour {
         eventSystem.pixelDragThreshold = (int)(0.5f * Screen.dpi / 2.54f);
      
         storeAndRoom.SetActive(false);
-        //상점 Ok버튼
-        greenBoxBtnOk = store.transform.FindChild("greenBoxOk").GetComponent<Button>();
-        blueBoxBtnOk = store.transform.FindChild("blueBoxOk").GetComponent<Button>();
-        redBoxBtnOk = store.transform.FindChild("redBoxOk").GetComponent<Button>();
-
-        greenBoxBtnOk.onClick.AddListener(()=> OkSign(0));
-        blueBoxBtnOk.onClick.AddListener(() => OkSign(2));
-        redBoxBtnOk.onClick.AddListener(() => OkSign(1));
-
-        greenBoxBtnOk.gameObject.SetActive(false);
-        blueBoxBtnOk.gameObject.SetActive(false);
-        redBoxBtnOk.gameObject.SetActive(false);
-
         //설정
         setup = UiCanvas.gameObject.transform.FindChild("setup").gameObject;
         
@@ -223,11 +210,11 @@ public partial class selectManager : MonoBehaviour {
         cha_selectUi = myRoom.transform.FindChild("cha_selectUi").gameObject;
         empty_panel = cha_selectUi.transform.GetChild(0).gameObject;
         cha_scrollpanel = empty_panel.transform.GetChild(0).gameObject;
-        cha_btnAll = cha_scrollpanel.transform.FindChild("cha_btnAll").gameObject;
 
-        for(int i = 0; i< cha_btnAll.transform.childCount; i++)
+        Debug.Log(cha_scrollpanel.transform.childCount);
+        for(int i = 0; i< cha_scrollpanel.transform.childCount; i++)
         {
-            Button chaBtn_a = cha_btnAll.transform.GetChild(i).GetComponent<Button>();
+            Button chaBtn_a = cha_scrollpanel.transform.GetChild(i).GetComponent<Button>();
             chaBtn_a.onClick.AddListener(() => chaFunc(chaBtn_a.name));
         }
 
@@ -267,6 +254,11 @@ public partial class selectManager : MonoBehaviour {
 				stageBtn.onClick.AddListener (() => SceneGo (stageBtn.name));
 			}
 		}
+        if(CreateUnitClass.CreateUnitChk == true)
+        {
+            MyBtnFunc();
+            CreateUnitClass.CreateUnitChk = false;
+        }
 
         loadStar(); //별 로드
         loadNoneStage();

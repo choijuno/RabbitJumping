@@ -41,17 +41,17 @@ public class LoadingBarClass : MonoBehaviour {
         while (loadingBar.fillAmount >= 0.5f)
         {
             loadingBar.fillAmount += 0.001f;
-
             yield return null;
-            
         }
+
+        yield return new WaitForSeconds(0.5f);
 
         loadingchk = true;
         if (loadingchk == true)
         {
             while (async.isDone == false)
             {
-                loadingBar.fillAmount = async.progress * 10f;
+                loadingBar.fillAmount = async.progress * 100f;
                 yield return true;
             }
         }

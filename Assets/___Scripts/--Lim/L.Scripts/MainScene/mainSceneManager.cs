@@ -32,8 +32,7 @@ public class mainSceneManager : MonoBehaviour {
 	void startBtnFunc()
     {
         SceneIndex = 1;
-        SceneManager.LoadScene(1);
-        
+        SceneManager.LoadScene(2);
     }
     
     void faceBookBtnFunc() //구글

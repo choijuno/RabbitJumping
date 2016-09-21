@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public partial class selectManager : MonoBehaviour
 {
+    public static int eggNumber = 0;
+
     public void MyBtnFunc() //인벤토리 버튼 눌렀을때.
     {
         chaSetFalse();
@@ -80,6 +83,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void bosukBtnFunc()
     {
+        
         goldBosuk.SetActive(true);
         goldBtn.image.sprite = GoldSprite;
         bosukBtn.image.sprite = nonBosukSprite;
@@ -202,14 +206,10 @@ public partial class selectManager : MonoBehaviour
             Debug.Log("돈이 부족합니다.");
         else
         {
+            eggNumber = 0;
             DataSave._instance.setMoney_GameMinus(1000);
-            animator = goldDraw.GetComponentInChildren<Animator>();
-            animator.SetBool("Ok", true);
             gameMoney.text = DataSave._instance.getMoney_Game().ToString();
-            greenBoxBtn.gameObject.SetActive(false);
-            redBoxBtn.gameObject.SetActive(false);
-            blueBoxBtn.gameObject.SetActive(false);
-            StartCoroutine(ChaWaitTime(0));
+            SceneManager.LoadScene(5);
         }
     }
 
@@ -220,69 +220,18 @@ public partial class selectManager : MonoBehaviour
             Debug.Log("돈이 부족합니다.");
         else
         {
+            eggNumber = 1;
             DataSave._instance.setMoney_GameMinus(2500);
-            animator = bosukDraw.GetComponentInChildren<Animator>();
-            animator.SetBool("Ok", true);
             gameMoney.text = DataSave._instance.getMoney_Game().ToString();
-            greenBoxBtn.gameObject.SetActive(false);
-            redBoxBtn.gameObject.SetActive(false);
-            blueBoxBtn.gameObject.SetActive(false);
-            StartCoroutine(ChaWaitTime(1));
+            SceneManager.LoadScene(5);
         }
     }
     public void blueBoxBtnFunc() //광고 박스
     {
-        animator = bosukDraw.GetComponentInChildren<Animator>();
-        animator.SetBool("Ok", true);
-        greenBoxBtn.gameObject.SetActive(false);
-        redBoxBtn.gameObject.SetActive(false);
-        blueBoxBtn.gameObject.SetActive(false);
-        StartCoroutine(ChaWaitTime(2));
+        eggNumber = 2;
+        SceneManager.LoadScene(5);
     }
-    IEnumerator ChaWaitTime(int whereBox)
-    {
-        randomCharacter = Random.Range(2, 4);
-        switch (whereBox)
-        {
-            case 0:
-                yield return new WaitForSeconds(3.3f);
-                rabbit = Instantiate(Resources.Load("character/0che_rabbit" + randomCharacter), new Vector3(-24.08f, -2.55f, -163.23f), Quaternion.identity) as GameObject;
-
-                greenBoxBtnOk.gameObject.SetActive(true);
-                break;
-            case 1:
-                yield return new WaitForSeconds(3.3f);
-                rabbit = Instantiate(Resources.Load("character/0che_rabbit" + randomCharacter), new Vector3(-19.13f, -2.55f, -163.23f), Quaternion.identity) as GameObject;
-                redBoxBtnOk.gameObject.SetActive(true);
-                break;
-            case 2:
-                yield return new WaitForSeconds(3.3f);
-                rabbit = Instantiate(Resources.Load("character/0che_rabbit" + randomCharacter), new Vector3(-14.38f, -2.55f, -163.23f), Quaternion.identity) as GameObject;
-                blueBoxBtnOk.gameObject.SetActive(true);
-                break;
-        }
-    }
-    void OkSign(int characterIndex)
-    {
-        Destroy(rabbit);
-        ES2.Save<int>(randomCharacter, "character" + randomCharacter.ToString());
-        animator.SetBool("Ok", false);
-        switch (characterIndex)
-        {
-            case 0:
-                greenBoxBtnOk.gameObject.SetActive(false);
-                break;
-            case 1:
-                redBoxBtnOk.gameObject.SetActive(false);
-                break;
-            case 2:
-                blueBoxBtnOk.gameObject.SetActive(false);
-                break;
-        }
-        greenBoxBtn.gameObject.SetActive(true);
-        redBoxBtn.gameObject.SetActive(true);
-        blueBoxBtn.gameObject.SetActive(true);
-    }
+    
     public void chaFunc(string cha_index)
     {
         int cha_test = int.Parse(cha_index);
