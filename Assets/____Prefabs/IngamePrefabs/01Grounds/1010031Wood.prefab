@@ -43,7 +43,7 @@ GameObject:
   - 33: {fileID: 3360586}
   - 65: {fileID: 6515542}
   - 23: {fileID: 2316286}
-  - 114: {fileID: 11439614}
+  - 114: {fileID: 11452506}
   m_Layer: 0
   m_Name: woodCollider
   m_TagString: ground
@@ -243,7 +243,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
---- !u!114 &11439614
+--- !u!114 &11452506
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -251,11 +251,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 157930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac12061a6729ed45942c4051c03297d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a36c2ddedb2e704a8f10a403e1a8820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bumpCheck: 0
-  woodAni: {fileID: 9543462}
+  bumpAni: {fileID: 9543462}
+  groundParent: {fileID: 404696}
 --- !u!212 &21280120
 SpriteRenderer:
   m_ObjectHideFlags: 1

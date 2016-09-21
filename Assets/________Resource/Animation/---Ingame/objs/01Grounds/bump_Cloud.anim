@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: bump
+  m_Name: bump_Cloud
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,32 +20,32 @@ AnimationClip:
       - time: 0
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: -0.32, z: 0}
-        outSlope: {x: 0, y: -1.0449358, z: 0}
+        outSlope: {x: 0, y: -1.2030284, z: 0}
         tangentMode: 0
-      - time: 0.033333335
-        value: {x: 0, y: -0.06012048, z: 0}
-        inSlope: {x: 0, y: -1.1641356, z: 0}
-        outSlope: {x: 0, y: -0.18797776, z: 0}
+      - time: 0.1
+        value: {x: 0, y: -0.18311964, z: 0}
+        inSlope: {x: 0, y: -2.69466, z: 0}
+        outSlope: {x: 0, y: -0.35401082, z: 0}
         tangentMode: 0
-      - time: 0.13333333
-        value: {x: 0, y: -0.060792305, z: 0}
-        inSlope: {x: 0, y: 0.17026915, z: 0}
-        outSlope: {x: 0, y: 0.17026915, z: 0}
+      - time: 0.5
+        value: {x: 0, y: -0.13434932, z: 0}
+        inSlope: {x: 0, y: 0.3833368, z: 0}
+        outSlope: {x: 0, y: 0.69376236, z: 0}
         tangentMode: 0
-      - time: 0.15
-        value: {x: 0, y: -0.057476696, z: 0}
-        inSlope: {x: 0, y: 0.22748497, z: 0}
-        outSlope: {x: 0, y: 0.30530563, z: 0}
+      - time: 0.68333334
+        value: {x: 0, y: -0.03904309, z: 0}
+        inSlope: {x: 0, y: 0.38305718, z: 0}
+        outSlope: {x: 0, y: 0.38305718, z: 0}
         tangentMode: 0
-      - time: 0.21666667
+      - time: 0.78333336
+        value: {x: 0, y: -0.0050701736, z: 0}
+        inSlope: {x: 0, y: 0.30744398, z: 0}
+        outSlope: {x: 0, y: 0.30744398, z: 0}
+        tangentMode: 0
+      - time: 0.8
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 1.5910134, z: 0}
+        inSlope: {x: 0, y: 0.30128324, z: 0}
         outSlope: {x: 0, y: 0.32, z: 0}
-        tangentMode: 0
-      - time: 0.26666668
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -73,7 +73,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.26666668
+    m_StopTime: 0.8
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -97,12 +97,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 1
-      - time: 0.13333333
+      - time: 0.68333334
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 0.26666668
+      - time: 0.78333336
         value: 0
         inSlope: 0
         outSlope: 0
@@ -120,21 +120,21 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: -0.32
-        outSlope: -1.0449358
+        outSlope: -1.2030284
         tangentMode: 1
-      - time: 0.033333335
-        value: -0.06012048
-        inSlope: -1.1641356
-        outSlope: -0.18797776
+      - time: 0.1
+        value: -0.18311964
+        inSlope: -2.69466
+        outSlope: -0.35401082
         tangentMode: 1
-      - time: 0.15
-        value: -0.057476696
-        inSlope: 0.22748497
-        outSlope: 0.30530563
+      - time: 0.5
+        value: -0.13434932
+        inSlope: 0.3833368
+        outSlope: 0.69376236
         tangentMode: 1
-      - time: 0.21666667
+      - time: 0.8
         value: 0
-        inSlope: 1.5910134
+        inSlope: 0.30128324
         outSlope: 0.32
         tangentMode: 1
       m_PreInfinity: 2
@@ -152,12 +152,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 1
-      - time: 0.13333333
+      - time: 0.68333334
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 0.26666668
+      - time: 0.78333336
         value: 0
         inSlope: 0
         outSlope: 0

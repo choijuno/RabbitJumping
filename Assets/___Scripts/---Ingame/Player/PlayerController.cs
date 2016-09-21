@@ -217,8 +217,8 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if (obj.CompareTag("clear")) {
-			GameManager.gameSet = 1;
-			gameset = GameSet.win;
+			//GameManager.gameSet = 1;
+			//gameset = GameSet.win;
 		}
 
 
