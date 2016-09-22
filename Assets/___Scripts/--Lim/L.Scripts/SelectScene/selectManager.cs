@@ -112,7 +112,11 @@ public partial class selectManager : MonoBehaviour {
     Animator animator;
     void Start ()
     {
-       
+       /* for(int i = 0; i < 5; i++)
+        {
+            ES2.Delete("character" + i.ToString());
+        }
+        ES2.Delete("rabbit");*/
         if (ES2.Exists("scrollPanel"))
         {
             scrollPanel.localPosition = ES2.Load<Vector2>("scrollPanel");
