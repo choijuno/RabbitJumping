@@ -2935,6 +2935,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!23 &339627647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2977,7 +2978,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339627645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.57, y: -3.77, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children:
   - {fileID: 443976104}
@@ -4112,6 +4113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpAni: {fileID: 558868404}
+  groundParent: {fileID: 0}
 --- !u!1 &460096944
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,6 +4253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c4a9552529bbb4a8565d33bd83990c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingameCamera: {fileID: 0}
   resultCheck: 0
   Money_ingame_txt: {fileID: 0}
   Record_time_txt: {fileID: 0}
@@ -4502,6 +4505,8 @@ MonoBehaviour:
   spider_2: {fileID: 162394, guid: 067c27979196cb34da9557fd35889049, type: 2}
   spider_3: {fileID: 177748, guid: dd95422cccd98454587d2d107720a9ae, type: 2}
   gold: {fileID: 147632, guid: 8045fb03393156746a7a3d924eb12100, type: 2}
+  cloud_Rain: {fileID: 0}
+  cloud_Rain_2: {fileID: 0}
   cloud: {fileID: 117846, guid: dd8e96846a305e545bd7d579e549f5b3, type: 2}
   cloud_2: {fileID: 157452, guid: ff83130ce38ee554596e34f5dd23b8a8, type: 2}
   hive: {fileID: 164364, guid: b76d502bbcfe0aa44abf6a2906f1128e, type: 2}
@@ -10023,11 +10028,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.32
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13110,11 +13115,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 496418, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496418, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496418, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -17673,6 +17678,7 @@ MonoBehaviour:
   MoveSpeed: 5
   midleBackGround: {fileID: 1104618708}
   playerPosition: {fileID: 663604566}
+  viveCheck: 0
   CameraCenterPosition: 4
   waitTime_in: 0
   rideSpeed_in: 0
@@ -17706,7 +17712,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068546302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 3.77, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2074465917}

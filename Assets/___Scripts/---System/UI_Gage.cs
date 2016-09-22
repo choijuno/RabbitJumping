@@ -41,7 +41,8 @@ public class UI_Gage : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		EndPos = 20f;
-
+		chaStartPos = 0f;
+		chaEndPos = 20f;
 		StartCoroutine ("posSet");
 
 

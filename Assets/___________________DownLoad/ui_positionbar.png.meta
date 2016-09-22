@@ -1,13 +1,18 @@
 fileFormatVersion: 2
 guid: 9b55699d662abee4bb474bc7bc33c99f
-timeCreated: 1474521189
+timeCreated: 1474532826
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: back1
+    21300002: back2
+    21300004: face
+    21300006: claer
+    21300008: pos
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -49,7 +54,80 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: back1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 418
+        width: 396
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -198, y: 30}
+        - {x: -198, y: -27}
+        - {x: -197, y: -30}
+        - {x: 198, y: -30}
+        - {x: 198, y: 14}
+        - {x: 171, y: 30}
+    - name: back2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 323
+        width: 408
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -204, y: 17}
+        - {x: -204, y: -15}
+        - {x: -199, y: -17}
+        - {x: 204, y: -17}
+        - {x: 204, y: 17}
+    - name: face
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 240
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 18.5}
+        - {x: -16, y: -17.5}
+        - {x: -13, y: -18.5}
+        - {x: 15, y: -18.5}
+        - {x: 16, y: -14.5}
+        - {x: 16, y: 16.5}
+        - {x: 15, y: 18.5}
+    - name: claer
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 197
+        width: 20
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pos
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 179
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
