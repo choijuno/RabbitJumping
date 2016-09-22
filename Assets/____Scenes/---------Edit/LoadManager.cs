@@ -58,6 +58,8 @@ public class LoadManager : MonoBehaviour {
 	public GameObject gold;
 
 	//06Hurddle
+	public GameObject cloud_Rain;
+	public GameObject cloud_Rain_2;
 	public GameObject cloud;
 	public GameObject cloud_2;
 	public GameObject hive;
@@ -302,9 +304,15 @@ public class LoadManager : MonoBehaviour {
 						break;
 				//06Hurddle
 					case "1060011":
-						_tmp = (GameObject)Instantiate (cloud, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						_tmp = (GameObject)Instantiate (cloud_Rain, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					case "1060012":
+						_tmp = (GameObject)Instantiate (cloud_Rain_2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1060013":
+						_tmp = (GameObject)Instantiate (cloud, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1060014":
 						_tmp = (GameObject)Instantiate (cloud_2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					case "1060021":
