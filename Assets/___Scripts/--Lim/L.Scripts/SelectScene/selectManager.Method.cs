@@ -30,6 +30,7 @@ public partial class selectManager : MonoBehaviour
                 chaBtnArray[i].interactable = false;
             }
         }
+
         if (ES2.Exists("rabbit"))
         {
             chaSetFalse();
