@@ -74,7 +74,7 @@ GameObject:
   - 4: {fileID: 482222}
   - 95: {fileID: 9534190}
   m_Layer: 0
-  m_Name: shop_speacialEgg 1
+  m_Name: shop_speacialEgg_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
