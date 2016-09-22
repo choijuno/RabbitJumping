@@ -2869,8 +2869,8 @@ MonoBehaviour:
   gold: {fileID: 147632, guid: 8045fb03393156746a7a3d924eb12100, type: 2}
   cloud_Rain: {fileID: 117846, guid: dd8e96846a305e545bd7d579e549f5b3, type: 2}
   cloud_Rain_2: {fileID: 157452, guid: ff83130ce38ee554596e34f5dd23b8a8, type: 2}
-  cloud: {fileID: 117846, guid: dd8e96846a305e545bd7d579e549f5b3, type: 2}
-  cloud_2: {fileID: 157452, guid: ff83130ce38ee554596e34f5dd23b8a8, type: 2}
+  cloud: {fileID: 117846, guid: c82b803b0a48ee94b933d98ce6a1f330, type: 2}
+  cloud_2: {fileID: 157452, guid: 1abfb65618c47e14cb46c0cfe24c437a, type: 2}
   hive: {fileID: 164364, guid: b76d502bbcfe0aa44abf6a2906f1128e, type: 2}
   poison: {fileID: 125900, guid: 8f3b18ebc94c7a7409b387ff78c69d10, type: 2}
   elephant: {fileID: 134054, guid: 047ef6b8800432348ac19ceb0fea59d6, type: 2}

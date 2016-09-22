@@ -7154,7 +7154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 163494, guid: ae1449e524ef48840b82545f9247108d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21287406, guid: ae1449e524ef48840b82545f9247108d, type: 2}
       propertyPath: m_SortingOrder
@@ -29244,7 +29244,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 160862, guid: 7f0849b687adfd84491a4a247711d742, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9508454, guid: 7f0849b687adfd84491a4a247711d742, type: 2}
       propertyPath: m_Controller
@@ -30783,7 +30783,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 165682, guid: 8bb6e1be834015344bffee1cb7e4b517, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9503156, guid: 8bb6e1be834015344bffee1cb7e4b517, type: 2}
       propertyPath: m_Controller
