@@ -5,7 +5,7 @@ using System.Collections;
 public class LoadManager : MonoBehaviour {
 	
 
-
+	public Text StageNum_txt;
 
 	public Text DataPathTest;
 	public Text DataPathTest2;
@@ -101,6 +101,7 @@ public class LoadManager : MonoBehaviour {
 		} else {
 			if (Application.loadedLevelName == "TestGame"){
 				stageNum = GameManager.TestNum;
+				StageNum_txt.text = "Stage " + GameManager.TestNum;
 			}
 
 		}

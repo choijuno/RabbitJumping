@@ -31,9 +31,9 @@ public class GameCamera : MonoBehaviour {
 
 	void Start () {
 		CameraCenterPosition_in = CameraCenterPosition;
-		baseY = 0;
+		baseY = 3.77f;
 
-		transform.position = new Vector3 (playerPosition.transform.position.x + CameraCenterPosition, 0, -10);
+		transform.position = new Vector3 (playerPosition.transform.position.x + CameraCenterPosition, 5f, -10);
 		movespeed = MoveSpeed;
 
 		StartCoroutine ("lookCha");
