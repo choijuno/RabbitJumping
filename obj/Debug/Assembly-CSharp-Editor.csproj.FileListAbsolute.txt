@@ -139,3 +139,4 @@ D:\최준오\programing\projects\Rabbit\Temp\bin\Debug\UnityEngine.Purchasing.xm
 D:\최준오\programing\projects\Rabbit\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 D:\최준오\programing\projects\Rabbit\obj\Debug\Assembly-CSharp-Editor.dll
 D:\최준오\programing\projects\Rabbit\obj\Debug\Assembly-CSharp-Editor.pdb
+D:\최준오\programing\projects\Rabbit\Temp\bin\Debug\JMOAssets.dll

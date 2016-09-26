@@ -76,10 +76,18 @@ public class GameCamera : MonoBehaviour {
 					if (Physics.Raycast (ray, out hit)) {
 
 						if (hit.collider.gameObject.CompareTag ("left")) {
-							playerState = MovePosition.Left;
+							if (!PlayerController.poisonCheck) {
+								playerState = MovePosition.Left;
+							} else {
+								playerState = MovePosition.Right;
+							}
 						}
 						if (hit.collider.gameObject.CompareTag ("right")) {
-							playerState = MovePosition.Right;
+							if (!PlayerController.poisonCheck) {
+								playerState = MovePosition.Right;
+							} else {
+								playerState = MovePosition.Left;
+							}
 						}
 
 					}

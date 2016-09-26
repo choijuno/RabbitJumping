@@ -842,6 +842,14 @@ public class PlayerMove : MonoBehaviour {
 					}
 					break;
 
+				case "1030031"://plant
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "plantCollider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
 				case "1040021"://croc
 					foreach (Transform child_inChild in child) {
 						if (child_inChild.name == "crocodile_Collider") {

@@ -3,7 +3,7 @@ using System.Collections;
 
 //AudioSource.PlayClipAtPoint ('public AudioClip 변수;', transform.position);
 
-public class SoundManager : MonoBehaviour {
+public class SoundManager2 : MonoBehaviour {
 	public Transform Camera;
 
 

@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: bdd792331384f604aa6069af7068436c
+timeCreated: 1474867917
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_coin_0
+    21300002: ob_coin_1
+    21300004: ob_coin_2
+    21300006: ob_coin_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: ob_coin_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 384
+        width: 79
+        height: 76
+      alignment: 9
+      pivot: {x: 0.41626605, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.885017, y: 38}
+        - {x: -28.885017, y: 28}
+        - {x: -32.885017, y: 16}
+        - {x: -32.885017, y: -21}
+        - {x: -18.885017, y: -38}
+        - {x: 25.114983, y: -38}
+        - {x: 46.114983, y: -24}
+        - {x: 46.114983, y: 34}
+        - {x: 32.114983, y: 38}
+    - name: ob_coin_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 387
+        width: 79
+        height: 77
+      alignment: 9
+      pivot: {x: 0.43719947, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.538757, y: 38.5}
+        - {x: -34.538757, y: 25.5}
+        - {x: -34.538757, y: -33.5}
+        - {x: -21.538757, y: -38.5}
+        - {x: 37.461243, y: -38.5}
+        - {x: 44.461243, y: -27.5}
+        - {x: 44.461243, y: 34.5}
+        - {x: 31.461243, y: 38.5}
+    - name: ob_coin_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 110
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 56.5}
+        - {x: -56.5, y: 42.5}
+        - {x: -56.5, y: -36.5}
+        - {x: -40.5, y: -56.5}
+        - {x: 44.5, y: -56.5}
+        - {x: 56.5, y: -43.5}
+        - {x: 56.5, y: 39.5}
+        - {x: 52.5, y: 56.5}
+    - name: ob_coin_3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 106
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 56.5}
+        - {x: -56.5, y: 42.5}
+        - {x: -56.5, y: -36.5}
+        - {x: -40.5, y: -56.5}
+        - {x: 44.5, y: -56.5}
+        - {x: 56.5, y: -43.5}
+        - {x: 56.5, y: 39.5}
+        - {x: 52.5, y: 56.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

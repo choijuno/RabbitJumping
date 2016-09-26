@@ -350,6 +350,7 @@
      <Compile Include="Assets\___Scripts\---System\BtnController.cs" />
      <Compile Include="Assets\___Scripts\---System\GameCamera.cs" />
      <Compile Include="Assets\___Scripts\---System\GameManager.cs" />
+     <Compile Include="Assets\___Scripts\---System\SoundManager.cs" />
      <Compile Include="Assets\___Scripts\---System\Status.cs" />
      <Compile Include="Assets\___Scripts\---System\UI_Gage.cs" />
      <Compile Include="Assets\___Scripts\--Lim\GoogleManager\GoogleManager.cs" />
@@ -368,7 +369,7 @@
      <Compile Include="Assets\___Scripts\--Lim\inappManager\InappManager.cs" />
      <Compile Include="Assets\___Scripts\--Lim\inappManager\InappSceneManager.cs" />
      <Compile Include="Assets\___Scripts\--Lim\soundManager\MusicManager.cs" />
-     <Compile Include="Assets\___Scripts\-ETC\SoundManager.cs" />
+     <Compile Include="Assets\___Scripts\-ETC\SoundManager2.cs" />
      <Compile Include="Assets\___Scripts\-ETC\TiltTest\Test.cs" />
      <Compile Include="Assets\____Scenes\---------Edit\EditSetting.cs" />
      <Compile Include="Assets\____Scenes\---------Edit\LoadManager.cs" />

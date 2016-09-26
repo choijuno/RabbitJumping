@@ -5,7 +5,10 @@ public class PlayerController : MonoBehaviour {
 
 
 
+	public GameObject deadbody;
+
 	// status use
+
 	public PlayerCC hiveCC = PlayerCC.not;
 	public GameObject hive_bees;
 	public float hiveTime;
@@ -13,9 +16,10 @@ public class PlayerController : MonoBehaviour {
 	public float hiveHp;
 	float hiveHp_in;
 
+	public GameObject poison_mush;
 	public float poisonTime;
 	float poisonTime_in;
-	bool poisonCheck;
+	public static bool poisonCheck;
 
 
 	MovePosition hiveState = MovePosition.Stay;
@@ -91,7 +95,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 			case MovePosition.Left:
 				if (GameManager.gameSet == 0) {
-					transform.rotation = new Quaternion (0, 180, 0, 0);
+					deadbody.transform.rotation = new Quaternion (0, 180, 0, 0);
 					if (!moveStopCheck) {
 						movespeed = -MoveSpeed;
 					} else {
@@ -101,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 			case MovePosition.Right:
 				if (GameManager.gameSet == 0) {
-					transform.rotation = new Quaternion (0, 0, 0, 0);
+					deadbody.transform.rotation = new Quaternion (0, 0, 0, 0);
 					if (!moveStopCheck) {
 						movespeed = Mathf.Abs (MoveSpeed);
 					} else {
@@ -188,6 +192,7 @@ public class PlayerController : MonoBehaviour {
 			//Debug.Log (hiveTime_in);
 			if (poisonTime_in <= 0) {
 				poisonCheck = false;
+				poison_mush.SetActive (false);
 				StopCoroutine ("poison");
 			}
 
@@ -208,6 +213,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (obj.CompareTag ("poison")) {
 			hiveCC = PlayerCC.bug;
+			poison_mush.SetActive (true);
 			Destroy (obj.transform.parent.gameObject);
 			StartCoroutine ("poison");
 		}
