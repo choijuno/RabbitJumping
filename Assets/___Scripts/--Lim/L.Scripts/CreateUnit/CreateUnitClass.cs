@@ -59,7 +59,7 @@ public class CreateUnitClass : MonoBehaviour {
     }
     void createUnitFunc()
     {
-        randomIndex = Random.Range(0, 2);
+        randomIndex = Random.Range(0, 10);
         Instantiate(unit[randomIndex], new Vector3(0.74f, -0.73f, 2.29f), Quaternion.identity);
     }
 }

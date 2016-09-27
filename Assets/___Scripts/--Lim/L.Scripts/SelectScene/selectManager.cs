@@ -108,6 +108,7 @@ public partial class selectManager : MonoBehaviour {
     Button redBoxBtnOk;
     Button blueBoxBtnOk;
 
+    GameObject preCharacter;
     int randomCharacter;
     Animator animator;
     void Start ()
