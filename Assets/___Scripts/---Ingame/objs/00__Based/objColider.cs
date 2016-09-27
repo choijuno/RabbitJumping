@@ -26,8 +26,11 @@ public class objColider : MonoBehaviour {
 	public GameObject yeon3;
 	public GameObject yeonCollider;
 
+	public Animator plant_ani;
 	public GameObject plantDeadPoint;
 	public GameObject plantModel;
+	public GameObject plantModel_dead;
+
 
 	// Use this for initialization
 	void Awake () {
@@ -40,6 +43,9 @@ public class objColider : MonoBehaviour {
 			break;
 		case "1040021": //croc
 			croc_ani.SetInteger("hp",(int)standhp);
+			break;
+		case "1030031": //plant
+			plant_ani.SetInteger("hp",(int)standhp);
 			break;
 		
 		}
@@ -65,14 +71,27 @@ public class objColider : MonoBehaviour {
 					break;
 				case "1001":
 					break;
-				case "1010021":
+
+				case "1010021": //yeon
 					Debug.Log ("resetYeon");
 					yeon_ani.SetTrigger("reset");
 					yeon_ani.SetInteger("hp",(int)standhp);
 					GetComponent<BoxCollider> ().enabled = true;
 					break;
+
 				case "2000":
 					break;
+
+				case "1030031": //plant
+					//plant_ani.SetTrigger ("reset");
+					plant_ani.SetInteger ("hp", (int)standhp);
+					plantModel_dead.SetActive (false);
+					plantModel.SetActive (true);
+					plantDeadPoint.GetComponent<BoxCollider> ().enabled = true;
+					GetComponent<BoxCollider> ().enabled = true;
+					plant_ani.ResetTrigger ("reset");
+					break;
+
 				case "1040021": //croc
 					croc_ani.SetTrigger("reset");
 					croc_ani.SetInteger("hp",(int)standhp);
@@ -90,7 +109,7 @@ public class objColider : MonoBehaviour {
 	void OnTriggerEnter (Collider player){
 		if (player.CompareTag ("ride_elephant")) {
 
-			switch (transform.parent.name.Substring (0, 4)) {
+			switch (transform.parent.name.Substring (0, 7)) {
 
 			case "1990011":
 				break;
@@ -116,8 +135,8 @@ public class objColider : MonoBehaviour {
 				break;
 			case "1030021":
 				break;
-			case "1030031":
-				transform.parent.gameObject.SetActive (false);
+			case "1030031"://plant
+				//transform.parent.gameObject.SetActive (false);
 				break;
 			case "1030041":
 				break;
@@ -125,8 +144,15 @@ public class objColider : MonoBehaviour {
 				//04Moveenemy
 			case "1040011":
 				break;
-			case "1040021":
-				transform.parent.gameObject.SetActive (false);
+			case "1040021": //croc
+				//transform.parent.gameObject.SetActive (false);
+				Camera_ingame = player.transform.parent.GetComponent<Elephant> ().Camera_ingame;
+				croc_ani.SetTrigger ("attack");
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				crocAngry.SetActive (false);
+				crocAngry.SetActive (true);
+				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
+
 				break;
 			case "1040031":
 				break;
@@ -208,7 +234,7 @@ public class objColider : MonoBehaviour {
 				break;
 			case "1030021":
 				break;
-			case "1030031":
+			case "1030031"://plant
 				plant ();
 				break;
 			case "1030041":
@@ -279,6 +305,12 @@ public class objColider : MonoBehaviour {
 			if (standhp <= 0) {
 				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
 				croc_ani.SetTrigger ("attack");
+				crocAngry.SetActive (false);
+				crocAngry.SetActive (true);
+			} else {
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				croc_ani.SetTrigger ("attack");
+				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
 			}
 			/*
@@ -305,9 +337,11 @@ public class objColider : MonoBehaviour {
 		if (standhp > 0) {
 			standhp--;
 			if (standhp <= 0) {
-				Debug.Log ("??????");
-
 				plantModel.SetActive (false);
+				plantModel_dead.SetActive (true);
+				
+				//plant_ani.SetInteger ("hp", (int)standhp);
+				//plant_ani.SetTrigger ("break");
 				plantDeadPoint.GetComponent<BoxCollider> ().enabled = false;
 				GetComponent<BoxCollider> ().enabled = false;
 			}

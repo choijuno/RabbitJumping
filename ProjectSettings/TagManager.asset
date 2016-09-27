@@ -23,6 +23,8 @@ TagManager:
   - warpexit
   - stun
   - gold
+  - gold50
+  - treecollider
   layers:
   - Default
   - TransparentFX

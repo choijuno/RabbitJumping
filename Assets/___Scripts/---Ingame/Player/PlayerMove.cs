@@ -403,6 +403,7 @@ public class PlayerMove : MonoBehaviour {
                                 Camera_ingame.GetComponent<GameCamera>().riding = true;
                                 Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Elephant>().waitTime;
                                 Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Elephant>().runSpeed * 0.001f;
+								obj.transform.parent.GetComponent<Elephant> ().Camera_ingame = Camera_ingame;
 								rideTime_in = obj.transform.parent.GetComponent<Elephant>().runTime;
 								transform.parent = obj.transform.parent.GetComponent<Elephant>().Pos.transform;
                                 transform.localPosition = new Vector3(0, 0, 0);
@@ -837,6 +838,14 @@ public class PlayerMove : MonoBehaviour {
 				case "1010021"://yeon
 					foreach (Transform child_inChild in child) {
 						if (child_inChild.name == "breakground_Collider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				case "1030031"://plant
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "plantCollider") {
 							child_inChild.GetComponent<objColider> ().reset = true;
 						}
 					}

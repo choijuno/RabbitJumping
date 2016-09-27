@@ -56,6 +56,8 @@ public class LoadManager : MonoBehaviour {
 
 	//05Items
 	public GameObject gold;
+	public GameObject gold_50;
+
 
 	//06Hurddle
 	public GameObject cloud_Rain;
@@ -74,6 +76,10 @@ public class LoadManager : MonoBehaviour {
 	public GameObject Cage_Bear;
 	public GameObject Cage_Fox;
 
+	//09BackGround
+	public GameObject monkeytree_1;
+	public GameObject monkeytree_2;
+	public GameObject tree_back;
 
 	//99Pos
 	public GameObject ClearPoint;
@@ -160,11 +166,7 @@ public class LoadManager : MonoBehaviour {
 				for (int i = 0; i < objPos_dataArr.Length; i += 3) {
 					Debug.Log ("!!!!");
 					switch ("" + objPos_dataIn [i]) {
-					//99Pos
-					case "1990011":
-						_tmp = (GameObject)Instantiate (StartPos, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
-						playerBody.GetComponent<PlayerMove> ().StartPos = _tmp.gameObject.transform;
-						break;
+
 
 				//01Ground
 					case "1010011":
@@ -303,6 +305,9 @@ public class LoadManager : MonoBehaviour {
 					case "1050011":
 						_tmp = (GameObject)Instantiate (gold, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
+					case "1050012":
+						_tmp = (GameObject)Instantiate (gold_50, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
 				//06Hurddle
 					case "1060011":
 						_tmp = (GameObject)Instantiate (cloud_Rain, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
@@ -342,7 +347,23 @@ public class LoadManager : MonoBehaviour {
 						_tmp = (GameObject)Instantiate (Cage_Fox, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 
-				//09Pos
+
+				//09BackGround
+					case "1090011":
+						_tmp = (GameObject)Instantiate (monkeytree_1, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1090012":
+						_tmp = (GameObject)Instantiate (monkeytree_2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1090021":
+						_tmp = (GameObject)Instantiate (tree_back, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+
+				//99Pos
+					case "1990011":
+						_tmp = (GameObject)Instantiate (StartPos, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						playerBody.GetComponent<PlayerMove> ().StartPos = _tmp.gameObject.transform;
+						break;
 					case "1990021":
 						_tmp = (GameObject)Instantiate (ClearPoint, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
@@ -353,6 +374,7 @@ public class LoadManager : MonoBehaviour {
 						_tmp = (GameObject)Instantiate (Map_R, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					}
+
 
 
 
