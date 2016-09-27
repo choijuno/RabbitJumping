@@ -290,6 +290,11 @@ public partial class selectManager : MonoBehaviour
                 preCharacter = Instantiate(cha_Array[9], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
                 ES2.Save<int>(9, "rabbit");
                 break;
+            case 10:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[10], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(10, "rabbit");
+                break;
         }
     }
     public void chaSetFalse()
