@@ -1146,7 +1146,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 3
     startSpeed:
-      scalar: 15
+      scalar: 7.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1265,7 +1265,7 @@ ParticleSystem:
         rgba: 3774873599
       minMaxState: 0
     startSize:
-      scalar: 0.9
+      scalar: 0.45
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1405,8 +1405,8 @@ ParticleSystem:
     radius: 0.01
     angle: 90
     length: 5
-    boxX: 1
-    boxY: 1
+    boxX: 0.5
+    boxY: 0.5
     boxZ: 0
     arc: 360
     placementMode: 2
@@ -1621,13 +1621,13 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294949792
+          rgba: 4290576288
         key1:
           serializedVersion: 2
-          rgba: 4293918802
+          rgba: 4279693312
         key2:
           serializedVersion: 2
-          rgba: 7340089
+          rgba: 684032
         key3:
           serializedVersion: 2
           rgba: 1118481
@@ -1980,7 +1980,7 @@ ParticleSystem:
   ClampVelocityModule:
     enabled: 1
     x:
-      scalar: 1
+      scalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2050,7 +2050,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     z:
-      scalar: 1
+      scalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2085,7 +2085,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     magnitude:
-      scalar: 15
+      scalar: 7.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3050,13 +3050,13 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 16759712
+          rgba: 11599776
         key1:
           serializedVersion: 2
-          rgba: 4293918802
+          rgba: 4280938496
         key2:
           serializedVersion: 2
-          rgba: 4285530169
+          rgba: 4280119296
         key3:
           serializedVersion: 2
           rgba: 1118481
