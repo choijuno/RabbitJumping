@@ -3060,6 +3060,7 @@ MonoBehaviour:
   spider_2: {fileID: 162394, guid: 067c27979196cb34da9557fd35889049, type: 2}
   spider_3: {fileID: 177748, guid: dd95422cccd98454587d2d107720a9ae, type: 2}
   gold: {fileID: 147632, guid: 8045fb03393156746a7a3d924eb12100, type: 2}
+  gold_50: {fileID: 147632, guid: 231294aba51657b46bc4f3c4fcaaa64d, type: 2}
   cloud_Rain: {fileID: 117846, guid: dd8e96846a305e545bd7d579e549f5b3, type: 2}
   cloud_Rain_2: {fileID: 157452, guid: ff83130ce38ee554596e34f5dd23b8a8, type: 2}
   cloud: {fileID: 117846, guid: c82b803b0a48ee94b933d98ce6a1f330, type: 2}
@@ -3071,6 +3072,9 @@ MonoBehaviour:
   Cage: {fileID: 199842, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
   Cage_Bear: {fileID: 190814, guid: c7f29ad883926f349970c86939b520e6, type: 2}
   Cage_Fox: {fileID: 162256, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
+  monkeytree_1: {fileID: 137282, guid: 1aa11797d4947354caef301f1163bea8, type: 2}
+  monkeytree_2: {fileID: 115142, guid: 91a1c3398f4871c44a45e70e452254c6, type: 2}
+  tree_back: {fileID: 173166, guid: d6614fd6ceed3dc4a9be8ea46e182001, type: 2}
   ClearPoint: {fileID: 189584, guid: 048a7ea2cabaca74cab983fbb3941c01, type: 2}
   Map_L: {fileID: 111434, guid: e2e1d451215ea9741b6174ade531dc5b, type: 2}
   Map_R: {fileID: 120228, guid: ad7d1643d301c68478afe4096dd1dbf7, type: 2}
@@ -41482,81 +41486,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597801616}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1612534785
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1612534789}
-  - 33: {fileID: 1612534788}
-  - 65: {fileID: 1612534787}
-  - 23: {fileID: 1612534786}
-  m_Layer: 0
-  m_Name: 1090011aaa
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1612534786
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612534785}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!65 &1612534787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612534785}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1612534788
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612534785}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1612534789
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612534785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.54, y: 1.8645892, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
 --- !u!1 &1614817294
 GameObject:
   m_ObjectHideFlags: 0
@@ -41763,6 +41692,10 @@ Prefab:
     - target: {fileID: 199252, guid: 25c7183306192ea48a21b500cc2cc723, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 423954, guid: 25c7183306192ea48a21b500cc2cc723, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25c7183306192ea48a21b500cc2cc723, type: 2}

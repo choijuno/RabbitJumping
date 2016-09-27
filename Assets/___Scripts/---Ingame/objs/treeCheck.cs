@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class groundCheck : MonoBehaviour {
+public class treeCheck : MonoBehaviour {
 	public Transform thisChild;
 
 	void Start(){
@@ -11,7 +11,8 @@ public class groundCheck : MonoBehaviour {
 	void OnTriggerEnter(Collider ground){
 
 		if (Application.loadedLevelName != "Edit") {
-			if (ground.transform.parent.name.Substring (0, 3) == "101") {
+			Debug.Log ("!!");
+			if (ground.transform.parent.name.Substring (0, 6) == "109001") {
 				thisChild.transform.parent = ground.GetComponent<BumpColider> ().groundParent.transform;
 				this.gameObject.SetActive (false);
 			}

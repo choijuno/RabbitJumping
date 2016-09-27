@@ -4,6 +4,8 @@ using System.Collections;
 public class Elephant : MonoBehaviour {
 	public elephantStatus stat = elephantStatus.stay;
 
+	public GameObject Camera_ingame;
+
 	public Animator thisAni;
 
 	public GameObject Pos;

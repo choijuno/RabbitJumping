@@ -615,7 +615,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.38, y: -3.68, z: 0}
+  m_LocalPosition: {x: 11.31, y: 0.14, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children:
   - {fileID: 414052}
@@ -951,8 +951,10 @@ MonoBehaviour:
   yeon2: {fileID: 0}
   yeon3: {fileID: 0}
   yeonCollider: {fileID: 0}
+  plant_ani: {fileID: 0}
   plantDeadPoint: {fileID: 0}
   plantModel: {fileID: 0}
+  plantModel_dead: {fileID: 0}
 --- !u!114 &11475616
 MonoBehaviour:
   m_ObjectHideFlags: 1

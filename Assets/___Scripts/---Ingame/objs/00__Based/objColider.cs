@@ -109,7 +109,7 @@ public class objColider : MonoBehaviour {
 	void OnTriggerEnter (Collider player){
 		if (player.CompareTag ("ride_elephant")) {
 
-			switch (transform.parent.name.Substring (0, 4)) {
+			switch (transform.parent.name.Substring (0, 7)) {
 
 			case "1990011":
 				break;
@@ -144,8 +144,15 @@ public class objColider : MonoBehaviour {
 				//04Moveenemy
 			case "1040011":
 				break;
-			case "1040021":
-				transform.parent.gameObject.SetActive (false);
+			case "1040021": //croc
+				//transform.parent.gameObject.SetActive (false);
+				Camera_ingame = player.transform.parent.GetComponent<Elephant> ().Camera_ingame;
+				croc_ani.SetTrigger ("attack");
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				crocAngry.SetActive (false);
+				crocAngry.SetActive (true);
+				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
+
 				break;
 			case "1040031":
 				break;
@@ -298,6 +305,12 @@ public class objColider : MonoBehaviour {
 			if (standhp <= 0) {
 				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
 				croc_ani.SetTrigger ("attack");
+				crocAngry.SetActive (false);
+				crocAngry.SetActive (true);
+			} else {
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				croc_ani.SetTrigger ("attack");
+				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
 			}
 			/*
