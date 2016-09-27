@@ -34,12 +34,12 @@ public partial class selectManager : MonoBehaviour
         if (ES2.Exists("rabbit"))
         {
             chaSetFalse();
-            cha_Array[ES2.Load<int>("rabbit")].SetActive(true);
+            preCharacter = Instantiate(cha_Array[ES2.Load<int>("rabbit")], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
         }
         else
         {
             chaSetFalse();
-            cha_Array[0].SetActive(true);
+            preCharacter = Instantiate(cha_Array[0], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
         }
     }
     public void shopBtnFunc() //상점 버튼 눌렀을때.
@@ -241,18 +241,54 @@ public partial class selectManager : MonoBehaviour
         {
             case 0:
                 chaSetFalse();
-                cha_Array[0].SetActive(true);
+                preCharacter = Instantiate(cha_Array[0], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+
                 ES2.Save<int>(0, "rabbit");
                 break;
             case 1:
                 chaSetFalse();
-                cha_Array[1].SetActive(true);
+                preCharacter = Instantiate(cha_Array[1], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
                 ES2.Save<int>(1, "rabbit");
                 break;
             case 2:
                 chaSetFalse();
-                cha_Array[2].SetActive(true);
+                preCharacter = Instantiate(cha_Array[2], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
                 ES2.Save<int>(2, "rabbit");
+                break;
+            case 3:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[3], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(3, "rabbit");
+                break;
+            case 4:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[4], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(4, "rabbit");
+                break;
+            case 5:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[5], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(5, "rabbit");
+                break;
+            case 6:
+                chaSetFalse();
+                preCharacter =Instantiate(cha_Array[6], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(6, "rabbit");
+                break;
+            case 7:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[7], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(7, "rabbit");
+                break;
+            case 8:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[8], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(8, "rabbit");
+                break;
+            case 9:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[9], new Vector3(-24.43f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(9, "rabbit");
                 break;
         }
     }
@@ -261,10 +297,7 @@ public partial class selectManager : MonoBehaviour
         goldDraw.SetActive(false);
         bosukDraw.SetActive(false);
         adDraw.SetActive(false);
-        for (int i = 0; i < cha_Array.Length; i++)
-        {
-            cha_Array[i].SetActive(false);
-        }
+        Destroy(preCharacter);
     }
     public void GoogleBtnFunc(int googleOnOff)
     {
