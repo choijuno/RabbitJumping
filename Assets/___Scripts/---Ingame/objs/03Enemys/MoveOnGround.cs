@@ -37,8 +37,9 @@ public class MoveOnGround : MonoBehaviour {
 				thisAni.SetTrigger ("move");
 			}
 		}
-			
-		StartCoroutine ("MoveReset");
+		if (move != MovePosition.Stay) {
+			StartCoroutine ("MoveReset");
+		}
 
 	}
 

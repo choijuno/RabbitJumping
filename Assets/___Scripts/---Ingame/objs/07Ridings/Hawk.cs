@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Hawk : MonoBehaviour {
+	public GameObject Camera_ingame;
+
 	public hawkStatus stat = hawkStatus.stay;
 
 	public GameObject Pos;
