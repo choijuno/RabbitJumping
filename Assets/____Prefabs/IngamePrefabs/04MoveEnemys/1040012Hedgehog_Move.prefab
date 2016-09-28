@@ -48,9 +48,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &142786
+--- !u!1 &138200
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 450034}
+  m_Layer: 0
+  m_Name: model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &142786
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -60,6 +75,7 @@ GameObject:
   - 65: {fileID: 6594816}
   - 23: {fileID: 2364806}
   - 114: {fileID: 11436462}
+  - 54: {fileID: 5408938}
   m_Layer: 0
   m_Name: hedgehogCollider
   m_TagString: dead
@@ -117,7 +133,7 @@ GameObject:
   m_IsActive: 0
 --- !u!1 &159432
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -173,10 +189,24 @@ GameObject:
   - 33: {fileID: 3343980}
   - 23: {fileID: 2388116}
   - 114: {fileID: 11449804}
-  - 54: {fileID: 5456316}
   - 114: {fileID: 11471458}
   m_Layer: 0
   m_Name: 1040012Hedgehog_Move
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193794
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416422}
+  m_Layer: 0
+  m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,8 +306,8 @@ Transform:
   m_LocalScale: {x: 0.34683648, y: 0.34683648, z: 0.34683648}
   m_Children:
   - {fileID: 486236}
-  m_Father: {fileID: 474992}
-  m_RootOrder: 1
+  m_Father: {fileID: 416422}
+  m_RootOrder: 0
 --- !u!4 &406020
 Transform:
   m_ObjectHideFlags: 1
@@ -290,6 +320,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 486236}
   m_RootOrder: 4
+--- !u!4 &416422
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 402354}
+  - {fileID: 477232}
+  m_Father: {fileID: 450034}
+  m_RootOrder: 0
 --- !u!4 &427560
 Transform:
   m_ObjectHideFlags: 1
@@ -326,6 +370,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 486236}
   m_RootOrder: 1
+--- !u!4 &450034
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 416422}
+  m_Father: {fileID: 474992}
+  m_RootOrder: 1
 --- !u!4 &461974
 Transform:
   m_ObjectHideFlags: 1
@@ -337,7 +394,7 @@ Transform:
   m_LocalScale: {x: 0.60909176, y: 0.6090917, z: 0.6090917}
   m_Children: []
   m_Father: {fileID: 474992}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!4 &462644
 Transform:
   m_ObjectHideFlags: 1
@@ -370,12 +427,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.01, y: -2.81, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 477232}
-  - {fileID: 402354}
   - {fileID: 461974}
+  - {fileID: 450034}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &477232
@@ -388,8 +444,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 474992}
-  m_RootOrder: 0
+  m_Father: {fileID: 416422}
+  m_RootOrder: 1
 --- !u!4 &479920
 Transform:
   m_ObjectHideFlags: 1
@@ -544,12 +600,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142786}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5456316
+--- !u!54 &5408938
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190854}
+  m_GameObject: {fileID: 142786}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -626,6 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4b22521932dfb43a7c26ecd2d70b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myparent: {fileID: 190854}
   move: 0
   thisAni: {fileID: 9506940}
 --- !u!114 &11437572
@@ -639,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac713ee6a9f88c4a83289fcd72da8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisChild: {fileID: 402354}
+  thisChild: {fileID: 416422}
 --- !u!114 &11449804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,8 +708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2079825cef4b2f2409a25faf4b556f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stop: 0
   thisAni: {fileID: 9506940}
   move: 1
+  hedgehog_model: {fileID: 193794}
   waitTime: 1
   Speed: 5
 --- !u!114 &11471458
@@ -683,6 +742,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!212 &21210132
 SpriteRenderer:
   m_ObjectHideFlags: 1

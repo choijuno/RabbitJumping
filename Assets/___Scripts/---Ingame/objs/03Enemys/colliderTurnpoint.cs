@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class colliderTurnpoint : MonoBehaviour {
+	public GameObject myparent;
 	public MovePosition move;
 	public Animator thisAni;
 	// Use this for initialization
@@ -16,12 +17,13 @@ public class colliderTurnpoint : MonoBehaviour {
 
 	void OnTriggerEnter(Collider turnpoint){
 		//Debug.Log ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-		
+
 		if(turnpoint.CompareTag("turnpoint")){
-			if (transform.parent.GetComponent<MoveOnGround> ().move == MovePosition.Left) {
-				transform.parent.GetComponent<MoveOnGround> ().move = MovePosition.Right;
+			Debug.Log ("!!!!");
+			if (myparent.GetComponent<MoveOnGround> ().move == MovePosition.Left) {
+				myparent.GetComponent<MoveOnGround> ().move = MovePosition.Right;
 			} else {
-				transform.parent.GetComponent<MoveOnGround> ().move = MovePosition.Left;
+				myparent.GetComponent<MoveOnGround> ().move = MovePosition.Left;
 			}
 
 		}

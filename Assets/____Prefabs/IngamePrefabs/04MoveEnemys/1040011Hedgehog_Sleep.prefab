@@ -363,7 +363,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: -3.04, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 424912}
@@ -643,6 +643,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!114 &11459300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -654,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4b22521932dfb43a7c26ecd2d70b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myparent: {fileID: 0}
   move: 0
   thisAni: {fileID: 0}
 --- !u!114 &11469210
@@ -667,8 +669,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2079825cef4b2f2409a25faf4b556f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stop: 0
   thisAni: {fileID: 9529996}
   move: 0
+  hedgehog_model: {fileID: 0}
   waitTime: 1
   Speed: 0
 --- !u!114 &11487840

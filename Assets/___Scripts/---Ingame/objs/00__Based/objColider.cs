@@ -93,8 +93,9 @@ public class objColider : MonoBehaviour {
 					break;
 
 				case "1040021": //croc
-					croc_ani.SetTrigger("reset");
+					standhp = transform.parent.GetComponent<objMovement> ().standHp;
 					croc_ani.SetInteger("hp",(int)standhp);
+					croc_ani.SetTrigger("reset");
 					crocAngry.SetActive (false);
 					break;
 				}
@@ -307,12 +308,12 @@ public class objColider : MonoBehaviour {
 				croc_ani.SetTrigger ("attack");
 				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
-			} else {
+			} /*else {
 				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
 				croc_ani.SetTrigger ("attack");
 				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
-			}
+			}*/
 			/*
 		} else {
 			AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
