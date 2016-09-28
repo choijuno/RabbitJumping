@@ -100,6 +100,38 @@ public class PlayerMove : MonoBehaviour {
 			ChaSkin [2].SetActive (true);
 			_anim = ChaSkin[2].GetComponent<Animator>();
 			break;
+		case 3:
+			ChaSkin [3].SetActive (true);
+			_anim = ChaSkin[3].GetComponent<Animator>();
+			break;
+		case 4:
+			ChaSkin [4].SetActive (true);
+			_anim = ChaSkin[4].GetComponent<Animator>();
+			break;
+		case 5:
+			ChaSkin [5].SetActive (true);
+			_anim = ChaSkin[5].GetComponent<Animator>();
+			break;
+		case 6:
+			ChaSkin [6].SetActive (true);
+			_anim = ChaSkin[6].GetComponent<Animator>();
+			break;
+		case 7:
+			ChaSkin [7].SetActive (true);
+			_anim = ChaSkin[7].GetComponent<Animator>();
+			break;
+		case 8:
+			ChaSkin [8].SetActive (true);
+			_anim = ChaSkin[8].GetComponent<Animator>();
+			break;
+		case 9:
+			ChaSkin [9].SetActive (true);
+			_anim = ChaSkin[9].GetComponent<Animator>();
+			break;
+		case 10:
+			ChaSkin [10].SetActive (true);
+			_anim = ChaSkin[10].GetComponent<Animator>();
+			break;
 		}
 
 		transform.position = StartPos.position;
@@ -358,6 +390,11 @@ public class PlayerMove : MonoBehaviour {
 				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
 				}
 
+				if (obj.CompareTag ("gold50")) {
+					GameManager.Money_ingame += 50;
+					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				}
+
                 if (obj.CompareTag("warp"))
                 {
 					_anim.SetBool ("DropCheck", false);
@@ -563,7 +600,11 @@ public class PlayerMove : MonoBehaviour {
 				if (obj.CompareTag ("gold")) {
 				GameManager.Money_ingame += 10;
 				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
-				Debug.Log ("Upgold");
+				}
+
+				if (obj.CompareTag ("gold50")) {
+					GameManager.Money_ingame += 50;
+					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
 				}
 
                 if (obj.CompareTag("rain"))
@@ -653,6 +694,11 @@ public class PlayerMove : MonoBehaviour {
 				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
 				}
 
+				if (obj.CompareTag ("gold50")) {
+					GameManager.Money_ingame += 50;
+					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				}
+
 				if (obj.CompareTag ("ground")) {
 				stunGround = true;
 				}
@@ -688,6 +734,11 @@ public class PlayerMove : MonoBehaviour {
 				
 				if (obj.CompareTag ("gold")) {
 					GameManager.Money_ingame += 10;
+					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				}
+
+				if (obj.CompareTag ("gold50")) {
+					GameManager.Money_ingame += 50;
 					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
 				}
 
