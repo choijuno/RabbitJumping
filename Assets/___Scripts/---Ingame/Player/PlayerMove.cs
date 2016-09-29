@@ -453,6 +453,7 @@ public class PlayerMove : MonoBehaviour {
                             Camera_ingame.GetComponent<GameCamera>().riding = true;
                             Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Hawk>().waitTime;
                             Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
+							obj.transform.parent.GetComponent<Hawk> ().Camera_ingame = Camera_ingame;
                             rideTime_in = obj.transform.parent.GetComponent<Hawk>().runTime;
 
 							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
@@ -634,13 +635,14 @@ public class PlayerMove : MonoBehaviour {
                             }
                             break;
                         case "hawk":
-					GetComponent<PlayerController>().moveStopCheck = true;
-					Camera_ingame.GetComponent<GameCamera> ().direction = 2;
+							GetComponent<PlayerController>().moveStopCheck = true;
+							Camera_ingame.GetComponent<GameCamera> ().direction = 2;
                             bounce = Bouncy.ride;
                             MaxHeight_in = transform.position.y + MaxHeight * 0.3f;
                             Camera_ingame.GetComponent<GameCamera>().riding = true;
                             Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Hawk>().waitTime;
-                            Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
+							Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
+							obj.transform.parent.GetComponent<Hawk> ().Camera_ingame = Camera_ingame;
                             rideTime_in = obj.transform.parent.GetComponent<Hawk>().runTime;
 
 							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;

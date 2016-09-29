@@ -110,6 +110,9 @@ public class objMovement : MonoBehaviour {
 			//04Moveenemy
 		case "1040011":
 			break;
+		case "1040012":	//moveHedgehog
+			
+			break;
 		case "1040021":
 			StartCoroutine ("enemyM_reset");
 			break;
