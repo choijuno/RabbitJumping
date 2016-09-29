@@ -544,20 +544,22 @@ public class PlayerMove : MonoBehaviour {
 
 				if (obj.CompareTag("stun"))
 				{
+					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 				Debug.Log ("DownStun");
 				_anim.SetBool ("StunCheck", true);
 				_anim.SetTrigger ("DownStun");
 				stunGround = false;
 				GetComponent<PlayerController>().moveStopCheck = true;
 				Camera_ingame.GetComponent<GameCamera> ().direction = 0;
-				stunTime_in = obj.transform.parent.GetComponent<Tree_R> ().stunTime;
+				stunTime_in = obj.GetComponent<TreeFruitCollider> ().stunTime;
 					DownLerp_in = 0;
 					bounce = Bouncy.stun;
 
 				}
 
                 if (obj.CompareTag("dead"))
-                {
+				{
+					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
                     GameManager.gameSet = 2;
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
@@ -568,7 +570,8 @@ public class PlayerMove : MonoBehaviour {
                 }
 
                 if (obj.CompareTag("clear"))
-                {
+				{
+					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 				Debug.Log ("!!!!!!!!!!!!!!!!!!!!");
 					transform.parent = obj.transform;
 					transform.localPosition = new Vector3(transform.localPosition.x,0.5f,transform.localPosition.z);
@@ -659,11 +662,12 @@ public class PlayerMove : MonoBehaviour {
 				if (obj.CompareTag("stun"))
 				{
 				Debug.Log ("UpStun");
+				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 				stunGround = false;
 				_anim.SetBool ("StunCheck", true);
 					GetComponent<PlayerController>().moveStopCheck = true;
 					Camera_ingame.GetComponent<GameCamera> ().direction = 0;
-					stunTime_in = obj.transform.parent.GetComponent<Tree_R> ().stunTime;
+					stunTime_in = obj.GetComponent<TreeFruitCollider> ().stunTime;
 					DownLerp_in = 0;
 					bounce = Bouncy.stun;
 
@@ -671,6 +675,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("dead"))
                 {
+				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
                     GameManager.gameSet = 2;
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
@@ -713,6 +718,7 @@ public class PlayerMove : MonoBehaviour {
 
 				if (obj.CompareTag("dead"))
 				{
+				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 					GameManager.gameSet = 2;
 					Debug.Log(bounce);
 					//gameover.SetActive (true);

@@ -3,7 +3,10 @@ using System.Collections;
 
 public class TreeFruitCollider : MonoBehaviour {
 
+	public float stunTime;
+
 	void Start(){
+		stunTime = transform.parent.GetComponent<Tree_R> ().stunTime;
 		transform.parent = null;
 	}
 
