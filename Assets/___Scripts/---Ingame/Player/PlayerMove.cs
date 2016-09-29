@@ -617,6 +617,7 @@ public class PlayerMove : MonoBehaviour {
                     rainCC = PlayerCC.heavy;
                 }
 
+			/*
                 if (obj.CompareTag("ride"))
                 {
 				
@@ -650,14 +651,11 @@ public class PlayerMove : MonoBehaviour {
 
 							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
 							transform.localPosition = new Vector3(0, 0, 0);
-							/*
-                            transform.parent = obj.transform.parent.transform;
-                            transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.y, 0);
-							*/
+
                             obj.transform.parent.GetComponent<Hawk>().stat = hawkStatus.wait;
                             break;
                     }
-                }
+                }*/
 
 				if (obj.CompareTag("stun"))
 				{
