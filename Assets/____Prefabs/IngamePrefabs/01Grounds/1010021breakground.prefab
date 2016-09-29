@@ -320,7 +320,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8, y: -3.4, z: 0}
+  m_LocalPosition: {x: 0, y: -3.4, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children:
   - {fileID: 453258}
@@ -523,6 +523,7 @@ MonoBehaviour:
   U_Speed: 0
   U_Lerp: 0
   down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!114 &11402812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,8 +562,10 @@ MonoBehaviour:
   yeon2: {fileID: 0}
   yeon3: {fileID: 0}
   yeonCollider: {fileID: 193410}
+  plant_ani: {fileID: 0}
   plantDeadPoint: {fileID: 0}
   plantModel: {fileID: 0}
+  plantModel_dead: {fileID: 0}
 --- !u!212 &21204610
 SpriteRenderer:
   m_ObjectHideFlags: 1
