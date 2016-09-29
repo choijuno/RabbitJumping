@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class objMovement : MonoBehaviour {
+	
+	public GameObject mainCamera;
 	public bool allStop=true;
 
 	objMove objmove = objMove.wait;
@@ -58,6 +60,9 @@ public class objMovement : MonoBehaviour {
 	//_etc
 
 	void Start(){
+
+		mainCamera = GameObject.Find ("Main Camera");
+
 		if (Application.loadedLevelName == "Edit") {
 			allStop = true;
 		}
