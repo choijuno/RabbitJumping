@@ -3025,6 +3025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d36d4e102b93f459342e2eac2f8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
   allStop: 0
   havehp: 0
   standHp: 100
@@ -6602,6 +6603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d36d4e102b93f459342e2eac2f8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
   allStop: 0
   havehp: 0
   standHp: 100
