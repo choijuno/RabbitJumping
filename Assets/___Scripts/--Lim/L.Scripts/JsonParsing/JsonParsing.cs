@@ -7,11 +7,9 @@ public class JsonParsing : MonoBehaviour {
     public static JsonParsing _instance;
 
     public TextAsset Json;
-    string strJsonData;
 
 	void Start ()
     {
-        strJsonData = Json.text;
         if(_instance == null)
         {
             _instance = this;

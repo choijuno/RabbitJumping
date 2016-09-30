@@ -9,7 +9,8 @@ public class MusicManager : MonoBehaviour {
     AudioSource audioSource;
 
     public AudioClip mainScene;
-    public AudioClip selectScene;
+    public AudioClip[] selectScene;
+    public AudioClip[] playOneShot;
     public AudioClip gameScene;
 	void Awake ()
     {
@@ -25,7 +26,12 @@ public class MusicManager : MonoBehaviour {
         else
         {
             DestroyImmediate(this.gameObject);
-        }
+        }    
+    }
+    public void PlayOnShot()
+    {
+        if(ES2.Load<bool>("HyoGwaSound"))
+            AudioSource.PlayClipAtPoint(playOneShot[0], transform.position);
     }
     public void MusicSelect(bool musicChk)
     {
@@ -37,7 +43,7 @@ public class MusicManager : MonoBehaviour {
                 audioSource.clip = mainScene;
             }else if (SceneManager.GetActiveScene().buildIndex == 2)
             {
-                audioSource.clip = selectScene;
+                audioSource.clip = selectScene[Random.Range(0,6)];
             }else if (SceneManager.GetActiveScene().buildIndex == 3)
             {
                 audioSource.clip = gameScene;

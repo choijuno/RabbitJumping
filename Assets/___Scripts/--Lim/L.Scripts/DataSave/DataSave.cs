@@ -78,21 +78,7 @@ public class DataSave : MonoBehaviour {
         else
             return -1;
     }
-
-    struct stageData
-    {
-        private float stageIndex;
-        private float starCount;
-        private float stageRecord;
-        
-        public stageData(float stageIndex, float starCount, float stageRecord)
-        {
-            this.stageIndex = stageIndex;
-            this.starCount = starCount;
-            this.stageRecord = stageRecord;
-        }
-    }
-
+    
     void Start()
     {
         if(_instance == null)
