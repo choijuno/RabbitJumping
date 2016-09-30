@@ -8901,6 +8901,10 @@ Prefab:
       propertyPath: backGround_basePos
       value: 
       objectReference: {fileID: 1512191039}
+    - target: {fileID: 166064, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
   m_IsPrefabParent: 0
@@ -18046,8 +18050,8 @@ MonoBehaviour:
   result_score: {fileID: 2040193886}
   pauseMenu: {fileID: 1173713350}
   Controller: {fileID: 175201111}
-  tiltOn: {fileID: 0}
-  tiltOff: {fileID: 0}
+  tiltOn: {fileID: 1957236720}
+  tiltOff: {fileID: 1854255819}
   soundOn: {fileID: 266568219}
   soundOff: {fileID: 1062307457}
 --- !u!114 &615815018
@@ -19178,7 +19182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScene: {fileID: 8300000, guid: 8f63f2c5cb034174b8d89b7ab44f35fa, type: 3}
-  selectScene: {fileID: 8300000, guid: 10be28ff5af055742936cf8daa032b16, type: 3}
+  selectScene:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playOneShot: []
   gameScene: {fileID: 8300000, guid: feb07188fe9dcc2479c022ce9527095e, type: 3}
 --- !u!82 &784579131
 AudioSource:
@@ -19242,7 +19250,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -24031,6 +24039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d36d4e102b93f459342e2eac2f8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
   allStop: 0
   havehp: 0
   standHp: 100
@@ -31363,6 +31372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d36d4e102b93f459342e2eac2f8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
   allStop: 0
   havehp: 0
   standHp: 100

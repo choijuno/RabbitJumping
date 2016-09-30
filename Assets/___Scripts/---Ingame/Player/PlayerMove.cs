@@ -308,6 +308,7 @@ public class PlayerMove : MonoBehaviour {
 
 
 		if (warpTime_in <= 0) {
+			Debug.Log ("!!!!!!!!!!!!!!");
 
 			if (warpX.position.x >= warpHeight.position.x) {
 				UpLerp_in = Mathf.Lerp (UpLerp_in, 0, 0.1f);

@@ -80,12 +80,12 @@ public class BtnController : MonoBehaviour {
 		switch (this.name) {
 		case "On":
 			GameManager.tiltCheck = false;
-			ES2.Save<bool> (GameManager.tiltCheck, "tiltCheck");
+			ES2.Save<bool> (GameManager.tiltCheck, "tilt");
 			openClose ();
 			break;
 		case "Off":
 			GameManager.tiltCheck = true;
-			ES2.Save<bool> (GameManager.tiltCheck, "tiltCheck");
+			ES2.Save<bool> (GameManager.tiltCheck, "tilt");
 			openClose ();
 			break;
 		}

@@ -85,6 +85,25 @@ public class GameManager : MonoBehaviour {
 				soundOn.SetActive (true);
 				soundOff.SetActive (false);
 			}
+
+			if (ES2.Exists ("tilt")) {
+				if (ES2.Load<bool> ("tilt")) {
+					tiltOn.SetActive (true);
+					tiltOff.SetActive (false);
+					tiltCheck = true;
+				} else {
+					tiltOn.SetActive (false);
+					tiltOff.SetActive (true);
+					tiltCheck = false;
+				}
+			} else {
+				ES2.Save<bool> (false, "tilt");
+				tiltOff.SetActive (true);
+				tiltOn.SetActive (false);
+			}
+
+
+
 		}
     }
 
