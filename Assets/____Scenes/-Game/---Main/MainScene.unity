@@ -487,7 +487,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScene: {fileID: 8300000, guid: 8f63f2c5cb034174b8d89b7ab44f35fa, type: 3}
-  selectScene: {fileID: 8300000, guid: 10be28ff5af055742936cf8daa032b16, type: 3}
+  selectScene:
+  - {fileID: 8300000, guid: 0d7dba6ec7d1e214abdcb4874f351533, type: 3}
+  - {fileID: 8300000, guid: 9e8ea52ef3c05ff4c8909bb8f8604ea7, type: 3}
+  - {fileID: 8300000, guid: 5d3ac877076c7be40a78170b56612fa9, type: 3}
+  - {fileID: 8300000, guid: 52423bdcdd634034ebf2909e070f24b8, type: 3}
+  - {fileID: 8300000, guid: 3195ee2098727c14a850be91117d8fbc, type: 3}
+  - {fileID: 8300000, guid: 829875545fb4c1149be124c23ac6a8a6, type: 3}
+  playOneShot: {fileID: 8300000, guid: a320711b5bbd0924b8087701775f9d82, type: 3}
   gameScene: {fileID: 8300000, guid: feb07188fe9dcc2479c022ce9527095e, type: 3}
 --- !u!82 &291928987
 AudioSource:
