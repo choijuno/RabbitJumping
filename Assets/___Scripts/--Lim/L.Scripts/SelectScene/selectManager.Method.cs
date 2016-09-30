@@ -9,6 +9,7 @@ public partial class selectManager : MonoBehaviour
 
     public void MyBtnFunc() //인벤토리 버튼 눌렀을때.
     {
+        MusicManager.instance.PlayOnShot();
         chaSetFalse();
         myRoomBtn.GetComponent<Image>().sprite = myRoomBtnClick;
         myRoomBtn.GetComponent<Image>().SetNativeSize();
@@ -44,6 +45,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void shopBtnFunc() //상점 버튼 눌렀을때.
     {
+        MusicManager.instance.PlayOnShot();
         chaSetFalse();
         goldDraw.SetActive(true);
         bosukDraw.SetActive(true);
@@ -59,16 +61,19 @@ public partial class selectManager : MonoBehaviour
 
     public void setupBtnFunc() //설정 버튼 눌렀을때.
     {
+        MusicManager.instance.PlayOnShot();
         chaSetFalse();
         setup.SetActive(true);
     }
     public void setupExitBtnFunc()
     {
+        MusicManager.instance.PlayOnShot();
         chaSetFalse();
         setup.SetActive(false);
     }
     public void storeRoomExitFunc() //상점 닫기
     {
+        MusicManager.instance.PlayOnShot();
         chaSetFalse();
         storeAndRoom.SetActive(false);
     }
@@ -84,7 +89,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void bosukBtnFunc()
     {
-        
+        MusicManager.instance.PlayOnShot();
         goldBosuk.SetActive(true);
         goldBtn.image.sprite = GoldSprite;
         bosukBtn.image.sprite = nonBosukSprite;
@@ -97,6 +102,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void goldBtnFunc()
     {
+        MusicManager.instance.PlayOnShot();
         goldBosuk.SetActive(true);
         goldBtn.image.sprite = nonGoldSprite;
         bosukBtn.image.sprite = BosukSprite;
@@ -109,14 +115,17 @@ public partial class selectManager : MonoBehaviour
     }
     public void goldbosukExitBtnFunc()
     {
+        MusicManager.instance.PlayOnShot();
         goldBosuk.SetActive(false);
     }
     public void bosukRealBtnFunc()
     {
+        MusicManager.instance.PlayOnShot();
         bosukBtnFunc();
     }
     public void goldRealBtnFunc()
     {
+        MusicManager.instance.PlayOnShot();
         goldBtnFunc();
     }
 
@@ -137,6 +146,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void goldBuy(int bosuk)
     {
+        MusicManager.instance.PlayOnShot();
         float bosukCount = DataSave._instance.getBosuk_Game();
         switch (bosuk)
         {
@@ -198,9 +208,39 @@ public partial class selectManager : MonoBehaviour
             MusicManager.instance.MusicSelect(false);
         }
     }
-
+    public void tilt(bool tiltOnOff)
+    {
+        MusicManager.instance.PlayOnShot();
+        if (tiltOnOff)
+        {
+            ES2.Save<bool>(false, "tilt");
+            tiltOn.gameObject.SetActive(false);
+            tiltOff.gameObject.SetActive(true);
+        }
+        else
+        {
+            ES2.Save<bool>(true, "tilt");
+            tiltOn.gameObject.SetActive(true);
+            tiltOff.gameObject.SetActive(false);
+        }
+    }
+    public void HyoGwaSound(bool hyoGwaSound)
+    {
+        if (hyoGwaSound)
+        {
+            ES2.Save<bool>(false, "HyoGwaSound");
+            hyogwaMusicOff.gameObject.SetActive(true);
+            hyogwaMusicOn.gameObject.SetActive(false);
+        }else
+        {
+            ES2.Save<bool>(true, "HyoGwaSound");
+            hyogwaMusicOff.gameObject.SetActive(false);
+            hyogwaMusicOn.gameObject.SetActive(true);
+        }
+    }
     public void greenBoxBtnFunc() //그린박스
     {
+        MusicManager.instance.PlayOnShot();
         Debug.Log("몇번?");
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 1000)
@@ -216,6 +256,7 @@ public partial class selectManager : MonoBehaviour
 
     public void redBoxBtnFunc() //레드박스
     {
+        MusicManager.instance.PlayOnShot();
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 2500)
             Debug.Log("돈이 부족합니다.");
@@ -236,7 +277,7 @@ public partial class selectManager : MonoBehaviour
     public void chaFunc(string cha_index)
     {
         int cha_test = int.Parse(cha_index);
-
+        MusicManager.instance.PlayOnShot();
         switch (cha_test)
         {
             case 0:
@@ -306,6 +347,7 @@ public partial class selectManager : MonoBehaviour
     }
     public void GoogleBtnFunc(int googleOnOff)
     {
+        MusicManager.instance.PlayOnShot();
         //0 == 로그인 , 1 == 비로그인.
         if (googleOnOff == 0)
         {

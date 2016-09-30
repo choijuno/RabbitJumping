@@ -19,7 +19,6 @@ public class LimTestClass : MonoBehaviour {
     Button LoadLeaderBoard;
 
     Button itemBuyBtn;
-    Text CloudText;
     Text ScoreTxt;
 	// Use this for initialization
 	void Start ()
@@ -30,7 +29,6 @@ public class LimTestClass : MonoBehaviour {
         CloudSave.onClick.AddListener(CloudSaveFunc);
         CloudLoad = GameObject.Find("CloudLoad").GetComponent<Button>();
         CloudLoad.onClick.AddListener(CloudLoadFunc);
-        CloudText = GameObject.Find("CloudText").GetComponent<Text>();
         Achievement = GameObject.Find("Achievement").GetComponent<Button>();
         Achievement.onClick.AddListener(ShowAchievementFunc);
         leaderBoard = GameObject.Find("LeaderBoard").GetComponent<Button>();

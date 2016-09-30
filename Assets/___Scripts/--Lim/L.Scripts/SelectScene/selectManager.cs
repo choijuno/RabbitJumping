@@ -69,6 +69,8 @@ public partial class selectManager : MonoBehaviour {
     public Button backgroundMusicOff;
     public Button hyogwaMusicOn;
     public Button hyogwaMusicOff;
+    public Button tiltOn;
+    public Button tiltOff;
 
     //골드 보석 상점
     public GameObject goldBosuk;
@@ -153,7 +155,28 @@ public partial class selectManager : MonoBehaviour {
         
         backgroundMusicOn.onClick.AddListener(() => backgroundMusicGo(1));
         backgroundMusicOff.onClick.AddListener(() => backgroundMusicGo(0));
-        
+        tiltOn.onClick.AddListener(() => tilt(true));
+        tiltOff.onClick.AddListener(() => tilt(false));
+        hyogwaMusicOn.onClick.AddListener(() => HyoGwaSound(true));
+        hyogwaMusicOff.onClick.AddListener(() => HyoGwaSound(false));
+
+        if (!ES2.Exists("tilt"))
+        {
+            ES2.Save<bool>(false, "tilt");
+            tiltOff.gameObject.SetActive(true);
+            tiltOn.gameObject.SetActive(false);
+        }
+        if (ES2.Load<bool>("tilt"))
+        {
+            tiltOn.gameObject.SetActive(true);
+            tiltOff.gameObject.SetActive(false);
+        }
+        else
+        {
+            tiltOn.gameObject.SetActive(false);
+            tiltOff.gameObject.SetActive(true);
+        }
+
         GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0));
         GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1));
 
@@ -184,10 +207,21 @@ public partial class selectManager : MonoBehaviour {
             backgroundMusicOn.gameObject.SetActive(false);
             MusicManager.instance.MusicSelect(false);
         }
-        
-        hyogwaMusicOff.gameObject.SetActive(false);
-        hyogwaMusicOn.gameObject.SetActive(true);
-        
+
+        if (!ES2.Exists("HyoGwaSound"))
+            ES2.Save<bool>(true, "HyoGwaSound");
+
+        if (ES2.Load<bool>("HyoGwaSound"))
+        {
+            hyogwaMusicOff.gameObject.SetActive(false);
+            hyogwaMusicOn.gameObject.SetActive(true);
+        }
+        else
+        {
+            hyogwaMusicOff.gameObject.SetActive(true);
+            hyogwaMusicOn.gameObject.SetActive(false);
+        }
+
         setupExit.onClick.AddListener(setupExitBtnFunc);
         setup.SetActive(false);
 
@@ -302,11 +336,17 @@ public partial class selectManager : MonoBehaviour {
     }
     void SceneGo(string name) //게임씬으로 넘기자
     {
+        MusicManager.instance.PlayOnShot();
         test = scrollPanel.localPosition;
         ES2.Save<Vector2>(test, "scrollPanel");
         Debug.Log("====처음벡터===" + ES2.Load<Vector2>("scrollPanel"));
         GameManager.TestNum = System.Convert.ToInt32(name);
         mainSceneManager.SceneIndex = 2;
+        StartCoroutine(waitLoadingScene());
+    }
+    IEnumerator waitLoadingScene()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(1);
     }
 }
