@@ -289,7 +289,7 @@ public class PlayerMove : MonoBehaviour {
 
 	void Bride() {
 		transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y, 0);
-		rideTime_in = rideTime_in - Time.deltaTime;
+		rideTime_in = rideTime_in - 0.02f;
 		if (rideTime_in <= 0) {
 			Camera_ingame.GetComponent<GameCamera> ().direction = 1;
 			GetComponent<PlayerController> ().moveStopCheck = false;
