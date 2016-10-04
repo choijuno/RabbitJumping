@@ -12,7 +12,8 @@ public class jumpPointCollider : MonoBehaviour {
 
 	void OnTriggerEnter(Collider player) {
 		if (player.CompareTag ("player")) {
-			_anim.SetTrigger ("jump");
+			if(player.GetComponent<PlayerMove>().bounce == Bouncy.Down)
+				_anim.SetTrigger ("jump");
 		}
 	}
 }

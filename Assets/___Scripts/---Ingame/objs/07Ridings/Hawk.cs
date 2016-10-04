@@ -15,15 +15,20 @@ public class Hawk : MonoBehaviour {
 	float runSpeed_in;
 	public float runTime;
 	float runTime_in;
+	public float boostTime;
+	float boostTime_in;
 
 
 	void Start () {
 		waitTime_in = waitTime;
 		runSpeed_in = runSpeed * 0.001f;
 		runTime_in = runTime;
+		boostTime_in = boostTime;
 	}
 
 	void Update () {
+		Debug.Log (runSpeed_in);
+
 		if (stat == hawkStatus.wait) {
 			stat = hawkStatus.not;
 			hawkCollider.SetActive (false);
@@ -45,6 +50,9 @@ public class Hawk : MonoBehaviour {
 	}
 
 	IEnumerator att(){
+		if (boostTime_in > 0) {
+			StartCoroutine ("boost");
+		}
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
 			transform.position = new Vector3 (transform.position.x + runSpeed_in, transform.position.y, transform.position.z);
@@ -71,5 +79,19 @@ public class Hawk : MonoBehaviour {
 			}
 
 		}
+	}
+
+	IEnumerator boost() {
+		
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+
+			boostTime_in = boostTime_in - Time.deltaTime;
+			if (boostTime_in <= 0) {
+				runSpeed_in = runSpeed_in * 2.5f;
+				StopCoroutine ("boost");
+			}
+		}
+
 	}
 }

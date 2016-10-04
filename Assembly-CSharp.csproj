@@ -334,6 +334,8 @@
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\FishCollider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\Monkey.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\MoveOnGround.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\NewPlantDeadPoint.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\NewSpider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\PlantDeadPoint.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\Spider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\SpiderRadar.cs" />
@@ -342,6 +344,8 @@
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\Tree_R.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\03Enemys\colliderTurnpoint.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\05Items\goldCollider.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\06Hurdles\hiveCollider.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\06Hurdles\poisonCollider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\07Ridings\Elephant.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\07Ridings\Hawk.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\08Cages\Cage.cs" />

@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: 468ff408209b99548844d86d60343f5a
-timeCreated: 1474534616
+timeCreated: 1475565570
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: mapFrame
     21300002: clear
     21300004: StartPoint
+    21300006: arrow
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -131,6 +132,26 @@ TextureImporter:
         - {x: 148.5, y: -95.5}
         - {x: 159.5, y: -82.5}
         - {x: 159.5, y: -25.5}
+    - name: arrow
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 370
+        width: 78
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 14}
+        - {x: -17, y: 30}
+        - {x: -39, y: 30}
+        - {x: -39, y: -26}
+        - {x: -37, y: -26}
+        - {x: -17, y: -24}
+        - {x: 25, y: -14}
+        - {x: 35, y: -5}
+        - {x: 38, y: -1}
     outline: []
   spritePackingTag: 
   userData: 

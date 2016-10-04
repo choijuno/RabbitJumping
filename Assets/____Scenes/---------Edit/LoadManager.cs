@@ -35,8 +35,9 @@ public class LoadManager : MonoBehaviour {
 
 	//02ActionObj
 	public GameObject jumpPoint;
-	public GameObject moleTunnel;
-	public GameObject moleTunnel_2;
+	public GameObject moleTunnel_back;
+	public GameObject moleTunnel_forward2;
+	public GameObject moleTunnel_back2;
 
 	//03StayEnemy
 	public GameObject fish;
@@ -50,9 +51,15 @@ public class LoadManager : MonoBehaviour {
 	public GameObject hedgedog;
 	public GameObject hedgedog_Move;
 	public GameObject crocodile;
-	public GameObject spider_1;
-	public GameObject spider_2;
-	public GameObject spider_3;
+	public GameObject spider_down_low;
+	public GameObject spider_down_mid;
+	public GameObject spider_down_high;
+	public GameObject spider_downup_low;
+	public GameObject spider_downup_mid;
+	public GameObject spider_downup_high;
+	public GameObject spider_up_low;
+	public GameObject spider_up_mid;
+	public GameObject spider_up_high;
 
 	//05Items
 	public GameObject gold;
@@ -70,6 +77,7 @@ public class LoadManager : MonoBehaviour {
 	//07Riding
 	public GameObject elephant;
 	public GameObject hawk;
+	public GameObject hawk_long;
 
 	//08Cage
 	public GameObject Cage;
@@ -204,10 +212,13 @@ public class LoadManager : MonoBehaviour {
 						_tmp = (GameObject)Instantiate (jumpPoint, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					case "1020021":
-						_tmp = (GameObject)Instantiate (moleTunnel, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						_tmp = (GameObject)Instantiate (moleTunnel_back, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					case "1020022":
-						_tmp = (GameObject)Instantiate (moleTunnel_2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						_tmp = (GameObject)Instantiate (moleTunnel_forward2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1020023":
+						_tmp = (GameObject)Instantiate (moleTunnel_back2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 
 				//03Stayenemy
@@ -292,15 +303,34 @@ public class LoadManager : MonoBehaviour {
 						_tmp.GetComponent<objMovement> ().U_Lerp = objPos_component_dataIn [k + 13];
 						_tmp.GetComponent<objMovement> ().down_Lerp = objPos_component_dataIn [k + 14];
 						break;
-					case "1040031":
-						_tmp = (GameObject)Instantiate (spider_1, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+					case "1040041":
+						_tmp = (GameObject)Instantiate (spider_down_low, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
-					case "1040032":
-						_tmp = (GameObject)Instantiate (spider_2, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+					case "1040042":
+						_tmp = (GameObject)Instantiate (spider_down_mid, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
-					case "1040033":
-						_tmp = (GameObject)Instantiate (spider_3, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+					case "1040043":
+						_tmp = (GameObject)Instantiate (spider_down_high, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
+					case "1040051":
+						_tmp = (GameObject)Instantiate (spider_downup_low, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1040052":
+						_tmp = (GameObject)Instantiate (spider_downup_mid, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1040053":
+						_tmp = (GameObject)Instantiate (spider_downup_high, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1040061":
+						_tmp = (GameObject)Instantiate (spider_up_low, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1040062":
+						_tmp = (GameObject)Instantiate (spider_up_mid, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1040063":
+						_tmp = (GameObject)Instantiate (spider_up_high, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+
 				//05Item
 					case "1050011":
 						_tmp = (GameObject)Instantiate (gold, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
@@ -334,6 +364,9 @@ public class LoadManager : MonoBehaviour {
 						break;
 					case "1070021":
 						_tmp = (GameObject)Instantiate (hawk, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1070022":
+						_tmp = (GameObject)Instantiate (hawk_long, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 
 				//08Cage
