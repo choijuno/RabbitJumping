@@ -195,7 +195,6 @@ public partial class selectManager : MonoBehaviour
     {
         if (musicOnOff == 0)
         {
-            Debug.Log("abc");
             backgroundMusicOn.gameObject.SetActive(true);
             backgroundMusicOff.gameObject.SetActive(false);
             MusicManager.instance.MusicSelect(true);

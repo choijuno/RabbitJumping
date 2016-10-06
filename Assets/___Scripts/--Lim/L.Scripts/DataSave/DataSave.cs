@@ -104,7 +104,6 @@ public class DataSave : MonoBehaviour {
 
         ES2.Save(test, "ValueKey" + stageIndex.ToString());
 
-
         if (ES2.Exists("stageIndexCount"))
         {
             if (ES2.Load<int>("stageIndexCount") < stageIndex)

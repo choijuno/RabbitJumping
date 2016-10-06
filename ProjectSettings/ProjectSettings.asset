@@ -156,9 +156,9 @@ PlayerSettings:
   iOSLaunchScreeniPadCustomXibPath: 
   iOSDeviceRequirements: []
   AndroidTargetDevice: 0
-  AndroidSplashScreenScale: 0
+  AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "D:/\uCD5C\uC900\uC624/programing/projects/JumpX/RealKey.keystore"
+  AndroidKeystoreName: C:/Users/tlghk/Desktop/RabbitJumping/RealKey.keystore
   AndroidKeyaliasName: realkey
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
@@ -436,7 +436,7 @@ PlayerSettings:
   - UNet_ServiceEnabled::UNet_ServiceEnabled
   Build_ServiceEnabled::Build_ServiceEnabled: False
   UNet_ServiceEnabled::UNet_ServiceEnabled: True
-  cloudProjectId: 08cee612-81ef-4b04-80aa-f6cda9f04173
-  projectName: JumpingX
-  organizationId: k131good
+  cloudProjectId: e36a9f99-7fe4-43f8-a064-b047eacbfee6
+  projectName: Jumping Rabbit
+  organizationId: ggamestudio
   cloudEnabled: 0
