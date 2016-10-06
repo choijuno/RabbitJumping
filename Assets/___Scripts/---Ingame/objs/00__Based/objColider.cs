@@ -83,6 +83,8 @@ public class objColider : MonoBehaviour {
 					break;
 
 				case "1030031": //plant
+				case "1030032":
+				case "1030033":
 					//plant_ani.SetTrigger ("reset");
 					plantModel_dead.SetActive (false);
 					plantModel.SetActive (true);
@@ -231,6 +233,8 @@ public class objColider : MonoBehaviour {
 			case "1030021":
 				break;
 			case "1030031"://plant
+			case "1030032":
+			case "1030033":
 				//transform.parent.gameObject.SetActive (false);
 				Camera_ingame = player.transform.parent.GetComponent<Hawk> ().Camera_ingame;
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
@@ -330,6 +334,8 @@ public class objColider : MonoBehaviour {
 			case "1030021":
 				break;
 			case "1030031"://plant
+			case "1030032":
+			case "1030033":
 				Camera_ingame = player.GetComponent<PlayerMove> ().Camera_ingame;
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 				plant ();

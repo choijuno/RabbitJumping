@@ -7,7 +7,8 @@ public class SpiderRadar : MonoBehaviour {
 
 	void OnTriggerEnter(Collider player) {
 		if (player.CompareTag ("player")) {
-			Body.GetComponent<Spider> ().radarCheck = true;
+			Body.GetComponent<NewSpider> ().radarCheck = true;
+			this.gameObject.SetActive (false);
 		}
 	}
 

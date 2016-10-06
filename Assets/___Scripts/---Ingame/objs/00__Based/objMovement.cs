@@ -4,6 +4,7 @@ using System.Collections;
 public class objMovement : MonoBehaviour {
 	
 	public GameObject mainCamera;
+	public GameObject rhino_model;
 	public bool allStop=true;
 
 	objMove objmove = objMove.wait;
@@ -109,7 +110,8 @@ public class objMovement : MonoBehaviour {
 			break;
 		case "1030031":
 			break;
-		case "1030041":
+		case "1030041": //rhino
+			StartCoroutine ("rhino_reset");
 			break;
 
 			//04Moveenemy
@@ -347,5 +349,90 @@ public class objMovement : MonoBehaviour {
 
 	}
 
+
+	IEnumerator rhino_reset(){
+
+
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+			rhinomove_reset ();
+			if (!allStop) {
+
+				StartCoroutine ("rhinoM");
+				StopCoroutine ("rhino_reset");
+			}
+
+		}
+	}
+
+	IEnumerator rhinoM(){
+
+
+
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+
+			if (!allStop) {
+				rhino_move ();
+			} else {
+				
+				//move
+				if (move) {
+					if (this.name.Substring (0, 7) == "1030041") {
+						transform.localScale = new Vector3 (1, 1, 1);
+					}
+					rhino_model.transform.localPosition = new Vector3 (baseX_in, rhino_model.transform.localPosition.y, rhino_model.transform.localPosition.z);
+					movePos = MovePosition.Left;
+				}
+				//etc
+				StartCoroutine ("rhino_reset");
+				StopCoroutine ("rhinoM");
+			}
+
+		}
+	}
+
+		
+	void rhino_move(){
+
+		if (move) {
+			switch (movePos) {
+			case MovePosition.Left:
+				if (rhino_model.transform.localPosition.x >= L_Range_in) {
+					rhino_model.transform.localPosition = new Vector3 (rhino_model.transform.localPosition.x - L_Speed_in, rhino_model.transform.localPosition.y, rhino_model.transform.localPosition.z);
+				} else {
+					rhino_model.transform.localPosition = new Vector3 (L_Range_in, rhino_model.transform.localPosition.y, rhino_model.transform.localPosition.z);
+					if (this.name.Substring(0,7)=="1030041") {
+						rhino_model.transform.localScale = new Vector3 (1, 1, 1);
+					}
+					movePos = MovePosition.Right;
+				}
+				break;
+			case MovePosition.Right:
+				if (rhino_model.transform.localPosition.x <= R_Range_in) {
+					rhino_model.transform.localPosition = new Vector3 (rhino_model.transform.localPosition.x + R_Speed_in, rhino_model.transform.localPosition.y, rhino_model.transform.localPosition.z);
+				} else {
+					rhino_model.transform.localPosition = new Vector3 (R_Range_in, rhino_model.transform.localPosition.y, rhino_model.transform.localPosition.z);
+					if (this.name.Substring(0,7)=="1030041") {
+						rhino_model.transform.localScale = new Vector3 (-1, 1, 1);
+					}
+					movePos = MovePosition.Left;
+				}
+				break;
+			}
+		}
+
+	}
+
+	void rhinomove_reset() {
+		baseX_in = 0;
+
+		L_Speed_in = L_Speed * 0.001f;
+		R_Speed_in = R_Speed * 0.001f;
+
+		L_Range_in = - L_Range;
+		R_Range_in = + R_Range;
+
+	}
 
 }

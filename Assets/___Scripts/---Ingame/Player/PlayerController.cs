@@ -205,17 +205,21 @@ public class PlayerController : MonoBehaviour {
 		
 
 		if (obj.CompareTag ("hive")) {
-			hiveCC = PlayerCC.bug;
-			hive_bees.SetActive (true);
-			Destroy (obj.transform.parent.gameObject);
-			StartCoroutine ("hive");
+			if (GetComponent<PlayerMove> ().bounce == Bouncy.Down || GetComponent<PlayerMove> ().bounce == Bouncy.Up || GetComponent<PlayerMove> ().bounce == Bouncy.stun) {
+				hiveCC = PlayerCC.bug;
+				hive_bees.SetActive (true);
+				//Destroy (obj.transform.parent.gameObject);
+				StartCoroutine ("hive");
+			}
 		}
 
 		if (obj.CompareTag ("poison")) {
-			hiveCC = PlayerCC.bug;
-			poison_mush.SetActive (true);
-			Destroy (obj.transform.parent.gameObject);
-			StartCoroutine ("poison");
+			if (GetComponent<PlayerMove> ().bounce == Bouncy.Down || GetComponent<PlayerMove> ().bounce == Bouncy.Up || GetComponent<PlayerMove> ().bounce == Bouncy.stun) {
+				hiveCC = PlayerCC.bug;
+				poison_mush.SetActive (true);
+				//Destroy (obj.transform.parent.gameObject);
+				StartCoroutine ("poison");
+			}
 		}
 
 		if (obj.CompareTag("dead")) {
