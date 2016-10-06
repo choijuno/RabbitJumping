@@ -27,6 +27,7 @@ GameObject:
   - 33: {fileID: 3341694}
   - 23: {fileID: 2357652}
   - 114: {fileID: 11421742}
+  - 114: {fileID: 11451440}
   m_Layer: 0
   m_Name: 1040052Spider_DownUp_mid
   m_TagString: Untagged
@@ -562,6 +563,37 @@ MonoBehaviour:
   range: 3
   HwaitTime: 1
   LwaitTime: 1
+--- !u!114 &11451440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d36d4e102b93f459342e2eac2f8105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  rhino_model: {fileID: 0}
+  allStop: 1
+  havehp: 0
+  standHp: 0
+  angryHp: 0
+  move: 0
+  turn_image: {fileID: 0}
+  L_Speed: 0
+  R_Speed: 0
+  L_Range: 0
+  R_Range: 0
+  jump: 0
+  jump_image: {fileID: 0}
+  waitTime_jump: 0
+  maxHeight: 0
+  U_Speed: 0
+  U_Lerp: 0
+  down_Lerp: 0
+  waterEffect: {fileID: 0}
 --- !u!114 &11451652
 MonoBehaviour:
   m_ObjectHideFlags: 1

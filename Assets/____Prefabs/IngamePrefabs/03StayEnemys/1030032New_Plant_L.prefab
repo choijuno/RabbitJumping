@@ -431,7 +431,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &188354
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -506,9 +506,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5702846, y: -1.37, z: 0}
+  m_LocalPosition: {x: 6.346152, y: 0.95290375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 423848}
   - {fileID: 434466}
   - {fileID: 416842}
   - {fileID: 495998}
@@ -524,7 +525,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.030410463, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 423848}
   - {fileID: 422734}
   - {fileID: 450590}
   m_Father: {fileID: 455492}
@@ -542,7 +542,7 @@ Transform:
   - {fileID: 455492}
   - {fileID: 444538}
   m_Father: {fileID: 412706}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &422734
 Transform:
   m_ObjectHideFlags: 1
@@ -554,7 +554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414008}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &423848
 Transform:
   m_ObjectHideFlags: 1
@@ -562,10 +562,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18266663, y: -0.008, z: 0}
-  m_LocalScale: {x: 0.46666667, y: 0.5, z: 1}
+  m_LocalPosition: {x: -0.2739997, y: 0.6013746, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 414008}
+  m_Father: {fileID: 412706}
   m_RootOrder: 0
 --- !u!4 &428052
 Transform:
@@ -607,7 +607,7 @@ Transform:
   m_LocalScale: {x: 1.3010173, y: 0.5554285, z: 1.110857}
   m_Children: []
   m_Father: {fileID: 412706}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &439218
 Transform:
   m_ObjectHideFlags: 1
@@ -713,7 +713,7 @@ Transform:
   - {fileID: 475014}
   - {fileID: 401598}
   m_Father: {fileID: 414008}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &451440
 Transform:
   m_ObjectHideFlags: 1
@@ -825,7 +825,7 @@ Transform:
   m_LocalScale: {x: 0.60909176, y: 0.6090917, z: 0.6090917}
   m_Children: []
   m_Father: {fileID: 412706}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!23 &2332110
 MeshRenderer:
   m_ObjectHideFlags: 1
