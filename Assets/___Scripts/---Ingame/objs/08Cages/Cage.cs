@@ -14,7 +14,7 @@ public class Cage : MonoBehaviour {
 
 	void OnTriggerEnter(Collider player) {
 		if (player.CompareTag ("player")) {
-			AudioSource.PlayClipAtPoint (breakSound, player.GetComponent<PlayerMove> ().Camera_ingame.transform.position);
+			AudioSource.PlayClipAtPoint (breakSound, player.GetComponent<PlayerMove> ().Camera_ingame.transform.position, GameManager.soundVolume);
 			breakCage.SetActive (true);
 			standCage.SetActive (false);
 			GameManager.Record_help += 1;

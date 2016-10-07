@@ -15,6 +15,7 @@ public class PlayerMove : MonoBehaviour {
 	public int TestSkinNum;
 	public GameObject[] ChaSkin;
 
+	public GameObject soundManager;
 	public GameObject gameManager;
 	public Animator _anim;
 
@@ -79,6 +80,7 @@ public class PlayerMove : MonoBehaviour {
 	bool stunGround;
 
 	void Awake () {
+		
 		Camera_ingame.GetComponent<GameCamera> ().direction = 1;
 		//_anim = deadBody.GetComponent<Animation> ();
 		if (ES2.Exists ("rabbit")) {
@@ -389,12 +391,12 @@ public class PlayerMove : MonoBehaviour {
 			case Bouncy.Down:
 				if (obj.CompareTag ("gold")) {
 				GameManager.Money_ingame += 10;
-				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
 				if (obj.CompareTag ("gold50")) {
 					GameManager.Money_ingame += 50;
-					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
                 if (obj.CompareTag("warp"))
@@ -538,7 +540,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.name == "water")
                 {
-                    AudioSource.PlayClipAtPoint(deadSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(deadSound, SoundBase.transform.position, GameManager.soundVolume);
 					waterbumped ();
 				//waterDead.SetActive(true);
 
@@ -605,12 +607,12 @@ public class PlayerMove : MonoBehaviour {
             case Bouncy.Up:
 				if (obj.CompareTag ("gold")) {
 				GameManager.Money_ingame += 10;
-				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
 				if (obj.CompareTag ("gold50")) {
 					GameManager.Money_ingame += 50;
-					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
                 if (obj.CompareTag("rain"))
@@ -698,12 +700,12 @@ public class PlayerMove : MonoBehaviour {
 			case Bouncy.stun:
 				if (obj.CompareTag ("gold")) {
 				GameManager.Money_ingame += 10;
-				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
 				if (obj.CompareTag ("gold50")) {
 					GameManager.Money_ingame += 50;
-					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
 				if (obj.CompareTag ("ground")) {
@@ -742,12 +744,12 @@ public class PlayerMove : MonoBehaviour {
 				
 				if (obj.CompareTag ("gold")) {
 					GameManager.Money_ingame += 10;
-					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
 				if (obj.CompareTag ("gold50")) {
 					GameManager.Money_ingame += 50;
-					AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position);
+				AudioSource.PlayClipAtPoint(goldSound, SoundBase.transform.position, GameManager.soundVolume);
 				}
 
                 if (obj.CompareTag("rain"))
@@ -868,7 +870,7 @@ public class PlayerMove : MonoBehaviour {
 	void bumped() {
 		int rand = Random.Range (0, 10);
 
-        AudioSource.PlayClipAtPoint(bumpSound, SoundBase.transform.position);
+        AudioSource.PlayClipAtPoint(bumpSound, SoundBase.transform.position, GameManager.soundVolume);
 
         bumpEffect.transform.position = this.transform.position;
         bumpEffect.SetActive(true);

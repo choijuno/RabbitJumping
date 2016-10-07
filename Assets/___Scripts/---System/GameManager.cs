@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
 	public static bool pauseCheck;
 
+	public static float soundVolume;
+
 	public bool resultCheck;
 
 	//UI
@@ -56,6 +58,13 @@ public class GameManager : MonoBehaviour {
 	public GameObject soundOn;
 	public GameObject soundOff;
 
+	public GameObject hyogwaOn;
+	public GameObject hyogwaOff;
+
+
+	public AudioClip clear_star;
+	public AudioClip clear_exit;
+
 
     //Json
 
@@ -84,6 +93,23 @@ public class GameManager : MonoBehaviour {
 				ES2.Save<bool> (true, "musicChk");
 				soundOn.SetActive (true);
 				soundOff.SetActive (false);
+			}
+
+			if (ES2.Exists ("HyoGwaSound")) {
+				if (ES2.Load<bool> ("HyoGwaSound")) {
+					soundVolume = 1;
+					hyogwaOn.SetActive (true);
+					hyogwaOff.SetActive (false);
+				} else {
+					soundVolume = 0f;
+					hyogwaOn.SetActive (false);
+					hyogwaOff.SetActive (true);
+				}
+			} else {
+				ES2.Save<bool> (true, "HyoGwaSound");
+				soundVolume = 1;
+				hyogwaOn.SetActive (true);
+				hyogwaOff.SetActive (false);
 			}
 
 			if (ES2.Exists ("tilt")) {
@@ -195,10 +221,14 @@ public class GameManager : MonoBehaviour {
 			result_Panel_Clear.SetActive (true);
 			result (); //골드, 시간, 동물구함.
 			ScoreCheck (); //점수체크.
-			StarCheck (); //별체크.
+
+			StartCoroutine("StarCheck_Effect");
+			//StarCheck (); //별체크.
+
 			StopCoroutine ("gameResult_Clear");
 		}
 	}
+
 
 	IEnumerator gameResult_Failed(){
 		while (true) {
@@ -206,6 +236,7 @@ public class GameManager : MonoBehaviour {
 			result_Panel.SetActive (true);
 			result_Panel_Failed.SetActive (true);
 			result ();
+
 			ScoreCheck ();
 			StopCoroutine ("gameResult_Failed");
 		}
@@ -251,4 +282,42 @@ public class GameManager : MonoBehaviour {
         DataSave._instance.saveData(GameManager.TestNum, starCount, Score_ingame);
         DataSave._instance.setStar_Count(starCount);
     }
+
+	IEnumerator StarCheck_Effect(){
+		
+		starCount = JsonGo.starJsonData(TestNum, Score_ingame);
+			switch (starCount)
+			{
+			case 1:
+				yield return new WaitForSeconds (0.3f);
+				Star [0].SetActive (true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+				break;
+			case 2:
+				yield return new WaitForSeconds (0.3f);
+				Star[0].SetActive(true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+
+				yield return new WaitForSeconds (0.3f);
+				Star[1].SetActive(true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+				break;
+			case 3:
+				yield return new WaitForSeconds (0.3f);
+				Star[0].SetActive(true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+				yield return new WaitForSeconds (0.3f);
+				Star[1].SetActive(true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+				yield return new WaitForSeconds (0.3f);
+				Star[2].SetActive(true);
+				AudioSource.PlayClipAtPoint (clear_star, ingameCamera.transform.position, GameManager.soundVolume);
+				break;
+			}
+			yield return new WaitForSeconds (0.3f);
+			AudioSource.PlayClipAtPoint (clear_exit, ingameCamera.transform.position, GameManager.soundVolume);
+
+	}
+
+
 }
