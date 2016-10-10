@@ -15,19 +15,23 @@ public class BtnController : MonoBehaviour {
 	public GameObject tiltOff;
 
 	public void pauseBtn() {
+		MusicManager.instance.PlayOnShot ();
 		Time.timeScale = 0.0001f;
 		GameManager.pauseCheck = true;
 		justOpen ();
 		justClose ();
 		if (GameManager.tiltCheck) {
+			tiltOff.SetActive (false);
 			tiltOn.SetActive (true);
 		} else {
+			tiltOn.SetActive (false);
 			tiltOff.SetActive (true);
 
 		}
 	}
 
 	public void pauseClose(){
+		MusicManager.instance.PlayOnShot ();
 		Time.timeScale = 1f;
 		GameManager.pauseCheck = false;
 		justOpen ();
@@ -35,12 +39,14 @@ public class BtnController : MonoBehaviour {
 	}
 
 	public void pauseReset(){
+		MusicManager.instance.PlayOnShot ();
 		Time.timeScale = 1f;
 		GameManager.pauseCheck = false;
 		Application.LoadLevel (Application.loadedLevel);
 	}
 
 	public void pauseHome(){
+		MusicManager.instance.PlayOnShot ();
 		Time.timeScale = 1f;
 		GameManager.pauseCheck = false;
         //Application.LoadLevel ("SelectScene");
@@ -50,6 +56,7 @@ public class BtnController : MonoBehaviour {
 	}
 
 	public void Bgm_OnOff(){
+		MusicManager.instance.PlayOnShot ();
 		//ES2.Load<bool> ("musicChk")
 		switch (this.name) {
 		case "On":
@@ -66,17 +73,23 @@ public class BtnController : MonoBehaviour {
 	}
 
 	public void Sound_OnOff(){
+		MusicManager.instance.PlayOnShot ();
 		switch (this.name) {
 		case "On":
 			openClose ();
+			ES2.Save<bool> (false, "HyoGwaSound");
+			GameManager.soundVolume = 0;
 			break;
 		case "Off":
 			openClose ();
+			ES2.Save<bool> (true, "HyoGwaSound");
+			GameManager.soundVolume = 1;
 			break;
 		}
 	}
 
 	public void Tilt_OnOff(){
+		MusicManager.instance.PlayOnShot ();
 		switch (this.name) {
 		case "On":
 			GameManager.tiltCheck = false;

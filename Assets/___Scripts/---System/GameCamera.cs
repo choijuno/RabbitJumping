@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class GameCamera : MonoBehaviour {
-	
+
+	public Transform soundPoint;
+
 	// player position
 	PlayerController playerController;
 	MovePosition playerState;

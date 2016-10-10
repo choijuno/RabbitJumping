@@ -152,7 +152,7 @@ public class objColider : MonoBehaviour {
 				//transform.parent.gameObject.SetActive (false);
 				Camera_ingame = player.transform.parent.GetComponent<Elephant> ().Camera_ingame;
 				croc_ani.SetTrigger ("attack");
-				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position, GameManager.soundVolume);
 				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
@@ -249,7 +249,7 @@ public class objColider : MonoBehaviour {
 				//transform.parent.gameObject.SetActive (false);
 				Camera_ingame = player.transform.parent.GetComponent<Hawk> ().Camera_ingame;
 				croc_ani.SetTrigger ("attack");
-				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position, GameManager.soundVolume);
 				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
@@ -406,7 +406,7 @@ public class objColider : MonoBehaviour {
 			standhp--;
 			croc_ani.SetInteger ("hp", (int)standhp);
 			if (standhp <= 0) {
-				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position);
+				AudioSource.PlayClipAtPoint (crocSound, Camera_ingame.transform.position, GameManager.soundVolume);
 				croc_ani.SetTrigger ("attack");
 				crocAngry.SetActive (false);
 				crocAngry.SetActive (true);
