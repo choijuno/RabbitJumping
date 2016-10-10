@@ -3320,7 +3320,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.54, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 1.547302, y: 1.5473026, z: 1.5473026}
   m_Children:
   - {fileID: 456374}
@@ -5007,7 +5007,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.04, z: 0}
+  m_LocalPosition: {x: 0, y: 7.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470680}
@@ -5442,6 +5442,7 @@ MonoBehaviour:
   - {fileID: 109824}
   - {fileID: 185074}
   - {fileID: 188440}
+  soundManager: {fileID: 0}
   gameManager: {fileID: 0}
   _anim: {fileID: 9548888}
   SoundBase: {fileID: 0}
@@ -5449,6 +5450,7 @@ MonoBehaviour:
   bumpSound2: {fileID: 8300000, guid: 75e1f4db8bbc74649a3aca35c922a47f, type: 3}
   deadSound: {fileID: 8300000, guid: 8086e785a0e0cba48bca7494cfdc174f, type: 3}
   goldSound: {fileID: 8300000, guid: ee19e9c88d436ee4cafafa54124b7899, type: 3}
+  dead_: {fileID: 8300000, guid: 1d72a3108bcfe2540a497cfe18ebb223, type: 3}
   loadManager: {fileID: 0}
   FindChild_inParent: {fileID: 0}
   StartPos: {fileID: 0}
@@ -17151,7 +17153,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 468ff408209b99548844d86d60343f5a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 1b8d6a53e26763f478e9d1551a62900c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19671,7 +19673,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 468ff408209b99548844d86d60343f5a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 1b8d6a53e26763f478e9d1551a62900c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour {
 	public AudioClip bumpSound2;
 	public AudioClip deadSound;
 	public AudioClip goldSound;
+	public AudioClip dead_;
 
 
 
@@ -563,6 +564,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("dead"))
 				{
+				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
                     GameManager.gameSet = 2;
                     Debug.Log(bounce);
@@ -677,6 +679,7 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("dead"))
                 {
+				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
                     GameManager.gameSet = 2;
                     Debug.Log(bounce);
@@ -720,6 +723,7 @@ public class PlayerMove : MonoBehaviour {
 
 				if (obj.CompareTag("dead"))
 				{
+				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 					GameManager.gameSet = 2;
 					Debug.Log(bounce);

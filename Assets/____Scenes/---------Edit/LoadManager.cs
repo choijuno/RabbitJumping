@@ -115,7 +115,7 @@ public class LoadManager : MonoBehaviour {
 		} else {
 			if (Application.loadedLevelName == "TestGame"){
 				stageNum = GameManager.TestNum;
-				StageNum_txt.text = "Stage " + GameManager.TestNum;
+				StageNum_txt.text = "STAGE " + GameManager.TestNum;
 			}
 
 		}

@@ -32,4 +32,7 @@ public class UnityAdsManager : MonoBehaviour {
     {
         Advertisement.Show(null, _ShowOpt);
     }
+
+
 }
+
