@@ -34,8 +34,8 @@ public class PlayerController : MonoBehaviour {
 
 	void Start ()
     {
-
-	}
+        poisonCheck = false;
+    }
 
 
 	void Update () {

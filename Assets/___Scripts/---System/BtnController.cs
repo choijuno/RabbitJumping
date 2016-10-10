@@ -51,7 +51,7 @@ public class BtnController : MonoBehaviour {
 		GameManager.pauseCheck = false;
         //Application.LoadLevel ("SelectScene");
         mainSceneManager.SceneIndex = 3;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
 	}
 
