@@ -27,13 +27,13 @@ public class CreateUnitClass : MonoBehaviour {
         switch (selectManager.eggNumber)
         {
             case 0:
-                EggTemp = Instantiate(Egg[0], new Vector3(0.18f, 0.87f, -5.21f), Quaternion.identity) as GameObject;
+                EggTemp = Instantiate(Egg[0], new Vector3(0, 0.87f, -5.21f), Quaternion.identity) as GameObject;
                 break;
             case 1:
-                EggTemp = Instantiate(Egg[1], new Vector3(0.18f, 0.87f, -5.21f), Quaternion.identity) as GameObject;
+                EggTemp = Instantiate(Egg[1], new Vector3(0, 0.87f, -5.21f), Quaternion.identity) as GameObject;
                 break;
             case 2:
-                EggTemp = Instantiate(Egg[0], new Vector3(0.18f, 0.87f, -5.21f), Quaternion.identity) as GameObject;
+                EggTemp = Instantiate(Egg[0], new Vector3(0, 0.87f, -5.21f), Quaternion.identity) as GameObject;
                 break;
         }
         StartCoroutine(waitFireWork());
@@ -60,6 +60,6 @@ public class CreateUnitClass : MonoBehaviour {
     void createUnitFunc()
     {
         randomIndex = Random.Range(0, 10);
-        Instantiate(unit[randomIndex], new Vector3(0.74f, -0.73f, 2.29f), Quaternion.identity);
+        Instantiate(unit[randomIndex], new Vector3(0f, -0.73f, 2.29f), Quaternion.identity);
     }
 }
