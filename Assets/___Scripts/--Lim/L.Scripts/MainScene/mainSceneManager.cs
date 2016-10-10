@@ -32,7 +32,7 @@ public class mainSceneManager : MonoBehaviour {
 	void startBtnFunc()
     {
         SceneIndex = 1;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     
     void faceBookBtnFunc() //구글
@@ -44,6 +44,6 @@ public class mainSceneManager : MonoBehaviour {
     }
     void guestLoginFunc() //게스트 로그인
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

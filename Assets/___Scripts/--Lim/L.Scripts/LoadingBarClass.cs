@@ -25,13 +25,13 @@ public class LoadingBarClass : MonoBehaviour {
         switch (mainSceneManager.SceneIndex)
         {
             case 1:
-                async = SceneManager.LoadSceneAsync(2);
-                break;
-            case 2:
                 async = SceneManager.LoadSceneAsync(3);
                 break;
+            case 2:
+                async = SceneManager.LoadSceneAsync(4);
+                break;
             case 3:
-                async = SceneManager.LoadSceneAsync(2);
+                async = SceneManager.LoadSceneAsync(3);
                 break;
             default:
                 async = null;
