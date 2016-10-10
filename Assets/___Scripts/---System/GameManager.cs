@@ -68,6 +68,12 @@ public class GameManager : MonoBehaviour {
 	public AudioClip failed_;
 
 
+	//retry
+	public static int retry_count;
+	public static bool retry_Check;
+
+
+
     //Json
 
     JsonParsing JsonGo;

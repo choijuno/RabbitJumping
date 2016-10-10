@@ -142,4 +142,16 @@ public class BtnController : MonoBehaviour {
         }
 		Application.LoadLevel (Application.loadedLevel);
 	}
+
+
+
+	//Retry
+
+	public void TestRetry_ingame(){
+
+	}
+
+	public void Retry_ingame(){
+
+	}
 }

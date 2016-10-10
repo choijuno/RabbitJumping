@@ -291,9 +291,11 @@ public class PlayerMove : MonoBehaviour {
 	}
 
 	void Bride() {
+		
 		transform.localPosition = new Vector3 (transform.localPosition.x, transform.localPosition.y, 0);
 		rideTime_in = rideTime_in - 0.02f;
 		if (rideTime_in <= 0) {
+			Debug.Log ("Jump!!!!!!!!!!!!");
 			Camera_ingame.GetComponent<GameCamera> ().direction = 1;
 			GetComponent<PlayerController> ().moveStopCheck = false;
 			Camera_ingame.GetComponent<GameCamera> ().riding = false;
@@ -452,24 +454,25 @@ public class PlayerMove : MonoBehaviour {
                                 obj.transform.parent.GetComponent<Elephant>().stat = elephantStatus.wait;
                             }
                             break;
-                        case "hawk":
-                            bounce = Bouncy.ride;
-                            MaxHeight_in = transform.position.y + MaxHeight * 0.3f;
-                            Camera_ingame.GetComponent<GameCamera>().riding = true;
-                            Camera_ingame.GetComponent<GameCamera>().waitTime_in = obj.transform.parent.GetComponent<Hawk>().waitTime;
-                            Camera_ingame.GetComponent<GameCamera>().rideSpeed_in = obj.transform.parent.GetComponent<Hawk>().runSpeed * 0.001f;
-							obj.transform.parent.GetComponent<Hawk> ().Camera_ingame = Camera_ingame;
-                            rideTime_in = obj.transform.parent.GetComponent<Hawk>().runTime;
+				case "hawk":
+					Debug.Log ("downride");
+						bounce = Bouncy.ride;
+						MaxHeight_in = transform.position.y + MaxHeight;
+						Camera_ingame.GetComponent<GameCamera> ().riding = true;
+						Camera_ingame.GetComponent<GameCamera> ().waitTime_in = obj.transform.parent.GetComponent<Hawk> ().waitTime;
+						Camera_ingame.GetComponent<GameCamera> ().rideSpeed_in = obj.transform.parent.GetComponent<Hawk> ().runSpeed * 0.001f;
+						obj.transform.parent.GetComponent<Hawk> ().Camera_ingame = Camera_ingame;
+						rideTime_in = obj.transform.parent.GetComponent<Hawk> ().runTime;
 
-							transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
-							transform.localPosition = new Vector3(0, 0, 0);
-							/*
+						transform.parent = obj.transform.parent.GetComponent<Hawk> ().Pos.transform;
+						transform.localPosition = new Vector3 (0, 0, 0);
+						/*
                             transform.parent = obj.transform.parent.transform;
                             transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.y, 0);
 							*/
 
-                            obj.transform.parent.GetComponent<Hawk>().stat = hawkStatus.wait;
-                            break;
+						obj.transform.parent.GetComponent<Hawk> ().stat = hawkStatus.wait;
+						break;
                     }
                 }
 
@@ -817,7 +820,7 @@ public class PlayerMove : MonoBehaviour {
 		switch (bounce) {
 
 		case Bouncy.Down:
-
+			/*
 			if (obj.CompareTag ("ride")) {
 				GetComponent<PlayerController>().moveStopCheck = true;
 				_anim.SetBool ("DropCheck", false);
@@ -842,6 +845,9 @@ public class PlayerMove : MonoBehaviour {
 					}
 					break;
 				case "hawk":
+
+					GetComponent<PlayerController>().moveStopCheck = true;
+					Camera_ingame.GetComponent<GameCamera> ().direction = 2;
 					bounce = Bouncy.ride;
 					MaxHeight_in = transform.position.y + MaxHeight * 0.3f;
 					Camera_ingame.GetComponent<GameCamera>().riding = true;
@@ -852,15 +858,11 @@ public class PlayerMove : MonoBehaviour {
 
 					transform.parent = obj.transform.parent.GetComponent<Hawk>().Pos.transform;
 					transform.localPosition = new Vector3(0, 0, 0);
-					/*
-                            transform.parent = obj.transform.parent.transform;
-                            transform.localPosition = new Vector3(obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.x, obj.transform.parent.GetComponent<Hawk>().Pos.transform.localPosition.y, 0);
-							*/
 
 					obj.transform.parent.GetComponent<Hawk>().stat = hawkStatus.wait;
 					break;
 				}
-			}
+			}*/
 
 			break;
 		}

@@ -27,7 +27,7 @@ public class Hawk : MonoBehaviour {
 	}
 
 	void Update () {
-		Debug.Log (runSpeed_in);
+		//Debug.Log (runSpeed_in);
 
 		if (stat == hawkStatus.wait) {
 			stat = hawkStatus.not;
