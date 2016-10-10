@@ -5,7 +5,8 @@ using UnityEngine.Advertisements;
 using UnityEngine.SceneManagement;
 
 public class UnityAdsManager : MonoBehaviour {
-    
+
+    int WhereAds = 0;
     ShowOptions _ShowOpt = new ShowOptions();
 
     selectManager SelectManager;
@@ -19,7 +20,17 @@ public class UnityAdsManager : MonoBehaviour {
     void OnAdsShowResultCallBack(ShowResult result) //광고 보기후 호출되는 콜백함수. finished 다봤다는의미.
     {
         if (result == ShowResult.Finished)
-            SelectManager.blueBoxBtnFunc();
+        {
+            if(WhereAds == 1) // 광고로 뽑기
+            {
+                SelectManager.blueBoxBtnFunc();
+                WhereAds = 0;
+            }
+            else if(WhereAds == 2) // 죽었을때
+            {
+                WhereAds = 0;
+            }
+        }
     }
     /*
     void UpdateButton() //광고 준비가 되있다면 활성화.
@@ -30,6 +41,12 @@ public class UnityAdsManager : MonoBehaviour {
     */
     public void unityAdsFunc()
     {
+        WhereAds = 1;
+        Advertisement.Show(null, _ShowOpt);
+    }
+    public void unityAdsFuncPlayingDie()
+    {
+        WhereAds = 2;
         Advertisement.Show(null, _ShowOpt);
     }
 }
