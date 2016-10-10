@@ -347,6 +347,6 @@ public partial class selectManager : MonoBehaviour {
     IEnumerator waitLoadingScene()
     {
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
