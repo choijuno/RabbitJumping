@@ -51,4 +51,7 @@ public class UnityAdsManager : MonoBehaviour {
         WhereAds = 2;
         Advertisement.Show(null, _ShowOpt);
     }
+
+
 }
+

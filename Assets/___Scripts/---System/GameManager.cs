@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour {
 	public AudioClip clear_star;
 	public AudioClip clear_exit;
 
+	public AudioClip failed_;
+
 
     //Json
 
@@ -233,6 +235,7 @@ public class GameManager : MonoBehaviour {
 	IEnumerator gameResult_Failed(){
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
+			AudioSource.PlayClipAtPoint (failed_, ingameCamera.transform.position, GameManager.soundVolume);
 			result_Panel.SetActive (true);
 			result_Panel_Failed.SetActive (true);
 			result ();
