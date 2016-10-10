@@ -40,7 +40,7 @@ public class Tree_R : MonoBehaviour {
 			waitTime_in = waitTime_in - Time.deltaTime;
 			if (waitTime_in <= 0) {
 				waitTime_in = Random.Range (2f, 4f);
-				Debug.Log (waitTime_in);
+				//Debug.Log (waitTime_in);
 				attSpeed_in = Random.Range (60, 100);
 				turnSpeed_in = attSpeed_in / 4;
 				attSpeed_in = attSpeed_in * 0.001f;

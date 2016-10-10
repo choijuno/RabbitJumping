@@ -26,6 +26,7 @@ TagManager:
   - gold50
   - treecollider
   - ride_hawk
+  - savezone
   layers:
   - Default
   - TransparentFX
