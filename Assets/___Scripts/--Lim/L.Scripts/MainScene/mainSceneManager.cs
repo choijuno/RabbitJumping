@@ -10,6 +10,7 @@ public class mainSceneManager : MonoBehaviour {
     Button faceBookBtn;
 
     public Image Panel;
+    public Text GoogleLogin;
     void Start ()
     {
         startBtn = GameObject.Find("startBtn").GetComponent<Button>();
@@ -17,6 +18,19 @@ public class mainSceneManager : MonoBehaviour {
 
         faceBookBtn = GameObject.Find("googleLogin").GetComponent<Button>();
         faceBookBtn.onClick.AddListener(faceBookBtnFunc);
+
+        if (!ES2.Exists("Language"))
+        {
+            ES2.Save<bool>(true, "Language");
+            GoogleLogin.text = "구글 로그인 하기";
+        }
+        if (ES2.Load<bool>("Language"))
+        {
+            GoogleLogin.text = "구글 로그인 하기";
+        }else
+        {
+            GoogleLogin.text = "Google Login";
+        }
 
         Panel.gameObject.SetActive(false);
 

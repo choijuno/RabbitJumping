@@ -6,9 +6,23 @@ using UnityEngine.SceneManagement;
 public class LoadingBarClass : MonoBehaviour {
 
     public Image loadingBar;
+    public Text tip;
     bool loadingchk = false;
 	void Start ()
     {
+        if (!ES2.Exists("Language"))
+        {
+            ES2.Save<bool>(true, "Language");
+            tip.text = "Tip) 틸트 모드도 있어요~";
+        }
+        if (ES2.Load<bool>("Language"))
+        {
+            tip.text = "Tip) 틸트 모드도 있어요~";
+        }
+        else
+        {
+            tip.text = "Tip) You can tile version~";
+        }
         MusicManager.instance.MusicSelect(false);
         StartCoroutine(NextScene());
 	}

@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingBar: {fileID: 1425653666}
+  tip: {fileID: 875596550}
 --- !u!4 &568912279
 Transform:
   m_ObjectHideFlags: 0
