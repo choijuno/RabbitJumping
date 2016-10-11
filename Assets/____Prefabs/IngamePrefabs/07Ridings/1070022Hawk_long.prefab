@@ -322,7 +322,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.58, y: 0.32, z: 0}
+  m_LocalPosition: {x: 4.1346645, y: 2.6733782, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462468}
@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
+  rhino_model: {fileID: 0}
   allStop: 1
   havehp: 0
   standHp: 0
@@ -646,6 +647,7 @@ MonoBehaviour:
   runSpeed: 180
   runTime: 3
   boostTime: 1
+  model: {fileID: 188044}
 --- !u!212 &21205800
 SpriteRenderer:
   m_ObjectHideFlags: 1

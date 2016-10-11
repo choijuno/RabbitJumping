@@ -1069,6 +1069,7 @@ public class PlayerMove : MonoBehaviour {
 					break;
 
 				case "1030031"://plant
+					Debug.Log("resetPlant");
 					foreach (Transform child_inChild in child) {
 						if (child_inChild.name == "plantCollider") {
 							child_inChild.GetComponent<objColider> ().reset = true;

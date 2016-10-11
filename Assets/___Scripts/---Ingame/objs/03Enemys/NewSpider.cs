@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class NewSpider : MonoBehaviour {
-	public bool allStop = true;
+	public bool allStop;
 	public GameObject rader_obj;
 
 	public bool radarCheck;
@@ -15,8 +15,8 @@ public class NewSpider : MonoBehaviour {
 	float downSpeed_in;
 
 
-	public float range;
-	float range_in;
+	//public float range;
+	//float range_in;
 
 	float Maxlow;
 
@@ -31,6 +31,8 @@ public class NewSpider : MonoBehaviour {
 
 
 	void Start () {
+
+		Invoke ("resetTime", 2f);
 		/*
 		if (Application.loadedLevelName == "Edit") {
 			allStop = true;
@@ -64,15 +66,15 @@ public class NewSpider : MonoBehaviour {
 
 		switch (name.Substring (5, 1)) {
 		case "4":
-			transform.position = new Vector3 (transform.position.x, basePos_y - range_in, transform.position.z);
+			transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
 			pattern = 1;
 			break;
 		case "5":
-			transform.position = new Vector3 (transform.position.x, basePos_y - range_in, transform.position.z);
+			transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
 			pattern = 2;
 			break;
 		case "6":
-			transform.position = new Vector3 (transform.position.x, basePos_y - range_in, transform.position.z);
+			transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
 			pattern = 3;
 			Maxlow = 10;
 			break;
@@ -82,7 +84,44 @@ public class NewSpider : MonoBehaviour {
 
 	}
 
+	void resetTime(){
+		if (GameManager.retry_Check) {
+			StartCoroutine ("resetCheck");
+		}
+	}
+	//reset
+	IEnumerator resetCheck(){
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
 
+			if (GameManager.retry_count >= 1) {
+				StopCoroutine ("wait");
+				StopCoroutine ("findPlayer");
+				StopCoroutine ("att");
+				StopCoroutine ("att_Down");
+				StopCoroutine ("L_wait");
+				StopCoroutine ("att_Up");
+				StopCoroutine ("H_wait");
+				resetSpider ();
+				StopCoroutine ("resetCheck");
+			}
+
+		}
+	}
+
+	void resetSpider(){
+		Debug.Log ("resetSpider");
+		transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
+		radarCheck = false;
+		HwaitTime_in = HwaitTime;
+		LwaitTime_in = LwaitTime;
+		Invoke ("setRadar", 1f);
+		StartCoroutine("findPlayer");
+	}
+
+	void setRadar(){
+		rader_obj.SetActive (true);
+	}
 
 
 
@@ -200,35 +239,5 @@ public class NewSpider : MonoBehaviour {
 			}
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-	void SpiderReset(){
-		switch (name.Substring (6, 1)) {
-		case "1":
-			transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
-			break;
-		case "2":
-			transform.position = new Vector3 (transform.position.x, basePos_y, transform.position.z);
-			break;
-		case "3":
-			transform.position = new Vector3 (transform.position.x, basePos_y - range_in, transform.position.z);
-			break;
-		}
-		upSpeed_in = upSpeed * 0.001f;
-		downSpeed_in = downSpeed * 0.001f;
-		range_in = range;
-		HwaitTime_in = HwaitTime;
-		LwaitTime_in = LwaitTime;
-	}
+		
 }

@@ -31,6 +31,8 @@ public class UnityAdsManager : MonoBehaviour {
                 WhereAds = 0;
             }else if(WhereAds == 2)
             {
+				GameManager.retry_count ++;
+				GameManager.retry_Check = false;
                 WhereAds = 0;
             }
         }

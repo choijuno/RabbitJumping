@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class objMovement : MonoBehaviour {
-	
 	public GameObject mainCamera;
 	public GameObject rhino_model;
 	public bool allStop=true;
@@ -61,6 +60,7 @@ public class objMovement : MonoBehaviour {
 	//_etc
 
 	void Start(){
+
 
 		mainCamera = GameObject.Find ("Main Camera");
 

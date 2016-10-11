@@ -93,6 +93,7 @@ public class LoadManager : MonoBehaviour {
 	public GameObject ClearPoint;
 	public GameObject Map_L;
 	public GameObject Map_R;
+	public GameObject SavePoint;
 
 	GameObject _tmp;
 
@@ -405,6 +406,9 @@ public class LoadManager : MonoBehaviour {
 						break;
 					case "1990052":
 						_tmp = (GameObject)Instantiate (Map_R, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
+						break;
+					case "1990061":
+						_tmp = (GameObject)Instantiate (SavePoint, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 						break;
 					}
 

@@ -163,7 +163,7 @@ public class BtnController : MonoBehaviour {
 	}
 
 	public void Retry_ingame(){
-
+		
 	}
 
 	public void NoRetry_ingame(){

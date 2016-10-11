@@ -18,20 +18,61 @@ public class Hawk : MonoBehaviour {
 	public float boostTime;
 	float boostTime_in;
 
+	//new
+	BoxCollider mybody;
+	BoxCollider attColliderBox;
+	public GameObject model;
+
+	//reset
+	float basePosX;
+
 
 	void Start () {
+		Invoke ("resetTime", 2f);
+		mybody = hawkCollider.GetComponent<BoxCollider> ();
+		attColliderBox = attCollider.GetComponent<BoxCollider> ();
+		basePosX = transform.position.x;
 		waitTime_in = waitTime;
 		runSpeed_in = runSpeed * 0.001f;
 		runTime_in = runTime;
 		boostTime_in = boostTime;
 	}
 
+	void resetTime(){
+		if (GameManager.retry_Check) {
+
+			StartCoroutine ("resetCheck");
+		}
+	}
+
+	IEnumerator resetCheck(){
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+
+			if (GameManager.retry_count >= 1) {
+				transform.position = new Vector3 (basePosX, transform.position.y, transform.position.z);
+				waitTime_in = waitTime;
+				runSpeed_in = runSpeed * 0.001f;
+				runTime_in = runTime;
+				boostTime_in = boostTime;
+				model.SetActive (false);
+				model.SetActive (true);
+				mybody.enabled = true;
+				attColliderBox.enabled = true;
+				stat = hawkStatus.stay;
+				StopCoroutine ("resetCheck");
+			}
+
+		}
+	}
+
 	void Update () {
 		//Debug.Log (runSpeed_in);
 
 		if (stat == hawkStatus.wait) {
+			
 			stat = hawkStatus.not;
-			hawkCollider.SetActive (false);
+			mybody.enabled = false;
 			StartCoroutine ("wait");
 
 		}
@@ -61,7 +102,7 @@ public class Hawk : MonoBehaviour {
 				runTime_in = 0;
 				StartCoroutine ("away");
 				StopCoroutine ("att");
-				attCollider.SetActive (false);
+				attColliderBox.enabled = false;
 			}
 
 		}
@@ -73,9 +114,15 @@ public class Hawk : MonoBehaviour {
 			yield return new WaitForSeconds (0.006f);
 			transform.position = new Vector3 (transform.position.x + runSpeed_in * 2.5f, transform.position.y, transform.position.z);
 
+			if (GameManager.retry_count > 0) {
+				model.SetActive (false);
+				StopCoroutine ("away");
+			}
+
 			waitTime_in = waitTime_in - Time.deltaTime;
 			if (waitTime_in <= 0) {
-				this.gameObject.SetActive (false);
+				model.SetActive (false);
+				StopCoroutine ("away");
 			}
 
 		}
@@ -86,7 +133,13 @@ public class Hawk : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
 
+			if (GameManager.retry_count > 0) {
+				StopCoroutine ("boost");
+			}
+
 			boostTime_in = boostTime_in - Time.deltaTime;
+
+
 			if (boostTime_in <= 0) {
 				runSpeed_in = runSpeed_in * 2.5f;
 				StopCoroutine ("boost");
