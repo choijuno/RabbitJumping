@@ -8,7 +8,6 @@ public class mainSceneManager : MonoBehaviour {
     public static int SceneIndex = 0; // 1은 메인에서 넘길때, 2는 셀렉트에서 넘길때, 3은 게임에서 넘길때
     Button startBtn;
     Button faceBookBtn;
-    Button guestLoginBtn;
 
     public Image Panel;
     void Start ()
@@ -18,9 +17,6 @@ public class mainSceneManager : MonoBehaviour {
 
         faceBookBtn = GameObject.Find("googleLogin").GetComponent<Button>();
         faceBookBtn.onClick.AddListener(faceBookBtnFunc);
-
-        guestLoginBtn = GameObject.Find("guestLogin").GetComponent<Button>();
-        guestLoginBtn.onClick.AddListener(guestLoginFunc);
 
         Panel.gameObject.SetActive(false);
 
@@ -41,9 +37,5 @@ public class mainSceneManager : MonoBehaviour {
 
         if(!Social.localUser.authenticated)
             GoogleManager.GetInstance.LoginGPGS();
-    }
-    void guestLoginFunc() //게스트 로그인
-    {
-        SceneManager.LoadScene(3);
     }
 }
