@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+
 using UnityEngine.Advertisements;
 using UnityEngine.SceneManagement;
 
@@ -10,12 +11,13 @@ public class UnityAdsManager : MonoBehaviour {
     ShowOptions _ShowOpt = new ShowOptions();
 
     selectManager SelectManager;
+
     void Start ()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 2)
+        if(SceneManager.GetActiveScene().buildIndex == 3)
             SelectManager = GameObject.Find("selectManager").GetComponent<selectManager>();
 
-        Advertisement.Initialize("124147", true); // true인이유는 테스트광고를 시청하겠다.
+        Advertisement.Initialize("1165798", true); // true인이유는 테스트광고를 시청하겠다.
         _ShowOpt.resultCallback = OnAdsShowResultCallBack;
 
     }
@@ -23,12 +25,11 @@ public class UnityAdsManager : MonoBehaviour {
     {
         if (result == ShowResult.Finished)
         {
-            if(WhereAds == 1) // 광고로 뽑기 보상
+            if(WhereAds == 1)
             {
                 SelectManager.blueBoxBtnFunc();
                 WhereAds = 0;
-            }
-            else if(WhereAds == 2) // 죽었을때 보상
+            }else if(WhereAds == 2)
             {
                 WhereAds = 0;
             }
@@ -51,7 +52,5 @@ public class UnityAdsManager : MonoBehaviour {
         WhereAds = 2;
         Advertisement.Show(null, _ShowOpt);
     }
-
-
 }
 
