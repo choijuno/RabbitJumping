@@ -40,6 +40,9 @@ public class UI_Gage : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
+		GameManager.retry_Check = false;
+
 		EndPos = 20f;
 		chaStartPos = 0f;
 		chaEndPos = 20f;
@@ -67,6 +70,11 @@ public class UI_Gage : MonoBehaviour {
 
 					if (child.name.Substring (0, 7) == "1990052") {
 						chaEndPos = child.transform.position.x;
+					}
+
+					if (child.name.Substring (0, 7) == "1990061") {
+						GameManager.retry_Check = true;
+
 					}
 
 

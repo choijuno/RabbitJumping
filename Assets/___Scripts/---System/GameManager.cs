@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour {
 
 
 	// end game Check
-	public static int gameSet; //0:play 1:win 2:lose 3:wait
+	public static int gameSet; //0:play 1:win 2:lose 3:wait 4:retry?
 
 	public static int TestNum;
 
@@ -72,6 +72,12 @@ public class GameManager : MonoBehaviour {
 	public static int retry_count;
 	public static bool retry_Check;
 
+	public GameObject retry_Panel;
+	public Text retryStageNum_txt;
+	public Text retryTime_txt;
+	float retry_time;
+	public GameObject loadParent;
+
 
 
     //Json
@@ -80,6 +86,7 @@ public class GameManager : MonoBehaviour {
     int starCount = 0;
 	void Start()
     {
+		retry_count = 0;
 		gameSet = 3;
 
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
@@ -197,12 +204,21 @@ public class GameManager : MonoBehaviour {
 				break;
 
 			case 2://lose
+				
 				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
 				yield return new WaitForSeconds (1.7f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
 				StartCoroutine ("gameResult_Failed");
 				
+				break;
+
+			case 4://retry
+				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
+				yield return new WaitForSeconds (1.7f);
+				gameSet = 3;
+				StopCoroutine ("UICheck");
+				StartCoroutine ("gameResult_retry");
 				break;
 			}
 				
@@ -248,6 +264,40 @@ public class GameManager : MonoBehaviour {
 
 			ScoreCheck ();
 			StopCoroutine ("gameResult_Failed");
+		}
+	}
+
+	IEnumerator gameResult_retry(){
+		retry_Panel.SetActive (true);
+		retryStageNum_txt.text = "STAGE " + TestNum;
+		retry_time = 10;
+
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+			if (retry_count < 0) {
+				retry_Panel.SetActive (false);
+				StopCoroutine ("gameResult_retry");
+				StartCoroutine ("gameResult_Failed");
+			}
+
+			if (retry_count == 1) {
+				gameSet = 0;
+				retry_Panel.SetActive (false);
+				StartCoroutine ("UICheck");
+				StopCoroutine ("gameResult_retry");
+			}
+
+			retry_time -= Time.deltaTime;
+			retryTime_txt.text = "" + retry_time.ToString("###0");
+			if (retry_time >= 0) {
+				
+			} else {
+				retry_Panel.SetActive (false);
+				StopCoroutine ("gameResult_retry");
+				StartCoroutine ("gameResult_Failed");
+			}
+
+			//StopCoroutine ("gameResult_retry");
 		}
 	}
 

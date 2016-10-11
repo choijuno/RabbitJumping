@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour {
 
+
+
     public static MusicManager instance;
 
     AudioSource audioSource;
@@ -12,6 +14,14 @@ public class MusicManager : MonoBehaviour {
     public AudioClip[] selectScene;
     public AudioClip playOneShot;
     public AudioClip gameScene;
+
+
+
+
+
+
+
+
 	void Awake ()
     {
         if (instance == null)
@@ -27,6 +37,7 @@ public class MusicManager : MonoBehaviour {
         {
             DestroyImmediate(this.gameObject);
         }    
+
     }
     public void PlayOnShot()
     {

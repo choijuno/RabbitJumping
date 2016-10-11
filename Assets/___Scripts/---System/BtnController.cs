@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class BtnController : MonoBehaviour {
-
+	
 	public GameObject OpenPanel_1;
 	public GameObject OpenPanel_2;
 
@@ -13,6 +13,15 @@ public class BtnController : MonoBehaviour {
 	//pause
 	public GameObject tiltOn;
 	public GameObject tiltOff;
+
+	//ingame
+	public GameObject loadParent;
+	public GameObject playerbody;
+	Transform Find_ChildinParent;
+	public Transform StartPos;
+
+
+
 
 	public void pauseBtn() {
 		MusicManager.instance.PlayOnShot ();
@@ -148,10 +157,17 @@ public class BtnController : MonoBehaviour {
 	//Retry
 
 	public void TestRetry_ingame(){
+		GameManager.retry_count ++;
+		GameManager.retry_Check = false;
 
 	}
 
 	public void Retry_ingame(){
 
+	}
+
+	public void NoRetry_ingame(){
+		GameManager.retry_count --;
+		GameManager.retry_Check = false;
 	}
 }
