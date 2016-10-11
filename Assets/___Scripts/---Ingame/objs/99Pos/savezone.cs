@@ -15,6 +15,7 @@ public class savezone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider player) {
 		if (player.CompareTag ("player")) {
+			player.GetComponent<PlayerMove> ().StartPos.transform.position = transform.parent.transform.position;
 			this.gameObject.SetActive (false);
 		}
 	}

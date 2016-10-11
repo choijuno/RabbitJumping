@@ -25,6 +25,7 @@ public class PlayerMove : MonoBehaviour {
 	public AudioClip deadSound;
 	public AudioClip goldSound;
 	public AudioClip dead_;
+	public AudioClip clearGround;
 
 
 
@@ -44,6 +45,10 @@ public class PlayerMove : MonoBehaviour {
 
 	public GameObject bumpEffect;
 	public GameObject waterEffect;
+
+	public GameObject retryBody_soul;
+	public GameObject retryEffect;
+
 
 
 	//MaxHeight
@@ -569,7 +574,11 @@ public class PlayerMove : MonoBehaviour {
 				{
 				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
-                    GameManager.gameSet = 2;
+				if (!GameManager.retry_Check) {
+					GameManager.gameSet = 2;
+				} else {
+					GameManager.gameSet = 4;
+				}
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
                     deadBody.SetActive(false);
@@ -580,6 +589,8 @@ public class PlayerMove : MonoBehaviour {
 
                 if (obj.CompareTag("clear"))
 				{
+				AudioSource.PlayClipAtPoint (clearGround, SoundBase.transform.position, GameManager.soundVolume);
+
 					Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
 				Debug.Log ("!!!!!!!!!!!!!!!!!!!!");
 					transform.parent = obj.transform;
@@ -684,7 +695,11 @@ public class PlayerMove : MonoBehaviour {
                 {
 				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
-                    GameManager.gameSet = 2;
+					if (!GameManager.retry_Check) {
+						GameManager.gameSet = 2;
+					} else {
+						GameManager.gameSet = 4;
+					}
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
                     deadBody.SetActive(false);
@@ -728,7 +743,11 @@ public class PlayerMove : MonoBehaviour {
 				{
 				AudioSource.PlayClipAtPoint(dead_, SoundBase.transform.position, GameManager.soundVolume);
 				Camera_ingame.GetComponent<GameCamera> ().viveCheck = true;
-					GameManager.gameSet = 2;
+					if (!GameManager.retry_Check) {
+						GameManager.gameSet = 2;
+					} else {
+						GameManager.gameSet = 4;
+					}
 					Debug.Log(bounce);
 					//gameover.SetActive (true);
 					deadBody.SetActive(false);
@@ -915,7 +934,13 @@ public class PlayerMove : MonoBehaviour {
 
 		if (Application.loadedLevelName != "Edit") {
 
-			GameManager.gameSet = 2;
+				if (!GameManager.retry_Check || GameManager.retry_count != 0) {
+					GameManager.gameSet = 2;
+				} else {
+					GameManager.gameSet = 4;
+				StartCoroutine ("retryGame");
+
+			}
 
 		} else {
 			transform.parent = null;
@@ -1001,5 +1026,97 @@ public class PlayerMove : MonoBehaviour {
 
 			StartCoroutine ("GameReady");
 		}
+	}
+
+	IEnumerator retryGame(){
+
+		while (true) {
+
+			yield return new WaitForSeconds (0.006f);
+
+			if (GameManager.retry_count >= 1) {
+				StartCoroutine ("retryReset");
+				StopCoroutine ("retryGame");
+			}
+
+		}
+	}
+
+	IEnumerator retryReset(){
+
+		while (true) {
+
+			yield return new WaitForSeconds (0.006f);
+
+
+
+			transform.parent = null;
+			GetComponent<PlayerController> ().moveStopCheck = false;
+
+			backGround_inCamera.transform.position = new Vector3 (backGround_basePos.transform.position.x, backGround_basePos.transform.position.y, backGround_basePos.transform.position.z);
+			FindChild_inParent = FindChild_inParent.GetComponentInChildren<Transform>();
+
+
+			foreach (Transform child in FindChild_inParent) {
+				switch (child.name.Substring (0, 7)) {
+
+				case "1010021"://yeon
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "breakground_Collider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				case "1030031"://plant
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "plantCollider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				case "1040021"://croc
+					foreach (Transform child_inChild in child) {
+						if (child_inChild.name == "crocodile_Collider") {
+							child_inChild.GetComponent<objColider> ().reset = true;
+						}
+					}
+					break;
+
+				}
+
+
+			}
+			//loadManager.GetComponent<LoadManager> ().loadCheck = true;
+			transform.position = StartPos.position;
+			bounce = Bouncy.Ready;
+
+			retryBody_soul.SetActive (true);
+			//deadBody.SetActive(true);
+			Invoke("retryStart",readyTime);
+
+			deadEffect.SetActive(false);
+			waterDead.SetActive (false);
+			//RESET height
+			MaxHeight_in = transform.position.y + MaxHeight;
+
+			//up
+			UpLerp_in = UpLerp * 0.1f;
+			UpBounceSpeed_in = UpBounceSpeed;
+
+			//down
+			DownLerp_in = DownLerp * 0.1f;
+			//DownBounceSpeed_in = -DownBounceSpeed;
+
+			StartCoroutine ("GameReady");
+			StopCoroutine ("retryReset");
+		}
+	}
+
+	void retryStart(){
+		retryBody_soul.SetActive (false);
+		retryEffect.SetActive (true);
+		deadBody.SetActive (true);
 	}
 }
