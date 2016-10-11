@@ -6,6 +6,8 @@ public class objColider : MonoBehaviour {
 
 
 
+
+
 	public bool reset;
 	public float standhp;
 	public float angryhp;
@@ -28,7 +30,9 @@ public class objColider : MonoBehaviour {
 
 	public Animator plant_ani;
 	public GameObject plantDeadPoint;
+	BoxCollider plant_deadzone_box;
 	public GameObject plantModel;
+	BoxCollider plant_model_box;
 	public GameObject plantModel_dead;
 
 
@@ -45,17 +49,33 @@ public class objColider : MonoBehaviour {
 			croc_ani.SetInteger("hp",(int)standhp);
 			break;
 		case "1030031": //plant
-			plant_ani.SetInteger("hp",(int)standhp);
+			plant_deadzone_box = plantDeadPoint.GetComponent<BoxCollider>();
+			plant_model_box = GetComponent<BoxCollider>();
 			break;
 		
 		}
 
 		if (Application.loadedLevelName == "Edit") {
 			StartCoroutine ("editCollider");
+		} else {
+			StartCoroutine ("editCollider");
+			//StartCoroutine ("resetAll");
 		}
 
 	}
-	
+
+
+	IEnumerator resetAll(){
+
+
+
+		while (true) {
+			yield return new WaitForSeconds (0.06f);
+
+
+		}
+
+	}
 
 	IEnumerator editCollider(){
 		while (true) {
@@ -74,8 +94,9 @@ public class objColider : MonoBehaviour {
 
 				case "1010021": //yeon
 					Debug.Log ("resetYeon");
-					yeon_ani.SetTrigger("reset");
+					yeon_ani.ResetTrigger("hit");
 					yeon_ani.SetInteger("hp",(int)standhp);
+					yeon_ani.SetTrigger("reset");
 					GetComponent<BoxCollider> ().enabled = true;
 					break;
 
@@ -88,10 +109,8 @@ public class objColider : MonoBehaviour {
 					//plant_ani.SetTrigger ("reset");
 					plantModel_dead.SetActive (false);
 					plantModel.SetActive (true);
-					standhp = transform.parent.GetComponent<objMovement> ().standHp;
-					plant_ani.SetInteger ("hp", (int)standhp);
-					plantDeadPoint.GetComponent<BoxCollider> ().enabled = true;
-					GetComponent<BoxCollider> ().enabled = true;
+					plant_deadzone_box.enabled = true;
+					plant_model_box.enabled = true;
 					plant_ani.ResetTrigger ("reset");
 					break;
 
@@ -428,6 +447,7 @@ public class objColider : MonoBehaviour {
 
 	void yeon() {
 		if (standhp > 0) {
+			yeon_ani.SetTrigger ("hit");
 			standhp--;
 			yeon_ani.SetInteger ("hp", (int)standhp);
 			if (standhp <= 0) {
@@ -437,17 +457,9 @@ public class objColider : MonoBehaviour {
 	}
 
 	void plant(){
-		if (standhp > 0) {
-			standhp--;
-			if (standhp <= 0) {
 				plantModel.SetActive (false);
 				plantModel_dead.SetActive (true);
-				
-				//plant_ani.SetInteger ("hp", (int)standhp);
-				//plant_ani.SetTrigger ("break");
 				plantDeadPoint.GetComponent<BoxCollider> ().enabled = false;
 				GetComponent<BoxCollider> ().enabled = false;
-			}
-		}
 	}
 }
