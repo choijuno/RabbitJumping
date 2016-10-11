@@ -353,6 +353,7 @@
      <Compile Include="Assets\___Scripts\---Ingame\objs\99Pos\savezone.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\clearCollider.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\groundCheck.cs" />
+     <Compile Include="Assets\___Scripts\---Ingame\objs\hiveCheck.cs" />
      <Compile Include="Assets\___Scripts\---Ingame\objs\treeCheck.cs" />
      <Compile Include="Assets\___Scripts\---System\BtnController.cs" />
      <Compile Include="Assets\___Scripts\---System\GameCamera.cs" />

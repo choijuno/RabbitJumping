@@ -114,9 +114,15 @@ public class Hawk : MonoBehaviour {
 			yield return new WaitForSeconds (0.006f);
 			transform.position = new Vector3 (transform.position.x + runSpeed_in * 2.5f, transform.position.y, transform.position.z);
 
+			if (GameManager.retry_count > 0) {
+				model.SetActive (false);
+				StopCoroutine ("away");
+			}
+
 			waitTime_in = waitTime_in - Time.deltaTime;
 			if (waitTime_in <= 0) {
-				this.gameObject.SetActive (false);
+				model.SetActive (false);
+				StopCoroutine ("away");
 			}
 
 		}
@@ -127,7 +133,13 @@ public class Hawk : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
 
+			if (GameManager.retry_count > 0) {
+				StopCoroutine ("boost");
+			}
+
 			boostTime_in = boostTime_in - Time.deltaTime;
+
+
 			if (boostTime_in <= 0) {
 				runSpeed_in = runSpeed_in * 2.5f;
 				StopCoroutine ("boost");
