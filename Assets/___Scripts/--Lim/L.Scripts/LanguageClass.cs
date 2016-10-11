@@ -31,16 +31,35 @@ public class LanguageClass : MonoBehaviour
     public Text santa_rabbit;
     public Text snow_rabbit;
     public Text baseball_player;
-  
+
+    public GameObject[] EnglishImg;
+    public GameObject[] KoreanImg;
     void Start()
     {
         _SelectManager = GameObject.Find("selectManager").GetComponent<selectManager>();
+        if (!ES2.Exists("Language"))
+        {
+            ES2.Save<bool>(true, "Language");
+            KoreanTxt();
+          
+        }
+        if (ES2.Load<bool>("Language"))
+        {
+            KoreanTxt();
+        }
+        else
+        {
+            EnglishTxt();
+            
+        }
     }
-
-    public void Korean()
+    void KoreanTxt()
     {
-        Debug.Log("=========한국어=========");
-        ES2.Save<bool>(true, "Language");
+        for (int i = 0; i < KoreanImg.Length; i++)
+        {
+            KoreanImg[i].SetActive(true);
+            EnglishImg[i].SetActive(false);
+        }
         musicBackground.text = "배경음";
         musichyogwa.text = "효과음";
         tilt.text = "틸트";
@@ -66,10 +85,13 @@ public class LanguageClass : MonoBehaviour
         snow_rabbit.text = "스노우 레빗";
         baseball_player.text = "야구선수";
     }
-    public void English()
+    void EnglishTxt()
     {
-        Debug.Log("=========영어=========");
-        ES2.Save<bool>(false, "Language");
+        for (int i = 0; i < KoreanImg.Length; i++)
+        {
+            KoreanImg[i].SetActive(false);
+            EnglishImg[i].SetActive(true);
+        }
         musicBackground.text = "BGM";
         musichyogwa.text = "Effect";
         tilt.text = "Tilt";
@@ -94,5 +116,18 @@ public class LanguageClass : MonoBehaviour
         santa_rabbit.text = "Santa Rabbit";
         snow_rabbit.text = "Snow Rabbit";
         baseball_player.text = "Baseball Rabbit";
+    }
+    public void Korean()
+    {
+        Debug.Log("=========한국어=========");
+        ES2.Save<bool>(true, "Language");
+        KoreanTxt();
+       
+    }
+    public void English()
+    {
+        Debug.Log("=========영어=========");
+        ES2.Save<bool>(false, "Language");
+        EnglishTxt();
     }
 }
