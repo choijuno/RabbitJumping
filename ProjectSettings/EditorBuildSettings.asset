@@ -23,6 +23,8 @@ EditorBuildSettings:
     path: Assets/____Scenes/AutoLight/TestMain.unity
   - enabled: 1
     path: Assets/____Scenes/-Game/---Main/CreateUnitScene.unity
+  - enabled: 1
+    path: Assets/____Scenes/-Game/---Ingame/StoryScene.unity
   - enabled: 0
     path: Assets/____Scenes/-Game/---Main/TestBuyItem.unity
   - enabled: 0

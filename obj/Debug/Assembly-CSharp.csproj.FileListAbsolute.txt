@@ -120,3 +120,5 @@ D:\CJO\projects\RabbitJumping\Temp\bin\Debug\UnityEngine.Purchasing.dll
 D:\CJO\projects\RabbitJumping\Temp\bin\Debug\UnityEngine.UI.dll
 D:\CJO\projects\RabbitJumping\Temp\bin\Debug\winrt.dll
 D:\CJO\projects\RabbitJumping\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\CJO\projects\RabbitJumping\Temp\bin\Debug\Facebook.Unity.dll
+D:\CJO\projects\RabbitJumping\Temp\bin\Debug\Facebook.Unity.IOS.dll

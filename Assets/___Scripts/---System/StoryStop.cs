@@ -5,7 +5,7 @@ public class StoryStop : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		GameManager.gameSet = 10;
+		
 	}
 	
 
