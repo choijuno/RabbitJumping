@@ -67,8 +67,8 @@
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
      <None Include="Assets\Easy Save 2\readme.txt" />
      <None Include="Assets\_ETC\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
-     <None Include="Assets\Resources\stage\stage101\_obj_Component.txt" />
-     <None Include="Assets\Resources\stage\stage101\_obj.txt" />
+     <None Include="Assets\Resources\stage\stage1\_obj_Component.txt" />
+     <None Include="Assets\Resources\stage\stage1\_obj.txt" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
@@ -77,11 +77,11 @@
      <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
-     <None Include="Assets\Resources\stage\stage102\_obj_Component.txt" />
+     <None Include="Assets\Resources\stage\stage2\_obj_Component.txt" />
      <None Include="Assets\PlayMaker\Editor\Install\readme.txt" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
-     <None Include="Assets\Resources\stage\stage102\_obj.txt" />
+     <None Include="Assets\Resources\stage\stage2\_obj.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
