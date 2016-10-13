@@ -94,7 +94,7 @@ public class LanguageClass : MonoBehaviour
         }
         musicBackground.text = "BGM";
         musichyogwa.text = "Effect";
-        tilt.text = "Tilt";
+        tilt.text = "TILT";
         GoogleTxt.text = "Google";
         FacebookTxt.text = "Facebook";
         languageTxt.text = "Language";

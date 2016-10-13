@@ -79,6 +79,12 @@ public class GameManager : MonoBehaviour {
 	public GameObject loadParent;
 
 
+	//ingame Language
+
+	public GameObject[] Language_kr_img;
+	public GameObject[] Language_eng_img;
+
+
 
     //Json
 
@@ -94,6 +100,8 @@ public class GameManager : MonoBehaviour {
 		if (Application.loadedLevelName == "TestGame") {
 			
 			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
+
+			//backgroundmusic
 			if (ES2.Exists ("musicChk")) {
 				if (ES2.Load<bool> ("musicChk")) {
 					soundOn.SetActive (true);
@@ -110,6 +118,7 @@ public class GameManager : MonoBehaviour {
 				soundOff.SetActive (false);
 			}
 
+			//hyogwa
 			if (ES2.Exists ("HyoGwaSound")) {
 				if (ES2.Load<bool> ("HyoGwaSound")) {
 					soundVolume = 1;
@@ -127,6 +136,7 @@ public class GameManager : MonoBehaviour {
 				hyogwaOff.SetActive (false);
 			}
 
+			//tilt
 			if (ES2.Exists ("tilt")) {
 				if (ES2.Load<bool> ("tilt")) {
 					tiltOn.SetActive (true);
@@ -143,10 +153,36 @@ public class GameManager : MonoBehaviour {
 				tiltOn.SetActive (false);
 			}
 
+			//language
+			if (ES2.Exists ("Language")) {
+				if (ES2.Load<bool> ("Language")) {
+					language_kr ();
+				} else {
+					language_eng ();
+				}
+			} else {
+				ES2.Save<bool> (true, "Language");
+				language_kr ();
+			}
+
 
 
 		}
     }
+
+	void language_kr() {
+		for (int i = 0; i < Language_kr_img.Length; i++) {
+			Language_eng_img [i].SetActive (false);
+			Language_kr_img [i].SetActive (true);
+		}
+	}
+
+	void language_eng() {
+		for (int i = 0; i < Language_eng_img.Length; i++) {
+			Language_kr_img [i].SetActive (false);
+			Language_eng_img [i].SetActive (true);
+		}
+	}
 
 	void Awake () {
 		if (Application.loadedLevelName == "TestGame") {
@@ -343,8 +379,12 @@ public class GameManager : MonoBehaviour {
     }
 
 	IEnumerator StarCheck_Effect(){
-		
+
 		starCount = JsonGo.starJsonData(TestNum, Score_ingame);
+
+		DataSave._instance.saveData(GameManager.TestNum, starCount, Score_ingame);
+		DataSave._instance.setStar_Count(starCount);
+
 			switch (starCount)
 			{
 			case 1:

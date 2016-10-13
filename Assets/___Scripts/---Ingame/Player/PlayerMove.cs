@@ -160,7 +160,9 @@ public class PlayerMove : MonoBehaviour {
 
 
 	}
-
+	void Start(){
+		StartCoroutine (test ());
+	}
 	IEnumerator GameReady(){
 		
 		while (true) {
@@ -179,58 +181,61 @@ public class PlayerMove : MonoBehaviour {
 
 
 
-	void Update () {
+	IEnumerator test () {
+		while (true) {
+			
+			if (!GameManager.pauseCheck) {
+				// status equal to bounce
+				if (bounce != Bouncy.Not) {
+					switch (bounce) {
 
-		if (!GameManager.pauseCheck) {
-			// status equal to bounce
-			if (bounce != Bouncy.Not) {
-				switch (bounce) {
+					case Bouncy.Down:
+						BDown ();
+						break;
 
-				case Bouncy.Down:
-					BDown ();
-					break;
+					case Bouncy.Up:
+						BUp ();
+						break;
 
-				case Bouncy.Up:
-					BUp ();
-					break;
+					case Bouncy.stun:
+						BStun ();
+						break;
 
-				case Bouncy.stun:
-					BStun ();
-					break;
+					case Bouncy.ride:
+						Bride ();
+						break;
 
-				case Bouncy.ride:
-					Bride ();
-					break;
+					case Bouncy.warp:
+						Bwarp ();
+						break;
 
-				case Bouncy.warp:
-					Bwarp ();
-					break;
+					case Bouncy.warpexit:
+						Bwarpexit ();
+						break;
 
-				case Bouncy.warpexit:
-					Bwarpexit ();
-					break;
-
-				}
+					}
 				
 
-				if (transform.position.y >= MaxHeight_in) {
-					bumpEffect.SetActive (false);
-					waterEffect.SetActive (false);
-					DownLerp_in = 0;
-					bounce = Bouncy.Down;
-					transform.position = new Vector3 (transform.position.x, MaxHeight_in, transform.position.z);
+					if (transform.position.y >= MaxHeight_in) {
+						bumpEffect.SetActive (false);
+						waterEffect.SetActive (false);
+						DownLerp_in = 0;
+						bounce = Bouncy.Down;
+						transform.position = new Vector3 (transform.position.x, MaxHeight_in, transform.position.z);
 
-					_anim.SetBool ("DropCheck", true);
-					_anim.SetTrigger ("Down");
-					//_anim.clip = Jumping3;
-					//Debug.Log(_anim.clip);
-					//_anim.Play ();
+						_anim.SetBool ("DropCheck", true);
+						_anim.SetTrigger ("Down");
+						//_anim.clip = Jumping3;
+						//Debug.Log(_anim.clip);
+						//_anim.Play ();
 
+					}
+
+				} else {
+					BNot ();
 				}
-
-			} else {
-				BNot ();
 			}
+			yield return new WaitForEndOfFrame ();
 		}
 
 	}
@@ -608,7 +613,7 @@ public class PlayerMove : MonoBehaviour {
                     {
                         Social.ReportProgress(GPGS.achievement_test1, 100.0f, (bool success) => {});
                     }*/
-
+				
 				
                     //gameclear.SetActive (true);
 				if (Application.loadedLevelName == "Edit") {
@@ -948,33 +953,6 @@ public class PlayerMove : MonoBehaviour {
 
 			backGround_inCamera.transform.position = new Vector3 (backGround_basePos.transform.position.x, backGround_basePos.transform.position.y, backGround_basePos.transform.position.z);
 			FindChild_inParent = FindChild_inParent.GetComponentInChildren<Transform>();
-
-			/*foreach (Transform child in FindChild_inParent) {
-
-				foreach (Transform child_inChild in child) {
-					
-					switch (child.name.Substring (0, 7)) {
-					case "1000":
-						break;
-					case "1001":
-						break;
-					case "1010021":
-						if (child_inChild.name.Substring (0, 4) == "brea") {
-							child_inChild.GetComponent<objColider> ().reset = true;
-						}
-						break;
-					case "2000":
-						break;
-					case "1040021":
-						if (child_inChild.name.Substring (0, 5) == "croco") {
-							child_inChild.GetComponent<objColider> ().reset = true;
-						}
-						break;
-
-					}
-				}
-
-			}*/
 
 			foreach (Transform child in FindChild_inParent) {
 				switch (child.name.Substring (0, 7)) {
