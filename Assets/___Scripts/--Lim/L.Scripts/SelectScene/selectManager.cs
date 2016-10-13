@@ -297,7 +297,7 @@ public partial class selectManager : MonoBehaviour {
                 {
 					stageBtn.transform.GetChild (j).gameObject.SetActive (false);
 				}
-				stageBtn.onClick.AddListener (() => SceneGo (stageBtn.name));
+				stageBtn.onClick.AddListener (() => SceneGo (stageBtn.name, true));
 			}
 		}
         if(CreateUnitClass.CreateUnitChk == true)
@@ -340,9 +340,9 @@ public partial class selectManager : MonoBehaviour {
     {
 
     }
-    void SceneGo(string name) //게임씬으로 넘기자
+    void SceneGo(string name, bool isFristScene) //게임씬으로 넘기자
     {
-        if(float.Parse(name) == 1)
+        if(float.Parse(name) == 1 && isFristScene)
         {
             SceneManager.LoadScene(6);
         }else
