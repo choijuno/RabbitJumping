@@ -54,7 +54,7 @@ public class MusicManager : MonoBehaviour {
         }
         else
         {
-            if(SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 5)
+            if(SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 5 || SceneManager.GetActiveScene().buildIndex == 6)
             {
                 audioSource.clip = null;
                 audioSource.Stop();

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class StoryStop : MonoBehaviour {
 	public GameObject ani1;
@@ -78,5 +79,13 @@ public class StoryStop : MonoBehaviour {
 
 	void Next(){
 		Debug.Log ("next");
-	}
+        GameManager.TestNum = 1;
+        mainSceneManager.SceneIndex = 2;
+        StartCoroutine(waitLoadingScene());
+    }
+    IEnumerator waitLoadingScene()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(2);
+    }
 }
