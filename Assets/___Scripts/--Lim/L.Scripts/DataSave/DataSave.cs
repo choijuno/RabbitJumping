@@ -8,6 +8,17 @@ public class DataSave : MonoBehaviour {
     public static DataSave _instance;
 
     public Text Bosuk_Game;
+    public void setAnimal(int animalCount) //동물 카운트
+    {
+        if (ES2.Exists("Animal"))
+            ES2.Save<int>(ES2.Load<int>("Animal") + animalCount, "Animal");
+        else
+            ES2.Save<int>(animalCount, "Animal");
+    }
+    public int getAnimal()
+    {
+        return ES2.Load<int>("Animal");
+    }
 
     public void setMoney_Game(float game_Money) //돈저장
     {
