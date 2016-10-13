@@ -165,6 +165,15 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.Editor">
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Editor/Facebook.Unity.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.IOS">
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ </Reference>
  <Reference Include="JarResolverLib">
  <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/PlayServicesResolver/Editor/JarResolverLib.dll</HintPath>
  </Reference>
@@ -209,15 +218,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.IOS">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Editor">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Editor/Facebook.Unity.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

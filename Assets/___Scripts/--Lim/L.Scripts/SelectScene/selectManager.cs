@@ -342,13 +342,19 @@ public partial class selectManager : MonoBehaviour {
     }
     void SceneGo(string name) //게임씬으로 넘기자
     {
-        MusicManager.instance.PlayOnShot();
-        test = scrollPanel.localPosition;
-        ES2.Save<Vector2>(test, "scrollPanel");
-        Debug.Log("====처음벡터===" + ES2.Load<Vector2>("scrollPanel"));
-        GameManager.TestNum = System.Convert.ToInt32(name);
-        mainSceneManager.SceneIndex = 2;
-        StartCoroutine(waitLoadingScene());
+        if(float.Parse(name) == 1)
+        {
+            SceneManager.LoadScene(6);
+        }else
+        {
+            MusicManager.instance.PlayOnShot();
+            test = scrollPanel.localPosition;
+            ES2.Save<Vector2>(test, "scrollPanel");
+            Debug.Log("====처음벡터===" + ES2.Load<Vector2>("scrollPanel"));
+            GameManager.TestNum = System.Convert.ToInt32(name);
+            mainSceneManager.SceneIndex = 2;
+            StartCoroutine(waitLoadingScene());
+        }
     }
     IEnumerator waitLoadingScene()
     {

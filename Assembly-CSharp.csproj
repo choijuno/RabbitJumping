@@ -431,6 +431,12 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+ <Reference Include="Facebook.Unity">
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="Facebook.Unity.IOS">
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ </Reference>
  <Reference Include="ES2">
  <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/Plugins/ES2.dll</HintPath>
  </Reference>
@@ -457,12 +463,6 @@
  </Reference>
  <Reference Include="winrt">
  <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.IOS">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
