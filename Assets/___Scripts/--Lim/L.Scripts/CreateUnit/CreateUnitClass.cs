@@ -51,11 +51,10 @@ public class CreateUnitClass : MonoBehaviour {
     }
     void createOkBtnFunc()
     {
-        Debug.Log("aa");
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());
         Destroy(EggTemp);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     void createUnitFunc()
     {

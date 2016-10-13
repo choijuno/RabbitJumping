@@ -18,7 +18,6 @@ public class FacebookManager : MonoBehaviour
         {
             FB.Init(InitCallBack);
         }
-        //showUI();
        
     }
     void Start()
@@ -41,6 +40,10 @@ public class FacebookManager : MonoBehaviour
 
     public void Login() //로그인
     {
+        if (!FB.IsInitialized)
+        {
+            FB.Init(InitCallBack);
+        }
         if (!FB.IsLoggedIn)
         {
             FB.LogInWithReadPermissions(new List<string> { "user_friends" }, LoginCallBack);
@@ -91,7 +94,12 @@ public class FacebookManager : MonoBehaviour
 
     public void LogOut() //로그아웃
     {
-        FB.LogOut();
+        if (FB.IsLoggedIn)
+        {
+            FB.LogOut();
+            FacebookOn.SetActive(false);
+            FacebookOff.SetActive(true);
+        }
     }
 
     public void Share()
@@ -101,6 +109,10 @@ public class FacebookManager : MonoBehaviour
 
     public void Invite() //초대
     {
+        if (!FB.IsInitialized)
+        {
+            FB.Init(InitCallBack);
+        }
         if (!FB.IsLoggedIn)
         {
             Login();

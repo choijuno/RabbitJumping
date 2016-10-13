@@ -3,9 +3,6 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour {
-
-
-
     public static MusicManager instance;
 
     AudioSource audioSource;
@@ -14,13 +11,6 @@ public class MusicManager : MonoBehaviour {
     public AudioClip[] selectScene;
     public AudioClip playOneShot;
     public AudioClip gameScene;
-
-
-
-
-
-
-
 
 	void Awake ()
     {
@@ -64,7 +54,7 @@ public class MusicManager : MonoBehaviour {
         }
         else
         {
-            if(SceneManager.GetActiveScene().buildIndex == 2)
+            if(SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 5)
             {
                 audioSource.clip = null;
                 audioSource.Stop();
