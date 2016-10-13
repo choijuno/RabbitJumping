@@ -126,7 +126,7 @@
  <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

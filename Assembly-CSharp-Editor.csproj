@@ -214,10 +214,10 @@
  <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Editor">
- <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+ <HintPath>C:/Users/tlghk/Desktop/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Editor/Facebook.Unity.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
