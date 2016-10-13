@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour {
 
 
 	// end game Check
-	public static int gameSet; //0:play 1:win 2:lose 3:wait 4:retry?
+	public static int gameSet; //0:play 1:win 2:lose 3:wait 4:retry? 5:story
 
 	public static int TestNum;
 
@@ -92,8 +92,7 @@ public class GameManager : MonoBehaviour {
     int starCount = 0;
 	void Start()
     {
-		retry_count = 0;
-		gameSet = 3;
+		
 
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
@@ -185,31 +184,36 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Awake () {
+		
+		retry_count = 0;
+		gameSet = 3;
+
 		if (Application.loadedLevelName == "TestGame") {
 
-			if (ES2.Exists ("tilt")) {
-				tiltCheck = ES2.Load<bool> ("tilt");
-			} else {
 
-			}
 
 			Money_ingame = 0;
 			Record_time = 0;
 			Record_help = 0;
 			Record_help_Max = 0;
-			gameSet = 3;
+
 			if (Application.loadedLevelName == "TestGame") {
-				StartCoroutine ("UICheck");
+				
+				if (TestNum != 1) {
+					StartCoroutine ("UICheck");
+				} else {
+					gameSet = 5;
+					StartCoroutine ("StoryPlay");
+				}
+
 			}
 
-			if (tiltCheck) {
-				tiltOn.SetActive (true);
-				tiltOff.SetActive (false);
-			}
+
 		}
 	}
 	void Update () {
 		if(Input.GetKeyUp(KeyCode.Escape)){
+			
 			if (Application.loadedLevelName != "TestGame") {
 				Application.Quit ();
 			} else {
@@ -224,6 +228,13 @@ public class GameManager : MonoBehaviour {
 
 
     }
+
+	IEnumerator StoryPlay(){
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
+
+		}
+	}
 
 	IEnumerator UICheck(){
 		while (true) {
