@@ -115,6 +115,11 @@ public partial class selectManager : MonoBehaviour {
     Animator animator;
     void Start ()
     {
+     /*   for(int i = 0; i< 100; i++)
+        {
+            ES2.Delete("ValueKey" + i);
+        }
+        ES2.Delete("stageIndexCount");*/
 		/*
         for(int i = 0; i < 5; i++)
         {
@@ -315,6 +320,7 @@ public partial class selectManager : MonoBehaviour {
             for (int i = 0; i < ES2.Load<int>("stageIndexCount"); i++)
             {
                 test = ES2.LoadArray<string>("ValueKey" + (i + 1));
+                Debug.Log("test===" + float.Parse(test[1]));
                 stageBtn = ScrollPanel.transform.GetChild(i + 1).gameObject.GetComponent<Button>();
                 for (int j = 0; j < test.Length; j++)
                 {

@@ -96,24 +96,62 @@ public class DataSave : MonoBehaviour {
 
         //stageData sd = new stageData(stageIndex, starCount, stageRecord);
         //ES2.Save(sd, "valueKeytest");
-
-        string[] test = new string[3];
-        test[0] = stageIndex.ToString();
-        test[1] = starCount.ToString();
-        test[2] = stageRecord.ToString();
-
-        ES2.Save(test, "ValueKey" + stageIndex.ToString());
-
-        if (ES2.Exists("stageIndexCount"))
+        
+        if(ES2.Exists("ValueKey" + stageIndex.ToString()))
         {
-            if (ES2.Load<int>("stageIndexCount") < stageIndex)
+            Debug.Log("aa");
+            string[] ExistsString = new string[3];
+            ExistsString = ES2.LoadArray<string>("ValueKey" + stageIndex.ToString());
+
+            if(starCount > float.Parse(ExistsString[1]))
             {
-                ES2.Save<int>(stageIndex, "stageIndexCount");
+                string[] test = new string[3];
+                test[0] = stageIndex.ToString();
+                test[1] = starCount.ToString();
+                test[2] = ExistsString[2];
+
+                ES2.Save(test, "ValueKey" + stageIndex.ToString());
+            }
+            else if(starCount < float.Parse(ExistsString[1]))
+            {
+                return;
+            }
+
+            if(stageRecord > float.Parse(ExistsString[2]))
+            {
+                string[] test = new string[3];
+                test[0] = stageIndex.ToString();
+                test[1] = ExistsString[1];
+                test[2] = stageRecord.ToString();
+
+                ES2.Save(test, "ValueKey" + stageIndex.ToString());
+            }
+            else
+            {
+                return;
             }
         }
         else
         {
-            ES2.Save<int>(stageIndex, "stageIndexCount");
+            string[] test = new string[3];
+            test[0] = stageIndex.ToString();
+            test[1] = starCount.ToString();
+            test[2] = stageRecord.ToString();
+
+            ES2.Save(test, "ValueKey" + stageIndex.ToString());
+
+            if (ES2.Exists("stageIndexCount"))
+            {
+                if (ES2.Load<int>("stageIndexCount") < stageIndex)
+                {
+                    ES2.Save<int>(stageIndex, "stageIndexCount");
+                }
+            }
+            else
+            {
+                ES2.Save<int>(stageIndex, "stageIndexCount");
+            }
         }
+       
     }
 }

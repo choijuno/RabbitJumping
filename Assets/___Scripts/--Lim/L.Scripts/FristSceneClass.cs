@@ -11,7 +11,7 @@ public class FristSceneClass : MonoBehaviour {
 	}
     IEnumerator WaitSceneControll()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.5f);
         /*CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
         while(canvasGroup.alpha > 0)
         {
