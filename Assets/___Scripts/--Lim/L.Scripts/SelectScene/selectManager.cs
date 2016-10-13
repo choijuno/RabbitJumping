@@ -315,6 +315,7 @@ public partial class selectManager : MonoBehaviour {
             for (int i = 0; i < ES2.Load<int>("stageIndexCount"); i++)
             {
                 test = ES2.LoadArray<string>("ValueKey" + (i + 1));
+                Debug.Log("test===" + test);
                 stageBtn = ScrollPanel.transform.GetChild(i + 1).gameObject.GetComponent<Button>();
                 for (int j = 0; j < test.Length; j++)
                 {

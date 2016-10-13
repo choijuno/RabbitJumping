@@ -97,6 +97,8 @@ public class DataSave : MonoBehaviour {
         //stageData sd = new stageData(stageIndex, starCount, stageRecord);
         //ES2.Save(sd, "valueKeytest");
 
+        //ES2.LoadArray("ValueKey" + stageIndex.ToString());
+
         string[] test = new string[3];
         test[0] = stageIndex.ToString();
         test[1] = starCount.ToString();
