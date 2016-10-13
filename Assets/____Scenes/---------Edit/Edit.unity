@@ -4148,6 +4148,8 @@ MonoBehaviour:
   retryStageNum_txt: {fileID: 0}
   retryTime_txt: {fileID: 0}
   loadParent: {fileID: 0}
+  Language_kr_img: []
+  Language_eng_img: []
 --- !u!4 &460096947
 Transform:
   m_ObjectHideFlags: 0
@@ -8820,7 +8822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 464934, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11411624, guid: 245da86279ac2b949b3ae5a717023f4b, type: 2}
       propertyPath: gameManager
@@ -13223,7 +13225,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496418, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 178446, guid: ce3399ccd4f5dfc4892ce4a212dda9cf, type: 2}
       propertyPath: m_Name
