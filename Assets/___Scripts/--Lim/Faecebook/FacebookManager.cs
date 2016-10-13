@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-/*
+
 using System.Collections.Generic;
 using Facebook.Unity;
 using UnityEngine.UI;
 
-public class Test : MonoBehaviour
+public class FacebookManager : MonoBehaviour
 {
-    public GameObject LoggedInUI;
-    public GameObject NotLoggedInUI;
     public GameObject Friend;
-    private static string applink = "https://fb.me/346937705638950";
+    private static string applink = "https://fb.me/775279745947064";
+    public GameObject FacebookOn;
+    public GameObject FacebookOff;
 
     void Awake()
     {
@@ -18,15 +18,28 @@ public class Test : MonoBehaviour
         {
             FB.Init(InitCallBack);
         }
-        showUI();
+        //showUI();
+       
     }
-
-    void InitCallBack()
+    void Start()
+    {
+        if (!FB.IsLoggedIn)
+        {
+            FacebookOn.SetActive(false);
+            FacebookOff.SetActive(true);
+        }
+        else
+        {
+            FacebookOn.SetActive(true);
+            FacebookOff.SetActive(false);
+        }
+    }
+    void InitCallBack() //초기화콜백
     {
         Debug.Log("FB has been initiased.");
     }
 
-    public void Login()
+    public void Login() //로그인
     {
         if (!FB.IsLoggedIn)
         {
@@ -34,53 +47,51 @@ public class Test : MonoBehaviour
         }
     }
 
-    void LoginCallBack(ILoginResult result)
+    void LoginCallBack(ILoginResult result) //로그인 콜백
     {
-        if (result.Error == null)
+        if(result.Error == null)
         {
             Debug.Log("FB has logged in.");
-            showUI();
+            //showUI();
+            FacebookOn.SetActive(true);
+            FacebookOff.SetActive(false);
         }
         else
         {
             Debug.Log("Error During Login " + result.Error);
+            FacebookOn.SetActive(false);
+            FacebookOff.SetActive(true);
         }
     }
     void showUI()
     {
         if (FB.IsLoggedIn)
         {
-            LoggedInUI.SetActive(true);
-            NotLoggedInUI.SetActive(false);
             FB.API("me/picture?width=100&height=100", HttpMethod.GET, PictureCallBack);
             FB.API("me?fields=first_name", HttpMethod.GET, NameCallBack);
             FB.API("me/friends", HttpMethod.GET, FriendCallBack);
             FB.GetAppLink(ApplinkCallback);
-        }
-        else
+        }else
         {
-            LoggedInUI.SetActive(false);
-            NotLoggedInUI.SetActive(true);
         }
     }
 
     void PictureCallBack(IGraphResult result)
     {
         Texture2D image = result.Texture;
-        LoggedInUI.transform.FindChild("ProfilePicture").GetComponent<Image>().sprite = Sprite.Create(image, new Rect(0, 0, 100, 100), new Vector2(0.5f, 0.5f));
+        //LoggedInUI.transform.FindChild("ProfilePicture").GetComponent<Image>().sprite = Sprite.Create(image, new Rect(0, 0, 100, 100), new Vector2(0.5f, 0.5f));
     }
 
     void NameCallBack(IGraphResult result)
     {
         IDictionary<string, object> profile = result.ResultDictionary;
-        LoggedInUI.transform.FindChild("Name").GetComponent<Text>().text = "Hello " + profile["first_name"];
+        //LoggedInUI.transform.FindChild("Name").GetComponent<Text>().text = "Hello " + profile["first_name"];
 
     }
 
-    public void LogOut()
+    public void LogOut() //로그아웃
     {
         FB.LogOut();
-        showUI();
     }
 
     public void Share()
@@ -88,28 +99,32 @@ public class Test : MonoBehaviour
         FB.ShareLink(new System.Uri("http://naver.com"), "This game is awesome!", "A description of the game.", new System.Uri("http://naver.com/"));
     }
 
-    public void Invite()
+    public void Invite() //초대
     {
-        //FB.AppRequest(message: "You should really try this game.", title: "Check this super game!");
+        if (!FB.IsLoggedIn)
+        {
+            Login();
+        }
+
         FB.Mobile.AppInvite(new System.Uri(applink), null, InviteCallBack);
+        //FB.AppRequest(message: "You should really try this game.", title: "Check this super game!");
+
     }
 
-    void InviteCallBack(IAppInviteResult result)
+    void InviteCallBack(IAppInviteResult result) //초대 콜백
     {
         if (result.Cancelled)
         {
             Debug.Log("Invite cancelled.");
-        }
-        else if (!string.IsNullOrEmpty(result.Error))
+        }else if(!string.IsNullOrEmpty(result.Error))
         {
             Debug.Log("Error in ivite: " + result.Error);
-        }
-        else
+        }else
         {
             Debug.Log("Invite was successful : " + result.RawResult);
         }
     }
-
+    
     public void Challenge()
     {
         FB.AppRequest("Custom message", null, new List<object> { "app_users" }, null, null, "Data", "Challenge your friends!", ChallengeCallback);
@@ -135,7 +150,7 @@ public class Test : MonoBehaviour
 
         List<object> friends = (List<object>)data["data"];
 
-        foreach (object obj in friends)
+        foreach(object obj in friends)
         {
             Dictionary<string, object> dictio = (Dictionary<string, object>)obj;
             CreateFriend(dictio["name"].ToString(), dictio["id"].ToString());
@@ -145,8 +160,8 @@ public class Test : MonoBehaviour
     void CreateFriend(string name, string id)
     {
         GameObject myFriend = Instantiate(Friend);
-        Transform parent = LoggedInUI.transform.FindChild("ListContainer").FindChild("FriendsList");
-        myFriend.transform.SetParent(parent);
+        //Transform parent = LoggedInUI.transform.FindChild("ListContainer").FindChild("FriendsList");
+        //myFriend.transform.SetParent(parent);
 
         myFriend.GetComponentInChildren<Text>().text = name;
         FB.API(id + "/picture?width=100&height=100", HttpMethod.GET, delegate (IGraphResult result)
@@ -198,11 +213,10 @@ public class Test : MonoBehaviour
             {
                 FB.API("/" + dictio["id"], HttpMethod.DELETE, null);
             }
-        }
-        else
+        }else
         {
             Debug.Log("Error in request: " + result.Error);
         }
     }
 }
-*/
+
