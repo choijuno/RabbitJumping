@@ -53,6 +53,7 @@ public class CreateUnitClass : MonoBehaviour {
     {
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());
+
         Destroy(EggTemp);
         SceneManager.LoadScene(3);
     }

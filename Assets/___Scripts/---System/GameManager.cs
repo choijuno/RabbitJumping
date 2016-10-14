@@ -393,7 +393,17 @@ public class GameManager : MonoBehaviour {
 		result_gold.text = Money_ingame.ToString("n0");
         DataSave._instance.setMoney_Game(Money_ingame);
 
-		result_time.text = m_record.ToString("00") + ":" + s_record.ToString("00");
+        float gold = DataSave._instance.getMoney_Game();
+        if(gold >= 1000)
+            Social.ReportProgress(GPGS.achievement_Gold1, 100.0f, (bool success) => { });
+        else if(gold >= 10000)
+            Social.ReportProgress(GPGS.achievement_Gold2, 100.0f, (bool success) => { });
+        else if(gold >= 100000)
+            Social.ReportProgress(GPGS.achievement_Gold3, 100.0f, (bool success) => { });
+        else if(gold >= 1000000)
+            Social.ReportProgress(GPGS.achievement_Gold4, 100.0f, (bool success) => { });
+
+        result_time.text = m_record.ToString("00") + ":" + s_record.ToString("00");
 		result_help.text = Record_help +"/" +Record_help_Max;
 	}
 
@@ -447,7 +457,18 @@ public class GameManager : MonoBehaviour {
 		DataSave._instance.saveData(GameManager.TestNum, starCount, 0);
 		DataSave._instance.setStar_Count(starCount);
 
-			switch (starCount)
+        float starCountAch = DataSave._instance.getStar_Count();
+        
+        if(starCountAch >= 50)
+            Social.ReportProgress(GPGS.achievement_star1, 100.0f, (bool success) => { });
+        else if(starCountAch >= 100)
+            Social.ReportProgress(GPGS.achievement_star2, 100.0f, (bool success) => { });
+        else if(starCountAch >= 200)
+            Social.ReportProgress(GPGS.achievement_star3, 100.0f, (bool success) => { });
+        else if(starCountAch >= 300)
+            Social.ReportProgress(GPGS.achievement_star4, 100.0f, (bool success) => { });
+
+        switch (starCount)
 			{
 			case 1:
 				yield return new WaitForSeconds (0.3f);

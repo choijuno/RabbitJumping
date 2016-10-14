@@ -26,7 +26,7 @@ public static class GPGS
     public const string achievement_Gold1 = "CgkI-YvA8IIVEAIQAQ"; // <GPGSID>
     public const string achievement_Gold2 = "CgkI-YvA8IIVEAIQAg"; // <GPGSID>
     public const string achievement_Gold3 = "CgkI-YvA8IIVEAIQBA"; // <GPGSID>
-    public const string achievement_Godl4 = "CgkI-YvA8IIVEAIQAw"; // <GPGSID>
+    public const string achievement_Gold4 = "CgkI-YvA8IIVEAIQAw"; // <GPGSID>
     public const string achievement_timer1 = "CgkI-YvA8IIVEAIQBQ"; // <GPGSID>
     public const string achievement_timer2 = "CgkI-YvA8IIVEAIQBw"; // <GPGSID>
     public const string achievement_draw1 = "CgkI-YvA8IIVEAIQCA"; // <GPGSID>
