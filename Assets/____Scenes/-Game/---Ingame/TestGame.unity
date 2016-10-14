@@ -23594,8 +23594,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.5, y: 42.499996}
-  m_SizeDelta: {x: 121, y: 185}
+  m_AnchoredPosition: {x: -14, y: 42.499996}
+  m_SizeDelta: {x: 168, y: 212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292698662
 MonoBehaviour:
@@ -23616,7 +23616,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0e81a033e1ed5be4eb1c1ab557ad1561, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 2e755a75f33481a499b134957b2eeef3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -51010,48 +51010,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &722627164
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 451292, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c46b35d75f26f794f9561fb7f69d895c, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &724809452
 Prefab:
   m_ObjectHideFlags: 0
@@ -106680,48 +106638,6 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.27736777, g: 0.5273678, b: 0.7773678, a: 1}
   transform: {fileID: 1548589538}
---- !u!1001 &1549030200
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 403578, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 92a878787e4176f46bb05a09836b1698, type: 2}
-  m_IsPrefabParent: 0
 --- !u!114 &1552653426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133275,8 +133191,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.5, y: 21}
-  m_SizeDelta: {x: 147, y: 142}
+  m_AnchoredPosition: {x: 6, y: 21}
+  m_SizeDelta: {x: 234, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042095115
 MonoBehaviour:
@@ -133297,7 +133213,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ad882c7bc60c7884fa6b2418e12dd428, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2e755a75f33481a499b134957b2eeef3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -134932,52 +134848,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &2085795674
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 426566, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 21269828, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-      propertyPath: m_Color.a
-      value: 0.503
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bc5277f96c20cba499e762b964846c31, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2085995979
 GameObject:
   m_ObjectHideFlags: 0
@@ -136132,48 +136002,6 @@ MonoBehaviour:
   saveButtonSelected: 0
   color: {r: 0.86148536, g: 0.8222697, b: 0.36932853, a: 1}
   transform: {fileID: 2093136018}
---- !u!1001 &2093955969
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 457048, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c7f29ad883926f349970c86939b520e6, type: 2}
-  m_IsPrefabParent: 0
 --- !u!114 &2096935473
 MonoBehaviour:
   m_ObjectHideFlags: 0
