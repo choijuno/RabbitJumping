@@ -19,26 +19,17 @@ public class JsonParsing : MonoBehaviour {
             DestroyImmediate(this.gameObject);
         }
     }
-    public int starJsonData(float stageIndex, float gameRecord)
+    public int starJsonData(float stageIndex)
     {
         var N = JSON.Parse(Json.text);
-        int starCount = 0;
+        int timeCount = 0;
         for (int i = 0; i < N.Count; i++)
         {
             if(stageIndex == N[i][0].AsFloat)
             {
-                if(gameRecord >= N[i][3].AsFloat)
-                {
-                    starCount = 3;
-                }else if(gameRecord >= N[i][2].AsFloat)
-                {
-                    starCount = 2;
-                }else if(gameRecord >= N[i][1].AsFloat)
-                {
-                    starCount = 1;
-                }
+                timeCount = N[i][1].AsInt;
             }
         }
-        return starCount;
+        return timeCount;
     }
 }
