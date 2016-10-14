@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour {
 	public Text Record_help_Max_txt;
 	public static int Record_help;
 	public Text Record_help_txt;
+	public static int UI_help_index;
 
 	public GameObject result_Panel;
 	public GameObject result_Panel_Clear;
@@ -99,12 +100,17 @@ public class GameManager : MonoBehaviour {
     int starCount = 0;
 	void Start()
     {
-
-		JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
-		//downTime
-		Record_time_d = JsonGo.starJsonData(TestNum);
-		Debug.Log ("recored===== " + Record_time_d);
-
+		if (TestNum != 0) {
+			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
+			//downTime
+			Record_time_d = JsonGo.starJsonData (TestNum);
+			m_record_d = (int)(Record_time_d / 60) % 60;
+			s_record_d = (int)Record_time_d % 60;
+		} else {
+			Record_time_d = 120;
+			m_record_d = (int)(Record_time_d / 60) % 60;
+			s_record_d = (int)Record_time_d % 60;
+		}
 
 		starCount = 0;
 
@@ -211,11 +217,11 @@ public class GameManager : MonoBehaviour {
 			//upTime
 			Record_time = 0;
 
-			m_record_d = (int)(Record_time_d / 60) % 60;
-			s_record_d = (int)Record_time_d % 60;
+
 
 			Record_help = 0;
 			Record_help_Max = 0;
+			UI_help_index = 0;
 
 			if (Application.loadedLevelName == "TestGame") {
 				
@@ -291,7 +297,6 @@ public class GameManager : MonoBehaviour {
 
 			//down time
 			Record_time_d_txt.text = m_record_d.ToString("00") + " : " + s_record_d.ToString("00");
-			Debug.Log (Record_time_d);
 
 
 			Record_help_txt.text = Record_help.ToString();
