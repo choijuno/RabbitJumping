@@ -363,7 +363,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void StarCheck() {
-        starCount = JsonGo.starJsonData(TestNum, Score_ingame);
+        starCount = JsonGo.starJsonData(TestNum);
         switch (starCount)
         {
             case 1:
@@ -384,9 +384,10 @@ public class GameManager : MonoBehaviour {
         DataSave._instance.setStar_Count(starCount);
     }
 
-	IEnumerator StarCheck_Effect(){
+	IEnumerator StarCheck_Effect()
+    {
 
-		starCount = JsonGo.starJsonData(TestNum, Score_ingame);
+		starCount = JsonGo.starJsonData(TestNum);
         
 		DataSave._instance.saveData(GameManager.TestNum, starCount, Score_ingame);
 		DataSave._instance.setStar_Count(starCount);
