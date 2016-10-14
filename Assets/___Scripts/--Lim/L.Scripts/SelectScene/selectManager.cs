@@ -115,11 +115,13 @@ public partial class selectManager : MonoBehaviour {
     Animator animator;
     void Start ()
     {
-        /*for(int i = 0; i< 100; i++)
+        /*
+        for(int i = 0; i< 100; i++)
         {
             ES2.Delete("ValueKey" + i);
         }
         ES2.Delete("stageIndexCount");*/
+        ES2.Save<int>(49, "stageIndexCount");
 		/*
         for(int i = 0; i < 5; i++)
         {
