@@ -4,6 +4,7 @@ using System.Collections;
 public class GameCamera : MonoBehaviour {
 
 	public Transform soundPoint;
+	public Transform[] UI_Cage_pos;
 
 	// player position
 	PlayerController playerController;
