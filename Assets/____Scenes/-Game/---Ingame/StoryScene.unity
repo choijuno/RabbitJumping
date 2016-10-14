@@ -296,11 +296,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21293592, guid: 49f5dcf7c6be0aa4aba73d79b2d4ec46, type: 2}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 187364, guid: 49f5dcf7c6be0aa4aba73d79b2d4ec46, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 134106, guid: 49f5dcf7c6be0aa4aba73d79b2d4ec46, type: 2}
       propertyPath: m_IsActive
