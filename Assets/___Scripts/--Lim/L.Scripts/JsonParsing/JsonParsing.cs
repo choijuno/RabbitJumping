@@ -8,7 +8,7 @@ public class JsonParsing : MonoBehaviour {
 
     public TextAsset Json;
 
-	void Start ()
+	void Awake ()
     {
         if(_instance == null)
         {
@@ -19,17 +19,23 @@ public class JsonParsing : MonoBehaviour {
             DestroyImmediate(this.gameObject);
         }
     }
+
     public int starJsonData(float stageIndex)
     {
         var N = JSON.Parse(Json.text);
         int timeCount = 0;
+
+		Debug.Log ("N.count" + N.Count);
+
         for (int i = 0; i < N.Count; i++)
-        {
+		{
             if(stageIndex == N[i][0].AsFloat)
             {
+				
                 timeCount = N[i][1].AsInt;
             }
         }
+		Debug.Log ("timeCount" + timeCount);
         return timeCount;
     }
 }
