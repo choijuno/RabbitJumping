@@ -46,13 +46,6 @@ public class GameManager : MonoBehaviour {
 
 
 
-	//new 
-	public static float Record_time_d;
-	int m_record_d;
-	int s_record_d;
-	public Text Record_time_d_txt;
-
-
 	// end game Check
 	public static int gameSet; //0:play 1:win 2:lose 3:wait 4:retry? 5:story
 
@@ -95,18 +88,11 @@ public class GameManager : MonoBehaviour {
 
     //Json
 
-	JsonParsing JsonGo;
+    JsonParsing JsonGo;
     int starCount = 0;
 	void Start()
     {
-
-		JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
-		//downTime
-		Record_time_d = JsonGo.starJsonData(TestNum);
-		Debug.Log ("recored===== " + Record_time_d);
-
-
-		starCount = 0;
+		
 
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
@@ -207,13 +193,7 @@ public class GameManager : MonoBehaviour {
 
 
 			Money_ingame = 0;
-
-			//upTime
 			Record_time = 0;
-
-			m_record_d = (int)(Record_time_d / 60) % 60;
-			s_record_d = (int)Record_time_d % 60;
-
 			Record_help = 0;
 			Record_help_Max = 0;
 
@@ -244,7 +224,12 @@ public class GameManager : MonoBehaviour {
 
     }
 
+	IEnumerator StoryPlay(){
+		while (true) {
+			yield return new WaitForSeconds (0.006f);
 
+		}
+	}
 
 	IEnumerator UICheck(){
 		while (true) {
@@ -281,47 +266,21 @@ public class GameManager : MonoBehaviour {
 				
 
 
+			if (m_record == 59 && s_record == 59) {
 
-			upTime ();
-			downTime ();
+			} else {
+				Record_time = Record_time + Time.deltaTime;
+				m_record = (int)(Record_time / 60) % 60;
+				s_record = (int)Record_time % 60;
+			}
 			Money_ingame_txt.text = Money_ingame.ToString("n0");
-
-			//up time
 			Record_time_txt.text = m_record.ToString("00") + " : " + s_record.ToString("00");
-
-			//down time
-			Record_time_d_txt.text = m_record_d.ToString("00") + " : " + s_record_d.ToString("00");
-			Debug.Log (Record_time_d);
-
-
 			Record_help_txt.text = Record_help.ToString();
 			Record_help_Max_txt.text = Record_help_Max.ToString ();
 		}
 	}
 
-	void upTime() {
-		if (m_record == 59 && s_record == 59) {
-
-		} else {
-			Record_time = Record_time + Time.deltaTime;
-			m_record = (int)(Record_time / 60) % 60;
-			s_record = (int)Record_time % 60;
-		}
-	}
-
-	void downTime() {
-		if (m_record_d == 0 && s_record_d == 0) {
-			Record_time_d = 0;
-		} else {
-			Record_time_d = Record_time_d - Time.deltaTime;
-			m_record_d = (int)(Record_time_d / 60) % 60;
-			s_record_d = (int)Record_time_d % 60;
-		}
-	}
-
 	IEnumerator gameResult_Clear(){
-		starCount++;
-		Debug.Log ("clear ++");
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
 			result_Panel.SetActive (true);
@@ -427,19 +386,9 @@ public class GameManager : MonoBehaviour {
 
 	IEnumerator StarCheck_Effect()
     {
-		if (Record_help_Max == Record_help) {
-			starCount++;
-			Debug.Log ("help ++");
-		}
-
-		if (Record_time_d != 0) {
-			starCount++;
-			Debug.Log ("time ++");
-			Debug.Log (starCount);
-		}
-		//starCount = JsonGo.starJsonData(TestNum);
+		starCount = JsonGo.starJsonData(TestNum);
         
-		DataSave._instance.saveData(GameManager.TestNum, starCount, 0);
+		DataSave._instance.saveData(GameManager.TestNum, starCount, Score_ingame);
 		DataSave._instance.setStar_Count(starCount);
 
 			switch (starCount)

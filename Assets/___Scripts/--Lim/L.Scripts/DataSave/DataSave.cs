@@ -8,6 +8,39 @@ public class DataSave : MonoBehaviour {
     public static DataSave _instance;
 
     public Text Bosuk_Game;
+    public void setSkin(int skinCount) //스킨카운트
+    {
+        if (ES2.Exists("Skin"))
+            ES2.Save<int>(ES2.Load<int>("Skin") + skinCount, "Skin");
+        else
+            ES2.Save<int>(skinCount, "Skin");
+    }
+    public int getSkin()
+    {
+        return ES2.Load<int>("Skin");
+    }
+    public void setDraw(int DrawCount) //뽑기 카운트
+    {
+        if (ES2.Exists("Draw"))
+            ES2.Save<int>(ES2.Load<int>("Draw") + DrawCount, "Draw");
+        else
+            ES2.Save<int>(DrawCount, "Draw");
+    }
+    public int getDraw()
+    {
+        return ES2.Load<int>("Draw");
+    }
+    public void setTimer(float timer) // 시간 카운트
+    {
+        if (ES2.Exists("timer"))
+            ES2.Save<float>(ES2.Load<float>("timer") + timer, "timer");
+        else
+            ES2.Save<float>(timer, "timer");
+    }
+    public float getTimer()
+    {
+        return ES2.Load<int>("timer");
+    }
     public void setAnimal(int animalCount) //동물 카운트
     {
         if (ES2.Exists("Animal"))

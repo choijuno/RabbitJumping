@@ -121,7 +121,7 @@ public partial class selectManager : MonoBehaviour {
             ES2.Delete("ValueKey" + i);
         }
         ES2.Delete("stageIndexCount");*/
-        ES2.Save<int>(49, "stageIndexCount");
+        ES2.Save<int>(99, "stageIndexCount");
 		/*
         for(int i = 0; i < 5; i++)
         {
