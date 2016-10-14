@@ -199,12 +199,7 @@ public class GameManager : MonoBehaviour {
 
 			if (Application.loadedLevelName == "TestGame") {
 				
-				if (TestNum != 1) {
 					StartCoroutine ("UICheck");
-				} else {
-					gameSet = 5;
-					StartCoroutine ("StoryPlay");
-				}
 
 			}
 
