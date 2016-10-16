@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class BtnController : MonoBehaviour {
-	
+	public Animator GageBase;
+
 	public GameObject OpenPanel_1;
 	public GameObject OpenPanel_2;
 
@@ -21,7 +22,15 @@ public class BtnController : MonoBehaviour {
 	public Transform StartPos;
 
 
+	public void UIGage_Close_btn() {
+		GageBase.SetBool ("gageOpen", false);
+		openClose ();
+	}
 
+	public void UIGage_Open_btn() {
+		GageBase.SetBool ("gageOpen", true);
+		openClose ();
+	}
 
 	public void pauseBtn() {
 		MusicManager.instance.PlayOnShot ();

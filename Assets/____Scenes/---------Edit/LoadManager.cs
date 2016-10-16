@@ -173,7 +173,7 @@ public class LoadManager : MonoBehaviour {
 				}
 
 				for (int i = 0; i < objPos_dataArr.Length; i += 3) {
-					Debug.Log ("!!!!");
+					//Debug.Log ("!!!!");
 					switch ("" + objPos_dataIn [i]) {
 
 
