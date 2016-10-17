@@ -184,7 +184,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             LoginGPGS();
             return;
         }
-        Social.ReportScore(score, GPGS.LeaderBoardTest, (bool success) =>
+        Social.ReportScore(score, GPGS.LeaderBoard_star, (bool success) =>
         {
             if (success)
             {
@@ -204,7 +204,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             return;
         }
         ILeaderboard lb = Social.CreateLeaderboard();
-        lb.id =  GPGS.LeaderBoardTest;
+        lb.id =  GPGS.LeaderBoard_star;
         lb.LoadScores(ok =>
         {
             if (ok)
