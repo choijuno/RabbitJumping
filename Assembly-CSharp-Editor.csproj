@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8287569F-ACAD-F7F3-1DA7-4FD1F68E4710}</ProjectGuid>
+    <ProjectGuid>{A249ED23-6CDC-2F6A-6652-C80987A1FBA6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Users/PC03/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Users/PC03/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -136,92 +136,92 @@
      <None Include="Assets\Resources\stage\stage2\_obj.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.EditorTestsRunner">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Editor">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/FacebookSDK/Plugins/Android/Editor/Facebook.Unity.Editor.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Editor/Facebook.Unity.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.IOS">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
  </Reference>
  <Reference Include="JarResolverLib">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/PlayServicesResolver/Editor/JarResolverLib.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/PlayServicesResolver/Editor/JarResolverLib.dll</HintPath>
  </Reference>
  <Reference Include="ES2">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/ES2.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/ES2.dll</HintPath>
  </Reference>
  <Reference Include="MoodkieSecurity">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/MoodkieSecurity.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/MoodkieSecurity.dll</HintPath>
  </Reference>
  <Reference Include="ES2Editor">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/Editor/ES2Editor.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/Editor/ES2Editor.dll</HintPath>
  </Reference>
  <Reference Include="Common">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{91633989-925B-2350-915B-D8CD3D777189}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{DEC6D714-A7BA-FD7A-61A7-6555D77347DE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{53C6ED14-778B-B9EA-F891-90EA285AEBDA}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{4522C638-24C1-230C-5BAF-1C566E99CE14}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

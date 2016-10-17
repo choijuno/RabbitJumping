@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{91633989-925B-2350-915B-D8CD3D777189}</ProjectGuid>
+    <ProjectGuid>{DEC6D714-A7BA-FD7A-61A7-6555D77347DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Users/PC03/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Users/PC03/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -84,49 +84,49 @@
      <None Include="Assets\Resources\stage\stage2\_obj.txt" />
      <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/PC03/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.IOS">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll</HintPath>
  </Reference>
  <Reference Include="ES2">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/ES2.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/ES2.dll</HintPath>
  </Reference>
  <Reference Include="MoodkieSecurity">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/MoodkieSecurity.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/MoodkieSecurity.dll</HintPath>
  </Reference>
  <Reference Include="Common">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Common.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>D:/CJO/Projects/Rabbit/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>D:/CJO/projects/RabbitJumping/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
