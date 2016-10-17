@@ -111,11 +111,9 @@ public class DataSave : MonoBehaviour {
             ES2.Save<int>(ES2.Load<int>("Star_Count") + star_Count, "Star_Count");
         else
             ES2.Save<int>(star_Count, "Star_Count");
-
-        GoogleManager.GetInstance.ReportScoreLeaderBoard(ES2.Load<int>("Star_Count"));
     }
 
-    public float getStar_Count()
+	public float getStar_Count()
     {
         if (ES2.Exists("Star_Count"))
             return ES2.Load<int>("Star_Count");

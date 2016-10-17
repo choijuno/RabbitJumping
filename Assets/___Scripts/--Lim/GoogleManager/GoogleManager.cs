@@ -177,25 +177,158 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             //읽기 실패 했다. 오류출력.
         }
     }
-    public void ReportScoreLeaderBoard(int score) //리더보드에 스코어 저장.
+	public void ReportScoreLeaderBoard(float score, int stage, float time) //리더보드에 스코어 저장.
     {
         if (!Social.localUser.authenticated)
         {
             LoginGPGS();
             return;
         }
-        Social.ReportScore(score, GPGS.LeaderBoard_star, (bool success) =>
-        {
-            if (success)
-            {
-                Debug.Log("리더보드 성공");
-            }
-            else
-            {
-                Debug.Log("리더보드 실패");
-            }
-        });
+		switch (stage) {
+		case 10:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage10, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 20:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage20, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 30:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage30, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 40:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage40, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 50:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage50, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 60:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage60, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 70:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage70, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 80:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage80, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 90:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage90, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		case 100:
+			Social.ReportScore((int)time, GPGS.LeaderBoard_Stage100, (bool success) =>
+				{
+					if (success)
+					{
+						Debug.Log("리더보드 성공");
+					}
+					else
+					{
+						Debug.Log("리더보드 실패");
+					}
+				});
+			break;
+		}
+		Social.ReportScore((int)score, GPGS.LeaderBoard_star, (bool success) =>
+			{
+				if (success)
+				{
+					Debug.Log("리더보드 성공");
+				}
+				else
+				{
+					Debug.Log("리더보드 실패");
+				}
+			});
     }
+
     public void LeaderBoardLoadScores() //리더보드 스코어 가져오는것.
     {
         if (!Social.localUser.authenticated)
