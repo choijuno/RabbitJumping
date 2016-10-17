@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 682da46da2faa634ebc2266c9c68e69f
+timeCreated: 1476570374
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: missionbar
+    21300002: failedbar
+    21300004: clock
+    21300006: star
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: missionbar
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 135
+        width: 261
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -126.5, y: 56}
+        - {x: -130.5, y: 52}
+        - {x: -130.5, y: -56}
+        - {x: 130.5, y: -56}
+        - {x: 130.5, y: 52}
+        - {x: 126.5, y: 56}
+    - name: failedbar
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 14
+        width: 261
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -126.5, y: 56}
+        - {x: -130.5, y: 52}
+        - {x: -130.5, y: -56}
+        - {x: 130.5, y: -56}
+        - {x: 130.5, y: 52}
+        - {x: 126.5, y: 56}
+    - name: clock
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 152
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 39}
+        - {x: -35, y: 29}
+        - {x: -35, y: -30}
+        - {x: -22, y: -40}
+        - {x: 21, y: -40}
+        - {x: 35, y: -26}
+        - {x: 35, y: 39}
+      - - {x: -25, y: -13}
+        - {x: -26, y: -3}
+        - {x: -25, y: -2}
+        - {x: -25, y: 2}
+        - {x: -23, y: 5}
+        - {x: -6, y: 0}
+        - {x: -25, y: 0}
+        - {x: -28, y: -3}
+        - {x: -28, y: -8}
+        - {x: -26, y: -11}
+        - {x: -23, y: -12}
+        - {x: 0, y: -12}
+        - {x: 5, y: -8}
+        - {x: 5, y: 19}
+        - {x: 2, y: 22}
+        - {x: -3, y: 21}
+        - {x: 7, y: 19}
+        - {x: 10, y: 17}
+        - {x: 4, y: -30}
+    - name: star
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 55
+        width: 123
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 35}
+        - {x: -31.5, y: 35}
+        - {x: -57.5, y: 22}
+        - {x: -57.5, y: -7}
+        - {x: -45.5, y: -35}
+        - {x: 3.5, y: -35}
+        - {x: 6.5, y: -32}
+        - {x: 16.5, y: 3}
+        - {x: 16.5, y: 14}
+      - - {x: 33.5, y: 23}
+        - {x: 33.5, y: 21}
+        - {x: 17.5, y: 5}
+        - {x: 17.5, y: -8}
+        - {x: 29.5, y: -22}
+        - {x: 54.5, y: -22}
+        - {x: 61.5, y: -6}
+        - {x: 61.5, y: 13}
+        - {x: 48.5, y: 23}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
