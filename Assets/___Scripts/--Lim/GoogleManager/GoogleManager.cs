@@ -177,14 +177,14 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             //읽기 실패 했다. 오류출력.
         }
     }
-    public void ReportScoreLeaderBoard(int score) //리더보드에 스코어 저장.
+	public void ReportScoreLeaderBoard(float score, int stage) //리더보드에 스코어 저장.
     {
         if (!Social.localUser.authenticated)
         {
             LoginGPGS();
             return;
         }
-        Social.ReportScore(score, GPGS.LeaderBoard_star, (bool success) =>
+		Social.ReportScore((int)score, GPGS.LeaderBoard_star, (bool success) =>
         {
             if (success)
             {
@@ -196,6 +196,7 @@ public class GoogleManager : GoogleSingleton<GoogleManager> {
             }
         });
     }
+
     public void LeaderBoardLoadScores() //리더보드 스코어 가져오는것.
     {
         if (!Social.localUser.authenticated)

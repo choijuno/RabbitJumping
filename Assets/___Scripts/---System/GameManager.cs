@@ -105,8 +105,6 @@ public class GameManager : MonoBehaviour {
     int starCount = 0;
 
 
-	//mission
-	public static int helpTotal;
 
 	//tuto
 	public GameObject tuto1;
@@ -372,6 +370,8 @@ public class GameManager : MonoBehaviour {
 			result (); //골드, 시간, 동물구함.
 			ScoreCheck (); //점수체크.
 
+			DataSave._instance.setAnimal (Record_help);
+
 			StartCoroutine("StarCheck_Effect");
 			//StarCheck (); //별체크.
 
@@ -495,8 +495,10 @@ public class GameManager : MonoBehaviour {
 		DataSave._instance.saveData(GameManager.TestNum, starCount, 0);
 		DataSave._instance.setStar_Count(starCount);
 
-        float starCountAch = DataSave._instance.getStar_Count();
-        
+		float starCountAch = DataSave._instance.getStar_Count();
+		GoogleManager.GetInstance.ReportScoreLeaderBoard (starCountAch,0);
+		int helpTotal = DataSave._instance.getAnimal ();
+
         if(starCountAch >= 50)
             Social.ReportProgress(GPGS.achievement_star1, 100.0f, (bool success) => { });
         else if(starCountAch >= 100)

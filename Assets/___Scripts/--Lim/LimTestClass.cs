@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LimTestClass : MonoBehaviour {
-
+	/*
     Button Achievement;
     Button leaderBoard;
 
@@ -93,5 +93,5 @@ public class LimTestClass : MonoBehaviour {
     void itemBuyGo()
     {
         SceneManager.LoadScene(2);
-    }
+    }*/
 }
