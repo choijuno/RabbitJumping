@@ -1182,7 +1182,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4125,6 +4125,8 @@ MonoBehaviour:
   Record_time_txt: {fileID: 0}
   Record_help_Max_txt: {fileID: 0}
   Record_help_txt: {fileID: 0}
+  openHelp: []
+  closeHelp: []
   result_Panel: {fileID: 0}
   result_Panel_Clear: {fileID: 0}
   Star: []
@@ -4135,6 +4137,9 @@ MonoBehaviour:
   result_score: {fileID: 0}
   pauseMenu: {fileID: 0}
   Controller: {fileID: 0}
+  Record_time_d_txt: {fileID: 0}
+  time_bar_txt: {fileID: 0}
+  failBar: {fileID: 0}
   tiltOn: {fileID: 0}
   tiltOff: {fileID: 0}
   soundOn: {fileID: 0}
@@ -4150,6 +4155,7 @@ MonoBehaviour:
   loadParent: {fileID: 0}
   Language_kr_img: []
   Language_eng_img: []
+  tuto1: {fileID: 0}
 --- !u!4 &460096947
 Transform:
   m_ObjectHideFlags: 0
@@ -4910,7 +4916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21222198, guid: 91b00ab2c2e47aa4588898803a26a364, type: 2}
       propertyPath: m_SortingOrder
-      value: -10
+      value: -190
       objectReference: {fileID: 0}
     - target: {fileID: 433482, guid: 91b00ab2c2e47aa4588898803a26a364, type: 2}
       propertyPath: m_LocalScale.x
@@ -11348,7 +11354,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11564,7 +11570,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 29272fcffeac1264ab8601f0a305a636, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11876,7 +11882,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9da9ad546b60e4849909508b92a03abd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12736,7 +12742,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21293300, guid: 25c7183306192ea48a21b500cc2cc723, type: 2}
       propertyPath: m_SortingOrder
-      value: -20
+      value: -200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25c7183306192ea48a21b500cc2cc723, type: 2}
@@ -16018,7 +16024,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21222198, guid: 91b00ab2c2e47aa4588898803a26a364, type: 2}
       propertyPath: m_SortingOrder
-      value: -10
+      value: -190
       objectReference: {fileID: 0}
     - target: {fileID: 433482, guid: 91b00ab2c2e47aa4588898803a26a364, type: 2}
       propertyPath: m_LocalScale.x
@@ -17823,6 +17829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundPoint: {fileID: 0}
+  UI_Cage_pos: []
   MoveSpeed: 5
   midleBackGround: {fileID: 1104618708}
   playerPosition: {fileID: 663604566}

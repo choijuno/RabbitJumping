@@ -11,9 +11,11 @@ public class Cage : MonoBehaviour {
 	GameObject gameManager;
 
 	void Start(){
-		gameManager = GameObject.Find ("GameManager");
-		gameManager.GetComponent<GameManager> ().closeHelp[GameManager.Record_help_Max].SetActive(true);
-		GameManager.Record_help_Max += 1;
+		if (Application.loadedLevelName != "Edit") {
+			gameManager = GameObject.Find ("GameManager");
+			gameManager.GetComponent<GameManager> ().closeHelp [GameManager.Record_help_Max].SetActive (true);
+			GameManager.Record_help_Max += 1;
+		}
 	}
 
 	void OnTriggerEnter(Collider player) {

@@ -107,6 +107,10 @@ public class GameManager : MonoBehaviour {
 
 	//mission
 	public static int helpTotal;
+
+	//tuto
+	public GameObject tuto1;
+
 	void Start()
     {
 		if (TestNum != 0) {
@@ -195,7 +199,9 @@ public class GameManager : MonoBehaviour {
 				language_kr ();
 			}
 
-
+			if (TestNum == 1) {
+				tuto1.SetActive (true);
+			}
 
 		}
     }
