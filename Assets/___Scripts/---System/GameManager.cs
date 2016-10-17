@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour {
 	public Text Record_help_Max_txt;
 	public static int Record_help;
 	public Text Record_help_txt;
-	public static int UI_help_index;
+	public GameObject[] openHelp;
+	public GameObject[] closeHelp;
 
 	public GameObject result_Panel;
 	public GameObject result_Panel_Clear;
@@ -52,6 +53,10 @@ public class GameManager : MonoBehaviour {
 	int m_record_d;
 	int s_record_d;
 	public Text Record_time_d_txt;
+
+	//timebar
+	public Text time_bar_txt;
+	public GameObject failBar;
 
 
 	// end game Check
@@ -98,6 +103,10 @@ public class GameManager : MonoBehaviour {
 
 	JsonParsing JsonGo;
     int starCount = 0;
+
+
+	//mission
+	public static int helpTotal;
 	void Start()
     {
 		if (TestNum != 0) {
@@ -119,6 +128,8 @@ public class GameManager : MonoBehaviour {
 		if (Application.loadedLevelName == "TestGame") {
 			
 			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
+
+			time_bar_txt.text = m_record_d + ":" + s_record_d.ToString("00");
 
 			//backgroundmusic
 			if (ES2.Exists ("musicChk")) {
@@ -221,7 +232,8 @@ public class GameManager : MonoBehaviour {
 
 			Record_help = 0;
 			Record_help_Max = 0;
-			UI_help_index = 0;
+
+			StartCoroutine ("downTimeReady");
 
 			if (Application.loadedLevelName == "TestGame") {
 				
@@ -289,7 +301,7 @@ public class GameManager : MonoBehaviour {
 
 
 			upTime ();
-			downTime ();
+			//downTime ();
 			Money_ingame_txt.text = Money_ingame.ToString("n0");
 
 			//up time
@@ -301,6 +313,9 @@ public class GameManager : MonoBehaviour {
 
 			Record_help_txt.text = Record_help.ToString();
 			Record_help_Max_txt.text = Record_help_Max.ToString ();
+
+			//new help
+
 		}
 	}
 
@@ -314,13 +329,30 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	void downTime() {
-		if (m_record_d == 0 && s_record_d == 0) {
-			Record_time_d = 0;
-		} else {
-			Record_time_d = Record_time_d - Time.deltaTime;
-			m_record_d = (int)(Record_time_d / 60) % 60;
-			s_record_d = (int)Record_time_d % 60;
+	IEnumerator downTimeReady() {
+		while (true) {
+			if (gameSet == 0) {
+				StartCoroutine ("downTime");
+				StopCoroutine ("downTimeReady");
+			} else {
+
+			}
+			yield return null;
+		}
+	}
+
+	IEnumerator downTime() {
+		while (true) {
+			if (m_record_d == 0 && s_record_d == 0) {
+				Record_time_d = 0;
+				failBar.SetActive (true);
+				StopCoroutine ("downTime");
+			} else {
+				Record_time_d = Record_time_d - Time.deltaTime;
+				m_record_d = (int)(Record_time_d / 60) % 60;
+				s_record_d = (int)Record_time_d % 60;
+			}
+			yield return null;
 		}
 	}
 
@@ -467,6 +499,20 @@ public class GameManager : MonoBehaviour {
             Social.ReportProgress(GPGS.achievement_star3, 100.0f, (bool success) => { });
         else if(starCountAch >= 300)
             Social.ReportProgress(GPGS.achievement_star4, 100.0f, (bool success) => { });
+
+		if (helpTotal >= 10) {
+			Social.ReportProgress(GPGS.achievement_animal1, 100.0f, (bool success) => { });
+		} else if (helpTotal >= 50) {
+			Social.ReportProgress(GPGS.achievement_animal2, 100.0f, (bool success) => { });
+		} else if (helpTotal >= 100) {
+			Social.ReportProgress(GPGS.achievement_animal3, 100.0f, (bool success) => { });
+		}
+
+		if (Record_time >= 300) {
+			Social.ReportProgress(GPGS.achievement_timer1, 100.0f, (bool success) => { });
+		} else if (Record_time >= 600) {
+			Social.ReportProgress(GPGS.achievement_timer2, 100.0f, (bool success) => { });
+		}
 
         switch (starCount)
 			{

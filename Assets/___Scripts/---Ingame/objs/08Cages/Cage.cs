@@ -8,10 +8,11 @@ public class Cage : MonoBehaviour {
 
 	public AudioClip breakSound;
 
-	public GameObject UI_Cage_open;
-	public GameObject UI_Cage_close;
+	GameObject gameManager;
 
 	void Start(){
+		gameManager = GameObject.Find ("GameManager");
+		gameManager.GetComponent<GameManager> ().closeHelp[GameManager.Record_help_Max].SetActive(true);
 		GameManager.Record_help_Max += 1;
 	}
 
@@ -21,9 +22,9 @@ public class Cage : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (breakSound, player.GetComponent<PlayerMove> ().Camera_ingame.transform.position, GameManager.soundVolume);
 				breakCage.SetActive (true);
 				standCage.SetActive (false);
+				gameManager.GetComponent<GameManager> ().closeHelp[GameManager.Record_help].SetActive(false);
+				gameManager.GetComponent<GameManager> ().openHelp[GameManager.Record_help].SetActive(true);
 				GameManager.Record_help += 1;
-				UI_Cage_close.SetActive (false);
-				UI_Cage_open.SetActive (true);
 			}
 		}
 	}
