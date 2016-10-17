@@ -41,6 +41,15 @@ public static class GPGS
     public const string achievement_animal1 = "CgkI-YvA8IIVEAIQEQ"; // <GPGSID>
     public const string achievement_animal2 = "CgkI-YvA8IIVEAIQEg"; // <GPGSID>
     public const string achievement_animal3 = "CgkI-YvA8IIVEAIQEw"; // <GPGSID>
-    public const string LeaderBoard_star = "CgkI-YvA8IIVEAIQBg";
-    public const string LeaderBoard_Stage10 = "CgkI-YvA8IIVEAIQFA";
+    public const string LeaderBoard_star = "CgkI-YvA8IIVEAIQBg"; // 별..
+    public const string LeaderBoard_Stage10 = "CgkI-YvA8IIVEAIQFA"; // 10스테이지 시간
+    public const string LeaderBoard_Stage20 = "CgkI-YvA8IIVEAIQFQ"; // 20스테이지 시간
+    public const string LeaderBoard_Stage30 = "CgkI-YvA8IIVEAIQFg"; // 30스테이지 시간
+    public const string LeaderBoard_Stage40 = "CgkI-YvA8IIVEAIQGA"; // 40스테이지 시간
+    public const string LeaderBoard_Stage50 = "CgkI-YvA8IIVEAIQFw"; // 50스테이지 시간
+    public const string LeaderBoard_Stage60 = "CgkI-YvA8IIVEAIQGQ"; // 60스테이지 시간
+    public const string LeaderBoard_Stage70 = "CgkI-YvA8IIVEAIQGg"; // 70스테이지 시간
+    public const string LeaderBoard_Stage80 = "CgkI-YvA8IIVEAIQGw"; // 80스테이지 시간
+    public const string LeaderBoard_Stage90 = "CgkI-YvA8IIVEAIQHA"; // 90스테이지 시간
+    public const string LeaderBoard_Stage100 = "CgkI-YvA8IIVEAIQHQ"; // 100스테이지 시간
 }

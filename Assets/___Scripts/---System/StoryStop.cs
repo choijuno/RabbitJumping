@@ -18,8 +18,9 @@ public class StoryStop : MonoBehaviour {
 	int i;
 	// Use this for initialization
 	void Awake () {
-		//StartCoroutine ("Ani");
-	}
+        //StartCoroutine ("Ani");
+        MusicManager.instance.MusicSelect(false);
+    }
 	
 	IEnumerator Ani() {
 		yield return new WaitForSeconds (0.5f);

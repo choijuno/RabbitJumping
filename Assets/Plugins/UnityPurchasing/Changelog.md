@@ -1,3 +1,8 @@
+## [1.8.3] - 2016-10-13
+### Fixed
+- iOS crash when calling PurchasingManager.ConfirmPendingPurchase with a product that does not have a transaction ID
+- Ensure tvOS build uses correct correct stub DLL
+
 ## [1.8.2] - 2016-09-23
 ### Fixed
 - Tizen Store - Product list not delivered to new app or new user
