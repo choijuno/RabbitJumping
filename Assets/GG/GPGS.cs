@@ -41,5 +41,6 @@ public static class GPGS
     public const string achievement_animal1 = "CgkI-YvA8IIVEAIQEQ"; // <GPGSID>
     public const string achievement_animal2 = "CgkI-YvA8IIVEAIQEg"; // <GPGSID>
     public const string achievement_animal3 = "CgkI-YvA8IIVEAIQEw"; // <GPGSID>
-    public const string LeaderBoardTest = null;
+    public const string LeaderBoard_star = "CgkI-YvA8IIVEAIQBg";
+    public const string LeaderBoard_Stage10 = "CgkI-YvA8IIVEAIQFA";
 }

@@ -41,12 +41,15 @@ public class MusicManager : MonoBehaviour {
             ES2.Save<bool>(musicChk, "musicChk");
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
+                audioSource.volume = 0.7f;
                 audioSource.clip = mainScene;
             }else if (SceneManager.GetActiveScene().buildIndex == 3)
             {
+                audioSource.volume = 0.7f;
                 audioSource.clip = selectScene[Random.Range(0,6)];
             }else if (SceneManager.GetActiveScene().buildIndex == 4)
             {
+                audioSource.volume = 1.0f;
                 audioSource.clip = gameScene;
             }
             audioSource.loop = true;
