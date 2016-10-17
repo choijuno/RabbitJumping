@@ -234,11 +234,11 @@ public partial class selectManager : MonoBehaviour
         DataSave._instance.setDraw(1);
         int DrawCount = DataSave._instance.getDraw();
 
-        if(DrawCount >= 10)
+        if(DrawCount == 10)
             Social.ReportProgress(GPGS.achievement_draw1, 100.0f, (bool success) => { });
-        else if(DrawCount >= 30)
+        else if(DrawCount == 30)
             Social.ReportProgress(GPGS.achievement_draw2, 100.0f, (bool success) => { });
-        else if(DrawCount >= 50)
+        else if(DrawCount == 50)
             Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
 
         MusicManager.instance.PlayOnShot();

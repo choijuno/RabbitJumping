@@ -54,6 +54,24 @@ public class CreateUnitClass : MonoBehaviour {
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());
 
+        for (int i = 0; i < 10; i++)
+        {
+            if(ES2.Exists("character" + i))
+            {
+                DataSave._instance.setSkin(1);
+            }
+        }
+        int skinCount = DataSave._instance.getSkin();
+
+        if(skinCount == 10)
+        {
+            Social.ReportProgress(GPGS.achievement_skin1, 100.0f, (bool success) => { });
+        }
+        else if(skinCount == 20)
+        {
+            Social.ReportProgress(GPGS.achievement_skin2, 100.0f, (bool success) => { });
+        }
+
         Destroy(EggTemp);
         SceneManager.LoadScene(3);
     }
