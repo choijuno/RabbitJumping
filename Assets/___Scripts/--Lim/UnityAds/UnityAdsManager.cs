@@ -17,7 +17,7 @@ public class UnityAdsManager : MonoBehaviour {
         if(SceneManager.GetActiveScene().buildIndex == 3)
             SelectManager = GameObject.Find("selectManager").GetComponent<selectManager>();
 
-        Advertisement.Initialize("1165798", true); // true인이유는 테스트광고를 시청하겠다.
+		Advertisement.Initialize("1165798", false); // true인이유는 테스트광고를 시청하겠다.
         _ShowOpt.resultCallback = OnAdsShowResultCallBack;
 
     }
