@@ -2642,7 +2642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "20000 \uBCF4\uC11D"
+  m_Text: "20 \uBCF4\uC11D"
 --- !u!222 &102215449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6835,7 +6835,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2,500
+  m_Text: 10
 --- !u!222 &217680267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12039,7 +12039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &364369032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21721,13 +21721,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,000
+  m_Text: 10
 --- !u!222 &702823288
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22427,13 +22427,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2,500
+  m_Text: 20
 --- !u!222 &745684345
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24806,7 +24806,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "30000 \uBCF4\uC11D"
+  m_Text: "80 \uBCF4\uC11D"
 --- !u!222 &828495522
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27060,7 +27060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "20000 \uACE8\uB4DC"
+  m_Text: "2000 \uACE8\uB4DC"
 --- !u!222 &890994468
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29730,7 +29730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2,500
+  m_Text: 3,300
 --- !u!222 &983254647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31071,7 +31071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1036680939
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32718,7 +32718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1100685611
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38371,7 +38371,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "30000 \uACE8\uB4DC"
+  m_Text: "5000 \uACE8\uB4DC"
 --- !u!222 &1314517735
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46265,7 +46265,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "100000 \uBCF4\uC11D"
+  m_Text: "150 \uBCF4\uC11D"
 --- !u!222 &1582149183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -46475,7 +46475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "100000 \uACE8\uB4DC"
+  m_Text: "15000 \uACE8\uB4DC"
 --- !u!222 &1592954543
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48727,7 +48727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1691320958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54725,7 +54725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' 32,500'
+  m_Text: 5,500
 --- !u!222 &1876278832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -56645,7 +56645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,000
+  m_Text: 1,100
 --- !u!222 &1927943803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -59093,13 +59093,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 32,500
+  m_Text: 50
 --- !u!222 &2022815832
 CanvasRenderer:
   m_ObjectHideFlags: 0

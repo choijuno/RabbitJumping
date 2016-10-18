@@ -343,6 +343,8 @@ public partial class selectManager : MonoBehaviour {
     {
         if(float.Parse(name) == 1)
         {
+            test = scrollPanel.localPosition;
+            ES2.Save<Vector2>(test, "scrollPanel");
             SceneManager.LoadScene(6);
         }else
         {
