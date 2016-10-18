@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Facebook.Unity;
 
 public partial class selectManager : MonoBehaviour {
     
@@ -93,6 +94,9 @@ public partial class selectManager : MonoBehaviour {
 
     public Button GoogleBtnOn;
     public Button GoogleBtnOff;
+
+    public Button FaceBookOn;
+    public Button FaceBookOff;
 
     public Sprite nonGoldSprite;
     public Sprite GoldSprite;
@@ -186,17 +190,6 @@ public partial class selectManager : MonoBehaviour {
         GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0));
         GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1));
 
-        if (!Social.localUser.authenticated)
-        {
-            GoogleBtnOff.gameObject.SetActive(true); //로그인 안되있으면.
-            GoogleBtnOn.gameObject.SetActive(false);
-        }
-        else
-        {
-            GoogleBtnOn.gameObject.SetActive(true); //로그인 되있으면.
-            GoogleBtnOff.gameObject.SetActive(false);
-        }
-            
 
         if (!ES2.Exists("musicChk"))
             ES2.Save<bool>(true, "musicChk");

@@ -10886,7 +10886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &321872156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57403,6 +57403,8 @@ MonoBehaviour:
   gold32500won: {fileID: 357681751}
   GoogleBtnOn: {fileID: 352085475}
   GoogleBtnOff: {fileID: 65813861}
+  FaceBookOn: {fileID: 775632304}
+  FaceBookOff: {fileID: 2112707906}
   nonGoldSprite: {fileID: 21300000, guid: 1fc1e5ab3438bf14094273b1c9db4648, type: 3}
   GoldSprite: {fileID: 21300000, guid: 3abfdebe6634e4b4eaff18ae8581fd14, type: 3}
   nonBosukSprite: {fileID: 21300000, guid: 1fc1e5ab3438bf14094273b1c9db4648, type: 3}

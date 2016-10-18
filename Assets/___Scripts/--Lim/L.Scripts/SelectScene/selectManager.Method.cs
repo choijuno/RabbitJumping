@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using Facebook.Unity;
 
 public partial class selectManager : MonoBehaviour
 {
@@ -62,6 +65,29 @@ public partial class selectManager : MonoBehaviour
         MusicManager.instance.PlayOnShot();
         chaSetFalse();
         setup.SetActive(true);
+
+        if (!Social.localUser.authenticated)
+        {
+            GoogleBtnOff.gameObject.SetActive(true); //로그인 안되있으면.
+            GoogleBtnOn.gameObject.SetActive(false);
+        }
+        else
+        {
+            GoogleBtnOn.gameObject.SetActive(true); //로그인 되있으면.
+            GoogleBtnOff.gameObject.SetActive(false);
+        }
+
+        if (!FB.IsLoggedIn)
+        {
+            FaceBookOn.gameObject.SetActive(false);
+            FaceBookOff.gameObject.SetActive(true);
+        }
+        else
+        {
+            FaceBookOn.gameObject.SetActive(true);
+            FaceBookOff.gameObject.SetActive(false);
+        }
+
     }
     public void setupExitBtnFunc()
     {

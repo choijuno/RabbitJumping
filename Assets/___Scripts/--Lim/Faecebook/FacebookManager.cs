@@ -20,19 +20,6 @@ public class FacebookManager : MonoBehaviour
         }
        
     }
-    void Start()
-    {
-        if (!FB.IsLoggedIn)
-        {
-            FacebookOn.SetActive(false);
-            FacebookOff.SetActive(true);
-        }
-        else
-        {
-            FacebookOn.SetActive(true);
-            FacebookOff.SetActive(false);
-        }
-    }
     void InitCallBack() //초기화콜백
     {
         Debug.Log("FB has been initiased.");
