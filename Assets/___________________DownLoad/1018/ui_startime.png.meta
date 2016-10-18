@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 9b36e281c56e4224bb055ad0b60914f7
+timeCreated: 1476762844
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mission
+    21300002: timer
+    21300004: failed
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: mission
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 348
+        width: 241
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118.5, y: 53}
+        - {x: 114.5, y: 56}
+        - {x: -114.5, y: 56}
+        - {x: -120.5, y: 52}
+        - {x: -120.5, y: -50}
+        - {x: -115.5, y: -56}
+        - {x: 114.5, y: -56}
+        - {x: 120.5, y: -51}
+        - {x: 120.5, y: 50}
+    - name: timer
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 372
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 27}
+        - {x: -25, y: -13}
+        - {x: -18, y: -27}
+        - {x: 23, y: -27}
+        - {x: 25, y: -20}
+        - {x: 25, y: 27}
+    - name: failed
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 112
+        width: 239
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 115.5, y: 56}
+        - {x: -113.5, y: 56}
+        - {x: -119.5, y: 52}
+        - {x: -119.5, y: -50}
+        - {x: -114.5, y: -56}
+        - {x: 114.5, y: -56}
+        - {x: 119.5, y: -51}
+        - {x: 119.5, y: 53}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

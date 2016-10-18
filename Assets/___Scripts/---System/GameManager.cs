@@ -278,6 +278,7 @@ public class GameManager : MonoBehaviour {
 				yield return new WaitForSeconds (1.1f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
+				StopCoroutine ("downTime");
 				StartCoroutine ("gameResult_Clear");
 				
 				break;
@@ -288,6 +289,7 @@ public class GameManager : MonoBehaviour {
 				yield return new WaitForSeconds (1.7f);
 				gameSet = 3;
 				StopCoroutine ("UICheck");
+				StopCoroutine ("downTime");
 				StartCoroutine ("gameResult_Failed");
 				
 				break;
