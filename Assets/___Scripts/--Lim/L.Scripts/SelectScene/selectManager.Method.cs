@@ -171,7 +171,7 @@ public partial class selectManager : MonoBehaviour
             case 1000:
                 if (bosukCount < 10)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -183,7 +183,7 @@ public partial class selectManager : MonoBehaviour
             case 2500:
                 if (bosukCount < 20)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -195,7 +195,7 @@ public partial class selectManager : MonoBehaviour
             case 32500:
                 if (bosukCount < 50)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -261,6 +261,7 @@ public partial class selectManager : MonoBehaviour
         if (gameMoney_ < 1000)
         {
             //돈이 부족하면
+            goldPopUp.SetActive(true);
         }
         else
         {
@@ -280,6 +281,7 @@ public partial class selectManager : MonoBehaviour
         if (gameMoney_ < 10)
         {
             //보석이 부족할때..
+            BosukPopUp.SetActive(true);
         }
         else
         {
@@ -382,5 +384,29 @@ public partial class selectManager : MonoBehaviour
             GoogleBtnOn.gameObject.SetActive(true);
             GoogleBtnOff.gameObject.SetActive(false);
         }
+    }
+    public void GoldYes()
+    {
+        goldBtnFunc();
+    }
+    public void GoldNo()
+    {
+        goldPopUp.SetActive(false);
+    }
+    public void BosukYes()
+    {
+        bosukBtnFunc();
+    }
+    public void BosukNo()
+    {
+        BosukPopUp.SetActive(false);
+    }
+    public void GameExitNo()
+    {
+        GameOutPopUp.SetActive(false);
+    }
+    public void GameExitYes()
+    {
+
     }
 }

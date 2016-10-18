@@ -117,21 +117,29 @@ public partial class selectManager : MonoBehaviour {
     GameObject preCharacter;
     int randomCharacter;
     Animator animator;
+
+    //팝업
+    public GameObject GameOutPopUp;
+    public GameObject BosukPopUp;
+    public GameObject goldPopUp;
     void Start ()
     {
-       ES2.Save(99, "stageIndexCount");
+        GameOutPopUp.SetActive(false);
+        BosukPopUp.SetActive(false);
+        goldPopUp.SetActive(false);
+       //ES2.Save(99, "stageIndexCount");
        /* 
         for(int i = 0; i< 100; i++)
         {
             ES2.Delete("ValueKey" + i);
         }
         ES2.Delete("stageIndexCount");*/
-		/*
-        for(int i = 0; i < 5; i++)
-        {
-            ES2.Delete("character" + i.ToString());
-        }
-        ES2.Delete("rabbit");
+       /*
+       for(int i = 0; i < 5; i++)
+       {
+           ES2.Delete("character" + i.ToString());
+       }
+       ES2.Delete("rabbit");
 */
         if (ES2.Exists("scrollPanel"))
         {
