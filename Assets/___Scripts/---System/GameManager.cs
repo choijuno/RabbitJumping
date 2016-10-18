@@ -475,8 +475,10 @@ public class GameManager : MonoBehaviour {
         }
 
         DataSave._instance.saveData(GameManager.TestNum, starCount, Score_ingame);
-        DataSave._instance.setStar_Count(starCount);
+		DataSave._instance.setStar_Count (starCount);
     }
+
+
 
 	IEnumerator StarCheck_Effect()
     {
@@ -496,7 +498,7 @@ public class GameManager : MonoBehaviour {
 		DataSave._instance.setStar_Count(starCount);
 
 		float starCountAch = DataSave._instance.getStar_Count();
-		GoogleManager.GetInstance.ReportScoreLeaderBoard (starCountAch, TestNum, Record_time);
+		GoogleManager.GetInstance.ReportScoreLeaderBoard (starCountAch, TestNum, Record_time * 1000);
 		int helpTotal = DataSave._instance.getAnimal ();
 
         if(starCountAch >= 50)
