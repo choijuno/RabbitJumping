@@ -145,19 +145,22 @@ public class BtnController : MonoBehaviour {
 
 	public void nextStage_ingame(){
         GameManager.TestNum += 1;
-        if(ES2.Load<int>("stageIndexCount") < GameManager.TestNum)
-        {
-            Debug.Log("작다.");
-            Vector2 test = ES2.Load<Vector2>("scrollPanel");
-            Debug.Log("====벡터====" + test);
-            float scroll_X;
-            float scroll_Y;
-            scroll_X = test.x - 200;
-            scroll_Y = test.y;
+		if (GameManager.TestNum != 2) {
+			if (ES2.Exists ("stageIndexCount")) {
+				if (ES2.Load<int> ("stageIndexCount") < GameManager.TestNum) {
+					Debug.Log ("작다.");
+					Vector2 test = ES2.Load<Vector2> ("scrollPanel");
+					Debug.Log ("====벡터====" + test);
+					float scroll_X;
+					float scroll_Y;
+					scroll_X = test.x - 200;
+					scroll_Y = test.y;
 
-            ES2.Save<Vector2>(new Vector2(scroll_X, scroll_Y), "scrollPanel");
-            Debug.Log("=====마지막벡터=====" + ES2.Load<Vector2>("scrollPanel"));
-        }
+					ES2.Save<Vector2> (new Vector2 (scroll_X, scroll_Y), "scrollPanel");
+					Debug.Log ("=====마지막벡터=====" + ES2.Load<Vector2> ("scrollPanel"));
+				}
+			}
+		}
 		Application.LoadLevel (Application.loadedLevel);
 	}
 

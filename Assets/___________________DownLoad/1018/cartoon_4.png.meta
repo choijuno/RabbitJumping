@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: 2833ae6a0b9833c4daf4d40edc1ae8e6
+timeCreated: 1476760818
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cartoon_4_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: cartoon_4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 512
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 240, y: 3.5}
+        - {x: 256, y: 115.5}
+        - {x: 256, y: 137.5}
+        - {x: -201, y: 137.5}
+        - {x: -204, y: 129.5}
+        - {x: -205, y: 119.5}
+        - {x: -207, y: 110.5}
+        - {x: -212, y: 85.5}
+        - {x: -214, y: 76.5}
+        - {x: -218, y: 56.5}
+        - {x: -220, y: 47.5}
+        - {x: -224, y: 27.5}
+        - {x: -226, y: 18.5}
+        - {x: -230, y: -1.5}
+        - {x: -232, y: -10.5}
+        - {x: -234, y: -20.5}
+        - {x: -238, y: -39.5}
+        - {x: -242, y: -59.5}
+        - {x: -245, y: -73.5}
+        - {x: -247, y: -83.5}
+        - {x: -249, y: -91.5}
+        - {x: -252, y: -105.5}
+        - {x: -256, y: -123.5}
+        - {x: -256, y: -137.5}
+        - {x: 220, y: -137.5}
+        - {x: 230, y: -67.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
