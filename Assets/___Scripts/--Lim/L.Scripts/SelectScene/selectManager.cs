@@ -132,7 +132,6 @@ public partial class selectManager : MonoBehaviour {
         if (ES2.Exists("scrollPanel"))
         {
             scrollPanel.localPosition = ES2.Load<Vector2>("scrollPanel");
-            Debug.Log("====불로올 데이터====" + scrollPanel.localPosition);
         }
             
         selectInit();
@@ -258,8 +257,7 @@ public partial class selectManager : MonoBehaviour {
         cha_selectUi = myRoom.transform.FindChild("cha_selectUi").gameObject;
         empty_panel = cha_selectUi.transform.GetChild(0).gameObject;
         cha_scrollpanel = empty_panel.transform.GetChild(0).gameObject;
-
-        Debug.Log(cha_scrollpanel.transform.childCount);
+        
         for(int i = 0; i< cha_scrollpanel.transform.childCount; i++)
         {
             Button chaBtn_a = cha_scrollpanel.transform.GetChild(i).GetComponent<Button>();
@@ -322,7 +320,6 @@ public partial class selectManager : MonoBehaviour {
             for (int i = 0; i < ES2.Load<int>("stageIndexCount"); i++)
             {
                 test = ES2.LoadArray<string>("ValueKey" + (i + 1));
-                Debug.Log("test===" + float.Parse(test[1]));
                 stageBtn = ScrollPanel.transform.GetChild(i + 1).gameObject.GetComponent<Button>();
                 for (int j = 0; j < test.Length; j++)
                 {
@@ -352,7 +349,6 @@ public partial class selectManager : MonoBehaviour {
             MusicManager.instance.PlayOnShot();
             test = scrollPanel.localPosition;
             ES2.Save<Vector2>(test, "scrollPanel");
-            Debug.Log("====처음벡터===" + ES2.Load<Vector2>("scrollPanel"));
             GameManager.TestNum = System.Convert.ToInt32(name);
             mainSceneManager.SceneIndex = 2;
             StartCoroutine(waitLoadingScene());

@@ -119,14 +119,11 @@ public class LanguageClass : MonoBehaviour
     }
     public void Korean()
     {
-        Debug.Log("=========한국어=========");
         ES2.Save<bool>(true, "Language");
         KoreanTxt();
-       
     }
     public void English()
     {
-        Debug.Log("=========영어=========");
         ES2.Save<bool>(false, "Language");
         EnglishTxt();
     }

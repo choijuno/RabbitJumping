@@ -158,7 +158,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 2800000, guid: 2405e551945bc874fafdce07b8ad47df, type: 3}
-  AndroidKeystoreName: D:/CJO/projects/RabbitJumping/RealKey.keystore
+  AndroidKeystoreName: C:/Users/tlghk/Desktop/RabbitJumping/RealKey.keystore
   AndroidKeyaliasName: realkey
   AndroidTVCompatibility: 1
   AndroidIsGame: 1

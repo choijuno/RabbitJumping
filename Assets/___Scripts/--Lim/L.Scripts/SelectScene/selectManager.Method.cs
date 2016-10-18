@@ -145,7 +145,6 @@ public partial class selectManager : MonoBehaviour
             case 1000:
                 if (bosukCount < 1000)
                 {
-                    Debug.Log("====보석이 부족합니다=====");
                     return;
                 }
                 else
@@ -158,7 +157,6 @@ public partial class selectManager : MonoBehaviour
             case 2500:
                 if (bosukCount < 2000)
                 {
-                    Debug.Log("====보석이 부족합니다=====");
                     return;
                 }
                 else
@@ -171,7 +169,6 @@ public partial class selectManager : MonoBehaviour
             case 32500:
                 if (bosukCount < 32500)
                 {
-                    Debug.Log("====보석이 부족합니다=====");
                     return;
                 }
                 else
@@ -242,10 +239,11 @@ public partial class selectManager : MonoBehaviour
             Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
 
         MusicManager.instance.PlayOnShot();
-        Debug.Log("몇번?");
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 1000)
-            Debug.Log("돈이 부족합니다.");
+        {
+
+        }
         else
         {
             eggNumber = 0;
@@ -269,7 +267,9 @@ public partial class selectManager : MonoBehaviour
         MusicManager.instance.PlayOnShot();
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 2500)
-            Debug.Log("돈이 부족합니다.");
+        {
+
+        }
         else
         {
             eggNumber = 1;
@@ -370,14 +370,12 @@ public partial class selectManager : MonoBehaviour
         //0 == 로그인 , 1 == 비로그인.
         if (googleOnOff == 0)
         {
-            Debug.Log("----로그인----");
             GoogleManager.GetInstance.LogoutGPGS();
             GoogleBtnOff.gameObject.SetActive(true);
             GoogleBtnOn.gameObject.SetActive(false);
         }
         else
         {
-            Debug.Log("---비로그인----");
             GoogleManager.GetInstance.LoginGPGS();
             GoogleBtnOn.gameObject.SetActive(true);
             GoogleBtnOff.gameObject.SetActive(false);
