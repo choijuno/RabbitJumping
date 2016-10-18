@@ -46,13 +46,17 @@ public class UnityAdsManager : MonoBehaviour {
     */
     public void unityAdsFunc()
     {
-        WhereAds = 1;
-        Advertisement.Show(null, _ShowOpt);
+		if (Advertisement.IsReady ()) {
+			WhereAds = 1;
+			Advertisement.Show (null, _ShowOpt);
+		}
     }
     public void unityAdsFuncPlayingDie()
     {
-        WhereAds = 2;
-        Advertisement.Show(null, _ShowOpt);
+		if (Advertisement.IsReady ()) {
+			WhereAds = 2;
+			Advertisement.Show (null, _ShowOpt);
+		}
     }
 }
 
