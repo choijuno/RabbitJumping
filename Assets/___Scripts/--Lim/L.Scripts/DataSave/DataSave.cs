@@ -95,17 +95,17 @@ public class DataSave : MonoBehaviour {
             Bosuk_Game.text = ES2.Load<float>("bosuk_Game").ToString();
         }
     }
-    public float getBosuk_Game()
+    public float getBosuk_Game() //보석 불러오기.
     {
         return ES2.Load<float>("bosuk_Game");
     }
 
-    public float getMoney_Game()
+    public float getMoney_Game() //돈 불러오기.
     {
         return ES2.Load<float>("Money_Game");
     }
 
-    public void setStar_Count(int star_Count) //별 저장
+    public void setStar_Count(int star_Count) //별 저장.
     {
         if (ES2.Exists("Star_Count"))
             ES2.Save<int>(ES2.Load<int>("Star_Count") + star_Count, "Star_Count");
@@ -132,16 +132,14 @@ public class DataSave : MonoBehaviour {
             DestroyImmediate(this.gameObject);
         }
     }
-    public void saveData(int stageIndex, float starCount, float stageRecord)
+    public void saveData(int stageIndex, float starCount, float stageRecord) // 스테이지, 별, 기록을 저장함.
     {
-        Debug.Log("-------stageindex-----" + stageIndex);
 
         //stageData sd = new stageData(stageIndex, starCount, stageRecord);
         //ES2.Save(sd, "valueKeytest");
         
         if(ES2.Exists("ValueKey" + stageIndex.ToString()))
         {
-            Debug.Log("aa");
             string[] ExistsString = new string[3];
             ExistsString = ES2.LoadArray<string>("ValueKey" + stageIndex.ToString());
 

@@ -49,7 +49,7 @@ public class CreateUnitClass : MonoBehaviour {
         CreateOk.SetActive(true);
         effectWhite.SetActive(false);
     }
-    void createOkBtnFunc()
+    void createOkBtnFunc() //획득하기를 클릭한다면.
     {
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());

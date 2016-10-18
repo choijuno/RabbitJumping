@@ -158,17 +158,15 @@ public class InappManager : MonoBehaviour, IStoreListener
     {
         if (String.Equals(args.purchasedProduct.definition.id, Product_20000Bosuk, StringComparison.Ordinal))
         {
-            Debug.Log("you 20000 보석!"); //돈이 올라가는곳
+            //돈이 올라가는곳
             DataSave._instance.setBosuk_Game(20000);
         }
         else if (String.Equals(args.purchasedProduct.definition.id, Product_30000Bosuk, StringComparison.Ordinal))
         {
-            Debug.Log("you 30000 보석");
             DataSave._instance.setBosuk_Game(30000);
         }
         else if (String.Equals(args.purchasedProduct.definition.id, Product_100000Bosuk, StringComparison.Ordinal))
         {
-            Debug.Log("you 100000 보석");
             DataSave._instance.setBosuk_Game(100000);
         }
         /*else if (String.Equals(args.purchasedProduct.definition.id, kProductIDSubscription, StringComparison.Ordinal))
