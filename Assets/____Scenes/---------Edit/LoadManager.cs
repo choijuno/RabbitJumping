@@ -428,7 +428,7 @@ public class LoadManager : MonoBehaviour {
 		}
 */
 			} else {
-				Debug.Log ("No Save File");
+				//Debug.Log ("No Save File");
 				//_tmp = (GameObject)Instantiate (StartPos, new Vector3 (objPos_dataIn [i + 1], objPos_dataIn [i + 2], 0), Quaternion.identity) as GameObject;
 				//playerBody.GetComponent<PlayerMove> ().StartPos = _tmp.gameObject.transform;
 				loadCheck = false;

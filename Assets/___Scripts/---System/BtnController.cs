@@ -145,7 +145,6 @@ public class BtnController : MonoBehaviour {
 
 	public void nextStage_ingame(){
         GameManager.TestNum += 1;
-		if (GameManager.TestNum != 2) {
 			if (ES2.Exists ("stageIndexCount")) {
 				if (ES2.Load<int> ("stageIndexCount") < GameManager.TestNum) {
 					Debug.Log ("작다.");
@@ -159,7 +158,6 @@ public class BtnController : MonoBehaviour {
 					ES2.Save<Vector2> (new Vector2 (scroll_X, scroll_Y), "scrollPanel");
 					Debug.Log ("=====마지막벡터=====" + ES2.Load<Vector2> ("scrollPanel"));
 				}
-			}
 		}
 		Application.LoadLevel (Application.loadedLevel);
 	}
