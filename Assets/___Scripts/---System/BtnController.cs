@@ -161,6 +161,12 @@ public class BtnController : MonoBehaviour {
         Application.LoadLevel (Application.loadedLevel);
 	}
 
+	public void popOpenBtn(){
+		justOpen ();
+	}
+	public void popCloseBtn(){
+		justClose ();
+	}
 
 
 	//Retry
