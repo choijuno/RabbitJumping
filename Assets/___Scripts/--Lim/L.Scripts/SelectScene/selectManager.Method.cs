@@ -143,38 +143,38 @@ public partial class selectManager : MonoBehaviour
         switch (bosuk)
         {
             case 1000:
-                if (bosukCount < 1000)
+                if (bosukCount < 10)
                 {
                     return;
                 }
                 else
                 {
-                    DataSave._instance.setBosuk_GameMinus(1000);
-                    DataSave._instance.setMoney_Game(20000);
+                    DataSave._instance.setBosuk_GameMinus(10);
+                    DataSave._instance.setMoney_Game(2000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
                 }
                 break;
             case 2500:
-                if (bosukCount < 2000)
+                if (bosukCount < 20)
                 {
                     return;
                 }
                 else
                 {
-                    DataSave._instance.setBosuk_GameMinus(2500);
-                    DataSave._instance.setMoney_Game(30000);
+                    DataSave._instance.setBosuk_GameMinus(20);
+                    DataSave._instance.setMoney_Game(5000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
                 }
                 break;
             case 32500:
-                if (bosukCount < 32500)
+                if (bosukCount < 50)
                 {
                     return;
                 }
                 else
                 {
-                    DataSave._instance.setBosuk_GameMinus(32500);
-                    DataSave._instance.setMoney_Game(100000);
+                    DataSave._instance.setBosuk_GameMinus(50);
+                    DataSave._instance.setMoney_Game(15000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
                 }
                 break;
@@ -242,7 +242,7 @@ public partial class selectManager : MonoBehaviour
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 1000)
         {
-
+            //돈이 부족하면
         }
         else
         {
@@ -265,16 +265,18 @@ public partial class selectManager : MonoBehaviour
         else if (DrawCount >= 50)
             Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
         MusicManager.instance.PlayOnShot();
-        float gameMoney_ = DataSave._instance.getMoney_Game();
-        if (gameMoney_ < 2500)
-        {
 
+        float gameMoney_ = DataSave._instance.getBosuk_Game();
+
+        if (gameMoney_ < 10)
+        {
+            //보석이 부족할때..
         }
         else
         {
             eggNumber = 1;
-            DataSave._instance.setMoney_GameMinus(2500);
-            gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+            DataSave._instance.setBosuk_GameMinus(10);
+            gameMoney.text = DataSave._instance.getBosuk_Game().ToString();
             SceneManager.LoadScene(5);
         }
     }
