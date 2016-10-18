@@ -37,6 +37,7 @@ public class UnityAdsManager : MonoBehaviour {
             }
         }
     }
+
     /*
     void UpdateButton() //광고 준비가 되있다면 활성화.
     {
@@ -44,6 +45,7 @@ public class UnityAdsManager : MonoBehaviour {
         unityAds.GetComponentInChildren<Text>().text = "보상형광고 테스트입니다! \r\nTest = " + _test.ToString();
     }
     */
+
     public void unityAdsFunc()
     {
         WhereAds = 1;

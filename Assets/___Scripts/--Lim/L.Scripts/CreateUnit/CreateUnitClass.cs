@@ -18,6 +18,16 @@ public class CreateUnitClass : MonoBehaviour {
     int randomIndex;
 	void Start ()
     {
+        DataSave._instance.setDraw(1);
+        int DrawCount = DataSave._instance.getDraw();
+
+        if (DrawCount == 10)
+            Social.ReportProgress(GPGS.achievement_draw1, 100.0f, (bool success) => { });
+        else if (DrawCount == 30)
+            Social.ReportProgress(GPGS.achievement_draw2, 100.0f, (bool success) => { });
+        else if (DrawCount == 50)
+            Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
+
         mude.SetActive(false);
         CreateOk.SetActive(false);
         effectWhite.SetActive(false);

@@ -119,7 +119,7 @@ public partial class selectManager : MonoBehaviour {
     Animator animator;
     void Start ()
     {
-        //ES2.Save(99, "stageIndexCount");
+       ES2.Save(99, "stageIndexCount");
        /* 
         for(int i = 0; i< 100; i++)
         {
