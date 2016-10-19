@@ -171,7 +171,7 @@ public partial class selectManager : MonoBehaviour
             case 1000:
                 if (bosukCount < 10)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -183,7 +183,7 @@ public partial class selectManager : MonoBehaviour
             case 2500:
                 if (bosukCount < 20)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -195,7 +195,7 @@ public partial class selectManager : MonoBehaviour
             case 32500:
                 if (bosukCount < 50)
                 {
-                    return;
+                    BosukPopUp.SetActive(true);
                 }
                 else
                 {
@@ -254,21 +254,14 @@ public partial class selectManager : MonoBehaviour
     }
     public void greenBoxBtnFunc() //그린박스
     {
-        DataSave._instance.setDraw(1);
-        int DrawCount = DataSave._instance.getDraw();
 
-        if(DrawCount == 10)
-            Social.ReportProgress(GPGS.achievement_draw1, 100.0f, (bool success) => { });
-        else if(DrawCount == 30)
-            Social.ReportProgress(GPGS.achievement_draw2, 100.0f, (bool success) => { });
-        else if(DrawCount == 50)
-            Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
 
         MusicManager.instance.PlayOnShot();
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 1000)
         {
             //돈이 부족하면
+            goldPopUp.SetActive(true);
         }
         else
         {
@@ -281,15 +274,6 @@ public partial class selectManager : MonoBehaviour
 
     public void redBoxBtnFunc() //레드박스
     {
-        DataSave._instance.setDraw(1);
-
-        int DrawCount = DataSave._instance.getDraw();
-        if (DrawCount >= 10)
-            Social.ReportProgress(GPGS.achievement_draw1, 100.0f, (bool success) => { });
-        else if (DrawCount >= 30)
-            Social.ReportProgress(GPGS.achievement_draw2, 100.0f, (bool success) => { });
-        else if (DrawCount >= 50)
-            Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
         MusicManager.instance.PlayOnShot();
 
         float gameMoney_ = DataSave._instance.getBosuk_Game();
@@ -297,6 +281,7 @@ public partial class selectManager : MonoBehaviour
         if (gameMoney_ < 10)
         {
             //보석이 부족할때..
+            BosukPopUp.SetActive(true);
         }
         else
         {
@@ -308,15 +293,6 @@ public partial class selectManager : MonoBehaviour
     }
     public void blueBoxBtnFunc() //광고 박스
     {
-        DataSave._instance.setDraw(1);
-        int DrawCount = DataSave._instance.getDraw();
-
-        if (DrawCount >= 10)
-            Social.ReportProgress(GPGS.achievement_draw1, 100.0f, (bool success) => { });
-        else if (DrawCount >= 30)
-            Social.ReportProgress(GPGS.achievement_draw2, 100.0f, (bool success) => { });
-        else if (DrawCount >= 50)
-            Social.ReportProgress(GPGS.achievement_draw3, 100.0f, (bool success) => { });
         eggNumber = 2;
         SceneManager.LoadScene(5);
     }
@@ -409,4 +385,33 @@ public partial class selectManager : MonoBehaviour
             GoogleBtnOff.gameObject.SetActive(false);
         }
     }
+    public void GoldYes()
+    {
+        goldBtnFunc();
+        storeRoomExitFunc();
+        goldPopUp.SetActive(false);
+    }
+    public void GoldNo()
+    {
+        goldPopUp.SetActive(false);
+    }
+    public void BosukYes()
+    {
+        bosukBtnFunc();
+        storeRoomExitFunc();
+        BosukPopUp.SetActive(false);
+    }
+    public void BosukNo()
+    {
+        BosukPopUp.SetActive(false);
+    }
+    public void GameExitNo()
+    {
+        GameOutPopUp.SetActive(false);
+    }
+    public void GameExitYes()
+    {
+        Application.Quit();
+    }
+    
 }

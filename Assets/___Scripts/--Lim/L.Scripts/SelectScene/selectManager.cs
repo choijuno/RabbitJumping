@@ -117,21 +117,29 @@ public partial class selectManager : MonoBehaviour {
     GameObject preCharacter;
     int randomCharacter;
     Animator animator;
+
+    //팝업
+    public GameObject GameOutPopUp;
+    public GameObject BosukPopUp;
+    public GameObject goldPopUp;
     void Start ()
     {
-        //ES2.Save(99, "stageIndexCount");
-       /* 
+        GameOutPopUp.SetActive(false);
+        BosukPopUp.SetActive(false);
+        goldPopUp.SetActive(false);
+       ES2.Save(99, "stageIndexCount");
+       /*
         for(int i = 0; i< 100; i++)
         {
             ES2.Delete("ValueKey" + i);
         }
         ES2.Delete("stageIndexCount");*/
-		/*
-        for(int i = 0; i < 5; i++)
-        {
-            ES2.Delete("character" + i.ToString());
-        }
-        ES2.Delete("rabbit");
+       /*
+       for(int i = 0; i < 5; i++)
+       {
+           ES2.Delete("character" + i.ToString());
+       }
+       ES2.Delete("rabbit");
 */
         if (ES2.Exists("scrollPanel"))
         {
@@ -154,7 +162,10 @@ public partial class selectManager : MonoBehaviour {
         if (ES2.Exists("bosuk_Game"))
             bosukMoney.text = DataSave._instance.getBosuk_Game().ToString(); //돈 출력
         else
+        {
             bosukMoney.text = 0.ToString("#,##0");
+            DataSave._instance.setBosuk_Game(0);
+        }
 
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         eventSystem.pixelDragThreshold = (int)(0.5f * Screen.dpi / 2.54f);
@@ -302,7 +313,16 @@ public partial class selectManager : MonoBehaviour {
         loadStar(); //별 로드
         loadNoneStage();
     }
-
+    void Update()
+    {
+        //if (Application.platform == RuntimePlatform.Android)
+       // {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                GameOutPopUp.SetActive(true);
+            }
+       // }
+    }
     void loadStar()
     {
         string[] test = new string[3];
