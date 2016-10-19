@@ -127,7 +127,7 @@ public partial class selectManager : MonoBehaviour {
         GameOutPopUp.SetActive(false);
         BosukPopUp.SetActive(false);
         goldPopUp.SetActive(false);
-       ES2.Save(99, "stageIndexCount");
+       //ES2.Save(99, "stageIndexCount");
        /*
         for(int i = 0; i< 100; i++)
         {
@@ -155,8 +155,8 @@ public partial class selectManager : MonoBehaviour {
             gameMoney.text = DataSave._instance.getMoney_Game().ToString(); //돈 출력
         else
         {
-            gameMoney.text = 5000.ToString("#,##0");
-            DataSave._instance.setMoney_Game(5000);
+            gameMoney.text = 0.ToString("#,##0");
+            DataSave._instance.setMoney_Game(0);
         }
 
         if (ES2.Exists("bosuk_Game"))
