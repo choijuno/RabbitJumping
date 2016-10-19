@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UnityAdsManager : MonoBehaviour {
 
+
     int WhereAds = 0;
     ShowOptions _ShowOpt = new ShowOptions();
 
@@ -34,7 +35,11 @@ public class UnityAdsManager : MonoBehaviour {
 				GameManager.retry_count ++;
 				GameManager.retry_Check = false;
                 WhereAds = 0;
-            }
+			}else if(WhereAds == 3)
+			{
+				WhereAds = 0;
+			}
+
         }
     }
 
@@ -60,5 +65,12 @@ public class UnityAdsManager : MonoBehaviour {
 			Advertisement.Show (null, _ShowOpt);
 		}
     }
+	public void unityAdsFuncDeadCountOver()
+	{
+		if (Advertisement.IsReady ()) {
+			WhereAds = 3;
+			Advertisement.Show (null, _ShowOpt);
+		}
+	}
 }
 

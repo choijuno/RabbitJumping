@@ -136,14 +136,21 @@ public class BtnController : MonoBehaviour {
 
 
 	public void goHome_ingame(){
+		GameManager.deadCount = 0;
 		Application.LoadLevel ("SelectScene");
 	}
 
 	public void replay_ingame(){
 		Application.LoadLevel (Application.loadedLevel);
+		GameManager.deadCount++;
+		if (GameManager.deadCount >= 5) {
+			GameManager.deadCount = 0;
+			GameObject.Find ("UnityAdsManager").SendMessage ("unityAdsFuncDeadCountOver");
+		}
 	}
 
 	public void nextStage_ingame(){
+		GameManager.deadCount = 0;
         GameManager.TestNum += 1;
         if (ES2.Load<int>("stageIndexCount") < GameManager.TestNum)
         {
