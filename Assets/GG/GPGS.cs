@@ -41,8 +41,8 @@ public static class GPGS
     public const string achievement_animal1 = "CgkI-YvA8IIVEAIQEQ"; // <GPGSID>
     public const string achievement_animal2 = "CgkI-YvA8IIVEAIQEg"; // <GPGSID>
     public const string achievement_animal3 = "CgkI-YvA8IIVEAIQEw"; // <GPGSID>
-    public const string LeaderBoard_star = "CgkI-YvA8IIVEAIQBg"; // 별..
-    public const string LeaderBoard_Stage10 = "CgkI-YvA8IIVEAIQFA"; // 10스테이지 시간
+    public const string LeaderBoard_star = "CgkI-YvA8IIVEAIQHw"; // 별..
+    public const string LeaderBoard_Stage10 = "CgkI-YvA8IIVEAIQHg"; // 10스테이지 시간
     public const string LeaderBoard_Stage20 = "CgkI-YvA8IIVEAIQFQ"; // 20스테이지 시간
     public const string LeaderBoard_Stage30 = "CgkI-YvA8IIVEAIQFg"; // 30스테이지 시간
     public const string LeaderBoard_Stage40 = "CgkI-YvA8IIVEAIQGA"; // 40스테이지 시간

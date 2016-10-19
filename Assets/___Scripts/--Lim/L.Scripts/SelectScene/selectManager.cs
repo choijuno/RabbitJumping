@@ -128,7 +128,7 @@ public partial class selectManager : MonoBehaviour {
         BosukPopUp.SetActive(false);
         goldPopUp.SetActive(false);
        //ES2.Save(99, "stageIndexCount");
-       /* 
+       /*
         for(int i = 0; i< 100; i++)
         {
             ES2.Delete("ValueKey" + i);
@@ -162,7 +162,10 @@ public partial class selectManager : MonoBehaviour {
         if (ES2.Exists("bosuk_Game"))
             bosukMoney.text = DataSave._instance.getBosuk_Game().ToString(); //돈 출력
         else
+        {
             bosukMoney.text = 0.ToString("#,##0");
+            DataSave._instance.setBosuk_Game(0);
+        }
 
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
         eventSystem.pixelDragThreshold = (int)(0.5f * Screen.dpi / 2.54f);

@@ -388,6 +388,8 @@ public partial class selectManager : MonoBehaviour
     public void GoldYes()
     {
         goldBtnFunc();
+        storeRoomExitFunc();
+        goldPopUp.SetActive(false);
     }
     public void GoldNo()
     {
@@ -396,6 +398,8 @@ public partial class selectManager : MonoBehaviour
     public void BosukYes()
     {
         bosukBtnFunc();
+        storeRoomExitFunc();
+        BosukPopUp.SetActive(false);
     }
     public void BosukNo()
     {
@@ -407,6 +411,16 @@ public partial class selectManager : MonoBehaviour
     }
     public void GameExitYes()
     {
-
+        Application.Quit();
+    }
+    void Update()
+    {
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                GameOutPopUp.SetActive(true);
+            }
+        }
     }
 }

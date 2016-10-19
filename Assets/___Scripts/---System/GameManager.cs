@@ -558,6 +558,5 @@ public class GameManager : MonoBehaviour {
 			AudioSource.PlayClipAtPoint (clear_exit, ingameCamera.transform.position, GameManager.soundVolume);
 
 	}
-
-
+    
 }
