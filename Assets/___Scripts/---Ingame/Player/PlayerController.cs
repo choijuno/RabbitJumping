@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	MovePosition hiveState = MovePosition.Stay;
+	MovePosition baseState = MovePosition.Right;
 	public MovePosition playerState = MovePosition.Stay;
 	GameSet gameset = GameSet.play;
 	PlayerMove playerMove;
@@ -66,6 +67,12 @@ public class PlayerController : MonoBehaviour {
 							} else {
 								playerState = MovePosition.Right;
 							}
+
+						if (baseState == MovePosition.Right) {
+							hiveHp_in--;
+							baseState = MovePosition.Left;
+						}
+
 						}
 						if (hit.collider.gameObject.CompareTag ("right")) {
 							if (!poisonCheck) {
@@ -73,6 +80,12 @@ public class PlayerController : MonoBehaviour {
 							} else {
 								playerState = MovePosition.Left;
 							}
+
+						if (baseState == MovePosition.Left) {
+							hiveHp_in--;
+							baseState = MovePosition.Right;
+						}
+
 						}
 
 
@@ -132,39 +145,10 @@ public class PlayerController : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
 			//Debug.Log (hiveHp_in);
-			if (Input.GetMouseButtonUp (0)) {
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				if (!GameManager.pauseCheck) {
-					if (Physics.Raycast (ray, out hit)) {
 
-						if (hit.collider.gameObject.CompareTag ("left")) {
-							if (hiveState == MovePosition.Stay) {
-								hiveState = MovePosition.Left;
-								hiveHp_in--;
-							}
-							if (hiveState == MovePosition.Right) {
-								hiveState = MovePosition.Left;
-								hiveHp_in--;
-							}
-						}
-						if (hit.collider.gameObject.CompareTag ("right")) {
-							if (hiveState == MovePosition.Stay) {
-								hiveState = MovePosition.Right;
-								hiveHp_in--;
-							}
-							if (hiveState == MovePosition.Left) {
-								hiveState = MovePosition.Right;
-								hiveHp_in--;
-							}
-						}
-
-						if (hiveHp_in <= 0) {
-							hive_bees.SetActive (false);
-							StopCoroutine ("hive");
-						}
-					}
-				}
+			if (hiveHp_in <= 0) {
+				hive_bees.SetActive (false);
+				StopCoroutine ("hive");
 			}
 
 			hiveTime_in = hiveTime_in - Time.deltaTime;
@@ -183,7 +167,7 @@ public class PlayerController : MonoBehaviour {
 
 	IEnumerator poison(){
 		Debug.Log ("poison");
-		poisonTime_in = poisonTime;
+
 		poisonCheck = true;
 		while (true) {
 			yield return new WaitForSeconds (0.006f);
@@ -215,6 +199,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (obj.CompareTag ("poison")) {
 			if (GetComponent<PlayerMove> ().bounce == Bouncy.Down || GetComponent<PlayerMove> ().bounce == Bouncy.Up || GetComponent<PlayerMove> ().bounce == Bouncy.stun) {
+				poisonTime_in = poisonTime;
 				hiveCC = PlayerCC.bug;
 				poison_mush.SetActive (true);
 				//Destroy (obj.transform.parent.gameObject);

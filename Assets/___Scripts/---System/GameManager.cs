@@ -109,6 +109,12 @@ public class GameManager : MonoBehaviour {
 	//tuto
 	public GameObject tuto1;
 
+	//background
+	public GameObject farBack1;
+	public GameObject farBack2;
+	public GameObject middleBack1;
+	public GameObject middleBack2;
+
 	void Start()
     {
 		if (TestNum != 0) {
@@ -239,11 +245,31 @@ public class GameManager : MonoBehaviour {
 
 			StartCoroutine ("downTimeReady");
 
-			if (Application.loadedLevelName == "TestGame") {
-				
+
 					StartCoroutine ("UICheck");
 
-			}
+					if (TestNum >= 1 && TestNum <= 25) {
+						farBack1.SetActive (true);
+						farBack2.SetActive (false);
+						middleBack1.SetActive (true);
+						middleBack2.SetActive (false);
+					} else if (TestNum >= 26 && TestNum <= 50) {
+						farBack1.SetActive (false);
+						farBack2.SetActive (true);
+						middleBack1.SetActive (false);
+						middleBack2.SetActive (true);
+					} else if (TestNum >= 51 && TestNum <= 75) {
+						farBack1.SetActive (true);
+						farBack2.SetActive (false);
+						middleBack1.SetActive (true);
+						middleBack2.SetActive (false);
+					} else if (TestNum >= 76 && TestNum <= 100) {
+						farBack1.SetActive (false);
+						farBack2.SetActive (true);
+						middleBack1.SetActive (false);
+						middleBack2.SetActive (true);
+					}
+
 
 
 		}
