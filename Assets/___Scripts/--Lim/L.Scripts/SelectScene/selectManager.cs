@@ -127,7 +127,7 @@ public partial class selectManager : MonoBehaviour {
         GameOutPopUp.SetActive(false);
         BosukPopUp.SetActive(false);
         goldPopUp.SetActive(false);
-       //ES2.Save(99, "stageIndexCount");
+       ES2.Save(99, "stageIndexCount");
        /*
         for(int i = 0; i< 100; i++)
         {
@@ -313,7 +313,16 @@ public partial class selectManager : MonoBehaviour {
         loadStar(); //별 로드
         loadNoneStage();
     }
-
+    void Update()
+    {
+        //if (Application.platform == RuntimePlatform.Android)
+       // {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                GameOutPopUp.SetActive(true);
+            }
+       // }
+    }
     void loadStar()
     {
         string[] test = new string[3];

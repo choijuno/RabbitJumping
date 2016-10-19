@@ -413,14 +413,5 @@ public partial class selectManager : MonoBehaviour
     {
         Application.Quit();
     }
-    void Update()
-    {
-        if(Application.platform == RuntimePlatform.Android)
-        {
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                GameOutPopUp.SetActive(true);
-            }
-        }
-    }
+    
 }
