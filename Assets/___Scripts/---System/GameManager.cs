@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
 
 	public static float soundVolume;
 
+	public static int deadCount;
+
 	public bool resultCheck;
 
 	//UI
