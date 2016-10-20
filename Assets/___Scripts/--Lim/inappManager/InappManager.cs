@@ -3,6 +3,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine.Purchasing;
+using UnityEngine.UI;
 
 // Placing the Purchaser class in the CompleteProject namespace allows it to interact with ScoreManager, 
 // one of the existing Survival Shooter scripts.
@@ -11,14 +12,17 @@ using UnityEngine.Purchasing;
 public class InappManager : MonoBehaviour, IStoreListener
 {
     public static InappManager Instance { set; get; }
-
+    public static bool Bosuk20000 = false;
+    public static bool Bosuk30000 = false;
+    public static bool Bosuk100000 = false;
     private static IStoreController m_StoreController;          // The Unity Purchasing system.
     private static IExtensionProvider m_StoreExtensionProvider; // The store-specific Purchasing subsystems.
 
     public static string Product_20000Bosuk = "gold20000";
     public static string Product_30000Bosuk ="gold30000";
     public static string Product_100000Bosuk = "gold100000";
-    
+
+    selectManager SelectManager;
     private void Awake()
     {
         Instance = this;
@@ -26,6 +30,7 @@ public class InappManager : MonoBehaviour, IStoreListener
     void Start()
     {
         InitializePurchasing();
+        SelectManager = GameObject.Find("selectManager").GetComponent<selectManager>();
     }
 
     public void InitializePurchasing()
@@ -160,14 +165,17 @@ public class InappManager : MonoBehaviour, IStoreListener
         {
             //돈이 올라가는곳
             DataSave._instance.setBosuk_Game(20);
+            Bosuk20000 = true;
         }
         else if (String.Equals(args.purchasedProduct.definition.id, Product_30000Bosuk, StringComparison.Ordinal))
         {
             DataSave._instance.setBosuk_Game(80);
+            Bosuk30000 = true;
         }
         else if (String.Equals(args.purchasedProduct.definition.id, Product_100000Bosuk, StringComparison.Ordinal))
         {
             DataSave._instance.setBosuk_Game(150);
+            Bosuk100000 = true;
         }
         /*else if (String.Equals(args.purchasedProduct.definition.id, kProductIDSubscription, StringComparison.Ordinal))
         {

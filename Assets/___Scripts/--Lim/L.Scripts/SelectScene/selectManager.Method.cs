@@ -178,6 +178,7 @@ public partial class selectManager : MonoBehaviour
                     DataSave._instance.setBosuk_GameMinus(10);
                     DataSave._instance.setMoney_Game(2000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                    bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
                 }
                 break;
             case 2500:
@@ -190,6 +191,7 @@ public partial class selectManager : MonoBehaviour
                     DataSave._instance.setBosuk_GameMinus(20);
                     DataSave._instance.setMoney_Game(5000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                    bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
                 }
                 break;
             case 32500:
@@ -202,6 +204,7 @@ public partial class selectManager : MonoBehaviour
                     DataSave._instance.setBosuk_GameMinus(50);
                     DataSave._instance.setMoney_Game(15000);
                     gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+                    bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
                 }
                 break;
         }
@@ -287,7 +290,7 @@ public partial class selectManager : MonoBehaviour
         {
             eggNumber = 1;
             DataSave._instance.setBosuk_GameMinus(10);
-            gameMoney.text = DataSave._instance.getBosuk_Game().ToString();
+            bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
             SceneManager.LoadScene(5);
         }
     }
@@ -412,6 +415,10 @@ public partial class selectManager : MonoBehaviour
     public void GameExitYes()
     {
         Application.Quit();
+    }
+    public void Bosukview()
+    {
+        bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
     }
     
 }

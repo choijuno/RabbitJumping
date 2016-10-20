@@ -122,6 +122,7 @@ public partial class selectManager : MonoBehaviour {
     public GameObject GameOutPopUp;
     public GameObject BosukPopUp;
     public GameObject goldPopUp;
+    
     void Start ()
     {
         GameOutPopUp.SetActive(false);
@@ -322,6 +323,21 @@ public partial class selectManager : MonoBehaviour {
                 GameOutPopUp.SetActive(true);
             }
        // }
+       if(InappManager.Bosuk20000 == true)
+        {
+            bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
+            InappManager.Bosuk20000 = false;
+        }
+        if (InappManager.Bosuk30000 == true)
+        {
+            bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
+            InappManager.Bosuk30000 = false;
+        }
+        if (InappManager.Bosuk100000 == true)
+        {
+            bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
+            InappManager.Bosuk100000 = false;
+        }
     }
     void loadStar()
     {

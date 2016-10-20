@@ -34403,7 +34403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d622f3cb5eab14f469867b8580420e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bosuk_Game: {fileID: 358580995}
+  bosukMoney: {fileID: 358580995}
 --- !u!4 &1114824086
 Transform:
   m_ObjectHideFlags: 0
