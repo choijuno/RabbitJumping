@@ -310,7 +310,7 @@ GameObject:
   - 54: {fileID: 5462110}
   - 114: {fileID: 11455480}
   m_Layer: 0
-  m_Name: Player_pumpkin
+  m_Name: 6Player_pumpkin
   m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

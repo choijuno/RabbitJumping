@@ -95,6 +95,9 @@ public class PlayerMove : MonoBehaviour {
 			TestSkinNum = 0;
 		}
 			
+		ChaSkin [TestSkinNum].SetActive (true);
+		_anim = ChaSkin[TestSkinNum].GetComponent<Animator>();
+		/*
 		switch (TestSkinNum) {
 		case 0:
 			ChaSkin [0].SetActive (true);
@@ -141,6 +144,7 @@ public class PlayerMove : MonoBehaviour {
 			_anim = ChaSkin[10].GetComponent<Animator>();
 			break;
 		}
+		*/
 
 		transform.position = StartPos.position;
 		bounce = Bouncy.Ready;
