@@ -32,6 +32,16 @@ public class LanguageClass : MonoBehaviour
     public Text snow_rabbit;
     public Text baseball_player;
 
+    public Text bosukBuy;
+    public Text GoldBuy;
+    public Text GameExit;
+    public Text BosukBuyOk;
+    public Text BosukBuyNo;
+    public Text GoldBuyOk;
+    public Text GoldBuyNo;
+    public Text GameExitOk;
+    public Text GameExitNo;
+
     public GameObject[] EnglishImg;
     public GameObject[] KoreanImg;
     void Start()
@@ -84,7 +94,18 @@ public class LanguageClass : MonoBehaviour
         santa_rabbit.text = "산타";
         snow_rabbit.text = "스노우 레빗";
         baseball_player.text = "야구선수";
-    }
+
+        bosukBuy.text = "보석이 부족합니다. \n충전 하시겠습니까?";
+        GoldBuy.text = "골드가 부족합니다. \n충전 하시겠습니까?";
+
+        GameExit.text = "정말 종료 하시겠습니까?";
+        BosukBuyOk.text = "예";
+        BosukBuyNo.text = "아니오";
+        GoldBuyOk.text = "예";
+        GoldBuyNo.text = "아니오";
+        GameExitOk.text = "예";
+        GameExitNo.text = "아니오";
+}
     void EnglishTxt()
     {
         for (int i = 0; i < KoreanImg.Length; i++)
@@ -116,6 +137,18 @@ public class LanguageClass : MonoBehaviour
         santa_rabbit.text = "Santa Rabbit";
         snow_rabbit.text = "Snow Rabbit";
         baseball_player.text = "Baseball Rabbit";
+
+
+        bosukBuy.text = "Crystal is low. \nWould you like to fill ? ";
+        GoldBuy.text = "Gold is low. \nWould you like to fill ? ";
+
+        GameExit.text = "Are you sure you want to quit?";
+        BosukBuyOk.text = "Yes";
+        BosukBuyNo.text = "No";
+        GoldBuyOk.text = "Yes";
+        GoldBuyNo.text = "No";
+        GameExitOk.text = "Yes";
+        GameExitNo.text = "No";
     }
     public void Korean()
     {

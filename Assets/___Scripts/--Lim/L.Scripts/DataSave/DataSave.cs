@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class DataSave : MonoBehaviour {
 
     public static DataSave _instance;
-
-    public Text Bosuk_Game;
     public void setSkin(int skinCount) //스킨카운트
     {
         if (ES2.Exists("Skin"))
@@ -73,12 +71,10 @@ public class DataSave : MonoBehaviour {
         if (ES2.Exists("bosuk_Game"))
         {
             ES2.Save<float>(ES2.Load<float>("bosuk_Game") + bosuk_Money, "bosuk_Game");
-            Bosuk_Game.text = ES2.Load<float>("bosuk_Game").ToString();
         }
         else
         {
             ES2.Save<float>(bosuk_Money, "bosuk_Game");
-            Bosuk_Game.text = ES2.Load<float>("bosuk_Game").ToString();
         }
             
     }
@@ -87,12 +83,10 @@ public class DataSave : MonoBehaviour {
         if (ES2.Exists("bosuk_Game"))
         {
             ES2.Save<float>(ES2.Load<float>("bosuk_Game") - bosuk_Money, "bosuk_Game");
-            Bosuk_Game.text = ES2.Load<float>("bosuk_Game").ToString();
         }
         else
         {
             ES2.Save<float>(bosuk_Money, "bosuk_Game");
-            Bosuk_Game.text = ES2.Load<float>("bosuk_Game").ToString();
         }
     }
     public float getBosuk_Game() //보석 불러오기.
