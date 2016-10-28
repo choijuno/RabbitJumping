@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 51a6aaf83c0172c4c82faa5922f05e43
+timeCreated: 1477533356
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_holloween_pumpkin_0
+    21300002: cos_holloween_pumpkin_1
+    21300004: cos_holloween_pumpkin_2
+    21300006: cos_holloween_pumpkin_3
+    21300008: cos_holloween_pumpkin_4
+    21300010: cos_holloween_pumpkin_5
+    21300012: cos_holloween_pumpkin_6
+    21300014: cos_holloween_pumpkin_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_holloween_pumpkin_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 152
+        width: 48
+        height: 58
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.812462, y: 8.258072}
+        - {x: -16.812462, y: 7.258072}
+        - {x: -37.81246, y: -31.741928}
+        - {x: -37.81246, y: -49.74193}
+        - {x: -20.812462, y: -49.74193}
+        - {x: -14.812462, y: -47.74193}
+        - {x: 10.187538, y: -9.741928}
+        - {x: 10.187538, y: 8.258072}
+    - name: cos_holloween_pumpkin_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 95
+        width: 240
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 54}
+        - {x: 81, y: 75}
+        - {x: 42, y: 95}
+        - {x: -4, y: 110}
+        - {x: -31, y: 110}
+        - {x: -85, y: 75}
+        - {x: -120, y: 36}
+        - {x: -120, y: -47}
+        - {x: -105, y: -69}
+        - {x: -53, y: -109}
+        - {x: -42, y: -110}
+        - {x: 47, y: -110}
+        - {x: 104, y: -73}
+        - {x: 120, y: -47}
+        - {x: 120, y: 33}
+    - name: cos_holloween_pumpkin_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 131
+        width: 76
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 208}
+        - {x: -38, y: 163}
+        - {x: -38, y: 11}
+        - {x: -17, y: 0}
+        - {x: 26, y: 0}
+        - {x: 38, y: 14}
+        - {x: 38, y: 177}
+        - {x: 32, y: 208}
+    - name: cos_holloween_pumpkin_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 59
+        width: 51
+        height: 55
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.803574, y: 6.111046}
+        - {x: -5.1964264, y: 6.111046}
+        - {x: -5.1964264, y: -24.888954}
+        - {x: 1.8035736, y: -48.888954}
+        - {x: 45.803574, y: -48.888954}
+        - {x: 45.803574, y: -20.888954}
+        - {x: 25.803574, y: 1.1110458}
+    - name: cos_holloween_pumpkin_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 9
+        width: 19
+        height: 56
+      alignment: 9
+      pivot: {x: 0, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_pumpkin_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 11
+        width: 16
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_pumpkin_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 11
+        width: 33
+        height: 63
+      alignment: 9
+      pivot: {x: 0.2423891, y: 0.8775096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.9988403, y: 7.716896}
+        - {x: -7.9988403, y: -28.283104}
+        - {x: -7.9988403, y: -53.283104}
+        - {x: -5.9988403, y: -55.283104}
+        - {x: 25.00116, y: -55.283104}
+        - {x: 25.00116, y: -29.283104}
+        - {x: 19.00116, y: 7.716896}
+    - name: cos_holloween_pumpkin_7
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 16
+        width: 38
+        height: 60
+      alignment: 9
+      pivot: {x: 0.1730071, y: 0.8806832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.57428, y: 7.159012}
+        - {x: -6.57428, y: -52.84099}
+        - {x: 31.42572, y: -52.84099}
+        - {x: 31.42572, y: -31.840988}
+        - {x: 11.42572, y: 7.159012}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: ffca84fc4b2a42b488c75bbaf155cd17
+timeCreated: 1477463204
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_Chucky_0
+    21300002: cos_Chucky_1
+    21300004: cos_Chucky_2
+    21300006: cos_Chucky_3
+    21300008: cos_Chucky_4
+    21300010: cos_Chucky_5
+    21300012: cos_Chucky_6
+    21300014: cos_Chucky_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_Chucky_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 151
+        width: 60
+        height: 61
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.7344208, y: 8.685211}
+        - {x: -29.26558, y: 8.685211}
+        - {x: -47.26558, y: -29.314789}
+        - {x: -47.26558, y: -52.31479}
+        - {x: -16.26558, y: -52.31479}
+        - {x: 12.734421, y: -19.314789}
+        - {x: 12.734421, y: -5.314789}
+        - {x: 10.734421, y: 2.6852112}
+    - name: cos_Chucky_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 98
+        width: 248
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112, y: 48}
+        - {x: 75, y: 78}
+        - {x: 51, y: 92}
+        - {x: 19, y: 101}
+        - {x: -20, y: 101}
+        - {x: -32, y: 99}
+        - {x: -76, y: 75}
+        - {x: -124, y: 11}
+        - {x: -124, y: -15}
+        - {x: -110, y: -59}
+        - {x: -77, y: -101}
+        - {x: 78, y: -101}
+        - {x: 114, y: -82}
+        - {x: 124, y: -17}
+        - {x: 124, y: 15}
+    - name: cos_Chucky_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 134
+        width: 58
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 206}
+        - {x: -29, y: 163}
+        - {x: -29, y: 58}
+        - {x: -19, y: 0}
+        - {x: 29, y: 0}
+        - {x: 29, y: 206}
+    - name: cos_Chucky_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 90
+        height: 61
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.829834, y: 3.77771}
+        - {x: 19.829834, y: 6.77771}
+        - {x: -8.170166, y: 6.77771}
+        - {x: -9.170166, y: 4.77771}
+        - {x: -9.170166, y: -12.22229}
+        - {x: 18.829834, y: -53.22229}
+        - {x: 22.829834, y: -54.22229}
+        - {x: 80.829834, y: -54.22229}
+        - {x: 80.829834, y: -36.22229}
+        - {x: 55.829834, y: -12.22229}
+    - name: cos_Chucky_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 8
+        width: 31
+        height: 56
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_Chucky_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 11
+        width: 29
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_Chucky_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 10
+        width: 42
+        height: 72
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.933105, y: 7.949135}
+        - {x: -17.933105, y: -64.050865}
+        - {x: 24.066895, y: -64.050865}
+        - {x: 24.066895, y: -1.0508652}
+        - {x: 19.066895, y: 7.949135}
+    - name: cos_Chucky_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 21
+        width: 52
+        height: 65
+      alignment: 9
+      pivot: {x: 0.37668082, y: 0.8806832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.412598, y: -3.2444077}
+        - {x: 15.412598, y: 7.7555923}
+        - {x: -16.587402, y: 7.7555923}
+        - {x: -19.587402, y: 4.7555923}
+        - {x: -19.587402, y: -33.244408}
+        - {x: -13.587402, y: -57.244408}
+        - {x: 29.412598, y: -57.244408}
+        - {x: 32.412598, y: -56.244408}
+        - {x: 32.412598, y: -28.244408}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

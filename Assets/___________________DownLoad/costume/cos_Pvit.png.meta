@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: badbc2dd13f33d64b8164935d855a432
+timeCreated: 1477533997
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_Pvit_0
+    21300002: cos_Pvit_1
+    21300004: cos_Pvit_2
+    21300006: cos_Pvit_3
+    21300008: cos_Pvit_4
+    21300010: cos_Pvit_5
+    21300012: cos_Pvit_6
+    21300014: cos_Pvit_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_Pvit_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 151
+        width: 48
+        height: 61
+      alignment: 9
+      pivot: {x: 0.72351426, y: 0.75909674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.728683, y: 14.695099}
+        - {x: -34.728683, y: -19.304901}
+        - {x: -34.728683, y: -46.3049}
+        - {x: -17.728683, y: -46.3049}
+        - {x: 13.271317, y: -9.304901}
+        - {x: 13.271317, y: 11.695099}
+        - {x: 12.271317, y: 14.695099}
+    - name: cos_Pvit_1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 88
+        width: 209
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103.5, y: 60.5}
+        - {x: 60.5, y: 86.5}
+        - {x: 28.5, y: 105.5}
+        - {x: -11.5, y: 105.5}
+        - {x: -84.5, y: 81.5}
+        - {x: -104.5, y: 35.5}
+        - {x: -104.5, y: -67.5}
+        - {x: -52.5, y: -102.5}
+        - {x: -23.5, y: -105.5}
+        - {x: 26.5, y: -105.5}
+        - {x: 37.5, y: -101.5}
+        - {x: 84.5, y: -64.5}
+        - {x: 104.5, y: -43.5}
+        - {x: 104.5, y: 52.5}
+    - name: cos_Pvit_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 132
+        width: 73
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 214}
+        - {x: -35.5, y: 197}
+        - {x: -36.5, y: 189}
+        - {x: -36.5, y: 0}
+        - {x: 3.5, y: 0}
+        - {x: 36.5, y: 36}
+        - {x: 36.5, y: 119}
+        - {x: 8.5, y: 214}
+    - name: cos_Pvit_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 56
+        width: 63
+        height: 58
+      alignment: 9
+      pivot: {x: 0.28874946, y: 0.74133456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.1912155, y: 15.002594}
+        - {x: -18.191216, y: 14.002594}
+        - {x: -18.191216, y: -12.997406}
+        - {x: 24.808784, y: -42.997406}
+        - {x: 42.808784, y: -42.997406}
+        - {x: 44.808784, y: -41.997406}
+        - {x: 44.808784, y: -19.997406}
+        - {x: 24.808784, y: 15.002594}
+    - name: cos_Pvit_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 21
+        height: 59
+      alignment: 9
+      pivot: {x: 0.46235728, y: 0.83198184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_Pvit_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 11
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.56638795, y: 0.82196844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_Pvit_6
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 8
+        width: 39
+        height: 66
+      alignment: 9
+      pivot: {x: 0.4425988, y: 0.8581629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.261353, y: -53.63875}
+        - {x: -14.261353, y: -56.63875}
+        - {x: 21.738647, y: -56.63875}
+        - {x: 21.738647, y: -29.638748}
+        - {x: 10.738647, y: 9.361252}
+        - {x: -10.261353, y: 9.361252}
+        - {x: -17.261353, y: -12.638748}
+    - name: cos_Pvit_7
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 17
+        width: 48
+        height: 60
+      alignment: 9
+      pivot: {x: 0.1685683, y: 0.8540764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.091278, y: -51.244583}
+        - {x: 39.908722, y: -51.244583}
+        - {x: 39.908722, y: -25.244583}
+        - {x: 19.908722, y: 8.755417}
+        - {x: -8.091278, y: 8.755417}
+        - {x: -8.091278, y: -49.244583}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
