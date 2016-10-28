@@ -64,7 +64,7 @@ public class CreateUnitClass : MonoBehaviour {
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
         {
             if(ES2.Exists("character" + i))
             {
@@ -87,7 +87,7 @@ public class CreateUnitClass : MonoBehaviour {
     }
     void createUnitFunc()
     {
-        randomIndex = Random.Range(0, 10);
+        randomIndex = Random.Range(0, 20);
         Instantiate(unit[randomIndex], new Vector3(0f, -0.73f, 2.29f), Quaternion.identity);
     }
 }

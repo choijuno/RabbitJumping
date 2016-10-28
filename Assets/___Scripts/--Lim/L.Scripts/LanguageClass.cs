@@ -31,6 +31,17 @@ public class LanguageClass : MonoBehaviour
     public Text santa_rabbit;
     public Text snow_rabbit;
     public Text baseball_player;
+    public Text Chucky;
+    public Text das;
+    public Text Dvot;
+    public Text dracula;
+    public Text frankenstein;
+    public Text pumpkin;
+    public Text witch;
+    public Text wolfbit;
+    public Text jack;
+    public Text pvit;
+    //public Text 
 
     public Text bosukBuy;
     public Text GoldBuy;
@@ -95,6 +106,17 @@ public class LanguageClass : MonoBehaviour
         snow_rabbit.text = "스노우 레빗";
         baseball_player.text = "야구선수";
 
+        Chucky.text = "처키";
+        das.text = "다스베이더";
+        Dvot.text = "티바";
+        dracula.text = "드라큘라";
+        frankenstein.text = "프랑켄슈타인";
+        pumpkin.text = "호박";
+        witch.text = "마녀";
+        wolfbit.text = "울프";
+        jack.text = "작스패로";
+        pvit.text = "피라";
+
         bosukBuy.text = "보석이 부족합니다. \n충전 하시겠습니까?";
         GoldBuy.text = "골드가 부족합니다. \n충전 하시겠습니까?";
 
@@ -137,7 +159,16 @@ public class LanguageClass : MonoBehaviour
         santa_rabbit.text = "Santa Rabbit";
         snow_rabbit.text = "Snow Rabbit";
         baseball_player.text = "Baseball Rabbit";
-
+        Chucky.text = "Chucky";
+        das.text = "Darth Vader";
+        Dvot.text = "Tiva";
+        dracula.text = "Dracula";
+        frankenstein.text = "Frankenstein";
+        pumpkin.text = "Pumpkin";
+        witch.text = "Witch";
+        wolfbit.text = "Wolf";
+        jack.text = "Jack Sparrow";
+        pvit.text = "Pira";
 
         bosukBuy.text = "Crystal is low. \nWould you like to fill ? ";
         GoldBuy.text = "Gold is low. \nWould you like to fill ? ";

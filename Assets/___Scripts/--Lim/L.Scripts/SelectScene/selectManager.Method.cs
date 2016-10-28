@@ -21,7 +21,7 @@ public partial class selectManager : MonoBehaviour
         storeAndRoom.SetActive(true);
         store.SetActive(false);
         myRoom.SetActive(true);
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < nonImg.Length; i++)
         {
             if (ES2.Exists("character" + i.ToString()))
             {
@@ -257,8 +257,6 @@ public partial class selectManager : MonoBehaviour
     }
     public void greenBoxBtnFunc() //그린박스
     {
-
-
         MusicManager.instance.PlayOnShot();
         float gameMoney_ = DataSave._instance.getMoney_Game();
         if (gameMoney_ < 1000)
@@ -361,6 +359,56 @@ public partial class selectManager : MonoBehaviour
                 chaSetFalse();
                 preCharacter = Instantiate(cha_Array[10], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
                 ES2.Save<int>(10, "rabbit");
+                break;
+            case 11:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[11], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(11, "rabbit");
+                break;
+            case 12:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[12], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(12, "rabbit");
+                break;
+            case 13:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[13], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(13, "rabbit");
+                break;
+            case 14:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[14], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(14, "rabbit");
+                break;
+            case 15:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[15], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(15, "rabbit");
+                break;
+            case 16:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[16], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(16, "rabbit");
+                break;
+            case 17:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[17], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(17, "rabbit");
+                break;
+            case 18:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[18], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(18, "rabbit");
+                break;
+            case 19:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[19], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(19, "rabbit");
+                break;
+            case 20:
+                chaSetFalse();
+                preCharacter = Instantiate(cha_Array[20], new Vector3(-24.19f, -2.93f, -163.23f), Quaternion.identity) as GameObject;
+                ES2.Save<int>(20, "rabbit");
                 break;
         }
     }
