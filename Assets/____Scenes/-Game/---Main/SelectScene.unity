@@ -725,7 +725,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 931.9999, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20946651
 MonoBehaviour:
@@ -787,7 +787,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9ad944d23f69c049b81a85e1265597f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10752,7 +10752,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 732.00024, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284058516
 MonoBehaviour:
@@ -10814,7 +10814,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9b5efd1664be464797bf77bad1374f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19774,6 +19774,16 @@ MonoBehaviour:
   santa_rabbit: {fileID: 1853581777}
   snow_rabbit: {fileID: 918439681}
   baseball_player: {fileID: 1444613298}
+  Chucky: {fileID: 1718239661}
+  das: {fileID: 975415470}
+  Dvot: {fileID: 1843068418}
+  dracula: {fileID: 2026707364}
+  frankenstein: {fileID: 2145789176}
+  pumpkin: {fileID: 921056658}
+  witch: {fileID: 1292579423}
+  wolfbit: {fileID: 1132169959}
+  jack: {fileID: 810944772}
+  pvit: {fileID: 2144472486}
   bosukBuy: {fileID: 1369562846}
   GoldBuy: {fileID: 1002604338}
   GameExit: {fileID: 397735431}
@@ -22389,7 +22399,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1532, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677667579
 MonoBehaviour:
@@ -22451,7 +22461,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f83522793b22894394891d38f607371, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22970,7 +22980,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 332.00024, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704875372
 MonoBehaviour:
@@ -23032,7 +23042,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 777b4681ff41c4a44bed6830bda32e3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25543,7 +25553,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uC791\uC2A4\uD328\uB85C"
 --- !u!222 &810944773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28648,7 +28658,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1131.9996, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904498258
 MonoBehaviour:
@@ -28710,7 +28720,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b3690a53cf4aee4ba661469a3723f0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29542,7 +29552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uD638\uBC15\uD1A0\uB07C"
 --- !u!222 &921056659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31278,7 +31288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uB2E4\uC2A4\uBCA0\uC774\uB354"
 --- !u!222 &975415471
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33103,7 +33113,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1331.9996, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033825138
 MonoBehaviour:
@@ -33165,7 +33175,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a170511e2a9f8e04a88c001e308276ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36235,7 +36245,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uC6B8\uD504"
 --- !u!222 &1132169960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36783,7 +36793,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1932, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159536453
 MonoBehaviour:
@@ -36845,7 +36855,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c611dea6bf529b4498225003f05caf3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -40481,7 +40491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uB9C8\uB140\uD1A0\uB07C"
 --- !u!222 &1292579424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -47233,7 +47243,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 532, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504879357
 MonoBehaviour:
@@ -47295,7 +47305,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c152fd69f2892247b26f07d393bf064, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -47700,7 +47710,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 132, y: -37.000286}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515965436
 MonoBehaviour:
@@ -47762,7 +47772,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 867c3333b6effce4fb1375c1c8725e58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -53442,7 +53452,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uCC98\uD0A4"
 --- !u!222 &1718239662
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57387,7 +57397,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uD2F0\uBC14"
 --- !u!222 &1843068419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58053,7 +58063,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1732, y: -37.00029}
-  m_SizeDelta: {x: 197, y: 290}
+  m_SizeDelta: {x: 170, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857120121
 MonoBehaviour:
@@ -58115,7 +58125,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92fd7041f88898b45bf6dcdfd31cacdd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -61287,6 +61297,16 @@ MonoBehaviour:
   - {fileID: 532348173}
   - {fileID: 1288966660}
   - {fileID: 909589283}
+  - {fileID: 1515965437}
+  - {fileID: 704875373}
+  - {fileID: 1504879358}
+  - {fileID: 284058517}
+  - {fileID: 20946652}
+  - {fileID: 904498259}
+  - {fileID: 1033825139}
+  - {fileID: 677667580}
+  - {fileID: 1857120122}
+  - {fileID: 1159536454}
   nonImg:
   - {fileID: 21300000, guid: 52c143fb86fbda340b2d0fbf32401bf6, type: 3}
   - {fileID: 21300000, guid: b164b4e35551fa84a8c9ba0bebe9773a, type: 3}
@@ -61298,6 +61318,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 322b5be9b42b7194b8253e080adce725, type: 3}
   - {fileID: 21300000, guid: 1f3dafae0da6e1b4c87cbcd509e97816, type: 3}
   - {fileID: 21300000, guid: 8c088d5803d55e44fa120b88d44c8a29, type: 3}
+  - {fileID: 21300000, guid: 036e206398018174fbec748371883cf5, type: 3}
+  - {fileID: 21300000, guid: 419d645bff3d26f46b4f480f11548e70, type: 3}
+  - {fileID: 21300000, guid: fe42bc9aa24bd8644ae72ae2cd93701d, type: 3}
+  - {fileID: 21300000, guid: b78e1e8c5736523409bd778e5ba8c4b3, type: 3}
+  - {fileID: 21300000, guid: bce757041380ae24384e932e1555a482, type: 3}
+  - {fileID: 21300000, guid: b61177c53ec5832408163392a2b099d2, type: 3}
+  - {fileID: 21300000, guid: 87847c5c7e03a7f449db185ca939dec3, type: 3}
+  - {fileID: 21300000, guid: f3ed3c04561e17344ad2b5ed98992a49, type: 3}
+  - {fileID: 21300000, guid: c051e98c652491c40937d3a75f1e136e, type: 3}
+  - {fileID: 21300000, guid: d7cec518960a22945b0a2028d627c5bd, type: 3}
   okImg:
   - {fileID: 21300000, guid: 0c6c10f4994aeab44a352dfd2f7ba20c, type: 3}
   - {fileID: 21300000, guid: cb102fc038b0e6246974749c9e661b28, type: 3}
@@ -61309,6 +61339,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c088a29ba0a63b84fb1e783752c74560, type: 3}
   - {fileID: 21300000, guid: 88272641d4bc9df48ae7fb630832c159, type: 3}
   - {fileID: 21300000, guid: f12c932fe0e3ad340b17b7e278ce7321, type: 3}
+  - {fileID: 21300000, guid: 867c3333b6effce4fb1375c1c8725e58, type: 3}
+  - {fileID: 21300000, guid: 777b4681ff41c4a44bed6830bda32e3b, type: 3}
+  - {fileID: 21300000, guid: 8c152fd69f2892247b26f07d393bf064, type: 3}
+  - {fileID: 21300000, guid: a9b5efd1664be464797bf77bad1374f1, type: 3}
+  - {fileID: 21300000, guid: e9ad944d23f69c049b81a85e1265597f, type: 3}
+  - {fileID: 21300000, guid: 5b3690a53cf4aee4ba661469a3723f0d, type: 3}
+  - {fileID: 21300000, guid: a170511e2a9f8e04a88c001e308276ea, type: 3}
+  - {fileID: 21300000, guid: 5f83522793b22894394891d38f607371, type: 3}
+  - {fileID: 21300000, guid: 92fd7041f88898b45bf6dcdfd31cacdd, type: 3}
+  - {fileID: 21300000, guid: c611dea6bf529b4498225003f05caf3b, type: 3}
   chaBtnArray:
   - {fileID: 13698923}
   - {fileID: 1698835258}
@@ -61320,6 +61360,16 @@ MonoBehaviour:
   - {fileID: 532348175}
   - {fileID: 1288966662}
   - {fileID: 909589285}
+  - {fileID: 1515965436}
+  - {fileID: 704875372}
+  - {fileID: 1504879357}
+  - {fileID: 284058516}
+  - {fileID: 20946651}
+  - {fileID: 904498258}
+  - {fileID: 1033825138}
+  - {fileID: 677667579}
+  - {fileID: 1857120121}
+  - {fileID: 1159536453}
   cha_Array:
   - {fileID: 165682, guid: c746e7444b758b447aaa1d9e65c186d6, type: 2}
   - {fileID: 160862, guid: 7f0849b687adfd84491a4a247711d742, type: 2}
@@ -61332,6 +61382,16 @@ MonoBehaviour:
   - {fileID: 190490, guid: 18230ac1af9bf2a46bf224701ae40901, type: 2}
   - {fileID: 162910, guid: 9900f065209c1454fae151fae4c1f9d5, type: 2}
   - {fileID: 142696, guid: 99d9b6d30b52008428d5b20c418c9d70, type: 2}
+  - {fileID: 159042, guid: 721329b014063d04fa89648a0792ab04, type: 2}
+  - {fileID: 160422, guid: db7c4615695f89f44ad73afebe3c5d5e, type: 2}
+  - {fileID: 127156, guid: adee8bc2bf6f4ed409b10577fac3ae36, type: 2}
+  - {fileID: 191914, guid: e1b74316d9b41b44a934e6079c50ce45, type: 2}
+  - {fileID: 189536, guid: 370e1c73461cb654bb52d130195253da, type: 2}
+  - {fileID: 105894, guid: 8da324d4a7636dc4c989fa605978b817, type: 2}
+  - {fileID: 149954, guid: bb6d1893463cfbd459aaf12c0ac99bd6, type: 2}
+  - {fileID: 193442, guid: ee668c0b13c062946aea9f8abe2f4e2e, type: 2}
+  - {fileID: 154680, guid: 7b10f496e12efe842a2f0aa05ea2d1f1, type: 2}
+  - {fileID: 153462, guid: efab702b756ce854a90169518e3eb152, type: 2}
   setup: {fileID: 0}
   setupExit: {fileID: 262653563}
   backgroundMusicOn: {fileID: 228689333}
@@ -63265,7 +63325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uB4DC\uB77C\uD058\uB77C"
 --- !u!222 &2026707365
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -67569,7 +67629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uD53C\uB77C"
 --- !u!222 &2144472487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -67718,7 +67778,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC57C\uAD6C\uC120\uC218"
+  m_Text: "\uD504\uB791\uCF04\uC288\uD0C0\uC778"
 --- !u!222 &2145789177
 CanvasRenderer:
   m_ObjectHideFlags: 0
