@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 7cc52c49a976b30458e7525c3f945bad
+timeCreated: 1477533863
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_jack_0
+    21300002: cos_jack_1
+    21300004: cos_jack_2
+    21300006: cos_jack_3
+    21300008: cos_jack_4
+    21300010: cos_jack_5
+    21300012: cos_jack_6
+    21300014: cos_jack_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_jack_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 151
+        width: 48
+        height: 62
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.812462, y: 8.827591}
+        - {x: -37.81246, y: -26.17241}
+        - {x: -37.81246, y: -48.17241}
+        - {x: -34.81246, y: -53.17241}
+        - {x: -16.812462, y: -53.17241}
+        - {x: -10.812462, y: -50.17241}
+        - {x: 10.187538, y: -9.172409}
+        - {x: 10.187538, y: 8.827591}
+    - name: cos_jack_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 80
+        width: 216
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100, y: -17.5}
+        - {x: 96, y: -11.5}
+        - {x: 93, y: -5.5}
+        - {x: 94, y: -1.5}
+        - {x: 95, y: -7.5}
+        - {x: 95, y: -10.5}
+        - {x: 98, y: -11.5}
+        - {x: 108, y: -2.5}
+        - {x: 108, y: 24.5}
+        - {x: 89, y: 108.5}
+        - {x: -106, y: 108.5}
+        - {x: -108, y: 93.5}
+        - {x: -108, y: -108.5}
+        - {x: 41, y: -108.5}
+        - {x: 55, y: -106.5}
+        - {x: 86, y: -95.5}
+        - {x: 103, y: -66.5}
+    - name: cos_jack_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 137
+        width: 60
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 207}
+        - {x: -11, y: 204}
+        - {x: -30, y: 153}
+        - {x: -30, y: 70}
+        - {x: -18, y: 0}
+        - {x: 26, y: 0}
+        - {x: 30, y: 39}
+        - {x: 30, y: 160}
+        - {x: 11, y: 207}
+    - name: cos_jack_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 50
+        height: 56
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.094536, y: 6.2221527}
+        - {x: -5.094536, y: -18.777847}
+        - {x: 10.905464, y: -49.777847}
+        - {x: 44.905464, y: -49.777847}
+        - {x: 44.905464, y: -22.777847}
+        - {x: 8.905464, y: 6.2221527}
+    - name: cos_jack_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 10
+        width: 27
+        height: 56
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_jack_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 11
+        width: 26
+        height: 65
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_jack_6
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 9
+        width: 41
+        height: 66
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.506134, y: -58.713295}
+        - {x: 23.493866, y: -58.713295}
+        - {x: 23.493866, y: -25.713295}
+        - {x: 20.493866, y: 4.286705}
+        - {x: 15.493866, y: 7.286705}
+        - {x: -16.506134, y: 7.286705}
+        - {x: -17.506134, y: 0.28670502}
+    - name: cos_jack_7
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 16
+        width: 47
+        height: 62
+      alignment: 9
+      pivot: {x: 0.25064543, y: 0.8806824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.780334, y: 7.39769}
+        - {x: -11.780334, y: 0.39768982}
+        - {x: -11.780334, y: -52.60231}
+        - {x: -6.7803345, y: -54.60231}
+        - {x: 35.219666, y: -54.60231}
+        - {x: 35.219666, y: -21.60231}
+        - {x: 20.219666, y: 7.39769}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

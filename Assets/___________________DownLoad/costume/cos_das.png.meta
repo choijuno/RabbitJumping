@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: bf241a8a1a2b6394cbf1959180a1eda0
+timeCreated: 1477463400
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_das_0
+    21300002: cos_das_1
+    21300004: cos_das_2
+    21300006: cos_das_3
+    21300008: cos_das_4
+    21300010: cos_das_5
+    21300012: cos_das_6
+    21300014: cos_das_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_das_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 151
+        width: 45
+        height: 61
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.550819, y: 8.685211}
+        - {x: -11.449181, y: 8.685211}
+        - {x: -26.44918, y: -2.3147888}
+        - {x: -35.44918, y: -28.314789}
+        - {x: -35.44918, y: -52.31479}
+        - {x: -23.44918, y: -52.31479}
+        - {x: -13.449181, y: -40.31479}
+        - {x: 9.550819, y: -13.314789}
+        - {x: 9.550819, y: 5.685211}
+    - name: cos_das_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 99
+        width: 244
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 55.5}
+        - {x: 91, y: 79.5}
+        - {x: 56, y: 108.5}
+        - {x: -23, y: 108.5}
+        - {x: -46, y: 97.5}
+        - {x: -70, y: 85.5}
+        - {x: -93, y: 42.5}
+        - {x: -97, y: -0.5}
+        - {x: -122, y: -64.5}
+        - {x: -122, y: -77.5}
+        - {x: -84, y: -92.5}
+        - {x: -30, y: -108.5}
+        - {x: 47, y: -108.5}
+        - {x: 89, y: -93.5}
+        - {x: 122, y: -78.5}
+        - {x: 122, y: -53.5}
+    - name: cos_das_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 133
+        width: 59
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.5, y: 206}
+        - {x: -29.5, y: 4}
+        - {x: -20.5, y: 0}
+        - {x: 12.5, y: 0}
+        - {x: 29.5, y: 36}
+        - {x: 29.5, y: 181}
+        - {x: 25.5, y: 206}
+    - name: cos_das_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 31
+        width: 145
+        height: 85
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.774155, y: 9.444344}
+        - {x: -14.774155, y: -40.555656}
+        - {x: 97.225845, y: -75.55566}
+        - {x: 130.22585, y: -75.55566}
+        - {x: 130.22585, y: -53.555656}
+        - {x: 9.225845, y: 9.444344}
+    - name: cos_das_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 8
+        width: 17
+        height: 57
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_das_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 8
+        width: 17
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_das_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 10
+        width: 33
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.0903015, y: 6.95549}
+        - {x: -14.0903015, y: -11.04451}
+        - {x: -14.0903015, y: -56.04451}
+        - {x: 18.909698, y: -56.04451}
+        - {x: 18.909698, y: -19.04451}
+        - {x: 11.9096985, y: 6.95549}
+    - name: cos_das_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 16
+        width: 40
+        height: 64
+      alignment: 9
+      pivot: {x: 0.1730071, y: 0.8806832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.920288, y: 7.6362762}
+        - {x: -6.920288, y: -51.363724}
+        - {x: -4.920288, y: -56.363724}
+        - {x: 32.079712, y: -56.363724}
+        - {x: 33.079712, y: -55.363724}
+        - {x: 33.079712, y: -14.363724}
+        - {x: 23.079712, y: 7.6362762}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

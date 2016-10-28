@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 07cd71c467bcc1241b0cd90154509a4b
+timeCreated: 1477533684
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_holloween_wolfbit_0
+    21300002: cos_holloween_wolfbit_1
+    21300004: cos_holloween_wolfbit_2
+    21300006: cos_holloween_wolfbit_3
+    21300008: cos_holloween_wolfbit_4
+    21300010: cos_holloween_wolfbit_5
+    21300012: cos_holloween_wolfbit_6
+    21300014: cos_holloween_wolfbit_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_holloween_wolfbit_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 150
+        width: 48
+        height: 60
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.812462, y: 8.542831}
+        - {x: -37.81246, y: -33.45717}
+        - {x: -37.81246, y: -51.45717}
+        - {x: -22.812462, y: -51.45717}
+        - {x: 10.187538, y: -11.457169}
+        - {x: 10.187538, y: 8.542831}
+    - name: cos_holloween_wolfbit_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 99
+        width: 209
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104.5, y: 38}
+        - {x: 90.5, y: 82}
+        - {x: 36.5, y: 97}
+        - {x: -36.5, y: 97}
+        - {x: -104.5, y: 42}
+        - {x: -104.5, y: -28}
+        - {x: -93.5, y: -64}
+        - {x: -41.5, y: -97}
+        - {x: 40.5, y: -97}
+        - {x: 76.5, y: -84}
+        - {x: 99.5, y: -58}
+        - {x: 104.5, y: -35}
+    - name: cos_holloween_wolfbit_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 133
+        width: 72
+        height: 207
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 207}
+        - {x: -16, y: 201}
+        - {x: -36, y: 182}
+        - {x: -36, y: 36}
+        - {x: -30, y: 0}
+        - {x: 36, y: 0}
+        - {x: 36, y: 199}
+        - {x: 19, y: 207}
+    - name: cos_holloween_wolfbit_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 59
+        width: 49
+        height: 55
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.9926453, y: 6.111046}
+        - {x: -4.9926453, y: -5.888954}
+        - {x: 21.007355, y: -48.888954}
+        - {x: 44.007355, y: -48.888954}
+        - {x: 44.007355, y: -22.888954}
+        - {x: 9.007355, y: 6.111046}
+    - name: cos_holloween_wolfbit_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 9
+        width: 20
+        height: 56
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_wolfbit_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 11
+        width: 19
+        height: 59
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_wolfbit_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 8
+        width: 33
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.0903015, y: 7.065895}
+        - {x: -14.0903015, y: -15.934105}
+        - {x: -14.0903015, y: -56.934105}
+        - {x: 18.909698, y: -56.934105}
+        - {x: 18.909698, y: -5.934105}
+        - {x: 17.909698, y: 6.065895}
+        - {x: 13.9096985, y: 7.065895}
+    - name: cos_holloween_wolfbit_7
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 17
+        width: 42
+        height: 58
+      alignment: 9
+      pivot: {x: 0.1730071, y: 0.8806832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.2662964, y: 6.9203796}
+        - {x: -7.2662964, y: -46.07962}
+        - {x: -6.2662964, y: -51.07962}
+        - {x: 34.733704, y: -51.07962}
+        - {x: 34.733704, y: -24.07962}
+        - {x: 27.733704, y: 6.9203796}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

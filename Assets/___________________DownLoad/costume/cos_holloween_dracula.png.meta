@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: fd4cbebfca6666a4ba4399430803fea4
+timeCreated: 1477533021
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_holloween_dracula_0
+    21300002: cos_holloween_dracula_1
+    21300004: cos_holloween_dracula_2
+    21300006: cos_holloween_dracula_3
+    21300008: cos_holloween_dracula_4
+    21300010: cos_holloween_dracula_5
+    21300012: cos_holloween_dracula_6
+    21300014: cos_holloween_dracula_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_holloween_dracula_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 153
+        width: 48
+        height: 57
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.812462, y: 8.115692}
+        - {x: -17.812462, y: 0.11569214}
+        - {x: -37.81246, y: -32.884308}
+        - {x: -37.81246, y: -48.884308}
+        - {x: -23.812462, y: -48.884308}
+        - {x: 10.187538, y: -13.884308}
+        - {x: 10.187538, y: 6.115692}
+        - {x: 9.187538, y: 8.115692}
+    - name: cos_holloween_dracula_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 98
+        width: 236
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: 80}
+        - {x: 46, y: 97}
+        - {x: -26, y: 97}
+        - {x: -65, y: 87}
+        - {x: -103, y: 28}
+        - {x: -118, y: 21}
+        - {x: -118, y: -5}
+        - {x: -82, y: -65}
+        - {x: -47, y: -93}
+        - {x: -24, y: -97}
+        - {x: 44, y: -97}
+        - {x: 61, y: -91}
+        - {x: 118, y: -35}
+        - {x: 118, y: 47}
+    - name: cos_holloween_dracula_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 135
+        width: 59
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 206}
+        - {x: -29.5, y: 157}
+        - {x: -29.5, y: 41}
+        - {x: -24.5, y: 7}
+        - {x: -18.5, y: 0}
+        - {x: 8.5, y: 0}
+        - {x: 29.5, y: 13}
+        - {x: 29.5, y: 206}
+    - name: cos_holloween_dracula_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 52
+        height: 56
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.298317, y: 6.2221527}
+        - {x: -5.298317, y: -13.777847}
+        - {x: -1.298317, y: -22.777847}
+        - {x: 31.701683, y: -49.777847}
+        - {x: 46.701683, y: -49.777847}
+        - {x: 46.701683, y: -24.777847}
+        - {x: 18.701683, y: 6.2221527}
+    - name: cos_holloween_dracula_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 9
+        width: 18
+        height: 59
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_dracula_5
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 11
+        width: 16
+        height: 61
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_dracula_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 9
+        width: 32
+        height: 67
+      alignment: 9
+      pivot: {x: 0.50418663, y: 0.8895956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.133972, y: 7.3970947}
+        - {x: -16.133972, y: 6.3970947}
+        - {x: -16.133972, y: -58.602905}
+        - {x: -14.133972, y: -59.602905}
+        - {x: 15.866028, y: -59.602905}
+        - {x: 15.866028, y: -39.602905}
+        - {x: 9.866028, y: 7.3970947}
+    - name: cos_holloween_dracula_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 20
+        width: 37
+        height: 57
+      alignment: 9
+      pivot: {x: 0.1730071, y: 0.8806832}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.598724, y: 6.801056}
+        - {x: -6.4012756, y: 6.801056}
+        - {x: -6.4012756, y: -50.198944}
+        - {x: 30.598724, y: -50.198944}
+        - {x: 30.598724, y: -27.198944}
+        - {x: 14.598724, y: 4.801056}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

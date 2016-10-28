@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 16c8cefc50aebc840bea58ac04295844
+timeCreated: 1477463876
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_Dvot_0
+    21300002: cos_Dvot_1
+    21300004: cos_Dvot_2
+    21300006: cos_Dvot_3
+    21300008: cos_Dvot_4
+    21300010: cos_Dvot_5
+    21300012: cos_Dvot_6
+    21300014: cos_Dvot_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_Dvot_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 152
+        width: 48
+        height: 60
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.812462, y: 8.542831}
+        - {x: -15.812462, y: 6.5428314}
+        - {x: -37.81246, y: -34.45717}
+        - {x: -37.81246, y: -51.45717}
+        - {x: -15.812462, y: -51.45717}
+        - {x: 10.187538, y: -19.457169}
+        - {x: 10.187538, y: 8.542831}
+    - name: cos_Dvot_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 96
+        width: 226
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 112}
+        - {x: 19, y: 112}
+        - {x: -60, y: 76}
+        - {x: -87, y: 98}
+        - {x: -96, y: 97}
+        - {x: -102, y: 92}
+        - {x: -110, y: 13}
+        - {x: -113, y: 2}
+        - {x: -113, y: -24}
+        - {x: -64, y: -95}
+        - {x: -24, y: -112}
+        - {x: 46, y: -112}
+        - {x: 93, y: -79}
+        - {x: 113, y: -42}
+        - {x: 113, y: 34}
+    - name: cos_Dvot_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 135
+        width: 49
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5, y: 170}
+        - {x: -12.5, y: 164}
+        - {x: -24.5, y: 140}
+        - {x: -24.5, y: 12}
+        - {x: -15.5, y: 0}
+        - {x: 7.5, y: 0}
+        - {x: 24.5, y: 45}
+        - {x: 24.5, y: 123}
+        - {x: 13.5, y: 170}
+    - name: cos_Dvot_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 60
+        height: 71
+      alignment: 9
+      pivot: {x: 0.24069825, y: 0.77158743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.4418945, y: 16.217293}
+        - {x: -14.441895, y: 7.217293}
+        - {x: -14.441895, y: -12.782707}
+        - {x: -7.4418945, y: -23.782707}
+        - {x: 22.558105, y: -52.782707}
+        - {x: 30.558105, y: -54.782707}
+        - {x: 41.558105, y: -54.782707}
+        - {x: 45.558105, y: -48.782707}
+        - {x: 45.558105, y: -20.782707}
+        - {x: 24.558105, y: 16.217293}
+    - name: cos_Dvot_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 32
+        height: 56
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.761017, y: 6.310974}
+        - {x: -14.761017, y: -3.6890259}
+        - {x: -12.761017, y: -39.689026}
+        - {x: 10.238983, y: -39.689026}
+        - {x: 15.238983, y: -35.689026}
+        - {x: 15.238983, y: 6.310974}
+    - name: cos_Dvot_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 16
+        width: 32
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.4483643, y: 7.593651}
+        - {x: -13.448364, y: 1.5936508}
+        - {x: -13.448364, y: -47.40635}
+        - {x: -12.448364, y: -48.40635}
+        - {x: 16.551636, y: -48.40635}
+        - {x: 18.551636, y: -39.40635}
+        - {x: 18.551636, y: 4.593651}
+        - {x: 17.551636, y: 7.593651}
+    - name: cos_Dvot_6
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 8
+        width: 31
+        height: 57
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_Dvot_7
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 18
+        width: 41
+        height: 58
+      alignment: 9
+      pivot: {x: 0.47770655, y: 0.880683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.414032, y: 5.9203873}
+        - {x: -6.585968, y: 5.9203873}
+        - {x: -19.585968, y: -4.0796127}
+        - {x: -19.585968, y: -30.079613}
+        - {x: -18.585968, y: -37.079613}
+        - {x: -7.585968, y: -51.079613}
+        - {x: 20.414032, y: -51.079613}
+        - {x: 21.414032, y: -50.079613}
+        - {x: 21.414032, y: -5.0796127}
+        - {x: 20.414032, y: 4.9203873}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

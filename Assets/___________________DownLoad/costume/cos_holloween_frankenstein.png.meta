@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 0c83151ae7202bd4aaa60c7586d3dfa3
+timeCreated: 1477533181
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cos_holloween_frankenstein_0
+    21300002: cos_holloween_frankenstein_1
+    21300004: cos_holloween_frankenstein_2
+    21300006: cos_holloween_frankenstein_3
+    21300008: cos_holloween_frankenstein_4
+    21300010: cos_holloween_frankenstein_5
+    21300012: cos_holloween_frankenstein_6
+    21300014: cos_holloween_frankenstein_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cos_holloween_frankenstein_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 153
+        width: 48
+        height: 63
+      alignment: 9
+      pivot: {x: 0.7877596, y: 0.8576195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.812462, y: 8.969971}
+        - {x: -18.812462, y: 6.9699707}
+        - {x: -37.81246, y: -41.03003}
+        - {x: -37.81246, y: -54.03003}
+        - {x: -21.812462, y: -54.03003}
+        - {x: 10.187538, y: -18.03003}
+        - {x: 10.187538, y: 4.9699707}
+        - {x: 8.187538, y: 8.969971}
+    - name: cos_holloween_frankenstein_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 99
+        width: 194
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 56.5}
+        - {x: 81, y: 84.5}
+        - {x: 42, y: 95.5}
+        - {x: -43, y: 95.5}
+        - {x: -97, y: 50.5}
+        - {x: -97, y: -36.5}
+        - {x: -94, y: -54.5}
+        - {x: -42, y: -95.5}
+        - {x: 41, y: -95.5}
+        - {x: 76, y: -74.5}
+        - {x: 97, y: -31.5}
+        - {x: 97, y: 33.5}
+    - name: cos_holloween_frankenstein_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 135
+        width: 59
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 206}
+        - {x: -29.5, y: 163}
+        - {x: -29.5, y: 70}
+        - {x: -19.5, y: 0}
+        - {x: 12.5, y: 0}
+        - {x: 29.5, y: 33}
+        - {x: 29.5, y: 186}
+        - {x: 25.5, y: 206}
+    - name: cos_holloween_frankenstein_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 60
+        width: 51
+        height: 54
+      alignment: 9
+      pivot: {x: 0.1018907, y: 0.8888901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.803574, y: 5.999939}
+        - {x: -5.1964264, y: 5.999939}
+        - {x: -5.1964264, y: -7.000061}
+        - {x: -2.1964264, y: -11.000061}
+        - {x: 24.803574, y: -48.00006}
+        - {x: 45.803574, y: -48.00006}
+        - {x: 45.803574, y: -23.000061}
+        - {x: 30.803574, y: -11.000061}
+    - name: cos_holloween_frankenstein_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 9
+        width: 17
+        height: 59
+      alignment: 9
+      pivot: {x: 0.523782, y: 0.887304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_frankenstein_5
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 10
+        width: 16
+        height: 62
+      alignment: 9
+      pivot: {x: 0.4202611, y: 0.8643991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cos_holloween_frankenstein_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1
+        width: 42
+        height: 73
+      alignment: 9
+      pivot: {x: 0.4269786, y: 0.8895954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.933105, y: 8.05954}
+        - {x: -17.933105, y: -5.94046}
+        - {x: -17.933105, y: -64.94046}
+        - {x: 21.066895, y: -64.94046}
+        - {x: 24.066895, y: -62.94046}
+        - {x: 24.066895, y: -28.94046}
+        - {x: 14.066895, y: 8.05954}
+    - name: cos_holloween_frankenstein_7
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 13
+        width: 47
+        height: 64
+      alignment: 9
+      pivot: {x: 0.21731892, y: 0.8806834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.786011, y: 7.636261}
+        - {x: -9.213989, y: 7.636261}
+        - {x: -10.213989, y: -1.363739}
+        - {x: -10.213989, y: -56.36374}
+        - {x: 32.78601, y: -56.36374}
+        - {x: 36.78601, y: -53.36374}
+        - {x: 36.78601, y: -34.36374}
+        - {x: 27.78601, y: -29.363739}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
