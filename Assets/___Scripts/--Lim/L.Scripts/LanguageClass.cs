@@ -13,7 +13,7 @@ public class LanguageClass : MonoBehaviour
     public Text GoogleTxt;
     public Text FacebookTxt;
     public Text languageTxt;
-    public Text AdsView;
+    //public Text AdsView; 중국서비스
     public Text Gold20000;
     public Text Gold30000;
     public Text Gold100000;
@@ -87,7 +87,7 @@ public class LanguageClass : MonoBehaviour
         GoogleTxt.text = "구글";
         FacebookTxt.text = "페이스북";
         languageTxt.text = "언어";
-        AdsView.text = "광고보기";
+        //AdsView.text = "광고보기";
         Gold20000.text = "2,000 골드";
         Gold30000.text = "5,000 골드";
         Gold100000.text = "15,000 골드";
@@ -141,7 +141,7 @@ public class LanguageClass : MonoBehaviour
         GoogleTxt.text = "Google";
         FacebookTxt.text = "Facebook";
         languageTxt.text = "Language";
-        AdsView.text = "Ad View";
+        //AdsView.text = "Ad View";
         Gold20000.text = "2,000 Gold";
         Gold30000.text = "5,000 Gold";
         Gold100000.text = "15,000 Gold";

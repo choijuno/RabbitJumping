@@ -199,8 +199,8 @@ public partial class selectManager : MonoBehaviour {
             tiltOff.gameObject.SetActive(true);
         }
 
-        GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0));
-        GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1));
+        //GoogleBtnOn.onClick.AddListener(() => GoogleBtnFunc(0)); 중국서비스
+        //GoogleBtnOff.onClick.AddListener(() => GoogleBtnFunc(1)); 중국서비스
 
 
         if (!ES2.Exists("musicChk"))
@@ -237,6 +237,7 @@ public partial class selectManager : MonoBehaviour {
         setup.SetActive(false);
 
         //골드 보석 상점
+        /* 중국서비스
         goldBosuk = UiCanvas.gameObject.transform.FindChild("goldBosuk").gameObject;
         goldStore = goldBosuk.transform.FindChild("goldStore").gameObject;
         bosukStore = goldBosuk.transform.FindChild("bosukStore").gameObject;
@@ -256,6 +257,7 @@ public partial class selectManager : MonoBehaviour {
         bosuk32500won.onClick.AddListener(() => bosukBuy(32500));
 
         goldBosuk.SetActive(false);
+        */
 
         //사운드 옵션
         myRoom = ui_back_large.transform.FindChild("MyRoom").gameObject;
@@ -323,6 +325,7 @@ public partial class selectManager : MonoBehaviour {
                 GameOutPopUp.SetActive(true);
             }
        // }
+       /*
        if(InappManager.Bosuk20000 == true)
         {
             bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
@@ -338,6 +341,7 @@ public partial class selectManager : MonoBehaviour {
             bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
             InappManager.Bosuk100000 = false;
         }
+        */
     }
     void loadStar()
     {
