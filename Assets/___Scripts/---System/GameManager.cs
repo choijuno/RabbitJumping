@@ -119,6 +119,8 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
     {
+
+
 		if (TestNum != 0) {
 			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
 			//downTime
@@ -323,6 +325,8 @@ public class GameManager : MonoBehaviour {
 				break;
 
 			case 4://retry
+				Debug.Log ("retry!!!!!!!");
+				
 				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
 				yield return new WaitForSeconds (1.7f);
 				gameSet = 3;
