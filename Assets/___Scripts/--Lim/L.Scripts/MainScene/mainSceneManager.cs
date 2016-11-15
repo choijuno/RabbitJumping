@@ -16,28 +16,31 @@ public class mainSceneManager : MonoBehaviour {
         startBtn = GameObject.Find("startBtn").GetComponent<Button>();
         startBtn.onClick.AddListener(startBtnFunc);
 
-        faceBookBtn = GameObject.Find("googleLogin").GetComponent<Button>();
-        faceBookBtn.onClick.AddListener(faceBookBtnFunc);
+        
+        //faceBookBtn = GameObject.Find("googleLogin").GetComponent<Button>();
+        //faceBookBtn.onClick.AddListener(faceBookBtnFunc);
 
-        if (!ES2.Exists("Language"))
+       /* if (!ES2.Exists("Language"))
         {
             ES2.Save<bool>(true, "Language");
             GoogleLogin.text = "구글 로그인 하기";
-        }
-        if (ES2.Load<bool>("Language"))
+        }*/
+
+        /*if (ES2.Load<bool>("Language"))
         {
             GoogleLogin.text = "구글 로그인 하기";
         }else
         {
             GoogleLogin.text = "Google Login";
-        }
+        }*/
 
         Panel.gameObject.SetActive(false);
 
-        GoogleManager.GetInstance.InitializeGPGS();
+       /* GoogleManager.GetInstance.InitializeGPGS();
 
         if (!Social.localUser.authenticated)
             GoogleManager.GetInstance.LoginGPGS();
+            */
     }
 	void startBtnFunc()
     {

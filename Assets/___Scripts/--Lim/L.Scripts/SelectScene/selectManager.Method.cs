@@ -66,6 +66,7 @@ public partial class selectManager : MonoBehaviour
         chaSetFalse();
         setup.SetActive(true);
 
+        /* 중국서비스
         if (!Social.localUser.authenticated)
         {
             GoogleBtnOff.gameObject.SetActive(true); //로그인 안되있으면.
@@ -87,7 +88,7 @@ public partial class selectManager : MonoBehaviour
             FaceBookOn.gameObject.SetActive(true);
             FaceBookOff.gameObject.SetActive(false);
         }
-
+        */
     }
     public void setupExitBtnFunc()
     {
