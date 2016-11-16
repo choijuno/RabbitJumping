@@ -586,7 +586,8 @@ public class PlayerMove : MonoBehaviour {
 				if (!GameManager.retry_Check) {
 					GameManager.gameSet = 2;
 				} else {
-					GameManager.gameSet = 4;
+					GameManager.gameSet = 2;
+					//GameManager.gameSet = 4;
 				}
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
@@ -707,7 +708,8 @@ public class PlayerMove : MonoBehaviour {
 					if (!GameManager.retry_Check) {
 						GameManager.gameSet = 2;
 					} else {
-						GameManager.gameSet = 4;
+						GameManager.gameSet = 2;
+						//GameManager.gameSet = 4;
 					}
                     Debug.Log(bounce);
                     //gameover.SetActive (true);
@@ -755,7 +757,8 @@ public class PlayerMove : MonoBehaviour {
 					if (!GameManager.retry_Check) {
 						GameManager.gameSet = 2;
 					} else {
-						GameManager.gameSet = 4;
+						GameManager.gameSet = 2;
+						//GameManager.gameSet = 4;
 					}
 					Debug.Log(bounce);
 					//gameover.SetActive (true);
@@ -946,8 +949,9 @@ public class PlayerMove : MonoBehaviour {
 				if (!GameManager.retry_Check || GameManager.retry_count != 0) {
 					GameManager.gameSet = 2;
 				} else {
-					GameManager.gameSet = 4;
-				StartCoroutine ("retryGame");
+					GameManager.gameSet = 2;
+					//GameManager.gameSet = 4;
+				//StartCoroutine ("retryGame");
 
 			}
 
@@ -1011,7 +1015,7 @@ public class PlayerMove : MonoBehaviour {
 	}
 
 	IEnumerator retryGame(){
-
+		Debug.Log ("retry!!!!!!!");
 		while (true) {
 
 			yield return new WaitForSeconds (0.006f);
@@ -1025,7 +1029,7 @@ public class PlayerMove : MonoBehaviour {
 	}
 
 	IEnumerator retryReset(){
-
+		
 		while (true) {
 
 			yield return new WaitForSeconds (0.006f);

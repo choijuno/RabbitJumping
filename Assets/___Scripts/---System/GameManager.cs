@@ -119,6 +119,8 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
     {
+
+
 		if (TestNum != 0) {
 			JsonGo = GameObject.Find ("Json").GetComponent<JsonParsing> ();
 			//downTime
@@ -323,6 +325,8 @@ public class GameManager : MonoBehaviour {
 				break;
 
 			case 4://retry
+				Debug.Log ("retry!!!!!!!");
+				
 				ingameCamera.GetComponent<GameCamera>().viveCheck = true;
 				yield return new WaitForSeconds (1.7f);
 				gameSet = 3;
@@ -460,7 +464,7 @@ public class GameManager : MonoBehaviour {
 	void result() {
 		result_gold.text = Money_ingame.ToString("n0");
         DataSave._instance.setMoney_Game(Money_ingame);
-
+		/*
         float gold = DataSave._instance.getMoney_Game();
         if(gold >= 1000)
             Social.ReportProgress(GPGS.achievement_Gold1, 100.0f, (bool success) => { });
@@ -470,7 +474,7 @@ public class GameManager : MonoBehaviour {
             Social.ReportProgress(GPGS.achievement_Gold3, 100.0f, (bool success) => { });
         else if(gold >= 1000000)
             Social.ReportProgress(GPGS.achievement_Gold4, 100.0f, (bool success) => { });
-
+		*/
         result_time.text = m_record.ToString("00") + ":" + s_record.ToString("00");
 		result_help.text = Record_help +"/" +Record_help_Max;
 	}
@@ -530,7 +534,7 @@ public class GameManager : MonoBehaviour {
 		float starCountAch = DataSave._instance.getStar_Count();
 		GoogleManager.GetInstance.ReportScoreLeaderBoard (starCountAch, TestNum, Record_time * 1000);
 		int helpTotal = DataSave._instance.getAnimal ();
-
+		/*
         if(starCountAch >= 50)
             Social.ReportProgress(GPGS.achievement_star1, 100.0f, (bool success) => { });
         else if(starCountAch >= 100)
@@ -553,7 +557,7 @@ public class GameManager : MonoBehaviour {
 		} else if (Record_time >= 600) {
 			Social.ReportProgress(GPGS.achievement_timer2, 100.0f, (bool success) => { });
 		}
-
+		*/
         switch (starCount)
 			{
 			case 1:
