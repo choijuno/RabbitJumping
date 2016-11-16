@@ -118,7 +118,8 @@ public class LanguageClass : MonoBehaviour
         pvit.text = "피라";
 
         bosukBuy.text = "보석이 부족합니다. \n충전 하시겠습니까?";
-        GoldBuy.text = "골드가 부족합니다. \n충전 하시겠습니까?";
+        //GoldBuy.text = "골드가 부족합니다. \n충전 하시겠습니까?";
+        GoldBuy.text = "골드가 부족합니다.";
 
         GameExit.text = "정말 종료 하시겠습니까?";
         BosukBuyOk.text = "예";
@@ -171,7 +172,8 @@ public class LanguageClass : MonoBehaviour
         pvit.text = "Pira";
 
         bosukBuy.text = "Crystal is low. \nWould you like to fill ? ";
-        GoldBuy.text = "Gold is low. \nWould you like to fill ? ";
+        //GoldBuy.text = "Gold is low. \nWould you like to fill ? ";
+        GoldBuy.text = "Gold is low.";
 
         GameExit.text = "Are you sure you want to quit?";
         BosukBuyOk.text = "Yes";
