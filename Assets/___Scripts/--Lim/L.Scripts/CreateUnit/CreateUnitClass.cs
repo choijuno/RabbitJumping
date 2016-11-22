@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CreateUnitClass : MonoBehaviour {
 
     public static bool CreateUnitChk = false;
+	public Text GetIt;
     public GameObject mude;
     public GameObject CreateOk;
     public GameObject[] unit;
@@ -46,6 +47,22 @@ public class CreateUnitClass : MonoBehaviour {
                 EggTemp = Instantiate(Egg[0], new Vector3(0, 0.87f, -5.21f), Quaternion.identity) as GameObject;
                 break;
         }
+
+		if (!ES2.Exists("Language"))
+        {
+            ES2.Save<bool>(true, "Language");
+			GetIt.text = "획득하기";
+        }
+
+        if (ES2.Load<bool>("Language"))
+        {
+			GetIt.text = "획득하기";
+        }
+        else
+        {
+			GetIt.text = "Get It";
+        }
+
         StartCoroutine(waitFireWork());
 	}
     IEnumerator waitFireWork()

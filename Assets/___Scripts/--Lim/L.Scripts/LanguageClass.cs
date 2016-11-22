@@ -62,8 +62,8 @@ public class LanguageClass : MonoBehaviour
         {
             ES2.Save<bool>(true, "Language");
             KoreanTxt();
-          
         }
+
         if (ES2.Load<bool>("Language"))
         {
             KoreanTxt();
@@ -71,7 +71,6 @@ public class LanguageClass : MonoBehaviour
         else
         {
             EnglishTxt();
-            
         }
     }
     void KoreanTxt()
