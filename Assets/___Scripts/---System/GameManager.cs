@@ -532,7 +532,9 @@ public class GameManager : MonoBehaviour {
 		DataSave._instance.setStar_Count(starCount);
 
 		float starCountAch = DataSave._instance.getStar_Count();
+		/*
 		GoogleManager.GetInstance.ReportScoreLeaderBoard (starCountAch, TestNum, Record_time * 1000);
+		*/
 		int helpTotal = DataSave._instance.getAnimal ();
 		/*
         if(starCountAch >= 50)

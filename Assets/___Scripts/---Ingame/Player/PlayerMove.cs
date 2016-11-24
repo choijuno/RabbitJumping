@@ -94,7 +94,7 @@ public class PlayerMove : MonoBehaviour {
 		} else {
 			TestSkinNum = 0;
 		}
-			
+
 		ChaSkin [TestSkinNum].SetActive (true);
 		_anim = ChaSkin[TestSkinNum].GetComponent<Animator>();
 		/*

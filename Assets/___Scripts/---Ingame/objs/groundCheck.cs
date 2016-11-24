@@ -12,7 +12,7 @@ public class groundCheck : MonoBehaviour {
 
 		if (Application.loadedLevelName != "Edit") {
 			if (ground.transform.parent.name.Substring (0, 3) == "101" && !ground.CompareTag("turnpoint")) {
-				thisChild.transform.parent = ground.GetComponent<BumpColider> ().groundParent.transform;
+				thisChild.transform.parent.transform.parent = ground.GetComponent<BumpColider> ().groundParent.transform;
 				this.gameObject.SetActive (false);
 			}
 
