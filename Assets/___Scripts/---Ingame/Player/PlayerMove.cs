@@ -802,7 +802,7 @@ public class PlayerMove : MonoBehaviour {
                 if (obj.CompareTag("warpexit"))
                 {
 					Camera_ingame.GetComponent<GameCamera> ().direction = 0;
-                    warpexitTime_in = obj.transform.parent.transform.parent.GetComponent<Tunnel>().exitTime;
+                    warpexitTime_in = 0.5f;
 
                     Camera_ingame.GetComponent<GameCamera>().riding = false;
                     MaxHeight_in = transform.position.y + MaxHeight;
