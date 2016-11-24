@@ -277,7 +277,7 @@ public partial class selectManager : MonoBehaviour
     public void redBoxBtnFunc() //레드박스
     {
         MusicManager.instance.PlayOnShot();
-
+        /*
         float gameMoney_ = DataSave._instance.getBosuk_Game();
 
         if (gameMoney_ < 10)
@@ -291,12 +291,40 @@ public partial class selectManager : MonoBehaviour
             DataSave._instance.setBosuk_GameMinus(10);
             bosukMoney.text = DataSave._instance.getBosuk_Game().ToString();
             SceneManager.LoadScene(5);
+        }*/
+        float gameMoney_ = DataSave._instance.getMoney_Game();
+        if (gameMoney_ < 2000)
+        {
+            //돈이 부족하면
+            goldPopUp.SetActive(true);
+        }
+        else
+        {
+            eggNumber = 1;
+            DataSave._instance.setMoney_GameMinus(2000);
+            gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+            SceneManager.LoadScene(5);
         }
     }
     public void blueBoxBtnFunc() //광고 박스
     {
+        /*
         eggNumber = 2;
         SceneManager.LoadScene(5);
+        */
+        float gameMoney_ = DataSave._instance.getMoney_Game();
+        if (gameMoney_ < 3000)
+        {
+            //돈이 부족하면
+            goldPopUp.SetActive(true);
+        }
+        else
+        {
+            eggNumber = 2;
+            DataSave._instance.setMoney_GameMinus(3000);
+            gameMoney.text = DataSave._instance.getMoney_Game().ToString();
+            SceneManager.LoadScene(5);
+        }
     }
     
     public void chaFunc(string cha_index)

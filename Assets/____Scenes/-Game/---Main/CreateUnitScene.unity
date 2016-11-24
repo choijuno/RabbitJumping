@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f3b3fdae357444eba4de34dc3482ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GetIt: {fileID: 1338321288}
   mude: {fileID: 782622542}
   CreateOk: {fileID: 1130644669}
   unit:

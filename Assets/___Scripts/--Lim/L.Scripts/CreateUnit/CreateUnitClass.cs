@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class CreateUnitClass : MonoBehaviour {
 
     public static bool CreateUnitChk = false;
+	public Text GetIt;
     public GameObject mude;
     public GameObject CreateOk;
-    public GameObject[] unit = new GameObject[2];
+    public GameObject[] unit;
     public GameObject[] Egg = new GameObject[2];
     GameObject EggTemp;
 
@@ -46,6 +47,22 @@ public class CreateUnitClass : MonoBehaviour {
                 EggTemp = Instantiate(Egg[0], new Vector3(0, 0.87f, -5.21f), Quaternion.identity) as GameObject;
                 break;
         }
+
+		if (!ES2.Exists("Language"))
+        {
+            ES2.Save<bool>(true, "Language");
+			GetIt.text = "획득하기";
+        }
+
+        if (ES2.Load<bool>("Language"))
+        {
+			GetIt.text = "획득하기";
+        }
+        else
+        {
+			GetIt.text = "Get It";
+        }
+
         StartCoroutine(waitFireWork());
 	}
     IEnumerator waitFireWork()
@@ -53,7 +70,18 @@ public class CreateUnitClass : MonoBehaviour {
         yield return new WaitForSeconds(3.2f);
         effectWhite.SetActive(true);
         yield return new WaitForSeconds(0.6f);
-        createUnitFunc();
+        switch (selectManager.eggNumber)
+        {
+            case 0:
+                createUnitFunc();
+                break;
+            case 1:
+                createUnitFunc1();
+                break;
+            case 2:
+                createUnitFunc2();
+                break;
+        }
         mude.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         CreateOk.SetActive(true);
@@ -64,6 +92,7 @@ public class CreateUnitClass : MonoBehaviour {
         CreateUnitChk = true;
         ES2.Save<int>(randomIndex, "character" + randomIndex.ToString());
 
+        /*
         for (int i = 0; i < 20; i++)
         {
             if(ES2.Exists("character" + i))
@@ -81,13 +110,23 @@ public class CreateUnitClass : MonoBehaviour {
         {
             Social.ReportProgress(GPGS.achievement_skin2, 100.0f, (bool success) => { });
         }
-
+        */
         Destroy(EggTemp);
         SceneManager.LoadScene(3);
     }
     void createUnitFunc()
     {
-        randomIndex = Random.Range(0, 20);
+        randomIndex = Random.Range(0, 10);
+        Instantiate(unit[randomIndex], new Vector3(0f, -0.73f, 2.29f), Quaternion.identity);
+    }
+    void createUnitFunc1()
+    {
+        randomIndex = Random.Range(10, 15);
+        Instantiate(unit[randomIndex], new Vector3(0f, -0.73f, 2.29f), Quaternion.identity);
+    }
+    void createUnitFunc2()
+    {
+        randomIndex = Random.Range(15, 20);
         Instantiate(unit[randomIndex], new Vector3(0f, -0.73f, 2.29f), Quaternion.identity);
     }
 }
