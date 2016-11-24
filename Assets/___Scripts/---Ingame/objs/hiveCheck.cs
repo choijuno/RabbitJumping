@@ -12,7 +12,7 @@ public class hiveCheck : MonoBehaviour {
 
 		if (Application.loadedLevelName != "Edit") {
 			if (ground.transform.parent.name.Substring (0, 7) == "1060021") {
-				thisChild.transform.parent = ground.GetComponent<BumpColider> ().groundParent.transform;
+				ground.transform.parent.transform.parent = transform.parent.transform;
 				this.gameObject.SetActive (false);
 			}
 
