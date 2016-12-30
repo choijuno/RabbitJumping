@@ -60,7 +60,7 @@ public class LanguageClass : MonoBehaviour
         _SelectManager = GameObject.Find("selectManager").GetComponent<selectManager>();
         if (!ES2.Exists("Language"))
         {
-            ES2.Save<bool>(true, "Language");
+            ES2.Save<bool>(false, "Language");
             KoreanTxt();
         }
 

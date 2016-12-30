@@ -50,8 +50,8 @@ public class CreateUnitClass : MonoBehaviour {
 
 		if (!ES2.Exists("Language"))
         {
-            ES2.Save<bool>(true, "Language");
-			GetIt.text = "획득하기";
+            ES2.Save<bool>(false, "Language");
+			GetIt.text = "Get It";
         }
 
         if (ES2.Load<bool>("Language"))

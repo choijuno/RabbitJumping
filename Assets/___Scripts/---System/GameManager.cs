@@ -203,8 +203,8 @@ public class GameManager : MonoBehaviour {
 					language_eng ();
 				}
 			} else {
-				ES2.Save<bool> (true, "Language");
-				language_kr ();
+				ES2.Save<bool> (false, "Language");
+				language_eng ();
 			}
 
 			if (TestNum == 1) {

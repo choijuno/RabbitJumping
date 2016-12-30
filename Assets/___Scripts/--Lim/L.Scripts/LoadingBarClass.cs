@@ -12,8 +12,8 @@ public class LoadingBarClass : MonoBehaviour {
     {
         if (!ES2.Exists("Language"))
         {
-            ES2.Save<bool>(true, "Language");
-            tip.text = "Tip) 틸트 모드도 있어요~";
+            ES2.Save<bool>(false, "Language");
+            tip.text = "Tip) You can tile version~";
         }
         if (ES2.Load<bool>("Language"))
         {
